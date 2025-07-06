@@ -6,14 +6,14 @@
         max-width: 680px;
 
         p {
-            font-size: 1.5rem;
+            font-size: 1.6rem; /* Adjusted font size */
         }
     }
     #works {
         a {
             p {
                 font-size: 16px;
-                margin: 4px 0 0;
+                margin: 8px 0 0; /* Adjusted margin */
             }   
         &:hover {
             p {
@@ -31,7 +31,7 @@
     }
     .content {
         border-left: 4px solid color.scale($primary-color, $lightness: 80%);
-        padding: 0 24px 0 16px;
+        padding: 0 30px 0 20px; /* Adjusted padding */
     }
 }
 
@@ -40,33 +40,33 @@
         border: none;
         width: 50%;
         padding: 0;
-        margin: 24px 24px 24px 0;
+        margin: 30px 30px 30px 0; /* Adjusted margin */
     }
 }
 
 #selected-works {
   .content {
-    padding: 40px;
-    max-width: 780px;
+    padding: 50px; /* Adjusted padding */
+    max-width: 800px; /* Adjusted max-width */
     margin: 0 auto;
     background: #fff;
 
     h1 {
       color: $color-black-purple;
       font-weight: 700;
-      margin-bottom: 20px;
+      margin-bottom: 25px; /* Adjusted margin */
     }
 
     h2 {
       color: $color-bright-fuchsia;
       font-weight: 500;
-      margin-bottom: 20px;
-      font-size: 1.3em;
+      margin-bottom: 25px; /* Adjusted margin */
+      font-size: 1.4em; /* Adjusted font size */
     }
 
     p {
       line-height: 1.6;
-      margin-bottom: 20px;
+      margin-bottom: 25px; /* Adjusted margin */
     }
 
     ul {
@@ -76,7 +76,7 @@
       
         li {
           line-height: 1.6;
-          margin: 10px 0 -2px;
+          margin: 12px 0; /* Adjusted margin */
           position: relative;
           padding-left: 25px; // Indent the text to make space for the icon
           
@@ -90,25 +90,76 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 30px 0;
+    margin: 40px 0; /* Adjusted margin */
   }
 }
 
 // Responsive Adjustments
 @media screen and (max-width: 768px) {
   .content {
-    padding: 20px;
+    padding: 25px; /* Adjusted padding */
+  }
+
+  #home {
+    #intro-text {
+      p {
+        font-size: 1.2rem; /* Smaller font size on mobile */
+      }
+    }
+  }
+
+  #hire-me, #about {
+    h2 {
+      font-size: 2.5em; /* Smaller font size on mobile */
+    }
+    .content {
+      padding: 0 15px; /* Adjust padding */
+    }
+  }
+
+  #about {
+    .content {
+      width: auto; /* Full width on mobile */
+      margin: 20px 0; /* Adjust margin */
+    }
+  }
+
+  #selected-works {
+    .content {
+      padding: 30px; /* Smaller padding on mobile */
+
+      h1 {
+        font-size: 28px; /* Smaller font size on mobile */
+      }
+
+      h2 {
+        font-size: 1.2em; /* Smaller font size on mobile */
+      }
+
+      p {
+        font-size: 16px; /* Smaller font size on mobile */
+      }
+
+      ul li {
+        font-size: 16px; /* Smaller font size on mobile */
+      }
+    }
+
+    .parallax-container {
+      min-height: 300px; /* Smaller height on mobile */
+      margin: 20px 0; /* Adjust margin */
+    }
   }
 
   .tabs {
     flex-direction: column;
 
     .tab-link {
-      padding: 0.5rem;
+      padding: 0.6rem; /* Adjusted padding */
     }
   }
 
   .tab-content {
-    padding: 15px;
+    padding: 20px; /* Adjusted padding */
   }
 }

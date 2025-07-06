@@ -11,8 +11,8 @@
 .contact-button {
     display: block;
     font-size: 16px;
-    padding: 16px 46px;
-    margin: 20px auto 0;
+    padding: 18px 50px; /* Adjusted padding */
+    margin: 30px auto 0; /* Adjusted margin */
     text-align: center;
     border: 2px solid $link-hover-color;
     color: $link-hover-color;
@@ -37,7 +37,7 @@
     .folder-icon-link {
         display: block;
         
-        margin-top: 80px;
+        margin-top: 100px; /* Adjusted margin */
     }
 
     img {
@@ -66,24 +66,24 @@
       }
       
   .work-details {
-      margin-top: 30px;
+      margin-top: 40px; /* Adjusted margin */
 
       h3 {
         font-weight: 600;
         color: $color-black-purple;
-        margin-bottom: 15px;
+        margin-bottom: 20px; /* Adjusted margin */
       }
 
       p,
       ul {
-        margin-bottom: 20px;
+        margin-bottom: 25px; /* Adjusted margin */
       }
 
       ul {
         padding-left: 20px;
 
         li {
-          margin-bottom: 10px;
+          margin-bottom: 15px; /* Adjusted margin */
 
           &:before {
             content: '\f00c'; // Check icon
@@ -100,27 +100,33 @@
     .tabs {
       display: flex;
       justify-content: space-around;
-      border-bottom: 2px solid $color-neutral-grey;
-      margin-bottom: 20px;
+      border-top: 1px solid $color-neutral-grey;
+      border-bottom: 1px solid $color-neutral-grey;
+      margin-bottom: 30px; /* Adjusted margin */
 
       li {
         margin: 0 !important;
-      padding: 0 0 14px 0 !important;
+        padding: 0 0 14px 0 !important;
 
-      &:before {
-        content: none !important;
+        &:before {
+          content: none !important;
+        }
       }
-    }
 
       .tab-link {
         flex: 1;
         text-align: center;
-        padding: 0.6rem 0;
+        padding: 0.8rem 0; /* Adjusted padding */
         cursor: pointer;
         font-weight: 500;
         color: $color-black-purple;
+        border-right: 1px solid $color-neutral-grey;
         border-bottom: 2px solid transparent;
         transition: all 0.2s ease;
+
+        &:last-child {
+          border-right: none;
+        }
 
         &.active {
           color: $color-bright-fuchsia;
@@ -134,11 +140,11 @@
     }
 
 .tab-content {
-      padding: 20px;
+      padding: 30px; /* Adjusted padding */
       background: $color-light-grey;
       border-radius: 8px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
+      margin-bottom: 40px; /* Adjusted margin */
       display: none;
 
       &.active {
@@ -149,3 +155,33 @@
         display: none;
       }
     }
+
+@media screen and (max-width: 768px) {
+    .contact-button {
+        padding: 15px 30px; /* Smaller padding on mobile */
+        font-size: 14px; /* Smaller font size on mobile */
+    }
+
+    #works {
+        .folder-icon-link {
+            margin-top: 50px; /* Smaller margin on mobile */
+        }
+    }
+
+    .tabs {
+        margin-bottom: 20px; /* Smaller margin on mobile */
+    }
+
+    .tab-link {
+        padding: 0.5rem 0; /* Smaller padding on mobile */
+    }
+
+    .tab-content {
+        padding: 20px; /* Smaller padding on mobile */
+        margin-bottom: 30px; /* Smaller margin on mobile */
+    }
+
+    .work-details {
+        margin-top: 30px; /* Smaller margin on mobile */
+    }
+}

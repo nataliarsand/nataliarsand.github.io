@@ -11,10 +11,15 @@ body {
     background-size: cover;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 
 body, h1, h2, h3, p {
     font-family: 'Montserrat', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+p {
+    margin-bottom: 1em;
 }
 
 a, a:visited {

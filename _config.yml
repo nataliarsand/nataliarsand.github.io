@@ -58,6 +58,7 @@ exclude:
   - yarn.lock
   - package.json
   - package-lock.json
+  - assets/main.scss
 
 include:
   - _redirects
