@@ -42,6 +42,7 @@
 
     img {
         width: 100px;
+        margin: 0 auto;
     }
 }
 
@@ -183,5 +184,70 @@
 
     .work-details {
         margin-top: 30px; /* Smaller margin on mobile */
+    }
+}
+
+/* Quick Navigation Overlay Styles */
+.quick-nav-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    z-index: 1000; /* Ensure it's on top of other content */
+    justify-content: center;
+    align-items: center;
+}
+
+.quick-nav-overlay.active {
+    display: flex; /* Show when active */
+}
+
+.quick-nav-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 90%;
+}
+
+.quick-nav-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.quick-nav-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.quick-nav-content ul li {
+    margin-bottom: 10px;
+}
+
+.quick-nav-content ul li a {
+    text-decoration: none;
+    color: #0073e6; /* Blue accent color */
+    font-size: 1.2em;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+#close-quick-nav {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    &:hover {
+        background-color: color.adjust(#0073e6, $lightness: -10%);
     }
 }

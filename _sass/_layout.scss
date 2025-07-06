@@ -104,22 +104,8 @@ footer {
         margin: 0;
 
         li {
-            margin-bottom: 10px;
-
-            a {
-                display: flex;
-                align-items: center;
-                font-size: 14px;
-
-                .folder-icon {
-                    width: 20px;
-                    margin-right: 10px;
-                }
-            }
-
-            &.selected {
-                font-weight: bold;
-            }
+            margin-bottom: 12px; /* Adjusted margin */
+            line-height: 1.5; /* Adjusted line height */
         }
     }
 
@@ -166,17 +152,45 @@ footer {
     display: flex;
 
     h1 {
-        font-size: 36px; /* Adjusted font size */
+        font-size: 32px; /* Adjusted font size */
         font-weight: bold;
-        margin-bottom: 12px; /* Adjusted margin */
+        margin-bottom: 10px; /* Adjusted margin */
         color: color.scale($primary-color, $lightness: -10%);
     }
 
     h2 {
-        font-size: 28px; /* Adjusted font size */
+        font-size: 24px; /* Adjusted font size */
         font-weight: 500;
-        margin-bottom: 24px; /* Adjusted margin */
+        margin-bottom: 15px; /* Adjusted margin */
         color: color.scale($primary-color, $lightness: 20%);
+    }
+
+    p {
+        font-size: 17px; /* Adjusted font size */
+        line-height: 1.7; /* Adjusted line height */
+        margin-bottom: 20px; /* Adjusted margin */
+        color: $primary-color;
+    }
+
+    h3 {
+        font-size: 20px; /* Adjusted font size */
+        font-weight: bold;
+        margin-top: 20px; /* Adjusted margin */
+        margin-bottom: 15px; /* Adjusted margin */
+        padding-bottom: 5px; /* Adjusted padding */
+        color: color.scale($primary-color, $lightness: -20%);
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 20px; /* Adjusted padding */
+        margin: 0;
+        font-size: 17px; /* Adjusted font size */
+
+        li {
+            margin-bottom: 10px; /* Adjusted margin */
+            line-height: 1.5; /* Adjusted line height */
+        }
     }
 
     p {
@@ -184,15 +198,6 @@ footer {
         line-height: 1.7; /* Adjusted line height */
         margin-bottom: 24px; /* Adjusted margin */
         color: $primary-color;
-    }
-
-    h3 {
-        font-size: 22px; /* Adjusted font size */
-        font-weight: bold;
-        margin-top: 24px; /* Adjusted margin */
-        margin-bottom: 18px; /* Adjusted margin */
-        padding-bottom: 8px; /* Adjusted padding */
-        color: color.scale($primary-color, $lightness: -20%);
     }
 
     ul {

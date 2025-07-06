@@ -4,15 +4,9 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I'm Natalia Arsand — a UX Design Lead based in Amsterdam, working at the intersection of strategy, systems, and craft. Over the last 15+ years, I’ve helped teams solve real-world problems through thoughtful design, scalable operations, and collaborative leadership.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+This site is both a portfolio and a digital playground. It’s inspired by operating systems, editorial interfaces, and the quiet clarity of Nordic design — a space to explore structure, reflect on process, and share things I’ve made with care.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Want to work together, invite me to speak, or just say hi?  
+**[hi@nataliarsand.com](mailto:hi@nataliarsand.com)**
