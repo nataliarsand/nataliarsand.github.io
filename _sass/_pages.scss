@@ -1,0 +1,114 @@
+@use "variables" as *;
+@use "sass:color";
+
+#home {
+    #intro-text {
+        max-width: 680px;
+
+        p {
+            font-size: 1.5rem;
+        }
+    }
+    #works {
+        a {
+            p {
+                font-size: 16px;
+                margin: 4px 0 0;
+            }   
+        &:hover {
+            p {
+               color: $link-hover-color !important;
+            }
+        }
+        }
+    }
+}
+
+#hire-me, #about {
+    h2 {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-size: 3em;
+    }
+    .content {
+        border-left: 4px solid color.scale($primary-color, $lightness: 80%);
+        padding: 0 24px 0 16px;
+    }
+}
+
+#about { 
+    .content {
+        border: none;
+        width: 50%;
+        padding: 0;
+        margin: 24px 24px 24px 0;
+    }
+}
+
+#selected-works {
+  .content {
+    padding: 40px;
+    max-width: 780px;
+    margin: 0 auto;
+    background: #fff;
+
+    h1 {
+      color: $color-black-purple;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: $color-bright-fuchsia;
+      font-weight: 500;
+      margin-bottom: 20px;
+      font-size: 1.3em;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      
+        li {
+          line-height: 1.6;
+          margin: 10px 0 -2px;
+          position: relative;
+          padding-left: 25px; // Indent the text to make space for the icon
+          
+        }
+      }
+    }
+
+    .parallax-container {
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px 0;
+  }
+}
+
+// Responsive Adjustments
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 20px;
+  }
+
+  .tabs {
+    flex-direction: column;
+
+    .tab-link {
+      padding: 0.5rem;
+    }
+  }
+
+  .tab-content {
+    padding: 15px;
+  }
+}

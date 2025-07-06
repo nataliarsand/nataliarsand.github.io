@@ -1,0 +1,41 @@
+@use "variables" as *;
+@use "sass:color";
+
+:root, :host {
+    --fa-style-family-classic: 'Font Awesome 6 Free';
+    --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free';
+}
+
+body {
+    background: #f4f4f4;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+body, h1, h2, h3, p {
+    font-family: 'Montserrat', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+a, a:visited {
+    color: $primary-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $link-hover-color;
+    } 
+    
+    &:active, &:focus {
+        color: $link-hover-color !important;
+    }
+}
+
+i {
+    font-size: 2em;
+    padding: 0 24px;
+}
+
+code,
+pre {
+    font-family: 'IBM Plex Mono', monospace;
+}

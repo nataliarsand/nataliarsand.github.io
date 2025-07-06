@@ -1,0 +1,151 @@
+@use "variables" as *;
+@use "sass:color";
+
+@mixin transition($property: all, $duration: 0.3s, $timing: ease) {
+    transition: $property $duration $timing;
+}
+
+.contact {
+    margin: 48px auto;
+}
+.contact-button {
+    display: block;
+    font-size: 16px;
+    padding: 16px 46px;
+    margin: 20px auto 0;
+    text-align: center;
+    border: 2px solid $link-hover-color;
+    color: $link-hover-color;
+    text-decoration: none;
+    border-radius: 5px;
+    width: fit-content;
+    @include transition();
+
+    &:hover {
+        background-color: $link-hover-color;
+        border-color: $link-hover-color;
+        color: #fff;
+    }
+}
+
+#works {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    height: 100vh;
+
+    .folder-icon-link {
+        display: block;
+        
+        margin-top: 80px;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+.work-image {
+    width: 60%;
+}
+
+.content {
+  ul {
+          li {
+            &:before {
+              content: '\f00c'; // Font Awesome check icon
+              font-family: "Font Awesome 6 Free";
+              font-weight: 900;
+              color: $color-bright-fuchsia;
+              position: absolute;
+              left: 0; // Position the icon to the left of the text
+              top: 0;
+            }
+          }
+        }
+      }
+      
+  .work-details {
+      margin-top: 30px;
+
+      h3 {
+        font-weight: 600;
+        color: $color-black-purple;
+        margin-bottom: 15px;
+      }
+
+      p,
+      ul {
+        margin-bottom: 20px;
+      }
+
+      ul {
+        padding-left: 20px;
+
+        li {
+          margin-bottom: 10px;
+
+          &:before {
+            content: '\f00c'; // Check icon
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: $color-bright-fuchsia;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 2px solid $color-neutral-grey;
+      margin-bottom: 20px;
+
+      li {
+        margin: 0 !important;
+      padding: 0 0 14px 0 !important;
+
+      &:before {
+        content: none !important;
+      }
+    }
+
+      .tab-link {
+        flex: 1;
+        text-align: center;
+        padding: 0.6rem 0;
+        cursor: pointer;
+        font-weight: 500;
+        color: $color-black-purple;
+        border-bottom: 2px solid transparent;
+        transition: all 0.2s ease;
+
+        &.active {
+          color: $color-bright-fuchsia;
+          border-bottom: 2px solid $color-bright-fuchsia;
+        }
+
+        &:hover {
+          color: $color-bright-fuchsia;
+        }
+      }
+    }
+
+.tab-content {
+      padding: 20px;
+      background: $color-light-grey;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+      display: none;
+
+      &.active {
+        display: block;
+      }
+
+      h3 {
+        display: none;
+      }
+    }

@@ -1,0 +1,54 @@
+<!-- work-tabs.html -->
+<div class="work meta-data">
+    <ul class="tabs">
+      {% if page.deliverables %}<li class="tab-link active" data-tab="deliverables">Deliverables</li>{% endif %}
+      {% if page.process %}<li class="tab-link" data-tab="process">Process & Techniques</li>{% endif %}
+      {% if page.team %}<li class="tab-link" data-tab="team">Team</li>{% endif %}
+      {% if page.credits %}<li class="tab-link" data-tab="credits">Credits</li>{% endif %}
+    </ul>
+  
+    {% if page.deliverables %}
+    <div id="deliverables" class="tab-content active">
+      <h3>Deliverables</h3>
+      <ul>
+        {% for item in page.deliverables %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  
+    {% if page.process %}
+    <div id="process" class="tab-content">
+      <h3>Process & Techniques</h3>
+      <ul>
+        {% for item in page.process %}
+        <li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  
+    {% if page.team %}
+    <div id="team" class="tab-content">
+      <h3>Team</h3>
+      <ul>
+        {% for member in page.team %}
+        <li>{{ member }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  
+    {% if page.credits %}
+    <div id="credits" class="tab-content">
+      <h3>Credits</h3>
+      <ul>
+        {% for credit in page.credits %}
+        <li>{{ credit }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+  

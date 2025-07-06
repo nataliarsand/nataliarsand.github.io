@@ -22,59 +22,10 @@
                 {% endif %}
             </div>
 
-            <!-- Interactive Metadata Section -->
-            <div class="work meta-data">
-                <ul class="tabs">
-                    <li class="tab-link active" data-tab="deliverables">Deliverables</li>
-                    <li class="tab-link" data-tab="process">Process & Techniques</li>
-                    <li class="tab-link" data-tab="team">Team</li>
-                    <li class="tab-link" data-tab="credits">Credits</li>
-                </ul>
-
-                <div id="deliverables" class="tab-content active">
-                    {% if page.deliverables %}
-                    <h3>Deliverables</h3>
-                    <ul>
-                        {% for item in page.deliverables %}
-                        <li>{{ item }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-
-                <div id="process" class="tab-content">
-                    {% if page.process %}
-                    <h3>Process & Techniques</h3>
-                    <ul>
-                        {% for item in page.process %}
-                        <li>{{ item }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-
-                <div id="team" class="tab-content">
-                    {% if page.team %}
-                    <h3>Team</h3>
-                    <ul>
-                        {% for member in page.team %}
-                        <li>{{ member }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-
-                <div id="credits" class="tab-content">
-                    {% if page.credits %}
-                    <h3>Credits</h3>
-                    <ul>
-                        {% for credit in page.credits %}
-                        <li>{{ credit }}</li>
-                        {% endfor %}
-                    </ul>
-                    {% endif %}
-                </div>
-            </div>
+            {% if page.deliverables or page.process or page.team or page.credits %}
+                {% include work-tabs.html %}
+            {% endif %}
+          
 
             <!-- Render Markdown Content -->
             {{ content }}
@@ -82,7 +33,8 @@
             <div class="parallax-container" style="background-image: url('{{ page.image }}');"></div>
         </section>
     </main>
-
+    
+    {% include footer.html %}
     <script src="/assets/script.js"></script>
 </body>
 </html>
