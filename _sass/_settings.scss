@@ -1,8 +1,38 @@
-$primary-color: #111;
-$link-hover-color: #0073e6;
+$primary-color: #111111;
+$accent-blue: #0073e6;
+$accent-blue-dark: #005bb5;
+
 $background-overlay: rgba(255, 255, 255, 0.9);
+$background-light: #f7f7f7;
+$surface-white: #ffffff;
+
+$border-grey: #e0e0e0;
+$text-muted: #666666;
 
 $color-black-purple: #1b1b3a;
 $color-bright-fuchsia: #0073e6;
-$color-neutral-grey: #eaeaea;
-$color-light-grey: #f7f7f7;
+$color-accent-primary: #d10090;
+$highlight-yellow: #fff5a5;
+
+
+// Core semantic roles
+$color-primary:       #111111;
+$color-secondary:     #1b1b3a;
+$color-accent:        #0073e6;       // main accent
+$color-accent-alt:    #d10090;       // optional vibrant alt
+$color-accent-hover:  #005bb5;
+
+// Surface + structure
+$color-surface:       #ffffff;
+$color-surface-alt:   #f7f7f7;
+$color-overlay:       rgba(255, 255, 255, 0.9);
+
+// Text
+$color-text:          $color-primary;
+$color-text-muted:    #666666;
+
+// Borders
+$color-border:        #e0e0e0;
+
+// Highlight
+$color-highlight:     #fff5a5;

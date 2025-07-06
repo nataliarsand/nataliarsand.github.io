@@ -4,7 +4,6 @@
         <a href="/" class="back-button">
             <i class="fa-solid fa-chevron-left"></i>
         </a>
-        <a href="#" class="disabled"><i class="fa-solid fa-chevron-right"></i></a>
         <!-- Sidebar Title -->
         <h2 class="nav-title">Selected Works</h2>
     </nav>
@@ -13,9 +12,9 @@
             {% assign works = site.works %}
             {% for work in works %}
             <li class="project-item {% if page.url == work.url %}selected{% endif %}">
-                <a href="{{ work.url }}">
+                <a href="{{ work.url }}" class="project-name">
                     <img src="/assets/images/folder.png" alt="folder-icon" class="folder-icon">
-                    {{ work.title }}
+                    <span class="project-title">{{ work.title }}</span>
                 </a>
             </li>
             {% endfor %}

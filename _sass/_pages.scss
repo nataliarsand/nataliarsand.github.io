@@ -1,162 +1,254 @@
 @use "variables" as *;
 @use "sass:color";
 
+// HOME PAGE SECTIONS
 #home {
-    #intro-text {
-        max-width: 680px;
+  .intro-image {
+    margin-top: 60px;
+    height: 180px;
+  }
 
-        p {
-            font-size: 1.6rem; /* Adjusted font size */
-        }
-    }
-    #works {
-        a {
-            p {
-                font-size: 16px;
-                margin: 8px 0 0; /* Adjusted margin */
-            }   
-        &:hover {
-            p {
-               color: $link-hover-color !important;
-            }
-        }
-        }
-    }
-}
+  #intro-text {
+    flex: 1 1 60%;
+    max-width: 700px;
 
-#hire-me, #about {
-    h2 {
-        font-family: 'Montserrat', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
-        font-size: 2em;
-    }
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-    }
-    .content {
-        border-left: 4px solid color.scale($primary-color, $lightness: 80%);
-        padding: 30px;
-        flex: 1 1 calc(33% - 20px);
-        min-width: 280px;
-        box-sizing: border-box;
-    }
-}
-
-#about { 
-    .content {
-        border: none;
-        width: 50%;
-        padding: 0;
-        margin: 30px 30px 30px 0; /* Adjusted margin */
-    }
-}
-
-#selected-works {
-  .content {
-    padding: 50px; /* Adjusted padding */
-    max-width: 800px; /* Adjusted max-width */
-    margin: 0 auto;
-    background: #fff;
-
-    h1 {
+    p.mono {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
       color: $color-black-purple;
-      font-weight: 700;
-      margin-bottom: 25px; /* Adjusted margin */
-    }
-
-    h2 {
-      color: $color-bright-fuchsia;
-      font-weight: 500;
-      margin-bottom: 25px; /* Adjusted margin */
-      font-size: 1.4em; /* Adjusted font size */
     }
 
     p {
-      line-height: 1.6;
-      margin-bottom: 25px; /* Adjusted margin */
+      color: $color-black-purple;
+      font-size: 1rem;
+      line-height: 1.7;
     }
+  }
+
+  #works {
+    flex: 1 1 30%;
+    text-align: center;
+    margin-top: 40px;
+
+    .folder-icon-link {
+      display: block;
+
+      img {
+        width: 80px;
+        margin: 0 auto;
+      }
+
+      .folder-text {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.85rem;
+        margin-top: 0.75rem;
+        color: $accent-blue;
+      }
+
+      &:hover .folder-text {
+        color: $accent-blue-dark !important;
+      }
+    }
+  }
+}
+
+
+// Works Section (from _components.scss)
+#works {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+
+  .folder-icon-link {
+    display: block;
+    margin-top: 300px;
+  }
+
+  img {
+    width: 100px;
+    margin: 0 auto;
+  }
+}
+
+// ABOUT and HIRE-ME Sections
+#about, #hire-me {
+  .grid-cards {
+    display: grid;
+    border: 1px solid $primary-color;
+    gap: 0;
+
+    .card {
+      border-right: 1px solid $primary-color;
+      border-bottom: 1px solid $primary-color;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+      background-color: #fff;
+
+      img {
+        width: 64px;
+        height: 64px;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-weight: 600;
+        font-size: 1rem;
+        margin-bottom: 0.75rem;
+        color: $primary-color;
+      }
+
+      p {
+        margin: 0;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: $color-black-purple;
+      }
+    }
+  }
+}
+
+// ABOUT — 2-column layout & border cleanup
+#about .grid-cards {
+  grid-template-columns: repeat(2, 1fr);
+
+  .card:nth-child(2n) {
+    border-right: none;
+  }
+
+  .card:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+}
+
+// HIRE-ME — 3-column layout & border cleanup
+#hire-me .grid-cards {
+  grid-template-columns: repeat(3, 1fr);
+
+  .card:nth-child(3n) {
+    border-right: none;
+  }
+
+  .card:nth-last-child(-n+3) {
+    border-bottom: none;
+  }
+}
+
+#more-about {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 20px;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: $color-black-purple;
+    margin-bottom: 1.5em;
+  }
+}
+
+    
+
+// SELECTED WORKS
+#selected-works {
+  .content {
+    padding: 50px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: $surface-white;
+    border-left: 1px solid $border-grey;
 
     ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      
-        li {
-          line-height: 1.6;
-          margin: 12px 0; /* Adjusted margin */
-          position: relative;
-          padding-left: 25px; // Indent the text to make space for the icon
-          
-        }
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 12px 0;
+        line-height: 1.6;
+        position: relative;
+        padding-left: 25px;
+        color: $color-black-purple;
       }
     }
 
     .parallax-container {
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 40px 0; /* Adjusted margin */
+      margin-top: 2em;
+      background-position: center;
+      background-size: cover;
+      height: 300px;
+      border-radius: 12px;
+    }
   }
 }
 
-// Responsive Adjustments
+// RESPONSIVE TWEAKS
 @media screen and (max-width: 768px) {
   .content {
-    padding: 25px; /* Adjusted padding */
+    padding: 25px;
   }
 
   #home {
     #intro-text {
-      p {
-        font-size: 1.2rem; /* Smaller font size on mobile */
-      }
+      padding: 0 20px;
     }
   }
 
   #hire-me, #about {
-    h2 {
-      font-size: 2.5em; /* Smaller font size on mobile */
+    .container {
+      flex-direction: column;
+      padding: 0 20px;
     }
+
     .content {
-      padding: 0 15px; /* Adjust padding */
+      flex: 1 1 100%;
+      padding: 20px;
+      margin: 0 0 20px;
     }
   }
 
   #about {
     .content {
-      width: auto; /* Full width on mobile */
-      margin: 20px 0; /* Adjust margin */
+      width: 100%;
+      margin: 20px 0;
+      padding: 0;
+    }
+
+    .grid-cards {
+      grid-template-columns: 1fr;
+
+      .card {
+        border-right: none !important;
+      }
     }
   }
 
   #selected-works {
     .content {
-      padding: 30px; /* Smaller padding on mobile */
+      padding: 30px;
 
       h1 {
-        font-size: 28px; /* Smaller font size on mobile */
+        font-size: 28px;
       }
 
       h2 {
-        font-size: 1.2em; /* Smaller font size on mobile */
+        font-size: 1.2em;
       }
 
-      p {
-        font-size: 16px; /* Smaller font size on mobile */
-      }
-
+      p,
       ul li {
-        font-size: 16px; /* Smaller font size on mobile */
+        font-size: 16px;
       }
-    }
-
-    .parallax-container {
-      min-height: 300px; /* Smaller height on mobile */
-      margin: 20px 0; /* Adjust margin */
     }
   }
 
@@ -164,11 +256,11 @@
     flex-direction: column;
 
     .tab-link {
-      padding: 0.6rem; /* Adjusted padding */
+      padding: 0.6rem;
     }
   }
 
   .tab-content {
-    padding: 20px; /* Adjusted padding */
+    padding: 20px;
   }
 }

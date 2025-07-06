@@ -1,150 +1,55 @@
 @use "variables" as *;
 @use "sass:color";
+@use "typography";
 
 :root, :host {
-    --fa-style-family-classic: 'Font Awesome 6 Free';
-    --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free';
+  --fa-style-family-classic: 'Font Awesome 6 Free';
+  --fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free';
 }
 
 body {
-    background: #f4f4f4;
-    background-size: cover;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
-
-body, h1, h2, h3, p {
-    font-family: 'Montserrat', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+  background: $background-light;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: $primary-color;
+  font-family: 'Montserrat', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 p {
-    margin-bottom: 1em;
+  font-family: 'Montserrat', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
+  margin-bottom: 1em;
+  font-size: 1rem;
+  color: $color-black-purple;
 }
 
-a, a:visited {
-    color: $primary-color;
-    text-decoration: none;
+a,
+a:visited {
+  color: $accent-blue;
+  text-decoration: none;
 
-    &:hover {
-        color: $link-hover-color;
-    } 
-    
-    &:active, &:focus {
-        color: $link-hover-color !important;
-    }
+  &:hover {
+    color: $accent-blue-dark;
+  }
+
+  &:active,
+  &:focus {
+    color: $accent-blue-dark !important;
+  }
 }
 
 i {
-    font-size: 2em;
-    padding: 0 24px;
+  font-size: 2em;
+  padding: 0 24px;
+  color: $accent-blue;
 }
 
 code,
 pre {
-    font-family: 'IBM Plex Mono', monospace;
-}
-
-// Headings
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
-    color: $primary-color;
-    margin-top: 1em;
-    margin-bottom: 0.5em;
-    line-height: 1.2;
-}
-
-h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
-h3 { font-size: 1.75em; }
-h4 { font-size: 1.5em; }
-h5 { font-size: 1.25em; }
-h6 { font-size: 1em; }
-
-// Paragraphs (already partially defined, will refine)
-p {
-    font-family: 'Montserrat', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 1em;
-    line-height: 1.7;
-    margin-bottom: 1em;
-    color: $primary-color;
-}
-
-// Links (already partially defined, will refine)
-a {
-    text-decoration: none;
-    color: $link-hover-color;
-    &:hover {
-        text-decoration: underline;
-    }
-}
-
-// Lists
-ul, ol {
-    margin-bottom: 1em;
-    padding-left: 1.5em;
-}
-
-ul {
-    list-style: disc;
-}
-
-ol {
-    list-style: decimal;
-}
-
-li {
-    margin-bottom: 0.5em;
-    line-height: 1.6;
-}
-
-// Blockquote
-blockquote {
-    border-left: 4px solid $color-neutral-grey;
-    padding-left: 1.5em;
-    margin: 1.5em 0;
-    font-style: italic;
-    color: color.scale($primary-color, $lightness: 30%);
-}
-
-// Tables
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1.5em;
-}
-
-th, td {
-    border: 1px solid $color-neutral-grey;
-    padding: 0.8em;
-    text-align: left;
-}
-
-th {
-    background-color: $color-light-grey;
-    font-weight: bold;
-}
-
-// Horizontal Rule
-hr {
-    border: none;
-    border-top: 1px solid $color-neutral-grey;
-    margin: 2em 0;
-}
-
-// Strong and Emphasized text
-strong {
-    font-weight: bold;
-}
-
-em {
-    font-style: italic;
-}
-
-// Images
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1em 0;
+  font-family: 'IBM Plex Mono', monospace;
+  background: $surface-white;
+  padding: 0.2em 0.5em;
+  border: 1px solid $border-grey;
+  border-radius: 3px;
 }
