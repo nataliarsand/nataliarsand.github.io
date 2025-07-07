@@ -4,6 +4,16 @@
 section {
     min-height: 100vh;
 }
+.section-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+section#main-intro {
+    align-items: center;
+}
 
 main {
     margin: 0 auto; /* Adjusted margin */

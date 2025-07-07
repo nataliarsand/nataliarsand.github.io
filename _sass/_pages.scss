@@ -4,7 +4,7 @@
 // HOME PAGE SECTIONS
 #home {
   .intro-image {
-    margin-top: 60px;
+    margin-top: 0;
     height: 180px;
   }
 
@@ -29,7 +29,6 @@
   #works {
     flex: 1 1 30%;
     text-align: center;
-    margin-top: 40px;
 
     .folder-icon-link {
       display: block;
@@ -62,7 +61,6 @@
 
   .folder-icon-link {
     display: block;
-    margin-top: 300px;
   }
 
   img {
@@ -72,7 +70,12 @@
 }
 
 // ABOUT and HIRE-ME Sections
-#about, #hire-me {
+#about, #hire-me, #my-craft, #not-my-zone {
+
+  .section-intro {
+    width: 60%;
+  }
+
   .grid-cards {
     display: grid;
     border: 1px solid $primary-color;
@@ -102,7 +105,6 @@
       }
 
       p {
-        margin: 0;
         font-size: 0.95rem;
         line-height: 1.6;
         color: $color-black-purple;
@@ -112,17 +114,43 @@
 }
 
 // ABOUT — 2-column layout & border cleanup
-#about .grid-cards {
-  grid-template-columns: repeat(2, 1fr);
+#about {
+  .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
 
-  .card:nth-child(2n) {
-    border-right: none;
-  }
+    .card:nth-child(2n) {
+      border-right: none;
+    }
 
-  .card:nth-last-child(-n+2) {
-    border-bottom: none;
+    .card:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
   }
 }
+
+#not-my-zone {
+
+  ul.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0;
+
+    li.pill {
+      list-style: none;
+      background-color: $background-light;
+      color: $primary-color;
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      border: 1px solid $primary-color;
+      font-family: 'IBM Plex Mono', monospace;
+      white-space: nowrap;
+    }
+  }
+}
+
 
 // HIRE-ME — 3-column layout & border cleanup
 #hire-me .grid-cards {
@@ -136,6 +164,39 @@
     border-bottom: none;
   }
 }
+
+// MY-CRAFT — 2-column layout with pills
+#my-craft .grid-cards {
+  grid-template-columns: repeat(2, 1fr);
+
+  .card:nth-child(2n) {
+    border-right: none;
+  }
+
+  .card:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
+
+  .pills {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    padding: 0;
+    list-style: none;
+  }
+
+  .pill {
+    background-color: $color-highlight; // fallback: #eee;
+    color: $primary-color;
+    padding: 0.25em 0.75em;
+    font-size: 0.75rem;
+    font-family: 'IBM Plex Mono', monospace;
+    border-radius: 9999px;
+    white-space: nowrap;
+  }
+}
+
 
 #more-about {
   max-width: 800px;
