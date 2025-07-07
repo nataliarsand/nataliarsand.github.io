@@ -1,59 +1,81 @@
 ---
 layout: work
-title: "Hôpital Universitaire de Mirebalais"
-subtitle: "Transforming healthcare delivery in Haiti with a user-centred digital solution"
+title: "Internal App Marketplace"
+subtitle: "Simplifying access to internal tools through a centralised marketplace"
 description: >
-  A collaborative effort with Partners in Health and OpenMRS to design a digital medical records system tailored to the unique needs of healthcare professionals in Haiti. This system addressed challenges in usability, accessibility, and operational constraints, empowering hospital staff to deliver better patient care.
-image: "/assets/images/mirebalais/hospital-ui.jpg"
+  A cross-functional effort to design a scalable internal app store at Booking.com. The platform streamlined how accommodation partners discover, access, and provide feedback on the tools they rely on — improving usability, standardisation, and alignment across product teams.
+image: "/assets/images/app-store-hero.png"
 deliverables:
-  - User Journeys
-  - Low-Fidelity Mockups
-  - Prototypes
-  - Live Design System
-  - Usability Testing
+  - label: App marketplace design
+    description: End-to-end platform interface for discovering internal tools
+  - label: UI framework
+    description: Common components and layout system for app store pages
+  - label: Discovery flows
+    description: Search, filter, and navigation patterns for intuitive access
+  - label: Feedback loop
+    description: Built-in tool ratings and comments for continuous improvement
+  - label: Role
+    description: UX designer leading user experience strategy, design, and testing
+  - label: Scope
+    description: Multi-team collaboration across platform tooling and internal services
+
 team:
-  - Partners in Health Staff
-  - ThoughtWorks Engineers
-  - OpenMRS Contributors
-  - Haitian Medical Professionals
+  - UX Designers
+  - Engineers
+  - Product Owners
+  - Internal Tool Managers
+  - Researchers
+
 process:
-  - Collaborative Research
-  - Wireframing and Prototyping
-  - In-Site Testing
-  - Iterative Development
-  - Stakeholder Workshops
-  - Design System Implementation
+  - User research and persona development
+  - Information architecture and categorisation models
+  - Wireframes and UI prototyping
+  - Usability testing with internal users
+  - Co-design with tool owners
+  - Design–engineering handoff and implementation support
+
 credits:
-  - Partners in Health
-  - OpenMRS
-  - ThoughtWorks
+  - Booking.com
 ---
+
 
 ### Project Details
 
-The **Mirebalais Hospital project** aimed to digitise medical records for one of Haiti's largest hospitals. This initiative addressed the needs of healthcare professionals in a low-resource setting, ensuring usability and accessibility for users with minimal exposure to digital systems. The design balanced technological constraints with user experience to deliver a scalable and effective solution.
+The **Booking App Store** was conceptualised as a one-stop shop for internal tools, addressing the complexity and inefficiency faced by accommodation partners in finding and using Booking.com’s extensive suite of applications. The platform aimed to enhance tool discoverability, accessibility, and usability, ultimately improving accommodation partner productivity.
 
-I joined the project during its development phase, focusing on improving usability and delivering a cohesive design system to support rapid iterations and scalability.
+My role in this project focused on creating a **seamless user experience** for the platform by designing intuitive interfaces, structuring the information architecture, and collaborating closely with development teams to bring the app store to life.
 
 Key contributions included:
 
-- Mapping **user journeys** to understand the workflows of healthcare professionals in the hospital.
-- Developing **low-fidelity mockups** and **prototypes** to test solutions early and gather actionable feedback.
-- Implementing a **live design system** to standardise UI components and streamline development.
+- Designing an **app marketplace interface** that categorised tools based on functionality, user roles, and popularity.
+- Crafting **search and discovery flows** to make finding tools faster and more intuitive.
+- Leading **usability testing sessions** to gather feedback from accommodation partners across departments, ensuring the platform met user needs.
+- Collaborating with internal tool managers to align features with business goals and technical feasibility.
 
 ### Challenges & Solutions
 
-1. **Digital Literacy**  
-   Many users had limited experience with computers. Solutions included designing keyboard-friendly navigation and intuitive visual indicators.
+1. **Tool Overload**  
+   Challenge: accommodation partners struggled to navigate an overwhelming number of tools.  
+   Solution: Developed a **clear categorisation system** and filters to help users quickly find relevant applications.
 
-2. **Operational Constraints**  
-   Limited infrastructure required lightweight designs and optimised workflows. Solutions involved streamlining key tasks, such as patient record lookups and updates.
+2. **Inconsistent User Interfaces**  
+   Challenge: Tools had varying UI patterns, leading to confusion.  
+   Solution: Standardised UI components and introduced a consistent visual language for all app pages.
 
-3. **On-Site Testing and Iteration**  
-   Prototypes were tested directly in Haiti with hospital staff, allowing for immediate feedback and adjustments.
+3. **User Feedback Loop**  
+   Challenge: accommodation partners lacked a way to provide feedback on tools.  
+   Solution: Integrated a feedback mechanism, allowing users to rate and comment on applications for continuous improvement.
 
 ### Outcome
 
-- Designed an accessible digital records system tailored to the needs of Haitian healthcare workers.
-- Improved **response times** and usability in high-stress medical scenarios.
-- Contributed to the adoption of OpenMRS in other regions, including Sierra Leone, by creating scalable design practices.
+- Launched the **Booking App Store**, used by thousands of accommodation partners globally.
+- Improved **tool discoverability**, reducing the time to find applications by 40%.
+- Enhanced the **user experience** of internal tools by standardising interfaces and improving navigation flows.
+- Facilitated **cross-functional collaboration**, aligning tool owners, designers, and engineers.
+
+### Key Results
+
+- Increased accommodation partner satisfaction with internal tools, as evidenced by post-launch surveys.
+- Reduced onboarding time for new accommodation partners by providing a centralised platform for all internal applications.
+- Fostered an environment of continuous improvement through the built-in feedback loop.
+

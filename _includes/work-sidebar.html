@@ -1,23 +1,55 @@
 <section class="work-sidebar">
     <nav class="navigation" role="navigation" aria-label="Work Portfolio Navigation">
-        <!-- Back Button -->
-        <a href="/" class="back-button" aria-label="Back to Home">
-            <i class="fa-solid fa-chevron-left"></i>
-        </a>
-        <!-- Sidebar Title -->
-        <h2 class="nav-title">Selected Works</h2>
+      <a href="/" class="back-button" aria-label="Back to Home">
+        <i class="fa-solid fa-chevron-left"></i>
+      </a>
+      <h2 class="nav-title">Selected Works</h2>
     </nav>
-        <nav class="folders" aria-label="Project Folders">
-            <ul>
-            {% assign works = site.works %}
-            {% for work in works %}
-            <li class="project-item {% if page.url == work.url %}selected{% endif %}">
-                <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
-                    <img src="/assets/images/folder.png" alt="folder-icon" class="folder-icon">
-                    <span class="project-title">{{ work.title }}</span>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
+  
+    <nav class="folders" aria-label="Project Folders">
+      <ul>
+        <h3>Booking.com</h3>
+        {% assign booking_titles = "Design Systems,Design Operations,Referral Program,Booking App Store" | split: "," %}
+        {% for title in booking_titles %}
+          {% assign work = site.works | where: "title", title | first %}
+          {% if work %}
+          <li class="project-item {% if page.url == work.url %}selected{% endif %}">
+            <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
+              <img src="/assets/images/folder.png" alt="folder-icon" class="folder-icon">
+              <span class="project-title">{{ work.title }}</span>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+  
+        <h3>ThoughtWorks</h3>
+        {% assign tw_titles = "Digital Health Records in Haiti,Amplify Tablet" | split: "," %}
+        {% for title in tw_titles %}
+          {% assign work = site.works | where: "title", title | first %}
+          {% if work %}
+          <li class="project-item {% if page.url == work.url %}selected{% endif %}">
+            <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
+              <img src="/assets/images/folder.png" alt="folder-icon" class="folder-icon">
+              <span class="project-title">{{ work.title }}</span>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+  
+        <h3>Personal</h3>
+        {% assign personal_titles = "BodyMap: Dosha Questionnaire,Mama Circle" | split: "," %}
+        {% for title in personal_titles %}
+          {% assign work = site.works | where: "title", title | first %}
+          {% if work %}
+          <li class="project-item {% if page.url == work.url %}selected{% endif %}">
+            <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
+              <img src="/assets/images/folder.png" alt="folder-icon" class="folder-icon">
+              <span class="project-title">{{ work.title }}</span>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
     </nav>
-</section>
+  </section>
+  
