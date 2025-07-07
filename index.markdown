@@ -5,7 +5,7 @@ title: Welcome
 
 <section id="main-intro" class="container">
   <div id="intro-text">
-    <img src="/assets/images/natalia.svg" class="intro-image"/>
+    <img src="/assets/images/natalia.svg" class="intro-image" alt="Natalia Arsand profile image"/>
 
     <p>I’m a <strong>UX Design Lead</strong> working at the intersection of strategy, systems, and craft. I design for impact. Thoughtful, scalable, and always human-centered.</p>
 

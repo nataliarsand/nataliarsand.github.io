@@ -3,12 +3,37 @@ $(document).ready(function () {
       const tabId = $(this).data("tab");
   
       // Update tab links
-      $(".tab-link").removeClass("active");
-      $(this).addClass("active");
+      $(".tab-link").removeClass("active").attr("aria-selected", "false");
+      $(this).addClass("active").attr("aria-selected", "true");
   
       // Update tab content
       $(".tab-content").removeClass("active").fadeOut(200);
       $(`#${tabId}`).fadeIn(200).addClass("active");
+    });
+
+    // Keyboard navigation for tabs
+    $(".tabs").on("keydown", ".tab-link", function(e) {
+        const $currentTab = $(this);
+        const $tabs = $currentTab.closest(".tabs").find(".tab-link");
+        let newIndex = $tabs.index($currentTab);
+
+        // Left arrow or Up arrow
+        if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+            e.preventDefault();
+            newIndex = (newIndex - 1 + $tabs.length) % $tabs.length;
+            $tabs.eq(newIndex).focus().click();
+        }
+        // Right arrow or Down arrow
+        else if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+            e.preventDefault();
+            newIndex = (newIndex + 1) % $tabs.length;
+            $tabs.eq(newIndex).focus().click();
+        }
+        // Enter or Space
+        else if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            $currentTab.click();
+        }
     });
 
     // Quick Navigation Overlay Logic
@@ -18,6 +43,8 @@ $(document).ready(function () {
     // Function to open the overlay
     function openQuickNav() {
         quickNavOverlay.addClass("active");
+        // Focus the first focusable element inside the overlay
+        quickNavOverlay.find("a, button").first().focus();
     }
 
     // Function to close the overlay
