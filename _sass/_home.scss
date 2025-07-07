@@ -46,7 +46,7 @@
       }
 
       &:hover .folder-text {
-        color: $color-accent-hover !important;
+        color: $color-accent-hover;
       }
     }
   }
@@ -113,25 +113,6 @@
 
 #not-my-zone {
 
-  ul.pills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    padding: 0;
-    margin: 0;
-
-    li.pill {
-      list-style: none;
-      background-color: $color-surface;
-      color: $color-primary;
-      font-size: 0.9rem;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      border: 1px solid $color-primary;
-      font-family: 'IBM Plex Mono', monospace;
-      white-space: nowrap;
-    }
-  }
 }
 
 

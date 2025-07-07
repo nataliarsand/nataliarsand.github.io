@@ -9,7 +9,7 @@
   
     {% if page.deliverables %}
     <div id="deliverables" class="tab-content active" role="tabpanel" aria-labelledby="deliverables">
-      <h3>Deliverables</h3>
+      <h3 tabindex="0">Deliverables</h3>
       <ul>
         {% for item in page.deliverables %}
           <li>
@@ -27,7 +27,7 @@
   
     {% if page.process %}
     <div id="process" class="tab-content" role="tabpanel" aria-labelledby="process">
-      <h3>Process & Techniques</h3>
+      <h3 tabindex="0">Process & Techniques</h3>
       <ul>
         {% for item in page.process %}
         <li>{{ item }}</li>
@@ -38,7 +38,7 @@
   
     {% if page.team %}
     <div id="team" class="tab-content" role="tabpanel" aria-labelledby="team">
-      <h3>Team</h3>
+      <h3 tabindex="0">Team</h3>
       <ul>
         {% for member in page.team %}
         <li>{{ member }}</li>
@@ -49,7 +49,7 @@
   
     {% if page.credits %}
     <div id="credits" class="tab-content" role="tabpanel" aria-labelledby="credits">
-      <h3>Credits</h3>
+      <h3 tabindex="0">Credits</h3>
       <ul>
         {% for credit in page.credits %}
         <li>{{ credit }}</li>

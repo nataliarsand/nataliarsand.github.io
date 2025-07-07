@@ -81,6 +81,11 @@ $(document).ready(function () {
             closeQuickNav();
         }
     });
+
+    // Add tabindex to h3 and h4 elements in selected works for keyboard navigation
+    if ($('main#selected-works').length) {
+        $('main#selected-works .content h3, main#selected-works .content h4').attr('tabindex', '0');
+    }
   });
   
 

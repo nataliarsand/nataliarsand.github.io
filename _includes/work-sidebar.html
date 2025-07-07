@@ -1,18 +1,18 @@
 <section class="work-sidebar">
-    <nav class="navigation">
+    <nav class="navigation" role="navigation" aria-label="Work Portfolio Navigation">
         <!-- Back Button -->
-        <a href="/" class="back-button">
+        <a href="/" class="back-button" aria-label="Back to Home">
             <i class="fa-solid fa-chevron-left"></i>
         </a>
         <!-- Sidebar Title -->
         <h2 class="nav-title">Selected Works</h2>
     </nav>
-        <nav class="folders">
+        <nav class="folders" aria-label="Project Folders">
             <ul>
             {% assign works = site.works %}
             {% for work in works %}
             <li class="project-item {% if page.url == work.url %}selected{% endif %}">
-                <a href="{{ work.url }}" class="project-name">
+                <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
                     <img src="/assets/images/folder.png" alt="folder-icon" class="folder-icon">
                     <span class="project-title">{{ work.title }}</span>
                 </a>

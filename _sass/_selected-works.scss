@@ -133,11 +133,6 @@
     &:hover {
       color: $color-accent;
     }
-
-    &:focus {
-      outline: 2px solid $color-accent;
-      outline-offset: 2px;
-    }
   }
 }
 

@@ -2,9 +2,11 @@
 <html lang="en">
     {% include head.html %}
 <body>
+    <a href="#main-content-start" class="skip-link">Skip to main content</a>
     {% include header.html %}
 
     <main id="selected-works" class="container">
+        <div id="main-content-start"></div>
         <!-- Include the Sidebar -->
         {% include work-sidebar.html %}
 
@@ -14,7 +16,7 @@
                 <!-- Render Title and Subtitle -->
                 <h1>{{ page.title }}</h1>
                 {% if page.subtitle %}
-                <h2>{{ page.subtitle }}</h2>
+                <h2 tabindex="0">{{ page.subtitle }}</h2>
                 {% endif %}
                 <!-- Render Description -->
                 {% if page.description %}
