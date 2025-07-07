@@ -8,26 +8,26 @@
 }
 
 body {
-  background: $background-light;
+  background: $color-surface-alt;
   margin: 0;
   padding: 0;
   font-family: 'Inter', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
-  color: $primary-color;
+  color: $color-primary;
 }
 
 // Global links
 a, a:visited {
-  color: $accent-blue;
+  color: $color-accent;
   text-decoration: none;
 
   &:hover {
-    color: $accent-blue-dark;
+    color: $color-accent-hover;
     text-decoration: underline;
   }
 
   &:focus {
-    outline: 2px solid $accent-blue;
+    outline: 2px solid $color-accent;
     outline-offset: 2px;
   }
 }
@@ -36,7 +36,7 @@ a, a:visited {
 i {
   font-size: 2em;
   padding: 0 24px;
-  color: $accent-blue;
+  color: $color-accent;
 }
 
 // Code blocks (global)
@@ -96,5 +96,5 @@ img {
 #intro-text .mono {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1.1rem;
-  color: $color-black-purple;
+  color: $color-secondary;
 }

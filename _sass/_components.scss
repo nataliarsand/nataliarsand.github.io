@@ -5,7 +5,7 @@
 .section-heading {
   font-size: 2em;
   margin-bottom: 1em;
-  color: $primary-color;
+  color: $color-primary;
   text-align: center;
 }
 
@@ -15,7 +15,7 @@
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
   padding: 14px 24px;
-  background-color: $color-black-purple;
+  background-color: $color-accent;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -25,7 +25,7 @@
   transition: transform 0.2s ease, background-color 0.2s ease;
 
   &:hover {
-    background-color: color.scale($color-black-purple, $lightness: -10%);
+    background-color: $color-accent-hover;
     transform: translateY(-4px) scale(1.03);
     color: #fff;
     text-decoration: none;
@@ -33,11 +33,11 @@
 
   &:active {
     transform: translateY(1px) scale(0.98);
-    background-color: color.scale($color-black-purple, $lightness: -20%);
+    background-color: $color-accent-hover;
   }
 
   &:focus {
-    outline: 2px solid $accent-blue;
+    outline: 2px solid $color-accent;
     outline-offset: 2px;
   }
 }
@@ -82,7 +82,7 @@
   }
 
   .quick-nav-content {
-    background-color: $surface-white;
+    background-color: $color-surface;
     padding: 30px;
     border-radius: 0;
     text-align: center;
@@ -91,7 +91,7 @@
 
     h2 {
       margin-bottom: 20px;
-      color: $primary-color;
+      color: $color-primary;
     }
 
     ul {
@@ -104,7 +104,7 @@
 
         a {
           text-decoration: none;
-          color: $accent-blue;
+          color: $color-accent;
           font-size: 1.2em;
 
           &:hover {
@@ -115,7 +115,7 @@
     }
 
     #close-quick-nav {
-      background-color: $accent-blue;
+      background-color: $color-accent;
       color: white;
       border: none;
       padding: 10px 20px;
@@ -124,7 +124,7 @@
       font-size: 1em;
 
       &:hover {
-        background-color: color.scale($accent-blue, $lightness: -10%);
+        background-color: color.scale($color-accent, $lightness: -10%);
       }
     }
   }
@@ -150,7 +150,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: $accent-blue;
+  background-color: $color-accent;
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
@@ -158,7 +158,7 @@
   display: none;
 
   &:hover {
-    background-color: $accent-blue-dark;
+    background-color: $color-accent-hover;
   }
 }
 
@@ -170,13 +170,13 @@
 
   i {
     cursor: help;
-    color: $color-black-purple;
+    color: $color-secondary;
     font-size: 1em;
     padding: 16px;
     transition: all 0.3s ease;
 
     &:hover {
-      color: $accent-blue;
+      color: $color-accent;
       transform: rotate(-15deg);
     }
 
@@ -192,7 +192,7 @@
     bottom: 90%;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    background: $color-black-purple;
+    background: $color-secondary;
     color: white;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.75rem;

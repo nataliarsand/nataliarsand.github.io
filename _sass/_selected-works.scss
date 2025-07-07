@@ -8,7 +8,7 @@
     max-width: 800px;
     margin: 0 auto;
     background: $color-surface;
-    border-left: 1px solid $border-grey;
+    border-left: 1px solid $color-border;
 
     h2 {
       font-size: 1.2rem;
@@ -16,7 +16,7 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
       margin: 1rem 0;
-      color: $accent-blue;
+      color: $color-accent-alt;
       width: 60%;
     }
 
@@ -30,13 +30,13 @@
         margin: 0.75rem 0;
         padding-left: 1.8rem;
         line-height: 1.7;
-        color: $color-black-purple;
+        color: $color-secondary;
 
         &::before {
           content: '\f00c';
           font-family: "Font Awesome 6 Free";
           font-weight: 900;
-          color: $accent-blue;
+          color: $color-accent;
           position: absolute;
           left: 0;
           top: 0;
@@ -54,8 +54,8 @@
 
 // Highlight Box (optional)
 .highlight-box {
-  background: $background-light;
-  border: 2px dashed $accent-blue;
+  background: $color-surface;
+  border: 2px dashed $color-accent;
   padding: 2rem;
   border-radius: 12px;
   margin: 2rem 0;
@@ -67,7 +67,7 @@
 
   h3 {
     font-weight: 600;
-    color: $color-black-purple;
+    color: $color-secondary;
     margin-bottom: 1.25rem;
   }
 
@@ -86,7 +86,7 @@
         content: '\f00c';
         font-family: "Font Awesome 6 Free";
         font-weight: 900;
-        color: $accent-blue;
+        color: $color-accent;
         margin-right: 0.5rem;
       }
     }
@@ -97,8 +97,8 @@
 .tabs {
   display: flex;
   justify-content: space-around;
-  border-top: 1px solid $border-grey;
-  border-bottom: 1px solid $border-grey;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
   margin: 2rem 0;
 
   li {
@@ -116,8 +116,8 @@
     padding: 0.8rem;
     cursor: pointer;
     font-weight: 500;
-    color: $color-black-purple;
-    border-right: 1px solid $border-grey;
+    color: $color-secondary;
+    border-right: 1px solid $color-border;
     border-bottom: 2px solid transparent;
     transition: all 0.2s ease;
 
@@ -126,19 +126,19 @@
     }
 
     &.active {
-      color: $accent-blue;
-      border-bottom: 2px solid $accent-blue;
+      color: $color-accent;
+      border-bottom: 2px solid $color-accent;
     }
 
     &:hover {
-      color: $accent-blue;
+      color: $color-accent;
     }
   }
 }
 
 .tab-content {
   padding: 2rem;
-  background: $background-light;
+  background: $color-surface;
   margin-bottom: 2.5rem;
   display: none;
 
@@ -161,7 +161,10 @@
 
   .project-item.selected {
     font-weight: 600;
+    a {
+    color: $color-secondary;
   }
+}
 
   .project-name {
     display: flex;
@@ -171,17 +174,16 @@
     gap: 0.5rem;
 
     &:hover {
-      color: $primary-color;
+      color: $color-primary;
       text-decoration: none;
     }
   }
 
   a {
     text-decoration: none;
-    color: $primary-color;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 
@@ -210,7 +212,7 @@
       padding: 4px 8px;
 
       &.disabled {
-        color: color.scale($primary-color, $lightness: 50%);
+        color: color.scale($color-primary, $lightness: 50%);
         cursor: default;
       }
     }

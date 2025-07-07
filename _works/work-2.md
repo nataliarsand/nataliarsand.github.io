@@ -1,33 +1,43 @@
 ---
 layout: work
 title: "Booking App Store"
-subtitle: "Revolutionising internal tools with a centralised app marketplace"
+subtitle: "Simplifying access to internal tools through a centralised marketplace"
 description: >
-  A transformative project to create a centralised platform for internal tools and applications, empowering Booking.com's accommodation partners with streamlined access, discovery, and usage of essential resources.
+  A cross-functional effort to design a scalable internal app store at Booking.com. The platform streamlined how accommodation partners discover, access, and provide feedback on the tools they rely on — improving usability, standardisation, and alignment across product teams.
 image: "/assets/images/app-store-hero.png"
 deliverables:
-  - App Marketplace Design
-  - User Interface (UI) Framework
-  - Application Discovery Flows
-  - User Feedback Integration
-  - Collaboration with Development Teams
-  - Prototyping and Usability Testing
+  - label: App marketplace design
+    description: End-to-end platform interface for discovering internal tools
+  - label: UI framework
+    description: Common components and layout system for app store pages
+  - label: Discovery flows
+    description: Search, filter, and navigation patterns for intuitive access
+  - label: Feedback loop
+    description: Built-in tool ratings and comments for continuous improvement
+  - label: Role
+    description: UX designer leading user experience strategy, design, and testing
+  - label: Scope
+    description: Multi-team collaboration across platform tooling and internal services
+
 team:
   - UX Designers
   - Engineers
   - Product Owners
   - Internal Tool Managers
   - Researchers
+
 process:
-  - User Research and Persona Development
-  - Information Architecture (IA) for Tool Categorisation
-  - Low- to High-Fidelity Wireframes
-  - Iterative Usability Testing
-  - Cross-Team Collaboration with Internal Tool Owners
-  - Design-Development Integration
+  - User research and persona development
+  - Information architecture and categorisation models
+  - Wireframes and UI prototyping
+  - Usability testing with internal users
+  - Co-design with tool owners
+  - Design–engineering handoff and implementation support
+
 credits:
   - Booking.com
 ---
+
 
 ### Project Details
 
