@@ -146,6 +146,22 @@
   }
 }
 
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: $accent-blue;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: none;
+
+  &:hover {
+    background-color: $accent-blue-dark;
+  }
+}
+
 .easter-egg {
   position: relative;
   display: block;

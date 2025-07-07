@@ -90,72 +90,6 @@ footer {
     }
 }
 
-.work-sidebar {
-    width: 320px;
-    height: 100vh;
-    overflow-y: auto;
-    padding: 0 24px 0 0; /* Adjusted padding */
-    box-sizing: border-box;
-
-    a {
-        text-decoration: none;
-        color: $primary-color;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-
-    ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-
-        li {
-            margin-bottom: 12px; /* Adjusted margin */
-            line-height: 1.5; /* Adjusted line height */
-        }
-    }
-
-    nav {
-        &.navigation {
-            display: flex;
-            align-items: center;
-            margin: 0 0 24px;
-
-            i {
-                font-size: 1.3em;
-                padding: 0;
-            }
-
-            a {
-                padding: 4px 8px;
-
-                &.disabled {
-                    color: color.scale($primary-color, $lightness: 50%);
-                    cursor: default;
-                }
-            }
-
-            h2 {
-                display: inline-block;
-                margin: 0;
-                padding-left: 14px;
-                font-size: 18px;
-                font-weight: 400;
-            }
-        }
-
-        &.folders {
-            margin-left: 8px;
-            img {
-                width: 24px;
-                margin: 0;
-            }
-        }
-    }
-}
-
 .container {
     max-width: 1200px;
     display: flex;
@@ -171,15 +105,6 @@ footer {
         flex-direction: column; /* Stack elements vertically */
         max-width: 100%; /* Use full width */
         padding: 0 15px; /* Add horizontal padding */
-    }
-
-    .work-sidebar {
-        width: 100%; /* Full width on mobile */
-        height: auto; /* Auto height */
-        padding: 20px 0; /* Adjust padding */
-        border-right: none; /* Remove right border */
-        border-bottom: 1px solid $color-border; /* Add bottom border */
-        margin-bottom: 20px; /* Space below sidebar */
     }
 
     .header .container {

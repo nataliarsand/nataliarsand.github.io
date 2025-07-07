@@ -62,4 +62,20 @@ $(function () {
         containment: "body", // Restrict movement to the viewport
         cursor: "move"
     });
+
+    // Back to top button
+    const backToTopButton = $("#back-to-top");
+
+    $(window).on("scroll", function () {
+        if ($(this).scrollTop() > 200) {
+            backToTopButton.fadeIn();
+        } else {
+            backToTopButton.fadeOut();
+        }
+    });
+
+    backToTopButton.on("click", function (e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, 400);
+    });
 });
