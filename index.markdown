@@ -172,13 +172,13 @@ title: Welcome
     <li class="pill">Illustrations</li>
     <li class="pill">Marketing and social media assets</li>
     <li class="pill">Logo design</li>
-    <li class="pill">Stunning graphic design</li>
+    <li class="pill">Stunning visual design</li>
     <li class="pill">Full-time developer</li>
   </ul>
 </section>
 
 
-<section id="more-about" class="section-block">
+<section id="more-about">
   <h2>My Journey</h2>
   <p>I’ve always been drawn to design:  not just how things look, but how they work and why. I studied both Graphic Design and Systems Analysis, but most of what I know I learned through experience: building, breaking, iterating.</p>
 

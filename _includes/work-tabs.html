@@ -12,8 +12,15 @@
       <h3>Deliverables</h3>
       <ul>
         {% for item in page.deliverables %}
-        <li>{{ item }}</li>
+          <li>
+            {% if item.link %}
+              <a href="{{ item.link }}"><strong>{{ item.label }}</strong></a>: {{ item.description }}
+            {% else %}
+              <strong>{{ item.label }}:</strong> {{ item.description }}
+            {% endif %}
+          </li>
         {% endfor %}
+
       </ul>
     </div>
     {% endif %}

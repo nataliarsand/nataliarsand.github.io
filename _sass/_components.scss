@@ -2,21 +2,6 @@
 @use "sass:color";
 @use "mixins";
 
-// Section Wrappers
-.section-block {
-  padding: 60px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-
-  &--light {
-    background-color: $background-light;
-  }
-
-  &--center {
-    text-align: center;
-  }
-}
-
 .section-heading {
   font-size: 2em;
   margin-bottom: 1em;
