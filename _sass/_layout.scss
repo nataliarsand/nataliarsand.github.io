@@ -194,4 +194,55 @@ footer {
     section {
         min-height: auto; /* Allow sections to collapse on mobile */
     }
+
+    .content {
+        padding: 25px;
+    }
+
+    #home {
+        #intro-text {
+            padding: 0 20px;
+        }
+    }
+
+    #hire-me, #about {
+        .container {
+            flex-direction: column;
+            padding: 0 20px;
+        }
+
+        .content {
+            flex: 1 1 100%;
+            padding: 20px;
+            margin: 0 0 20px;
+        }
+    }
+
+    #about {
+        .content {
+            width: 100%;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        .grid-cards {
+            grid-template-columns: 1fr;
+
+            .card {
+                border-right: none !important;
+            }
+        }
+    }
+
+    .tabs {
+        flex-direction: column;
+
+        .tab-link {
+            padding: 0.6rem;
+        }
+    }
+
+    .tab-content {
+        padding: 20px;
+    }
 }

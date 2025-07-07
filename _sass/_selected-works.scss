@@ -1,0 +1,213 @@
+@use "variables" as *;
+@use "sass:color";
+
+// SELECTED WORKS
+#selected-works {
+  .content {
+    padding: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: $surface-white;
+    border-left: 1px solid $border-grey;
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      color: $accent-blue;
+      width: 60%;
+    }    
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 0.75rem 0;
+        line-height: 1.7;
+        position: relative;
+        padding-left: 1.8rem;
+        color: $color-black-purple;
+
+        &::before {
+          content: '\f00c';
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          color: $accent-blue;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+// Work Image
+.work-image {
+  width: 60%;
+  max-width: 100%;
+}
+
+// Highlight Box (optional)
+.highlight-box {
+  background: $background-light;
+  border: 2px dashed $accent-blue;
+  padding: 2rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+}
+
+// Work Details Section
+.work-details {
+  margin-top: 3rem;
+
+  h3 {
+    font-weight: 600;
+    color: $color-black-purple;
+    margin-bottom: 1.25rem;
+  }
+
+  p,
+  ul {
+    margin-bottom: 1.5rem;
+  }
+
+  ul {
+    padding-left: 1.2rem;
+
+    li {
+      margin-bottom: 0.75rem;
+
+      &::before {
+        content: '\f00c';
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        color: $accent-blue;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+// Tabs
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid $border-grey;
+  border-bottom: 1px solid $border-grey;
+  margin: 2rem 0;
+
+  li {
+    margin: 0 !important;
+    padding: 0 !important;
+
+    &::before {
+      content: none !important;
+    }
+  }
+
+  .tab-link {
+    flex: 1;
+    text-align: center;
+    padding: 0.8rem 0;
+    cursor: pointer;
+    font-weight: 500;
+    color: $color-black-purple;
+    border-right: 1px solid $border-grey;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.active {
+      color: $accent-blue;
+      border-bottom: 2px solid $accent-blue;
+    }
+
+    &:hover {
+      color: $accent-blue;
+    }
+  }
+}
+
+.tab-content {
+  padding: 2rem;
+  background: $background-light;
+  margin-bottom: 2.5rem;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+
+  h3 {
+    display: none;
+  }
+}
+
+// Sidebar refinement
+.work-sidebar {
+  padding-top: 3rem;
+
+  .project-item.selected {
+    font-weight: 600;
+  }
+
+  .project-name {
+    display: flex;
+    font-size: 0.875rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+
+    &:hover {
+      color: $primary-color;
+      text-decoration: none;
+    }
+  }
+}
+
+// Responsive Tweaks
+@media screen and (max-width: 768px) {
+  #selected-works {
+    .content {
+      padding: 2rem;
+
+      p,
+      ul li {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .tabs {
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+
+    .tab-link {
+      padding: 0.6rem 0;
+    }
+  }
+
+  .tab-content {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .work-details {
+    margin-top: 2rem;
+  }
+
+  .content {
+    flex: 1 1 100%;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+  }
+}

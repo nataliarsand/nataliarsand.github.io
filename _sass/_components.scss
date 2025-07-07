@@ -48,124 +48,19 @@
   text-align: center;
 }
 
-// Work Image
-.work-image {
-  width: 60%;
-}
+// Works Section
+#works {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
 
-// Content Box (lists only)
-.content {
-  ul li {
-    position: relative;
-    padding-left: 25px;
-
-    &::before {
-      content: '\f00c'; // Font Awesome check
-      font-family: "Font Awesome 6 Free";
-      font-weight: 900;
-      color: $accent-blue;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-  }
-}
-
-// Optional Highlight Box
-.highlight-box {
-  background: $background-light;
-  border: 2px dashed $accent-blue;
-  padding: 30px;
-  border-radius: 12px;
-}
-
-// Work Details
-.work-details {
-  margin-top: 40px;
-
-  h3 {
-    font-weight: 600;
-    color: $color-black-purple;
-    margin-bottom: 20px;
-  }
-
-  p,
-  ul {
-    margin-bottom: 25px;
-  }
-
-  ul {
-    padding-left: 20px;
-
-    li {
-      margin-bottom: 15px;
-
-      &::before {
-        content: '\f00c';
-        font-family: "Font Awesome 6 Free";
-        font-weight: 900;
-        color: $accent-blue;
-        margin-right: 8px;
-      }
-    }
-  }
-}
-
-// Tabs
-.tabs {
-  display: flex;
-  justify-content: space-around;
-  border-top: 1px solid $border-grey;
-  border-bottom: 1px solid $border-grey;
-  margin-bottom: 30px;
-
-  li {
-    margin: 0 !important;
-    padding: 0 0 14px 0 !important;
-
-    &::before {
-      content: none !important;
-    }
-  }
-
-  .tab-link {
-    flex: 1;
-    text-align: center;
-    padding: 0.8rem 0 !important;
-    cursor: pointer;
-    font-weight: 500;
-    color: $color-black-purple;
-    border-right: 1px solid $border-grey;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease;
-
-    &:last-child {
-      border-right: none;
-    }
-
-    &.active {
-      color: $accent-blue;
-      border-bottom: 2px solid $accent-blue;
-    }
-
-    &:hover {
-      color: $accent-blue;
-    }
-  }
-}
-
-.tab-content {
-  padding: 30px;
-  background: $background-light;
-  margin-bottom: 40px;
-  display: none;
-
-  &.active {
+  .folder-icon-link {
     display: block;
   }
 
-  h3 {
-    display: none;
+  img {
+    width: 100px;
+    margin: 0 auto;
   }
 }
 
@@ -246,51 +141,7 @@
     margin-top: 50px;
   }
 
-  .tabs {
-    flex-direction: column;
-    margin-bottom: 20px;
-
-    .tab-link {
-      padding: 0.5rem 0;
-    }
-  }
-
-  .tab-content {
-    padding: 20px;
-    margin-bottom: 30px;
-  }
-
-  .work-details {
-    margin-top: 30px;
-  }
-
-  .content {
-    flex: 1 1 100%;
-    margin-bottom: 20px;
-    padding: 20px;
-  }
-
   .section-heading {
     font-size: 1.6em;
-  }
-}
-
-.work-sidebar {
-  padding-top: 46px;
-  height: 100%;
-  .project-item.selected {
-    font-weight: 600;
-  }
-  .project-name {
-    display: flex;
-    font-size: 14px;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 8px;
-      &:hover {
-        color: $primary-color;
-        text-decoration: none;
-    }
   }
 }

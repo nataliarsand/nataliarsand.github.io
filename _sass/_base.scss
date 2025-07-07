@@ -9,47 +9,92 @@
 
 body {
   background: $background-light;
-  background-size: cover;
   margin: 0;
   padding: 0;
+  font-family: 'Inter', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: $primary-color;
-  font-family: 'Montserrat', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-p {
-  font-family: 'Montserrat', 'Work Sans', 'Helvetica Neue', Arial, sans-serif;
-  margin-bottom: 1em;
-  font-size: 1rem;
-  color: $color-black-purple;
-}
-
-a,
-a:visited {
+// Global links
+a, a:visited {
   color: $accent-blue;
   text-decoration: none;
 
   &:hover {
     color: $accent-blue-dark;
+    text-decoration: underline;
   }
 
-  &:active,
   &:focus {
-    color: $accent-blue-dark !important;
+    outline: 2px solid $accent-blue;
+    outline-offset: 2px;
   }
 }
 
+// Font Awesome icons
 i {
   font-size: 2em;
   padding: 0 24px;
   color: $accent-blue;
 }
 
+// Code blocks (global)
 code,
 pre {
   font-family: 'IBM Plex Mono', monospace;
-  background: $surface-white;
+  font-size: 0.95em;
+  color: $color-text;
+  background: $color-surface;
   padding: 0.2em 0.5em;
-  border: 1px solid $border-grey;
+  border: 1px solid $color-border;
   border-radius: 3px;
+}
+
+pre {
+  overflow-x: auto;
+  display: block;
+  padding: 1em;
+  line-height: 1.6;
+}
+
+// Horizontal rule
+hr {
+  border: none;
+  border-top: 1px solid $color-border;
+  margin: 2em 0;
+}
+
+// Tables
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+  color: $color-text;
+}
+
+th, td {
+  border: 1px solid $color-border;
+  padding: 0.8em;
+  text-align: left;
+}
+
+th {
+  background-color: $color-surface-alt;
+  font-weight: bold;
+}
+
+// Images
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em 0;
+}
+
+// Optional: intro-text mono block
+#intro-text .mono {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.1rem;
+  color: $color-black-purple;
 }
