@@ -110,4 +110,14 @@ $(function () {
         e.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, 400);
     });
+
+    // Mobile navigation for header
+    const mobileHamburgerButton = $("#mobileNav .hamburger");
+    const mobileNavList = $("#mobileNavList");
+
+    mobileHamburgerButton.on("click", function() {
+        const isExpanded = $(this).attr("aria-expanded") === "true";
+        $(this).attr("aria-expanded", !isExpanded);
+        mobileNavList.toggleClass("expanded");
+    });
 });
