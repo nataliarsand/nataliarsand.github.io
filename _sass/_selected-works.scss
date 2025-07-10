@@ -120,25 +120,26 @@
     border-right: 1px solid $color-border;
     border-bottom: 2px solid transparent;
     transition: all 0.2s ease;
+    text-decoration: none;
 
     &:last-child {
       border-right: none;
     }
 
     &.active {
-      color: $color-accent;
-      border-bottom: 2px solid $color-accent;
+      color: $color-accent-alt;
+      border-bottom: 2px solid $color-accent-alt;
     }
 
     &:hover {
-      color: $color-accent;
+      color: $color-accent-alt-hover;
     }
   }
 }
 
 .tab-content {
   padding: 2rem;
-  background: $color-surface;
+  background: $color-surface-alt;
   margin-bottom: 2.5rem;
   display: none;
 
@@ -203,7 +204,7 @@
         font-size: 0.95rem;
         color: #0073e6;
         transition: all 0.2s ease;
-        font-weight: 500;
+        font-weight: 400;
 
         &:hover {
           color: #005bb5;
@@ -217,8 +218,8 @@
       }
 
       &.selected a.project-name {
-        font-weight: 700;
-        color: #111;
+        font-weight: 500;
+        color: $color-accent-hover;
       }
     }
   }

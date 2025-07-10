@@ -31,6 +31,39 @@ body {
   }
 }
 
+// Mixin: Reusable focus highlight with background
+@mixin focus-highlight($bg: rgba($color-accent, 0.1), $shadow: 0 0 0 2px rgba($color-accent, 0.3)) {
+  background-color: $bg;
+  box-shadow: $shadow;
+  outline: none;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+// Apply to common interactive elements
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+[tabindex="0"]:focus-visible {
+  @include focus-highlight;
+  border-radius: 4px;
+}
+
+// Optional lift for buttons and links
+a:focus-visible,
+button:focus-visible {
+  transform: translateY(-1px);
+}
+
+// Improve keyboard nav aesthetics without affecting mouse users
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+  outline: none;
+  box-shadow: none;
+  background: none;
+  transform: none;
+}
+
+
 // Global links
 a, a:visited {
   color: $color-accent;
@@ -41,25 +74,6 @@ a, a:visited {
     color: $color-accent-hover;
     text-decoration: underline;
   }
-}
-
-/* Reusable focus style for all interactive elements */
-a:focus,
-button:focus,
-[tabindex="0"]:focus {
-  outline: 2px solid $color-accent;
-  outline-offset: 2px;
-  box-shadow: 0 0 0 4px rgba($color-accent, 0.3);
-  transition: all 0.2s ease-in-out;
-}
-
-/* Optional: Add a subtle transform for clickable elements on focus/active */
-a:focus,
-.cta-button:focus,
-#close-quick-nav:focus,
-#back-to-top:focus,
-.tab-link:focus {
-  transform: translateY(-2px);
 }
 
 

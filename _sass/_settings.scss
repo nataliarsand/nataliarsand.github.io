@@ -1,23 +1,24 @@
 // === BRAND & CORE COLORS ===
-$color-primary:       #111111;
-$color-secondary:     #1b1b3a;
+$color-primary:       #1a1a1a;       // Deep neutral black (softer than #111)
+$color-secondary:     #2e2e42;       // Elegant desaturated indigo-gray
 
 // === ACCENTS ===
-$color-accent:        #0073e6;
-$color-accent-hover:  #005bb5;
-$color-accent-alt:    #d10090;
+$color-accent:        #3b82f6;       // Refined vivid blue (WCAG-compliant)
+$color-accent-hover:  #2563eb;       // Slightly deeper for hover
+$color-accent-alt:    #5126d3;
+$color-accent-alt-hover:    #5c38c6;       // Vibrant violet-pink for occasional highlights
 
 // === SURFACES & STRUCTURE ===
-$color-surface:       #ffffff;
-$color-surface-alt:   #f7f7f7;
-$color-overlay:       rgba(255, 255, 255, 0.9);
+$color-surface:       #ffffff;       // Clean white
+$color-surface-alt:   #f4f4f6;       // Slightly cool gray background
+$color-overlay:       rgba(255, 255, 255, 0.94); // Soft overlay for modals or popups
 
 // === TEXT ===
 $color-text:          $color-primary;
-$color-text-muted:    #666666;
+$color-text-muted:    #5f5f6e;       // Muted charcoal-violet tone
 
 // === BORDER ===
-$color-border:        #e0e0e0;
+$color-border:        #d1d1db;       // Soft neutral border
 
 // === HIGHLIGHT ===
-$color-highlight:     #fff5a5;
+$color-highlight:     #fef3c7;       // Warm pale yellow (soft + readable)

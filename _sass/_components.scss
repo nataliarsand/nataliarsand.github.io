@@ -15,7 +15,7 @@
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
   padding: 14px 24px;
-  background-color: $color-accent;
+  background-color: $color-accent-alt;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -199,7 +199,22 @@
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
   border-radius: 20px;
-  border: 1px solid $color-primary;
   font-family: 'IBM Plex Mono', monospace;
   white-space: nowrap;
+}
+
+#not-my-zone {
+
+  .pill {
+    background-color: $color-surface;
+    border: 1px solid $color-primary;
+  }
+}
+
+
+.contact {
+  display: block;
+  padding: 3rem;
+  margin: 0 auto;
+  text-align: center;
 }
