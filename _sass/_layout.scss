@@ -4,6 +4,11 @@
 section {
     min-height: 100vh;
 }
+
+.hidden {
+    display: none;
+}
+
 .section-block {
     display: flex;
     flex-direction: column;
@@ -13,6 +18,9 @@ section {
 
 section#main-intro {
     align-items: center;
+    .container {
+        margin: 5em 0;
+    }
 }
 
 main {
@@ -93,7 +101,61 @@ footer {
 .container {
     max-width: 1200px;
     display: flex;
+    align-items: center;
 }
+
+
+.section-nav {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.875rem;
+    text-align: center;
+    background: transparent;
+    padding: 2rem 0 1rem;
+    border-top: none;
+    border-bottom: none;
+  
+    ul {
+      display: inline-flex;
+      gap: 0.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+  
+      li {
+        display: flex;
+        align-items: center;
+  
+        &:not(:last-child)::after {
+          content: "/";
+          color: $color-text-muted;
+          margin: 0 0.5rem;
+        }
+  
+        a {
+          color: $color-text-muted;
+          text-decoration: none;
+          transition: color 0.2s ease;
+  
+          &:hover,
+          &:focus {
+            color: $color-accent;
+          }
+        }
+      }
+    }
+  
+    &.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 0.75rem 1rem;
+      background: $color-surface;
+      border-bottom: 1px solid $color-border;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+      z-index: 100;
+    }
+  }
+  
 
 @media screen and (max-width: 768px) {
     main {

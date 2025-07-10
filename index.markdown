@@ -3,22 +3,32 @@ layout: default
 title: Welcome
 ---
 
-<section id="main-intro" class="container">
-  <div id="intro-text">
-    <img src="/assets/images/natalia.svg" class="intro-image" alt="Natalia Arsand profile image"/>
-
-    <p>I’m a <strong>UX Design Lead</strong> working at the intersection of strategy, systems, and craft. I design for impact. Thoughtful, scalable, and always human-centered.</p>
-
-    <p>This site is my digital OS, it's a space to explore structure, reflect on process, and highlight work I am proud of.</p>
+<section id="main-intro">
+  <div class="container">
+    <div id="intro-text">
+      <img src="/assets/images/natalia.svg" class="intro-image" alt="Natalia Arsand profile image"/>
+      <h2 class="hidden">Hi, I’m Natalia.</h2>
+      <p>I’m a <strong>UX Design Lead</strong> working at the intersection of strategy, systems, and craft. I design for impact. Thoughtful, scalable, and always human-centered.</p>
+      <p>This site is my digital OS, it's a space to explore structure, reflect on process, and highlight work I am proud of.</p>
+    </div>
+    <div id="works">
+      <a href="/works/work-1" class="folder-icon-link">
+        <img src="/assets/images/folder.png" alt="Selected Works" class="folder-icon" />
+        <p class="folder-text">Selected works</p>
+      </a>
+    </div>
   </div>
 
-  <div id="works">
-    <a href="/works/work-1" class="folder-icon-link">
-      <img src="/assets/images/folder.png" alt="Selected Works" class="folder-icon">
-      <p class="folder-text">Selected works</p>
-    </a>
-  </div>
+  <nav class="section-nav" id="sectionNav">
+    <ul>
+      <li><a href="#how-i-work">How I Work</a></li>
+      <li><a href="#my-craft">My Craft</a></li>
+      <li><a href="#not-my-zone">Not My Zone</a></li>
+      <li><a href="#my-journey">My Journey</a></li>
+    </ul>
+  </nav>
 </section>
+
 
 <section id="about" class="section-block">
   <h2 tabindex="0">How I Work</h2>
