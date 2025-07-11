@@ -1,0 +1,33 @@
+{% if include.context == "desktop" %}
+  <!-- Desktop Sticky Nav -->
+  <nav class="section-nav" id="sectionNav">
+    <div class="nav-label">
+        <a href="/">
+          Natalia Arsand<span class="nav-easter-egg" aria-hidden="true"></span>
+        </a>
+      </div>      
+    <ul>
+      {% for item in site.data.nav %}
+        <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+{% elsif include.context == "mobile" %}
+  <!-- Mobile Hamburger Menu -->
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="hamburger"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileNavList">
+      <span class="hamburger-icon"></span>
+    </button>
+    <div class="mobile-nav-list-wrapper" id="mobileNavList">
+      <ul>
+        {% for item in site.data.nav %}
+          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+{% endif %}

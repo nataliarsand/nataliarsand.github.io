@@ -3,6 +3,9 @@
 
 // SELECTED WORKS
 #selected-works {
+  max-width: 100%;
+  display: flex;
+  
   .content {
     padding: 3rem;
     max-width: 800px;

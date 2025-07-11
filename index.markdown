@@ -19,14 +19,8 @@ title: Welcome
     </div>
   </div>
 
-  <nav class="section-nav" id="sectionNav">
-    <ul>
-      <li><a href="#how-i-work">How I Work</a></li>
-      <li><a href="#my-craft">My Craft</a></li>
-      <li><a href="#not-my-zone">Not My Zone</a></li>
-      <li><a href="#my-journey">My Journey</a></li>
-    </ul>
-  </nav>
+  {% include nav.html context="desktop" %}
+    
 </section>
 
 
@@ -188,7 +182,7 @@ title: Welcome
 </section>
 
 
-<section id="more-about">
+<section id="more-about" class="section-block">
   <h2 tabindex="0">My Journey</h2>
   <p>I’ve always been drawn to design:  not just how things look, but how they work and why. I studied both Graphic Design and Systems Analysis, but most of what I know I learned through experience: building, breaking, iterating.</p>
 
@@ -199,7 +193,7 @@ title: Welcome
   <p>Today I work at Booking.com, where I’ve led design for both B2B and B2C products, founded the Design Operations team, and now focus on scaling Booking's Design System to support our global design community.</p>
 </section>
 
-<section id="hire-me">
+<section id="hire-me" class="section-block">
   <h2 tabindex="0">Let’s Work Together</h2>
   <p class="section-intro">I’m open to good work with good people, whether that means shaping a new idea, mentoring a fellow designer, or joining a mission-driven team that cares about what they’re building.</p>
 

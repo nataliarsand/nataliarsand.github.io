@@ -1,0 +1,11 @@
+
+- label: My Method
+  url: "#about"
+- label: My Craft
+  url: "#my-craft"
+- label: Not My Zone
+  url: "#not-my-zone"
+- label: My Journey
+  url: "#more-about"
+- label: Hire me
+  url: "#hire-me"

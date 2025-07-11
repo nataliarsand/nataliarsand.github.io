@@ -4,18 +4,9 @@
       <a href="/">Natalia Arsand</a> <span class="location">| Amsterdam, NL</span>
     </h1>
     <a href="mailto:hi@nataliarsand.com" class="contact-email">hi@nataliarsand.com</a>
-    <nav class="mobile-nav" id="mobileNav">
-      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileNavList">
-        <span class="hamburger-icon"></span>
-      </button>
-      <div class="mobile-nav-list-wrapper" id="mobileNavList">
-        <ul>
-          <li><a href="#how-i-work">How I Work</a></li>
-          <li><a href="#my-craft">My Craft</a></li>
-          <li><a href="#not-my-zone">Not My Zone</a></li>
-          <li><a href="#my-journey">My Journey</a></li>
-        </ul>
-      </div>
-    </nav>
+    
+    {% include nav.html context="mobile" %} 
+
+    
   </div>
 </header>
