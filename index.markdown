@@ -12,7 +12,7 @@ title: Welcome
       <p>This site is my digital OS, it's a space to explore structure, reflect on process, and highlight work I am proud of.</p>
     </div>
     <div id="works">
-      <a href="/works/work-1" class="folder-icon-link">
+      <a href="/works/design-systems" class="folder-icon-link">
         <img src="/assets/images/folder.png" alt="Selected Works" class="folder-icon" />
         <p class="folder-text">Selected works</p>
       </a>
