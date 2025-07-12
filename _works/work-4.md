@@ -3,7 +3,7 @@ layout: work
 title: "Internal App Marketplace"
 subtitle: "Simplifying access to internal tools through a centralised marketplace"
 description: >
-  A cross-functional effort to design a scalable internal app store at Booking.com. The platform streamlined how accommodation partners discover, access, and provide feedback on the tools they rely on — improving usability, standardisation, and alignment across product teams.
+  A cross-functional effort to design a scalable internal app store at Booking.com. The platform streamlined how accommodation partners discover, access, and provide feedback on the tools they rely on,  improving usability, standardisation, and alignment across product teams.
 image: "/assets/images/app-store-hero.png"
 deliverables:
   - label: App marketplace design

@@ -25,7 +25,7 @@ title: Welcome
 
 
 <section id="about" class="section-block">
-  <h2 tabindex="0">How I Work</h2>
+  <h2 tabindex="0">Design approach</h2>
   <p class="section-intro">I approach design as a practice of systems thinking, honest collaboration, and continuous refinement. Here are the principles I follow to stay anchored in the impact I create through my work.
 </p>
 
@@ -64,9 +64,9 @@ title: Welcome
 </section>
 
 <section id="my-craft" class="section-block">
-  <h2 tabindex="0">My Craft</h2>
+  <h2 tabindex="0">Core skills</h2>
   <p class="section-intro">
-    This is where practice meets theory. I bring an end-to-end mindset to my work, from untangling complexity in early discovery to shipping real, usable solutions.
+    I bridge strategy and execution through skills that span problem framing, hands-on design, prototyping, and delivery. These are the core tools I rely on:
   </p>
 
   <div class="grid-cards">
@@ -111,6 +111,7 @@ title: Welcome
         <li class="pill">Claude AI</li>
         <li class="pill">Ethical AI usage</li>
         <li class="pill">Prompt Design</li>
+        <li class="pill">Output Review</li>
       </ul>
     </div>
 
@@ -159,7 +160,7 @@ title: Welcome
 </section>
 
 <section id="not-my-zone" class="section-block">
-  <h2 tabindex="0">Not My Zone</h2>
+  <h2 tabindex="0">Out of scope</h2>
   <p class="section-intro">
     I'm not a unicorn. Here are a few things I probably won't help you with, and that's okay:
   </p>
@@ -183,7 +184,7 @@ title: Welcome
 
 
 <section id="more-about" class="section-block">
-  <h2 tabindex="0">My Journey</h2>
+  <h2 tabindex="0">Career Journey</h2>
   <p>I’ve always been drawn to design:  not just how things look, but how they work and why. I studied both Graphic Design and Systems Analysis, but most of what I know I learned through experience: building, breaking, iterating.</p>
 
   <p>I started at 16, working as a Webmaster in a small countryside tech company. I spent my teenage years immersed in the internet, fascinated by its creative and connective power. By 18, I joined Dell, working on the US platform and helping migrate a massive CMS using HTML, CSS, XML, JavaScript, and C#.</p>

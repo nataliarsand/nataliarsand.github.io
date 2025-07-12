@@ -96,7 +96,7 @@
   }
 }
 
-// ABOUT — 2-column layout & border cleanup
+// ABOUT,  2-column layout & border cleanup
 #about {
   .grid-cards {
     grid-template-columns: repeat(2, 1fr);
@@ -116,7 +116,7 @@
 }
 
 
-// HIRE-ME — 3-column layout & border cleanup
+// HIRE-ME,  3-column layout & border cleanup
 #hire-me .grid-cards {
   grid-template-columns: repeat(3, 1fr);
 
@@ -129,7 +129,7 @@
   }
 }
 
-// MY-CRAFT — 2-column layout with pills
+// MY-CRAFT,  2-column layout with pills
 #my-craft .grid-cards {
   grid-template-columns: repeat(2, 1fr);
 

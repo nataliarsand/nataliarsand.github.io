@@ -43,7 +43,7 @@ credits:
 
 The Refer a Friend program is one of Booking.com’s largest peer-driven acquisition efforts. Customers could earn travel rewards by inviting friends to book, creating a viral loop where both the referrer and referee received benefits.
 
-When I joined, the product was only available on desktop in a few test markets. I was brought in to design a **scalable, cohesive referral experience** across all platforms — web, app, and mobile web — and grow it into a full-featured product with global reach.
+When I joined, the product was only available on desktop in a few test markets. I was brought in to design a **scalable, cohesive referral experience** across all platforms,  web, app, and mobile web,  and grow it into a full-featured product with global reach.
 
 ---
 
@@ -51,7 +51,7 @@ When I joined, the product was only available on desktop in a few test markets. 
 
 I was the lead UX designer for the core experience, partnering closely with a researcher, copywriter, and a distributed engineering team.
 
-My work spanned strategy, flows, visual design, prototyping, testing, and delivery — eventually supporting the product's expansion into three separate squads.
+My work spanned strategy, flows, visual design, prototyping, testing, and delivery,  eventually supporting the product's expansion into three separate squads.
 
 ---
 
@@ -101,4 +101,4 @@ Working with the researcher, we validated:
 - 🧩 The product split into three dedicated teams to handle growth and iteration  
 - 🤝 Sharing mechanisms became embedded into the partner and traveller dashboards  
 
-The result was a seamless, scalable, and engaging referral experience that helped Booking.com strengthen its network effects — driven by real customer advocacy.
+The result was a seamless, scalable, and engaging referral experience that helped Booking.com strengthen its network effects,  driven by real customer advocacy.

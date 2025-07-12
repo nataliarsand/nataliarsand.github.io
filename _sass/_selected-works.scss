@@ -155,9 +155,8 @@
   }
 }
 
-// Sidebar
 .work-sidebar {
-  padding: 2rem 1rem 2rem;
+  padding: 2rem 1.5rem;
 
   .navigation {
     display: flex;
@@ -167,15 +166,23 @@
 
     .back-button {
       font-size: 1.25rem;
-      color: #000;
+      color: $color-primary;
+      text-decoration: none;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: $color-accent;
+      }
     }
 
     h2 {
       margin: 0;
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-weight: 400;
       text-transform: uppercase;
-      letter-spacing: 0.05em;
+      letter-spacing: 0.06em;
+      font-family: 'IBM Plex Mono', monospace;
+      color: $color-text;
     }
   }
 
@@ -187,75 +194,61 @@
     }
 
     h3 {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 600;
-      margin-top: 2rem;
-      margin-bottom: 0.75rem;
-      color: #111;
+      margin: 1.5rem 0 0.5rem;
+      color: $color-primary;
       font-family: 'IBM Plex Mono', monospace;
     }
 
     .project-item {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
 
       a.project-name {
         display: flex;
         align-items: center;
         text-decoration: none;
-        font-size: 0.95rem;
-        color: #0073e6;
-        transition: all 0.2s ease;
-        font-weight: 400;
-
-        &:hover {
-          color: #005bb5;
-        }
+        font-size: 0.875rem;
+        font-family: 'IBM Plex Mono', monospace;
+        color: $color-accent;
+        transition: color 0.2s ease;
 
         .folder-icon {
           width: 18px;
           height: 18px;
           margin-right: 0.5rem;
         }
+
+        &:hover {
+          color: $color-accent-hover;
+        }
       }
 
       &.selected a.project-name {
-        font-weight: 500;
+        font-weight: 600;
         color: $color-accent-hover;
       }
     }
   }
 
-  nav.navigation {
-    display: flex;
-    align-items: center;
-    margin: 0 0 24px;
-
-    i {
-      font-size: 1.3em;
-      padding: 0;
-    }
-
-    a {
-      padding: 4px 8px;
-
-      &.disabled {
-        color: color.scale($color-primary, $lightness: 50%);
-        cursor: default;
-      }
-    }
+  i {
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
   }
+
 
   nav.folders {
     margin-left: 8px;
 
     img {
-      width: 24px;
+      width: 20px;
       margin: 0;
     }
   }
 }
+
 
 // Responsive Tweaks
 @media screen and (max-width: 768px) {
