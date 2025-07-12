@@ -35,6 +35,13 @@ p {
   color: $color-text;
 }
 
+@media (max-width: 768px) {
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.2rem; }
+  h3 { font-size: 1.1em; }
+  p { font-size: 0.95rem; }
+}
+
 // Lists
 ul, ol {
   margin-bottom: 1em;

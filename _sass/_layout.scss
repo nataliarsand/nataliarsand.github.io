@@ -25,6 +25,10 @@ section#main-intro {
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column; /* Stack elements vertically on mobile */
+    }
   }
 }
 
