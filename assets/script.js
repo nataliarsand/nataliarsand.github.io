@@ -78,11 +78,10 @@ $(function () {
     });
   
     // ========== DRAGGABLE FOLDER ICON ==========
-    $("#works").draggable({
-        containment: "body",
-        cursor: "move",
-        handle: ".folder-icon"
-      });      
+    $("#works a, .folder-link").draggable({
+        containment: "body", // Restrict movement to the viewport
+        cursor: "move"
+    });      
   
     // ========== BACK TO TOP BUTTON ==========
     const backToTopButton = $("#back-to-top");

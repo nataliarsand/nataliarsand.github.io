@@ -442,3 +442,57 @@ footer {
     padding: 20px;
   }
 }
+
+/* Styles for the new works.markdown page */
+#works-index {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 900px; /* Adjust as needed */
+
+    .folder-link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: $color-text;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
+
+      .folder-icon {
+        width: 80px;
+        height: auto;
+        margin-bottom: 0.5rem;
+      }
+
+      .folder-title {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .works-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      padding: 0 1rem;
+    }
+  }
+}
