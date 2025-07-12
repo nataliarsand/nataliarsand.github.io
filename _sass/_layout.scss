@@ -93,6 +93,9 @@ footer {
 
       span {
         font-weight: 400;
+        @media (max-width: 768px) {
+          display: none; /* Hide location on mobile */
+        }
       }
     }
 
@@ -107,6 +110,9 @@ footer {
         &:hover {
           text-decoration: underline;
         }
+      }
+      @media (max-width: 768px) {
+        display: none; /* Hide contact email on mobile */
       }
     }
   }
@@ -227,14 +233,7 @@ footer {
       display: none !important;
     }
   }
-  
-  // ========== Section Nav inside header (always hidden) ==========
-  header .section-nav {
-    display: none !important;
-  }
-  
-
-// ========== Mobile Nav (Header Hamburger Menu) ==========
+  // ========== Mobile Nav (Hamburger Menu) ==========
 .mobile-nav {
   display: none;
 
@@ -242,7 +241,6 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
     position: relative;
   }
 
@@ -250,79 +248,91 @@ footer {
     background: none;
     border: none;
     cursor: pointer;
-    padding: 0.5rem;
-    z-index: 1000;
-
+    padding: 0.75rem;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
     .hamburger-icon {
-      display: block;
-      width: 25px;
-      height: 3px;
-      background-color: $color-text;
       position: relative;
+      width: 24px;
+      height: 2px;
+      background-color: $color-text;
       transition: background-color 0.3s ease-in-out;
-
+  
       &::before,
       &::after {
         content: '';
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: $color-text;
         position: absolute;
-        transition: transform 0.3s ease-in-out;
+        width: 24px;
+        height: 2px;
+        background-color: $color-text;
+        transition: all 0.3s ease-in-out;
       }
-
+  
       &::before {
-        top: -8px;
+        top: -7px;
+        left: 0;
       }
-
+  
       &::after {
-        top: 8px;
+        top: 7px;
+        left: 0;
       }
     }
-
+  
     &[aria-expanded="true"] .hamburger-icon {
       background-color: transparent;
-
+  
       &::before {
-        transform: translateY(8px) rotate(45deg);
+        transform: rotate(45deg);
+        top: 0;
       }
-
+  
       &::after {
-        transform: translateY(-8px) rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 0;
+        
       }
     }
   }
+  
 
   .mobile-nav-list-wrapper {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: $color-surface;
-    width: 100%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color-surface, 0.97);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     &.expanded {
-      display: block;
-      max-height: 300px;
+      transform: translateY(0);
     }
 
     ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 1rem 0;
+      gap: 1.5rem;
 
       li {
-        margin: 0.5rem 0;
-
         a {
-          text-decoration: none;
           color: $color-text;
-          font-weight: bold;
+          font-size: 1.25rem;
+          font-weight: 600;
+          text-decoration: none;
 
           &:hover {
             text-decoration: underline;
@@ -332,7 +342,6 @@ footer {
     }
   }
 
-  // Hide mobile-nav on desktop
   @media (min-width: 769px) {
     display: none !important;
   }
@@ -352,9 +361,10 @@ footer {
   }
 
   .header .container {
-    flex-direction: column;
+    flex-direction: row;
     text-align: center;
     padding: 15px;
+    align-items: center; /* Center items horizontally when stacked */
   }
 
   footer {
