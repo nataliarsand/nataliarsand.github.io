@@ -42,11 +42,11 @@ credits:
 
 ### Context and Objective
 
-The **Amplify Tablet** project set out to reinvent the classroom experience — not by replacing existing tools, but by enhancing teaching and learning through thoughtful, research-led software.
+The **Amplify Tablet** project set out to reinvent the classroom experience by enhancing teaching and learning through thoughtful, research-led software.
 
 The tablet aimed to help teachers manage classroom dynamics while offering students more personalised, engaging learning pathways.
 
-I joined as the sole designer in Porto Alegre, working closely with teams in New York. It was a challenge in distributed collaboration — navigating time zones, aligning design intent, and staying in sync with fast-moving development cycles.
+I joined as the sole designer in Porto Alegre, working closely with teams in New York. It was a challenge in distributed collaboration, navigating time zones, aligning design intent, and staying in sync with fast-moving development cycles.
 
 ---
 
@@ -81,4 +81,4 @@ I led **interaction design** for several core experiences on the Android-based p
 - Delivered **research-validated prototypes** that informed final UI decisions across teacher and student experiences
 - Strengthened remote collaboration across continents through structured rituals and shared ownership
 
-The Amplify Tablet was a forward-thinking blend of pedagogy and technology — and this project remains one of my most formative experiences in **education, research, and collaborative design**.
+The Amplify Tablet was a forward-thinking blend of pedagogy and technology, and this project remains one of my most formative experiences in **education, research, and collaborative design**.

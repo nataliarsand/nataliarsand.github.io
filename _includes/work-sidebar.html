@@ -9,7 +9,7 @@
     <nav class="folders" aria-label="Project Folders">
       <ul>
         <h3>Booking.com</h3>
-        {% assign booking_titles = "Design Systems,Design Operations,Referral Program,Booking App Store" | split: "," %}
+        {% assign booking_titles = "Design Systems,Design Operations,Referral Program,Internal App Marketplace" | split: "," %}
         {% for title in booking_titles %}
           {% assign work = site.works | where: "title", title | first %}
           {% if work %}

@@ -3,102 +3,97 @@ layout: work
 title: "Referral Program"
 subtitle: "Boosting Booking.com adoption through peer-to-peer referrals"
 description: >
-  I led the design of the Referral Program at Booking.com, transforming it from a desktop-only concept into a globally scaled product. The referral flow encouraged organic sharing, built user trust, and helped drive acquisition across markets and platforms.
+  I led the design of the Refer a Friend program at Booking.com from concept to implementation across desktop, mobile web, and apps. Working as part of a dedicated R&D team, we built a full-funnel experience that made it easy and rewarding for users to share Booking.com with friends, driving trust, organic growth, and global adoption.
 image: "/assets/images/refer-a-friend-hero.png"
 deliverables:
   - label: Referral journeys
-    link: "#referral-journeys"
-    description: End-to-end flows from invite to reward redemption across web and app
-  - label: Brand & UI guidelines
-    link: "#branding"
-    description: Visual language aligned to Booking.com identity, optimised for referrals
-  - label: Interactive mockups
-    link: "#mockups"
-    description: Multi-platform prototypes used for testing and implementation handoff
-  - label: Usability & A/B tests
-    link: "#testing"
-    description: Experiments and research validating sharing mechanisms and copy
+    description: Cross-platform user flows that guided people from entry points to successful shares
+  - label: Desktop experience
+    description: Primary design ownership with shared patterns extended to mobile and app teams
+  - label: A/B experiments
+    description: Tested entry points, reward types, and messaging across markets
+  - label: Research strategy
+    description: Customer interviews and field research including a full study in Japan
   - label: Role
-    description: UX Designer leading flows, visual design, testing, and delivery
+    description: Lead designer on the R&D team. Delivery, strategy, experimentation, facilitation
   - label: Scope
-    description: Global referral program spanning mobile apps, desktop, and mobile web
+    description: Multi-disciplinary team covering all Booking.com platforms and major markets
+
 team:
   - UX Designers
-  - Engineers
-  - Product Owners
-  - User Researchers
-  - Copywriters
-  - Data Analysts
+  - Researchers
+  - Developers (Desktop, iOS, Android)
+  - Product Managers
+  - Marketing Specialists
+  - Localization and Brand
+
 process:
-  - User research and persona discovery
-  - Navigation and interaction flow design
-  - Co-creation workshops and sketching
-  - Branding and iconography exploration
-  - UI prototyping and QA support
+  - Design sprints and journey mapping
+  - Full-funnel experimentation
+  - Usability testing and iterative validation
+  - A/B testing across platforms
+  - Remote and on-site user research (NL, JP)
+  - Onboarding rituals and delivery workflows
+
 credits:
   - Booking.com
 ---
 
 ### Context and Objective
 
-The Refer a Friend program is one of Booking.com’s largest peer-driven acquisition efforts. Customers could earn travel rewards by inviting friends to book, creating a viral loop where both the referrer and referee received benefits.
+The **Refer a Friend** initiative at Booking.com was designed to enable organic, peer-to-peer sharing, a marketing product grounded in trust and community.
 
-When I joined, the product was only available on desktop in a few test markets. I was brought in to design a **scalable, cohesive referral experience** across all platforms,  web, app, and mobile web,  and grow it into a full-featured product with global reach.
+There was an early desktop landing page when I joined, but the program was still in its infancy. It needed direction, structure, and a strong design foundation to become a global, multi-platform product. My goal was to transform it into a scalable, cohesive experience across all platforms. I took a lead role in shaping the product strategy, building flows, and facilitating collaboration between design, engineering, marketing, and research.
+
+This included not only designing the referral experience, but also advocating for experimentation at every level of the funnel, from homepage banners to post-booking invites, and setting up delivery rituals for our growing team.
 
 ---
 
 ### My Role
 
-I was the lead UX designer for the core experience, partnering closely with a researcher, copywriter, and a distributed engineering team.
+As lead designer, I shaped the vision and execution across a multidisciplinary team.
 
-My work spanned strategy, flows, visual design, prototyping, testing, and delivery,  eventually supporting the product's expansion into three separate squads.
-
----
-
-### Key Initiatives
-
-#### <a id="referral-journeys"></a>Referral journeys
-
-We mapped the full journey from the perspective of both referrers and referees:
-
-- Entry points: dashboard, campaign pages, social prompts  
-- Sharing options: email, social media, direct links  
-- Status and payout tracking  
-- Reward redemption across markets and payment methods  
+- Designed the **desktop experience**, our core platform at the time, and helped scale patterns to mobile and native apps
+- Facilitated **design sprints** and mapped referral journeys end to end
+- Partnered with our researcher to run user testing and a week-long **research sprint in Japan** to guide localization efforts
+- Worked side by side with our PM to define our **delivery rhythm**, backlogs, and rollout strategy
+- Collaborated with brand and copy to align **messaging and tone** across languages and cultures
 
 ---
 
-#### <a id="branding"></a>Brand & UI guidelines
+### Key Projects
 
-We designed a visual system tailored for referrals:
+#### Referral Flows & Entry Points
 
-- Icons, badges, and illustrations to communicate reward logic  
-- Messaging tailored to different user types (hosts, guests)  
-- Reusable components across platforms  
+We designed full-funnel experiences that integrated seamlessly into the product, from first exposure on landing pages to the post-booking confirmation screen.
 
----
+- Built interaction patterns that encouraged sharing while feeling trustworthy and non-intrusive
+- Included previews of potential rewards and allowed easy access to invite tools (email, WhatsApp, social)
+- Provided confirmation and status updates so users stayed engaged with their rewards
 
-#### <a id="mockups"></a>Interactive mockups
+#### Experimentation & Growth
 
-I built detailed prototypes in Figma to test across devices and regions, helping teams quickly iterate and align before implementation.
+As an R&D team, we had freedom to test big bets.
 
----
+- Ran **A/B tests** on placement, rewards, and copy to measure conversion and engagement
+- Launched experiments in multiple markets, with localised rewards and triggers
+- Advocated for and launched in-product discovery moments, increasing visibility without harming core flows
 
-#### <a id="testing"></a>Usability & A/B tests
+#### Research & Validation
 
-Working with the researcher, we validated:
+We prioritised testing assumptions in the field.
 
-- Users’ willingness to refer friends and what language felt trustworthy  
-- Friction points in social sharing and email confirmation  
-- Iconography that helped users understand reward conditions  
+- Ran moderated sessions in Amsterdam and Tokyo to explore what made people excited to share
+- Validated referral mechanics and emotional drivers behind sharing Booking.com with friends
+- Used findings to fine-tune reward framing, messaging clarity, and trust signals
 
 ---
 
 ### Impact
 
-- 📈 Referral adoption grew significantly after flow simplification  
-- 🌍 Program scaled across countries and translated into multiple languages  
-- 🧩 The product split into three dedicated teams to handle growth and iteration  
-- 🤝 Sharing mechanisms became embedded into the partner and traveller dashboards  
+- Successfully launched the **Refer a Friend program across web, mobile, and apps**
+- Helped shape a trusted user experience that **scaled globally**
+- Drove **organic growth** through peer sharing while maintaining Booking.com’s tone of voice
+- Split into multiple teams as the program grew, with each team exploring new sharing mechanisms and optimisations
 
-The result was a seamless, scalable, and engaging referral experience that helped Booking.com strengthen its network effects,  driven by real customer advocacy.
+This project combined marketing, design systems, and user empathy into one of the most cross-functional challenges I’ve led, balancing global strategy with innovation and experimentation.

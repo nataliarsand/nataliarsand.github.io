@@ -1,61 +1,59 @@
 <!-- work-tabs.html -->
 <div class="work meta-data">
-    <ul class="tabs" role="tablist">
-      {% if page.deliverables %}<a class="tab-link active" data-tab="deliverables" role="tab" aria-controls="deliverables" aria-selected="true" href="#" tabindex="0">Deliverables</a>{% endif %}
-      {% if page.process %}<a class="tab-link" data-tab="process" role="tab" aria-controls="process" aria-selected="false" href="#" tabindex="0">Process & Techniques</a>{% endif %}
-      {% if page.team %}<a class="tab-link" data-tab="team" role="tab" aria-controls="team" aria-selected="false" href="#" tabindex="0">Team</a>{% endif %}
-      {% if page.credits %}<a class="tab-link" data-tab="credits" role="tab" aria-controls="credits" aria-selected="false" href="#" tabindex="0">Credits</a>{% endif %}
-    </ul>
-  
-    {% if page.deliverables %}
-    <div id="deliverables" class="tab-content active" role="tabpanel" aria-labelledby="deliverables">
-      <h3 tabindex="0">Deliverables</h3>
-      <ul>
-        {% for item in page.deliverables %}
-          <li>
-            {% if item.link %}
-              <a href="{{ item.link }}"><strong>{{ item.label }}</strong></a>: {{ item.description }}
-            {% else %}
-              <strong>{{ item.label }}:</strong> {{ item.description }}
-            {% endif %}
-          </li>
-        {% endfor %}
+  <ul class="tabs" role="tablist">
+    {% if page.deliverables %}<a class="tab-link active" data-tab="deliverables" role="tab" aria-controls="deliverables" aria-selected="true" href="#" tabindex="0">Deliverables</a>{% endif %}
+    {% if page.process %}<a class="tab-link" data-tab="process" role="tab" aria-controls="process" aria-selected="false" href="#" tabindex="0">Process & Techniques</a>{% endif %}
+    {% if page.team %}<a class="tab-link" data-tab="team" role="tab" aria-controls="team" aria-selected="false" href="#" tabindex="0">Team</a>{% endif %}
+    {% if page.credits %}<a class="tab-link" data-tab="credits" role="tab" aria-controls="credits" aria-selected="false" href="#" tabindex="0">Credits</a>{% endif %}
+  </ul>
 
-      </ul>
-    </div>
-    {% endif %}
-  
-    {% if page.process %}
-    <div id="process" class="tab-content" role="tabpanel" aria-labelledby="process">
-      <h3 tabindex="0">Process & Techniques</h3>
-      <ul>
-        {% for item in page.process %}
-        <li>{{ item }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-  
-    {% if page.team %}
-    <div id="team" class="tab-content" role="tabpanel" aria-labelledby="team">
-      <h3 tabindex="0">Team</h3>
-      <ul>
-        {% for member in page.team %}
-        <li>{{ member }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
-  
-    {% if page.credits %}
-    <div id="credits" class="tab-content" role="tabpanel" aria-labelledby="credits">
-      <h3 tabindex="0">Credits</h3>
-      <ul>
-        {% for credit in page.credits %}
-        <li>{{ credit }}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %}
+  {% if page.deliverables %}
+  <div id="deliverables" class="tab-content active" role="tabpanel" aria-labelledby="deliverables">
+    <h3 tabindex="0">Deliverables</h3>
+    <ul>
+      {% for item in page.deliverables %}
+        <li>
+          {% if item.link %}
+            <a href="{{ item.link }}"><strong>{{ item.label }}</strong></a>: {{ item.description }}
+          {% else %}
+            <strong>{{ item.label }}</strong>: {{ item.description }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
   </div>
-  
+  {% endif %}
+
+  {% if page.process %}
+  <div id="process" class="tab-content" role="tabpanel" aria-labelledby="process">
+    <h3 tabindex="0">Process & Techniques</h3>
+    <ul>
+      {% for item in page.process %}
+      <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if page.team %}
+  <div id="team" class="tab-content" role="tabpanel" aria-labelledby="team">
+    <h3 tabindex="0">Team</h3>
+    <ul>
+      {% for member in page.team %}
+      <li>{{ member }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+
+  {% if page.credits %}
+  <div id="credits" class="tab-content" role="tabpanel" aria-labelledby="credits">
+    <h3 tabindex="0">Credits</h3>
+    <ul>
+      {% for credit in page.credits %}
+      <li>{{ credit }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
+</div>
