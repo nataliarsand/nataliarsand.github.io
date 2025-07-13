@@ -6,8 +6,8 @@ email: contact@nataliarsand.com
 description: >-
   Portfolio of Natalia Arsand – UX design leader, systems thinker, and conscious living advocate.
   Projects, case studies, and experiments across tech, wellness, and design systems.
-baseurl: "" # if deploying to a subfolder, e.g. "/portfolio"
-url: "https://nataliarsand.com" # full URL of the site
+url: "https://nataliarsand.github.io"
+baseurl: "/portfolio.io"
 
 # Social (used in meta tags and templates)
 twitter_username: nataliarsand
