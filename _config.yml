@@ -1,5 +1,5 @@
 # ----------------------------------------------------
-# 🔧 Site Settings
+# Site Settings
 # ----------------------------------------------------
 title: Natalia Arsand,  UX Designer & Conscious Creator
 email: contact@nataliarsand.com
@@ -9,13 +9,13 @@ description: >-
 url: "https://nataliarsand.github.io"
 baseurl: "/portfolio.io"
 
-# Social (used in meta tags and templates)
+# Social
 twitter_username: nataliarsand
 github_username: nataliarsand
 linkedin_username: nataliaarsand
 
 # ----------------------------------------------------
-# 🚀 Build Settings
+# Build Settings
 # ----------------------------------------------------
 # theme: minima
 plugins:
@@ -38,7 +38,7 @@ kramdown:
 permalink: pretty
 
 # ----------------------------------------------------
-# 📂 Collections
+# Collections
 # ----------------------------------------------------
 collections:
   works:
@@ -46,7 +46,7 @@ collections:
     permalink: /works/:name/
 
 # ----------------------------------------------------
-# 🧼 Exclude/Include Paths
+# Exclude/Include Paths
 # ----------------------------------------------------
 exclude:
   - Gemfile
@@ -58,13 +58,12 @@ exclude:
   - yarn.lock
   - package.json
   - package-lock.json
-  - assets/main.scss
 
 include:
   - _redirects
 
 # ----------------------------------------------------
-# 🌐 Defaults (Optional - helps if you later group content)
+# Defaults
 # ----------------------------------------------------
 defaults:
   - scope:
@@ -75,6 +74,6 @@ defaults:
       author: Natalia Arsand
 
 # ----------------------------------------------------
-# 🔮 Custom Variables (add as needed)
+# Custom Variables
 # ----------------------------------------------------
 footer_text: "© 2025 Natalia Arsand. All rights reserved."
