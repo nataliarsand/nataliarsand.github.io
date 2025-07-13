@@ -19,7 +19,7 @@
       text-transform: uppercase;
       letter-spacing: 0.04em;
       margin: 1rem 0;
-      color: $color-accent-alt;
+      color: $color-secondary;
       width: 60%;
     }
 
@@ -39,7 +39,7 @@
           content: '\f00c';
           font-family: "Font Awesome 6 Free";
           font-weight: 900;
-          color: $color-accent;
+          color: $color-accent-alt;
           position: absolute;
           left: 0;
           top: 0;
@@ -58,7 +58,7 @@
 // Highlight Box (optional)
 .highlight-box {
   background: $color-surface;
-  border: 2px dashed $color-accent;
+  border: 2px dashed $color-border;
   padding: 2rem;
   border-radius: 12px;
   margin: 2rem 0;
@@ -150,6 +150,14 @@
     display: block;
   }
 
+  a {
+    border-bottom: 1px dotted;
+    color: $color-text;
+    strong {
+      font-weight: 500;
+    }
+  }
+
   h3 {
     display: none;
   }
@@ -211,17 +219,16 @@
         text-decoration: none;
         font-size: 0.875rem;
         font-family: 'IBM Plex Mono', monospace;
-        color: $color-accent;
+        color: $color-secondary;
         transition: color 0.2s ease;
 
         .folder-icon {
           width: 18px;
-          height: 18px;
           margin-right: 0.5rem;
         }
 
         &:hover {
-          color: $color-accent-hover;
+          color: $color-accent;
         }
       }
 

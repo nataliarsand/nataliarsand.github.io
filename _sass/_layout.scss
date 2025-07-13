@@ -37,40 +37,8 @@ main {
   max-width: 1000px;
 }
 
-// ========== Footer ==========
-footer {
-  margin: 0;
-  border-top: 1px solid $color-border;
-  padding-top: 24px;
 
-  section {
-    min-height: auto;
-  }
 
-  .footer-info {
-    margin: 0 auto;
-    text-align: center;
-    padding: 24px;
-  }
-
-  .footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-
-  .footer-links a {
-    text-decoration: none;
-    color: #444;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
 
 // ========== Header ==========
 .header {
@@ -320,7 +288,7 @@ footer {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background-color: rgba($color-surface, 0.97);
+    background-color: $color-overlay;
     backdrop-filter: blur(4px);
     z-index: 1000;
     transform: translateY(-100%);
@@ -380,10 +348,6 @@ footer {
     text-align: center;
     padding: 15px;
     align-items: center; /* Center items horizontally when stacked */
-  }
-
-  footer {
-    margin: 30px 0;
   }
 
   section {
@@ -496,3 +460,78 @@ footer {
     }
   }
 }
+
+.site-footer {
+  background-color: $color-surface-alt;
+  border-top: 1px solid $color-border;
+  padding: 3rem 1rem 2rem;
+  color: $color-text;
+  font-size: 0.9rem;
+
+  .footer-columns {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .footer-left,
+  .footer-right {
+    flex: 1;
+  }
+
+  .footer-left {
+    p {
+      margin: 0.3rem 0;
+    }
+  }
+
+  .footer-right {
+    text-align: right;
+
+    @media (max-width: 640px) {
+      text-align: left;
+    }
+
+    p {
+      margin: 0.3rem 0;
+    }
+
+    a {
+      &:hover {
+        text-decoration: underline;
+        color: $color-accent-hover;
+      }
+    }
+
+    .footer-social-icons {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0 0;
+      display: flex;
+      justify-content: flex-end;
+      gap: 1.25rem;
+
+      @media (max-width: 640px) {
+        justify-content: flex-start;
+      }
+
+      li a i {
+        font-size: 0.85rem;
+        transition: color 0.2s ease;
+        padding: 0;
+
+        &:hover {
+          color: $color-accent;
+        }
+      }
+    }
+  }
+}
+

@@ -1,24 +1,37 @@
 // === BRAND & CORE COLORS ===
-$color-primary:       #1a1a1a;       // Deep neutral black (softer than #111)
-$color-secondary:     #2e2e42;       // Elegant desaturated indigo-gray
+$color-primary:       #1a1a1a;       // Deep neutral black — primary text & strong UI elements
+$color-secondary:     #2e2e42;       // Muted indigo-gray — for secondary headings, borders, or depth
 
 // === ACCENTS ===
-$color-accent:        #3b82f6;       // Refined vivid blue (WCAG-compliant)
-$color-accent-hover:  #2563eb;       // Slightly deeper for hover
-$color-accent-alt:    #5126d3;
-$color-accent-alt-hover:    #5c38c6;       // Vibrant violet-pink for occasional highlights
+$color-accent:        #3b82f6;       // Primary action — links, buttons, icons
+$color-accent-hover:  #2563eb;       // Hover state for primary action
+$color-accent-alt:    #7e57c2;       // Secondary accent — quotes, highlights, badges
+$color-accent-alt-hover: #6a3fb1;    // Hover or active alt-accent
 
 // === SURFACES & STRUCTURE ===
-$color-surface:       #ffffff;       // Clean white
-$color-surface-alt:   #f4f4f6;       // Slightly cool gray background
-$color-overlay:       rgba(255, 255, 255, 0.94); // Soft overlay for modals or popups
+$color-surface:       #ffffff;       // Main backgrounds
+$color-surface-alt:   #f4f4f6;       // Section backgrounds, cards
+$color-surface-inverse: #1f1f2b;     // Dark surface — e.g., dark mode card or footer
+
+$color-overlay:       rgba(255, 255, 255, 0.94); // Light modals, overlays
+$color-overlay-dark:  rgba(0, 0, 0, 0.6);        // Dark overlay for modals or menus
 
 // === TEXT ===
-$color-text:          $color-primary;
-$color-text-muted:    #5f5f6e;       // Muted charcoal-violet tone
+$color-text:          $color-primary;    // Default text
+$color-text-muted:    #6b6b7e;           // Muted copy or labels
+$color-text-inverse:  #ffffff;           // On dark surfaces
+$color-text-link:     $color-accent;     // Links and CTA copy
 
 // === BORDER ===
-$color-border:        #d1d1db;       // Soft neutral border
+$color-border:        #d1d1db;       // Dividers, cards, input outlines
+$color-border-muted:  #e6e6ee;       // Subtle UI borders
 
 // === HIGHLIGHT ===
-$color-highlight:     #fef3c7;       // Warm pale yellow (soft + readable)
+$color-highlight:     #fef3c7;       // For callouts, annotations, gentle emphasis
+$color-highlight-strong: #fde68a;   // Slightly stronger for persistent notice or tags
+
+// === STATUS / UTILITY COLORS ===
+$color-success:       #10b981;       // For success messages, checkmarks
+$color-warning:       #f59e0b;       // For soft warnings or notices
+$color-error:         #ef4444;       // For errors, invalid inputs
+$color-info:          #0ea5e9;       // Informational messages or tips
