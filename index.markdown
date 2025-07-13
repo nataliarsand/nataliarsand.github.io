@@ -13,7 +13,7 @@ title: Welcome
     </div>
     <div id="works">
       <a href="/works/design-systems" class="folder-icon-link">
-        <img src="/assets/images/folder.png" alt="Selected Works" class="folder-icon" />
+        <img src="{{ '/assets/images/folder.png' | relative_url }}" alt="Selected Works" class="folder-icon" />
         <p class="folder-text">Selected works</p>
       </a>
     </div>
