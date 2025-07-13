@@ -1,4 +1,4 @@
-@use "sass:color";
+@import "sass:color";
 
 $grey-color: #828282 !default;
 $grey-color-light: color.scale($grey-color, $lightness: 40%) !default;

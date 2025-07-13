@@ -1,6 +1,6 @@
-@use "variables" as *;
-@use "sass:color";
-@use "typography";
+@import "variables" as *;
+@import "sass:color";
+@import "typography";
 
 :root, :host {
   --fa-style-family-classic: 'Font Awesome 6 Free';

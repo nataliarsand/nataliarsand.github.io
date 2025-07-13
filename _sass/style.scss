@@ -1,9 +1,9 @@
-@use "reset";
-@use "sass:color";
-@use "settings" as *;
-@use "mixins";
-@use "base";
-@use "layout";
-@use "components";
-@use "home";
-@use "selected-works";
+@import "reset";
+@import "sass:color";
+@import "settings" as *;
+@import "mixins";
+@import "base";
+@import "layout";
+@import "components";
+@import "home";
+@import "selected-works";

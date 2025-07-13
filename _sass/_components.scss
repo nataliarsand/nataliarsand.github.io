@@ -1,6 +1,6 @@
-@use "variables" as *;
-@use "sass:color";
-@use "mixins";
+@import "variables" as *;
+@import "sass:color";
+@import "mixins";
 
 .section-heading {
   font-size: 2em;

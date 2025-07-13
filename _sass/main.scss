@@ -2,5 +2,5 @@
 # Front matter is required for Jekyll to recognize this file
 ---
 @import "minima";
-@use "style";
-@use "works";
+@import "style";
+@import "works";
