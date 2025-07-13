@@ -1,5 +1,4 @@
-@import "variables" as *;
-@import "sass:color";
+@import "variables";
 
 // Headings
 h1, h2, h3, h4, h5, h6 {
@@ -63,7 +62,7 @@ blockquote {
   padding-left: 1.5em;
   margin: 1.5em 0;
   font-style: italic;
-  color: color.scale($color-text, $lightness: 30%);
+  color: lighten($color-text, 30%);
 }
 
 // Emphasis
