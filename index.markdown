@@ -6,7 +6,7 @@ title: Welcome
 <section id="main-intro">
   <div class="container">
     <div id="intro-text">
-      <img src="/assets/images/natalia.svg" class="intro-image" alt="Natalia Arsand profile image"/>
+      <img src="{{ '/assets/images/natalia.svg' | relative_url }}" class="intro-image" alt="Natalia Arsand profile image"/>
       <h2 class="hidden">Hi, I’m Natalia.</h2>
       <p>I’m a <strong>UX Design Lead</strong> working at the intersection of strategy, systems, and craft. I design for impact. Thoughtful, scalable, and always human-centered.</p>
       <p>This site is my digital OS, it's a space to explore structure, reflect on process, and highlight work I am proud of.</p>
@@ -32,7 +32,7 @@ title: Welcome
 
   <div class="grid-cards">
     <div class="card">
-        <img src="/assets/images/icons/discover.svg" alt="Discover icon" />
+        <img src="{{ '/assets/images/icons/discover.svg' | relative_url }}" alt="Discover icon" />
         <h3>Discovery & Collaboration</h3>
         <p>I bring people together early, across roles and perspectives, to frame problems clearly and align once, avoiding the cost of fragmented decisions later. I’ve got my ways of making even the busiest execs show up and engage when I run discovery workshops.</p>
 
@@ -40,18 +40,18 @@ title: Welcome
 
     </div>
     <div class="card">
-        <img src="/assets/images/icons/feedback.svg" alt="Feedback icon" />
+        <img src="{{ '/assets/images/icons/feedback.svg' | relative_url }}" alt="Feedback icon" />
         <h3>Design is Dialog</h3>
         <p>No designer gets it right the first time. That’s why I never work in isolation. I share early and often, not just to show progress, but to invite critique and surface ideas I wouldn’t reach alone. Even unused feedback reveals assumptions or gaps worth seeing.</p>
 
     </div>
     <div class="card">
-      <img src="/assets/images/icons/improve.svg" alt="Continuous Improvement icon" />
+      <img src="{{ '/assets/images/icons/improve.svg' | relative_url }}" alt="Continuous Improvement icon" />
       <h3>Iteration is Commitment</h3>
       <p>Design isn’t static and a problem is never fully solved. Our solutions must evolve as we deepen our understanding of the problem, the customer, and their needs. As long as it remains relevant to the business, we should strive to continuously improve it.</p>
     </div>
     <div class="card">
-      <img src="/assets/images/icons/empathy.svg" alt="Human-centered icon" />
+      <img src="{{ '/assets/images/icons/empathy.svg' | relative_url }}" alt="Human-centered icon" />
       <h3>Ethical, Human-Centered Always</h3>
       <p>Products exist to solve real problems for real people. It’s easy to get lost in business goals and forget that. I remind people by asking the uncomfortable questions about access, ethics, and impact. As designers, we’re gatekeepers of the change we wish to see in the world.</p>
 
@@ -200,17 +200,17 @@ title: Welcome
 
   <div class="grid-cards">
     <div class="card">
-      <img src="/assets/images/icons/freelance.svg" alt="Freelance work icon" />
+      <img src="{{ '/assets/images/icons/freelance.svg' | relative_url }}" alt="Freelance work icon" />
       <h3>Freelance work</h3>
       <p>Need a thoughtful UX designer to make sense of complexity, run a workshop, or help move things forward? Let’s talk and see how I can help you.</p>
     </div>
     <div class="card">
-      <img src="/assets/images/icons/mentorship.svg" alt="Mentorship icon" />
+      <img src="{{ '/assets/images/icons/mentorship.svg' | relative_url }}" alt="Mentorship icon" />
       <h3>Mentorship & Coaching</h3>
       <p>Looking for honest feedback, support with a career transition, or navigating the messier parts of design work? I offer 1:1 sessions and long-term mentorship.</p>
     </div>
     <div class="card">
-      <img src="/assets/images/icons/job.svg" alt="Job opportunities icon" />
+      <img src="{{ '/assets/images/icons/job.svg' | relative_url }}" alt="Job opportunities icon" />
       <h3>Job Opportunities</h3>
       <p>Looking for a lead designer who can work across systems, strategy, and team alignment? I’d love to hear about what you’re building.</p>
     </div>
