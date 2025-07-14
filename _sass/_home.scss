@@ -54,7 +54,6 @@
   font-size: 0.75rem;
   font-family: 'IBM Plex Mono', monospace;
   border-radius: 9999px;
-  white-space: nowrap;
 }
 
 // === SECTION: #home ===
@@ -66,7 +65,7 @@
   }
 
   #intro-text, .section-intro {
-    max-width: 60%;
+    max-width: 100%;
 
     p.mono {
       font-family: 'IBM Plex Mono', monospace;
@@ -143,7 +142,7 @@
 }
 
 #more-about {
-  max-width: 60%;
+  max-width: 100%;
 }
 
 // === MOBILE RESPONSIVENESS ===
@@ -154,7 +153,6 @@
     #intro-text,
     .section-intro {
       max-width: 90%;
-      margin-right: 40px;
     }
 
     #intro-text {
