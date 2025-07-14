@@ -1,16 +1,72 @@
 @import "variables";
 
-// HOME PAGE SECTIONS
+// === LAYOUT UTILITIES ===
+.grid-cards {
+  display: grid;
+  gap: 0;
+  border: 1px solid $color-primary;
+}
+
+.card {
+  border-right: 1px solid $color-primary;
+  border-bottom: 1px solid $color-primary;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  background-color: #fff;
+
+  img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: $color-primary;
+  }
+
+  p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: $color-secondary;
+  }
+}
+
+// === PILLS COMPONENT ===
+.pills {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0;
+  list-style: none;
+}
+
+.pill {
+  background-color: $color-highlight;
+  color: $color-primary;
+  padding: 0.25em 0.75em;
+  font-size: 0.75rem;
+  font-family: 'IBM Plex Mono', monospace;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+// === SECTION: #home ===
 #home {
   .intro-image {
     margin-top: 0;
-    max-height: 180px; /* Set a max-height instead of fixed height */
+    max-height: 180px;
     height: auto;
   }
 
-  #intro-text {
-    flex: 1 1 60%;
-    max-width: 700px;
+  #intro-text, .section-intro {
+    max-width: 60%;
 
     p.mono {
       font-family: 'IBM Plex Mono', monospace;
@@ -52,147 +108,86 @@
   }
 }
 
-// ABOUT and HIRE-ME Sections
-#about, #hire-me, #my-craft, #not-my-zone {
+// === SECTION-SPECIFIC GRID CONFIGS ===
+#about .grid-cards {
+  grid-template-columns: repeat(2, 1fr);
 
-  .section-intro {
-    width: 60%;
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  }
-
-  .grid-cards {
-    display: grid;
-    border: 1px solid $color-primary;
-    gap: 0;
-
-    .card {
-      border-right: 1px solid $color-primary;
-      border-bottom: 1px solid $color-primary;
-      padding: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-      background-color: #fff;
-
-      img {
-        width: 64px;
-        height: 64px;
-        margin-bottom: 1rem;
-      }
-
-      h3 {
-        font-weight: 600;
-        font-size: 1rem;
-        margin-bottom: 0.75rem;
-        color: $color-primary;
-      }
-
-      p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        color: $color-secondary;
-      }
-    }
-  }
-}
-
-// ABOUT,  2-column layout & border cleanup
-#about {
-  .grid-cards {
-    grid-template-columns: repeat(2, 1fr);
-
-    .card:nth-child(2n) {
-      border-right: none;
-    }
-
-    .card:nth-last-child(-n+2) {
-      border-bottom: none;
-    }
-    @media (max-width: 768px) {
-      grid-template-columns: 1fr;
-      .card:nth-child(2n) {
-        border-right: 1px solid $color-primary; /* Re-add border for single column */
-      }
-      .card:last-child {
-        border-bottom: none; /* Remove bottom border for the last card */
-      }
-    }
-  }
-}
-
-#not-my-zone {
-
-}
-
-
-// HIRE-ME,  3-column layout & border cleanup
-#hire-me .grid-cards {
-  grid-template-columns: repeat(3, 1fr);
-
-  .card:nth-child(3n) {
+  .card:nth-child(2n) {
     border-right: none;
   }
-
-  .card:nth-last-child(-n+3) {
+  .card:nth-last-child(-n+2) {
     border-bottom: none;
-  }
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    .card:nth-child(3n) {
-      border-right: 1px solid $color-primary; /* Re-add border for single column */
-    }
-    .card:last-child {
-      border-bottom: none; /* Remove bottom border for the last card */
-    }
   }
 }
 
-// MY-CRAFT,  2-column layout with pills
 #my-craft .grid-cards {
   grid-template-columns: repeat(2, 1fr);
 
   .card:nth-child(2n) {
     border-right: none;
   }
-
   .card:nth-last-child(-n+2) {
     border-bottom: none;
   }
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    .card:nth-child(2n) {
-      border-right: 1px solid $color-primary; /* Re-add border for single column */
-    }
-    .card:last-child {
-      border-bottom: none; /* Remove bottom border for the last card */
-    }
-  }
-
-  .pills {
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.4rem;
-    padding: 0;
-    list-style: none;
-  }
-
-  .pill {
-    background-color: $color-highlight; // fallback: #eee;
-    color: $color-primary;
-    padding: 0.25em 0.75em;
-    font-size: 0.75rem;
-    font-family: 'IBM Plex Mono', monospace;
-    border-radius: 9999px;
-    white-space: nowrap;
-  }
 }
 
+#hire-me .grid-cards {
+  grid-template-columns: repeat(3, 1fr);
+
+  .card:nth-child(3n) {
+    border-right: none;
+  }
+  .card:nth-last-child(-n+3) {
+    border-bottom: none;
+  }
+}
 
 #more-about {
   max-width: 60%;
 }
 
+// === MOBILE RESPONSIVENESS ===
+@media (max-width: 768px) {
+  #home {
+    margin: 40px;
+
+    #intro-text,
+    .section-intro {
+      max-width: 90%;
+      margin-right: 40px;
+    }
+
+    #intro-text {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .grid-cards {
+    grid-template-columns: 1fr !important;
+  }
+
+  .grid-cards .card {
+    border-right: 1px solid $color-primary; // Reapply right border for single column
+  }
+
+  .grid-cards .card:last-child {
+    border-bottom: none; // Only remove bottom border from the final card
+  }
+
+  #about .grid-cards .card,
+  #my-craft .grid-cards .card,
+  #hire-me .grid-cards .card {
+    border-right: 0;
+    border-bottom: 1px solid $color-primary !important;
+  }
+  #about .grid-cards .card:last-child,
+  #my-craft .grid-cards .card:last-child,
+  #hire-me .grid-cards .card:last-child {
+    border-bottom: 0 !important;
+  }
+
+#more-about {
+    max-width: 80%;
+  }
+}

@@ -331,15 +331,10 @@ main {
 
 // ========== Media Queries ==========
 @media screen and (max-width: 768px) {
-  main {
-    margin: 30px auto;
-    padding: 0 15px;
-  }
 
   .container {
     flex-direction: column;
     max-width: 100%;
-    padding: 0 15px;
   }
 
   .header .container {
@@ -355,12 +350,6 @@ main {
 
   .content {
     padding: 25px;
-  }
-
-  #home {
-    #intro-text {
-      padding: 0 20px;
-    }
   }
 
   #hire-me,
@@ -382,14 +371,6 @@ main {
       width: 100%;
       margin: 20px 0;
       padding: 0;
-    }
-
-    .grid-cards {
-      grid-template-columns: 1fr;
-
-      .card {
-        border-right: none !important;
-      }
     }
   }
 
