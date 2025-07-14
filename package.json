@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "bundle exec jekyll serve --livereload --baseurl '' --port 4000",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "sass _sass/style.scss assets/css/main.css"
+    "build": "sass _sass/style.scss assets/css/main.css",
+    "prepush": "npm run build && git pull origin main"
   },
   "repository": {
     "type": "git",
