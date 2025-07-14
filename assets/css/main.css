@@ -714,6 +714,8 @@ main {
   justify-content: flex-end;
   gap: 1.25rem;
 }
+
+
 @media (max-width: 640px) {
   .site-footer .footer-right .footer-social-icons {
     justify-content: flex-start;
