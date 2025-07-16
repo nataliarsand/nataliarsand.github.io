@@ -1,6 +1,8 @@
 $(function () {
     // ========== TABS ==========
-    $(".tab-link").on("click", function () {
+    $(".tab-link").on("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
       const tabId = $(this).data("tab");
   
       // Update active tab link
