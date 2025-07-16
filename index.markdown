@@ -42,7 +42,7 @@ title: Welcome
     <div class="card">
         <img src="{{ '/assets/images/icons/feedback.svg' | relative_url }}" alt="Feedback icon" />
         <h3>Design is Dialog</h3>
-        <p>No designer gets it right the first time. That’s why I never work in isolation. I share early and often, not just to show progress, but to invite critique and surface ideas I wouldn’t reach alone. Even unused feedback reveals assumptions or gaps worth seeing.</p>
+        <p>No designer gets it right the first time. That’s why I never work in isolation. I share early and often to show progress and invite critique that surface ideas I wouldn’t reach alone. Even unused feedback reveals assumptions or gaps worth seeing.</p>
 
     </div>
     <div class="card">

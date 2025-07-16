@@ -41,7 +41,7 @@ credits:
 
 ### Context and Objective
 
-Hôpital Universitaire de Mirebalais was built by Partners in Health after the 2010 earthquake to serve over 3 million people in central Haiti. It aimed to become not just the best hospital in the country, but a place of learning, staffed by excellent professionals and equipped with solar energy and high-end infrastructure.
+Hôpital Universitaire de Mirebalais was built by Partners in Health after the 2010 earthquake to serve over 3 million people in central Haiti. It aimed to become the best hospital in the country as well as a place of learning, staffed by excellent professionals and equipped with solar energy and high-end infrastructure.
 
 But world-class care also needed a digital backbone, a system that would support clinicians in delivering care under pressure, with limited resources, and often to patients unfamiliar with digital processes.
 

@@ -65,6 +65,6 @@ It was also my first time coding with help from AI tools. Instead of specs and w
 
 - Created a heartfelt presence online that many described as “exactly the kind of gentleness the internet needs”
 - Helped others feel inspired to share stories and show up with the hashtag #mamacircle 💞
-- Reconnected me to my creative voice not just as a designer, but as a mother, a writer, and a builder
+- Reconnected me to my creative voice, as a designer, as a new mother, a writer, and a builder
 
 Mama Circle is a digital love letter to new mamas everywhere. Built not with a roadmap, but with rhythm, reverence, and the quiet power of showing up.

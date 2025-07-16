@@ -126,5 +126,3 @@ I was a senior UX designer embedded in the Design Systems team. My responsibilit
 - Created shared language and understanding through stories and accessible documentation  
 - Strengthened the system’s foundations to support a more inclusive and equitable experience for all users
 
-The system became not just a library but a living, learning tool that teams could trust, contribute to, and grow with.
-

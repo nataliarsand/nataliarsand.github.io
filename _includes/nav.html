@@ -27,7 +27,7 @@
     <div class="mobile-nav-list-wrapper" id="mobileNavList">
       <ul>
         {% for item in site.data.nav %}
-          <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+          <li><a href="/{{ item.url }}">{{ item.label }}</a></li>
         {% endfor %}
         <li class="nav-selected-works"><a href="/works/">Selected works</a></li>
       </ul>
