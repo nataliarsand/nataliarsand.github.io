@@ -331,11 +331,9 @@ button.work-dropdown-toggle {
 .tabs {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
-  width: max-content;
-  padding: 0.5rem 1rem;
+  width: 100%;
   scroll-snap-type: x mandatory;
-  border-bottom: 1px solid $color-border;
+  border-bottom: 1px solid $color-accent-alt;
   box-sizing: border-box;
 
   &::-webkit-scrollbar {
@@ -358,9 +356,12 @@ button.work-dropdown-toggle {
   transition: background 0.2s ease, color 0.2s ease;
 
   &:hover,
+  &:focus,
   &:focus-visible {
+    cursor: pointer;
     background: $color-surface-alt;
-    outline: none;
+    text-decoration: none;
+    color: $color-text;
   }
 
   &.active {
@@ -370,6 +371,21 @@ button.work-dropdown-toggle {
     font-weight: 600;
   }
 }
+
+.tab-content {
+  display: none;
+  background-color: $color-surface-alt;
+  padding: 1em;
+
+  &.active {
+    display: block;
+  }
+
+  h3 {
+    display: none;
+  }
+}
+
 
 
 
