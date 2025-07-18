@@ -1,10 +1,22 @@
 @import "variables";
 
-// SELECTED WORKS
+// ========================
+// SELECTED WORKS SECTION
+// ========================
+
+.work.meta-data,
+#selected-works,
+.content,
+main {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+
 #selected-works {
   max-width: 100%;
   display: flex;
-  
+
   .content {
     padding: 3rem;
     max-width: 800px;
@@ -48,13 +60,17 @@
   }
 }
 
-// Work Image
+// ========================
+// WORK IMAGE
+// ========================
 .work-image {
   width: 60%;
   max-width: 100%;
 }
 
-// Highlight Box (optional)
+// ========================
+// HIGHLIGHT BOX
+// ========================
 .highlight-box {
   background: $color-surface;
   border: 2px dashed $color-border;
@@ -63,7 +79,9 @@
   margin: 2rem 0;
 }
 
-// Work Details
+// ========================
+// WORK DETAILS
+// ========================
 .work-details {
   margin-top: 3rem;
 
@@ -95,73 +113,10 @@
   }
 }
 
-// Tabs
-.tabs {
-  display: flex;
-  justify-content: space-around;
-  border-top: 1px solid $color-border;
-  border-bottom: 1px solid $color-border;
-  margin: 2rem 0;
 
-  li {
-    margin: 0 !important;
-    padding: 10px !important;
-
-    &::before {
-      content: none !important;
-    }
-  }
-
-  .tab-link {
-    flex: 1;
-    text-align: center;
-    padding: 0.8rem;
-    cursor: pointer;
-    font-weight: 500;
-    color: $color-secondary;
-    border-right: 1px solid $color-border;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease;
-    text-decoration: none;
-
-    &:last-child {
-      border-right: none;
-    }
-
-    &.active {
-      color: $color-accent-alt;
-      border-bottom: 2px solid $color-accent-alt;
-    }
-
-    &:hover {
-      color: $color-accent-alt-hover;
-    }
-  }
-}
-
-.tab-content {
-  padding: 2rem;
-  background: $color-surface-alt;
-  margin-bottom: 2.5rem;
-  display: none;
-
-  &.active {
-    display: block;
-  }
-
-  a {
-    border-bottom: 1px dotted;
-    color: $color-text;
-    strong {
-      font-weight: 500;
-    }
-  }
-
-  h3 {
-    display: none;
-  }
-}
-
+// ========================
+// WORK SIDEBAR (DESKTOP)
+// ========================
 .work-sidebar {
   padding: 2rem 1.5rem;
 
@@ -244,7 +199,6 @@
     margin: 0;
   }
 
-
   nav.folders {
     margin-left: 8px;
 
@@ -259,18 +213,30 @@ button.work-dropdown-toggle {
   display: none;
 }
 
+// ========================
+// MOBILE STYLES
+// ========================
 @media screen and (max-width: 768px) {
+  #selected-works {
+    display: block;
+  }
+
+  #selected-works .content {
+    width: 100%;
+    padding: 1.5rem;
+    border-left: none;
+    overflow-x: hidden; /* Prevent content from stretching the page */
+  }
+
   .work-sidebar {
     padding: 1.5rem 1.25rem;
     background: $color-surface-alt;
     border-bottom: 1px solid $color-border;
 
-    // Hide top nav title + back button
     .navigation {
       display: none;
     }
 
-    // Toggle button
     .work-dropdown-toggle {
       display: flex;
       align-items: center;
@@ -301,7 +267,6 @@ button.work-dropdown-toggle {
       }
     }
 
-    // Folder section
     .folders {
       margin: 0 !important;
       position: absolute;
@@ -310,7 +275,6 @@ button.work-dropdown-toggle {
       background-color: $color-surface;
       padding: 1em 2em;
       min-height: 100vh;
-  }
 
       h3 {
         font-size: 0.85rem;
@@ -346,8 +310,106 @@ button.work-dropdown-toggle {
       }
     }
 
-    // Hidden state
     .folders.collapsed {
       display: none;
     }
   }
+}
+
+
+// ========================
+// TABS — BASE STYLES (desktop)
+// ========================
+.tabs-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  width: max-content;
+  padding: 0.5rem 1rem;
+  scroll-snap-type: x mandatory;
+  border-bottom: 1px solid $color-border;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tab-link {
+  flex: 0 0 auto;
+  white-space: nowrap;
+  scroll-snap-align: start;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.65rem 1rem;
+  border: 1px solid transparent;
+  background: $color-surface;
+  color: $color-secondary;
+  text-decoration: none;
+  transition: background 0.2s ease, color 0.2s ease;
+
+  &:hover,
+  &:focus-visible {
+    background: $color-surface-alt;
+    outline: none;
+  }
+
+  &.active {
+    background: $color-accent-alt;
+    color: #fff;
+    border-color: $color-accent-alt;
+    font-weight: 600;
+  }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .tabs-container {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    border-top: 1px solid $color-border;
+    border-bottom: 1px solid $color-border;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .tabs {
+    display: block;
+    white-space: nowrap;
+    padding: 0.5rem 1rem;
+  }
+
+  .tab-link {
+    display: inline-block;
+    padding: 0.65rem 1rem;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    background: $color-surface;
+    color: $color-secondary;
+    text-decoration: none;
+
+    &.active {
+      background: $color-accent-alt;
+      color: #fff;
+      border-color: $color-accent-alt;
+      font-weight: 600;
+    }
+  }
+
+  .tab-content {
+    padding: 1.5rem 1rem;
+  }
+}
