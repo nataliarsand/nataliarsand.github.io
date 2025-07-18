@@ -358,6 +358,13 @@ main {
     align-items: center; /* Center items horizontally when stacked */
   }
 
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: $color-surface; /* Add a background color to the sticky header */
+  }
+
   section {
     min-height: auto;
   }
