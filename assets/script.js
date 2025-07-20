@@ -136,40 +136,12 @@ $(function () {
         }
       });
     }
-  });
   
-  document.addEventListener("DOMContentLoaded", function () {
-    const sidebar = document.querySelector(".work-sidebar");
-    const folders = sidebar.querySelector(".folders");
-  
-    // Create trigger button
-    const trigger = document.createElement("button");
-    trigger.className = "work-dropdown-toggle";
-    trigger.setAttribute("aria-expanded", "false");
-    trigger.setAttribute("aria-controls", "mobile-work-folders");
-    trigger.setAttribute("aria-label", "Toggle selected works navigation");
-  
-    // Inner HTML with Font Awesome arrow
-    trigger.innerHTML = `Selected works <i class="fa-solid fa-caret-down" aria-hidden="true"></i>`;
-    sidebar.insertBefore(trigger, folders);
-  
-    // Prepare folders
-    folders.classList.add("collapsed");
-    folders.id = "mobile-work-folders";
-  
-    // Click toggle
-    trigger.addEventListener("click", () => {
-      const isExpanded = trigger.getAttribute("aria-expanded") === "true";
-  
-      // Toggle expanded state
-      trigger.setAttribute("aria-expanded", String(!isExpanded));
-      trigger.classList.toggle("expanded");
-      folders.classList.toggle("collapsed");
-  
-      // Update icon
-      trigger.innerHTML = `Selected works <i class="fa-solid ${
-        isExpanded ? "fa-caret-down" : "fa-caret-up"
-      }" aria-hidden="true"></i>`;
+    // ========== MOBILE WORK SELECT ==========
+    $("#mobile-work-select").on("change", function() {
+      const selectedUrl = $(this).val();
+      if (selectedUrl) {
+        window.location.href = selectedUrl;
+      }
     });
   });
-  

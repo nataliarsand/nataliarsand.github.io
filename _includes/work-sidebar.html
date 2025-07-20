@@ -4,9 +4,16 @@
         <i class="fa-solid fa-chevron-left"></i>
       </a>
       <h2 class="nav-title">Selected Works</h2>
+      <select id="mobile-work-select" class="mobile-only-select" aria-label="Select a project">
+        <option value="">Select a project</option>
+        {% assign all_works = site.works | sort: "title" %}
+        {% for work in all_works %}
+          <option value="{{ work.url }}" {% if page.url == work.url %}selected{% endif %}>{{ work.title }}</option>
+        {% endfor %}
+      </select>
     </nav>
   
-    <nav class="folders" aria-label="Project Folders">
+    <nav class="folders desktop-only-folders" aria-label="Project Folders">
       <ul>
         <h3>Booking.com</h3>
         {% assign booking_titles = "Design Systems,Design Operations,Referral Program,Internal App Marketplace" | split: "," %}

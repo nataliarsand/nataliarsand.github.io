@@ -209,14 +209,38 @@ main {
   }
 }
 
-button.work-dropdown-toggle {
+.mobile-only-select {
   display: none;
 }
 
-// ========================
-// MOBILE STYLES
-// ========================
+.desktop-only-folders {
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
+  .mobile-only-select {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    border: 1px solid $color-border;
+    border-radius: 6px;
+    background-color: $color-surface;
+    color: $color-text;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.95rem;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%;
+    background-size: 0.65em auto;
+  }
+
+  .desktop-only-folders {
+    display: none;
+  }
+
   #selected-works {
     display: block;
   }
@@ -234,37 +258,14 @@ button.work-dropdown-toggle {
     border-bottom: 1px solid $color-border;
 
     .navigation {
-      display: none;
+      display: flex; /* Ensure navigation is visible on mobile */
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the start */
     }
 
-    .work-dropdown-toggle {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      background: $color-surface;
-      border: 1px solid $color-border;
-      border-radius: 6px;
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 0.95rem;
-      font-weight: 500;
-      padding: 0.75rem 1rem;
-      color: $color-text;
-      cursor: pointer;
-      appearance: none;
-      transition: background 0.2s ease;
-
-      i {
-        font-size: 0.85rem;
-        color: $color-accent;
-        margin-left: 0.75rem;
-      }
-
-      &:hover,
-      &:focus-visible {
-        background: $color-surface-alt;
-        outline: none;
-      }
+    .navigation .back-button,
+    .navigation h2 {
+      display: none;
     }
 
     .folders {

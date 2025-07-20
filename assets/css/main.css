@@ -271,20 +271,18 @@ img {
 
 section {
   min-height: 100vh;
-}
-section section {
   padding: 4rem 2rem;
   margin: 0 auto;
   max-width: 1000px;
   box-sizing: border-box;
   scroll-margin-top: 4rem;
 }
+
 @media screen and (max-width: 768px) {
-  section section {
+  section {
     padding: 2.5rem 1.25rem;
   }
 }
-
 .hidden {
   display: none;
 }
@@ -583,6 +581,12 @@ main {
     text-align: center;
     padding: 15px;
     align-items: center; /* Center items horizontally when stacked */
+  }
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #ffffff; /* Add a background color to the sticky header */
   }
   section {
     min-height: auto;
@@ -1208,11 +1212,36 @@ main {
   margin: 0;
 }
 
-button.work-dropdown-toggle {
+.mobile-only-select {
   display: none;
 }
 
+.desktop-only-folders {
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
+  .mobile-only-select {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;
+    margin-top: 1rem;
+    border: 1px solid #d1d1db;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.95rem;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.7em top 50%;
+    background-size: 0.65em auto;
+  }
+  .desktop-only-folders {
+    display: none;
+  }
   #selected-works {
     display: block;
   }
@@ -1228,33 +1257,13 @@ button.work-dropdown-toggle {
     border-bottom: 1px solid #d1d1db;
   }
   .work-sidebar .navigation {
+    display: flex; /* Ensure navigation is visible on mobile */
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+  .work-sidebar .navigation .back-button,
+  .work-sidebar .navigation h2 {
     display: none;
-  }
-  .work-sidebar .work-dropdown-toggle {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    background: #ffffff;
-    border: 1px solid #d1d1db;
-    border-radius: 6px;
-    font-family: "IBM Plex Mono", monospace;
-    font-size: 0.95rem;
-    font-weight: 500;
-    padding: 0.75rem 1rem;
-    color: #1a1a1a;
-    cursor: pointer;
-    appearance: none;
-    transition: background 0.2s ease;
-  }
-  .work-sidebar .work-dropdown-toggle i {
-    font-size: 0.85rem;
-    color: #3b82f6;
-    margin-left: 0.75rem;
-  }
-  .work-sidebar .work-dropdown-toggle:hover, .work-sidebar .work-dropdown-toggle:focus-visible {
-    background: #f4f4f6;
-    outline: none;
   }
   .work-sidebar .folders {
     margin: 0 !important;
