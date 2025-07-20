@@ -1,9 +1,11 @@
 <section class="work-sidebar">
+  <nav class="nav-header">
+    <a href="/" class="back-button" aria-label="Back to Home">
+      <i class="fa-solid fa-chevron-left"></i>
+    </a>
+    <h2 class="nav-title">Selected Works</h2>
+  </nav>
     <nav class="navigation" role="navigation" aria-label="Work Portfolio Navigation">
-      <a href="/" class="back-button" aria-label="Back to Home">
-        <i class="fa-solid fa-chevron-left"></i>
-      </a>
-      <h2 class="nav-title">Selected Works</h2>
       <select id="mobile-work-select" class="mobile-only-select" aria-label="Select a project">
         <option value="">Select a project</option>
         {% assign all_works = site.works | sort: "title" %}

@@ -1139,22 +1139,22 @@ main {
 .work-sidebar {
   padding: 2rem 1.5rem;
 }
-.work-sidebar .navigation {
+.work-sidebar .nav-header {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   margin-bottom: 2rem;
 }
-.work-sidebar .navigation .back-button {
+.work-sidebar .nav-header .back-button {
   font-size: 1.25rem;
   color: #1a1a1a;
   text-decoration: none;
   transition: color 0.2s ease;
 }
-.work-sidebar .navigation .back-button:hover {
+.work-sidebar .nav-header .back-button:hover {
   color: #3b82f6;
 }
-.work-sidebar .navigation h2 {
+.work-sidebar .nav-header h2 {
   margin: 0;
   font-size: 1rem;
   font-weight: 400;
@@ -1221,11 +1221,14 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+  .work-sidebar .nav-header {
+    margin-bottom: 1rem;
+  }
   .mobile-only-select {
     display: block;
     width: 100%;
+    margin: 0;
     padding: 0.75rem 1rem;
-    margin-top: 1rem;
     border: 1px solid #d1d1db;
     border-radius: 6px;
     background-color: #ffffff;
@@ -1237,7 +1240,7 @@ main {
     background-image: url('data:image/svg+xml;utf8,<svg fill="%23333" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
     background-repeat: no-repeat;
     background-position: right 0.7em top 50%;
-    background-size: 0.65em auto;
+    background-size: 1.65em 25.08px auto;
   }
   .desktop-only-folders {
     display: none;
@@ -1246,63 +1249,10 @@ main {
     display: block;
   }
   #selected-works .content {
-    width: 100%;
-    padding: 1.5rem;
-    border-left: none;
-    overflow-x: hidden; /* Prevent content from stretching the page */
+    padding: 2rem;
   }
-  .work-sidebar {
-    padding: 1.5rem 1.25rem;
-    background: #f4f4f6;
-    border-bottom: 1px solid #d1d1db;
-  }
-  .work-sidebar .navigation {
-    display: flex; /* Ensure navigation is visible on mobile */
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start */
-  }
-  .work-sidebar .navigation .back-button,
-  .work-sidebar .navigation h2 {
-    display: none;
-  }
-  .work-sidebar .folders {
-    margin: 0 !important;
-    position: absolute;
-    left: 0;
-    right: 0;
-    background-color: #ffffff;
-    padding: 1em 2em;
-    min-height: 100vh;
-  }
-  .work-sidebar .folders h3 {
-    font-size: 0.85rem;
-    font-weight: 600;
-    margin: 1.25rem 0 0.5rem;
-    text-transform: uppercase;
-    color: #2e2e42;
-    letter-spacing: 0.03em;
-  }
-  .work-sidebar .folders .project-item {
-    margin: 0;
-  }
-  .work-sidebar .folders .project-item a.project-name {
-    display: block;
-    padding: 0.5rem 0;
-    font-size: 0.95rem;
-    font-family: "IBM Plex Mono", monospace;
-    text-decoration: none;
-    color: #2e2e42;
-  }
-  .work-sidebar .folders .project-item a.project-name:hover, .work-sidebar .folders .project-item a.project-name:focus-visible {
-    text-decoration: underline;
-    outline: none;
-  }
-  .work-sidebar .folders .project-item.selected a.project-name {
-    font-weight: 600;
-    color: #3b82f6;
-  }
-  .work-sidebar .folders.collapsed {
-    display: none;
+  .work.intro h1 {
+    margin-top: 1rem;
   }
 }
 .tabs-wrapper {
