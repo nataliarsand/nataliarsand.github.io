@@ -19,7 +19,6 @@
   text-decoration: none;
   border: none;
   border-radius: 0;
-  cursor: pointer;
   transform: translateY(0);
   transition: all 0.2s ease;
 
@@ -150,4 +149,32 @@
   padding: 3rem;
   margin: 0 auto;
   text-align: center;
+}
+
+
+#theme-toggle {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 0.6rem 1rem;
+  font-family: 'IBM Plex Mono', monospace;
+  background: #eee;
+  color: #111;
+  border: 1px solid #999;
+  border-radius: 4px;
+  z-index: 1000;
+
+  &:hover {
+    background: #ddd;
+  }
+}
+
+.theme-editorial #theme-toggle {
+  background: #111;
+  color: #fff;
+  border-color: #333;
+
+  &:hover {
+    background: #222;
+  }
 }

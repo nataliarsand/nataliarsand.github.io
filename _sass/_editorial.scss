@@ -1,0 +1,190 @@
+/* ========== Editorial Theme ========== */
+.editorial-theme {
+    // Fonts (adjust if using Google Fonts)
+    body {
+      font-family: 'IBM Plex Mono', monospace;
+      background-color: #fdfbf5;
+      color: #111;
+      font-size: 1rem;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+    }
+  
+    // Base reset
+    * {
+      box-sizing: border-box;
+    }
+  
+    a {
+      color: #000;
+      font-weight: bold;
+      text-decoration: underline;
+      text-underline-offset: 0.15em;
+  
+      &:hover {
+        color: #333;
+      }
+    }
+  
+    // Headings
+    h1, h2, h3, h4 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #111;
+    }
+  
+    h1 {
+      font-size: 3.2rem;
+      line-height: 1.2;
+    }
+  
+    h2 {
+      font-size: 2.2rem;
+    }
+  
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+  
+    p {
+      margin: 1.2rem 0;
+      max-width: 70ch;
+    }
+  
+    // Layout
+    .container,
+    main,
+    .content,
+    section,
+    article {
+      padding: 2rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+  
+    section {
+      border-top: 1px dashed #aaa;
+      padding-top: 2rem;
+    }
+  
+    .work.intro {
+      border-top: 2px dashed #000;
+      padding-top: 2rem;
+      margin-top: 2rem;
+    }
+  
+    // Tabs (if using work-tabs.html)
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+      gap: 1rem;
+    }
+  
+    .tab-link {
+      font-family: inherit;
+      background: transparent;
+      border: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 0.875rem;
+      padding: 0.25rem 0;
+      border-bottom: 2px solid transparent;
+  
+      &.active {
+        border-bottom: 2px solid #111;
+      }
+    }
+  
+    .tab-content {
+      padding-bottom: 2rem;
+    }
+  
+    // Hide visual folder chrome
+    .folder-icon,
+    .project-title,
+    .nav-title {
+      display: none !important;
+    }
+  
+    // Lists
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    li {
+      margin-bottom: 0.5rem;
+    }
+  
+    // Newsletter/CTA buttons if needed
+    .cta-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.6rem 1.2rem;
+      font-family: inherit;
+      font-weight: 600;
+      background: #000;
+      color: #fff;
+      border: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+  
+      &:hover {
+        background: #222;
+      }
+    }
+  
+    // Optional: newsletter bar, reservation links etc
+    .info-banner {
+      font-size: 1.1rem;
+      padding: 1rem;
+      border: 1px dashed #999;
+      margin: 2rem 0;
+      background: #faf7ee;
+    }
+  
+    // Footer styling under editorial theme
+    footer {
+      border-top: 1px dashed #ddd;
+      padding-top: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+  
+      a {
+        color: #555;
+        text-decoration: none;
+  
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  
+    // Theme toggle button
+    #theme-toggle {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      padding: 0.6rem 1rem;
+      font-family: 'IBM Plex Mono', monospace;
+      background: #eee;
+      color: #111;
+      border: 1px solid #999;
+      border-radius: 4px;
+      cursor: pointer;
+      z-index: 1000;
+  
+      &:hover {
+        background: #ddd;
+      }
+    }
+  }
+  

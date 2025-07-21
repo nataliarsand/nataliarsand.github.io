@@ -145,3 +145,31 @@ $(function () {
       }
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.getElementById("theme-toggle");
+    const editorialThemeClass = "editorial-theme";
+    const defaultThemeClass = "default-theme";
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === editorialThemeClass) {
+        document.body.classList.remove(defaultThemeClass);
+        document.body.classList.add(editorialThemeClass);
+    }
+
+    if (toggleButton) {
+        toggleButton.addEventListener("click", function () {
+            if (document.body.classList.contains(defaultThemeClass)) {
+                document.body.classList.remove(defaultThemeClass);
+                document.body.classList.add(editorialThemeClass);
+                localStorage.setItem("theme", editorialThemeClass);
+            } else {
+                document.body.classList.remove(editorialThemeClass);
+                document.body.classList.add(defaultThemeClass);
+                localStorage.removeItem("theme");
+            }
+        });
+    }
+  });
+  
