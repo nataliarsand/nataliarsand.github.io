@@ -3,7 +3,8 @@ layout: work
 title: "Design Systems"
 subtitle: "Scaling design through systems, documentation, and inclusive foundations"
 description: >
-  I led and contributed to a series of initiatives that shaped the design system at Booking.com supporting consistency, speed, and inclusivity across platforms. This included component design, research-driven tooling, documentation architecture, and accessibility guidance.
+  I led and contributed to a series of initiatives that strengthened the design system at Booking.com, supporting consistency, understanding, and inclusivity across platforms. This included component design, research-driven tooling, documentation architecture, and accessibility guidance.
+
 image: "/assets/images/design-system-hero.png"
 deliverables:
   - label: Components
@@ -11,42 +12,46 @@ deliverables:
     description: Design and specification of complex, reusable UI elements such as nested checkboxes and bubble placement logic
   - label: Time & Motion Study
     link: "#verify-design"
-    description: Research study evaluating the Verify Design plugin and its impact on efficiency, confidence, and quality
+    description: Research study evaluating our Design System’s Figma linter plugin to assess its efficiency, usefulness, and impact on design quality.
   - label: Unified Documentation
     link: "#unified-docs"
-    description: Consolidated, scalable documentation platform to support adoption and learning across teams
+    description: Led efforts to improve content architecture, findability, and usability, ensuring the documentation platform could scale to support adoption and learning across teams.
   - label: System Stories
     link: "#system-stories"
-    description: Case-based storytelling format to communicate system usage, decisions, and impact across product teams
-  - label: Accessibility & Inclusive Services
+    description: Organized a company-wide interview series capturing real stories of system use, led by DS designers through recurring 1:1 conversations.
+  - label: Accessibility and inclusive services
     link: "#inclusive-services"
-    description: Ongoing work to embed accessibility and equity into system foundations and product practices
+    description: Workshops and facilitation to embed accessibility and equity into system foundations and product practices.
   - label: Role
-    description: Senior UX designer in the Design Systems team, responsible for system evolution, education, and partner collaboration
+    description: Senior UX designer in the Design Systems team, responsible for system evolution and education.
   - label: Scope
-    description: Cross-platform system work spanning documentation, tooling, accessibility, and research partnerships
+    description: Cross-platform system work spanning design, documentation, tooling, accessibility, and research.
 team:
   - UX Designers
   - UX Writers
   - Researchers
-  - Engineers
+  - Multi-platform engineers
   - Accessibility and DEI specialists
-  - Product partners
+  - Product managers
 process:
-  - Component design and documentation
-  - User studies and plugin evaluation
-  - Cross-functional design reviews
-  - Accessibility testing and inclusive audits
-  - Story-driven communication strategies
+    - Component design, expansion and maintenance
+    - Design system audits
+    - Documentation audits
+    - Information architecture and taxonomy modelling
+    - Time & motion study
+    - User interviews and qualitative synthesis
+    - Accessibility reviews
+    - Design reviews and cross-functional critique sessions
+    - System governance and contribution model refinement
 credits:
   - Booking.com
 ---
 
 ### Context and Objective
 
-As Booking.com evolved its product architecture and team structures, the need for a more robust, flexible, and inclusive design system became essential. We weren’t just scaling visual consistency, we were enabling teams to ship faster, align better, and make more thoughtful, accessible decisions.
+Booking.com’s Design System was already well established when I joined the team. With hundreds of designers working across platforms, the system needed continuous refinement to stay usable, inclusive, and aligned with evolving product needs.
 
-The work spanned from creating and maintaining components to building the processes, tools, and stories that supported sustainable, cross-functional adoption.
+My contributions focused on reinforcing the system’s foundations, improving component clarity, scaling documentation, embedding accessibility, and validating new tooling through research. Each initiative was designed to reduce friction, increase adoption, and help teams build with more confidence and consistency.
 
 ---
 
