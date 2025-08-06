@@ -19,12 +19,12 @@ title: Welcome
     </div>
   </div>
 
-  {% include nav.html context="desktop" %}
+  {% include components/nav.html context="desktop" %}
     
 </section>
 
 
-<section id="about" class="section-block">
+<section id="about">
   <h2 tabindex="0">Design approach</h2>
   <p class="section-intro">I approach design as a practice of systems thinking, honest collaboration, and continuous refinement. Here are the principles I follow to stay anchored in the impact I create through my work.
 </p>
@@ -63,7 +63,7 @@ title: Welcome
   </div>
 </section>
 
-<section id="my-craft" class="section-block">
+<section id="my-craft">
   <h2 tabindex="0">Core skills</h2>
   <p class="section-intro">
     I bridge strategy and execution through skills that span problem framing, hands-on design, prototyping, and delivery. These are the core tools I rely on:
@@ -159,7 +159,7 @@ title: Welcome
   </div>
 </section>
 
-<section id="not-my-zone" class="section-block">
+<section id="not-my-zone">
   <h2 tabindex="0">Out of scope</h2>
   <p class="section-intro">
     I'm not a unicorn. Here are a few things I probably won't help you with, and that's okay:
@@ -183,18 +183,20 @@ title: Welcome
 </section>
 
 
-<section id="more-about" class="section-block">
-  <h2 tabindex="0">Career Journey</h2>
-  <p>I’ve always been drawn to design:  not just how things look, but how they work and why. I studied both Graphic Design and Systems Analysis, but most of what I know I learned through experience: building, breaking, iterating.</p>
+<section id="more-about">
+  <div class="about-content">
+    <h2 tabindex="0">Career Journey</h2>
+    <p>I’ve always been drawn to design:  not just how things look, but how they work and why. I studied both Graphic Design and Systems Analysis, but most of what I know I learned through experience: building, breaking, iterating.</p>
 
-  <p>I started at 16, working as a Webmaster in a small countryside tech company. I spent my teenage years immersed in the internet, fascinated by its creative and connective power. By 18, I joined Dell, working on the US platform and helping migrate a massive CMS using HTML, CSS, XML, JavaScript, and C#.</p>
+    <p>I started at 16, working as a Webmaster in a small countryside tech company. I spent my teenage years immersed in the internet, fascinated by its creative and connective power. By 18, I joined Dell, working on the US platform and helping migrate a massive CMS using HTML, CSS, XML, JavaScript, and C#.</p>
 
-  <p>Later, as I joined tech communities and got in touch of the boom of start-ups, I took on a UX role at a startup called Engage:  where I worked with research, design, and front-end. That experience opened the door to ThoughtWorks, where I deepened my skills in strategy, facilitation, and cross-cultural consulting across India, the US, and Europe.</p>
+    <p>Later, as I joined tech communities and got in touch of the boom of start-ups, I took on a UX role at a startup called Engage:  where I worked with research, design, and front-end. That experience opened the door to ThoughtWorks, where I deepened my skills in strategy, facilitation, and cross-cultural consulting across India, the US, and Europe.</p>
 
-  <p>Today I work at Booking.com, where I’ve led design for both B2B and B2C products, founded the Design Operations team, and now focus on scaling Booking's Design System to support our global design community.</p>
+    <p>Today I work at Booking.com, where I’ve led design for both B2B and B2C products, founded the Design Operations team, and now focus on scaling Booking's Design System to support our global design community.</p>
+  </div>
 </section>
 
-<section id="hire-me" class="section-block">
+<section id="hire-me">
   <h2 tabindex="0">Let’s Work Together</h2>
   <p class="section-intro">I’m open to good work with good people, whether that means shaping a new idea, mentoring a fellow designer, or joining a mission-driven team that cares about what they’re building.</p>
 

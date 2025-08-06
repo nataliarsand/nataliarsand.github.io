@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables" as *;
 
 // === LAYOUT UTILITIES ===
 .grid-cards {
@@ -64,7 +64,7 @@
     height: auto;
   }
 
-  #intro-text, .section-intro {
+  #intro-text, .section-intro, #more-about .about-content{
     max-width: 60%;
 
     p.mono {
@@ -139,10 +139,6 @@
   .card:nth-last-child(-n+3) {
     border-bottom: none;
   }
-}
-
-#more-about {
-  max-width: 100%;
 }
 
 // === MOBILE RESPONSIVENESS ===

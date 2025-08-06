@@ -1,12 +1,12 @@
-@import "reset";
-@import "settings";
-@import "mixins";
-@import "base";
-@import "layout";
-@import "components";
-@import "home";
-@import "selected-works";
-@import "editorial";
+@use "reset";
+@use "settings";
+@use "mixins";
+@use "base";
+@use "layout";
+@use "components";
+@use "home";
+@use "selected-works";
+@use "editorial";
 
 
 #theme-toggle {

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include head.html %}
+    {% include sections/meta-head.html %}
 <body>
     <a href="#main-content-start" class="skip-link">Skip to main content</a>
-    {% include header.html %}
+    {% include sections/header.html %}
 
     <main id="selected-works" class="container">
         <div id="main-content-start"></div>
         <!-- Include the Sidebar -->
-        {% include work-sidebar.html %}
+        {% include sections/project-sidebar.html %}
 
         <!-- Main Content -->
         <section class="content">
@@ -25,7 +25,7 @@
             </div>
 
             {% if page.deliverables or page.process or page.team or page.credits %}
-                {% include work-tabs.html %}
+                {% include components/project-tabs.html %}
             {% endif %}
           
 
@@ -35,7 +35,7 @@
         </section>
     </main>
     
-    {% include footer.html %}
+    {% include sections/footer.html %}
     <script src="/assets/script.js"></script>
 </body>
 </html>

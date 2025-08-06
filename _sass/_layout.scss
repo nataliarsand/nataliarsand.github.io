@@ -1,4 +1,4 @@
-@import "settings";
+@use 'settings' as *;
 
 // ========== Global Layout ==========
 section {
@@ -21,12 +21,6 @@ section {
   display: none;
 }
 
-.section-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 4rem 0;
-}
 
 section#main-intro {
   align-items: center;

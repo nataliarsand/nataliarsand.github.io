@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include head.html %}
+{% include sections/meta-head.html %}
 <body class="default-theme">
     <a href="#main-content-start" class="skip-link">Skip to main content</a>
-    {% include header.html %}
+    {% include sections/header.html %}
 
     <main id="home">
         <div id="main-content-start"></div>
         {{ content }}
     </main>
 
-    {% include footer.html %}
+    {% include sections/footer.html %}
     
     <script src="{{ '/assets/script.js' | relative_url }}"></script>
 

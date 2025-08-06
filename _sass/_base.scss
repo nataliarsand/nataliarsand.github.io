@@ -1,5 +1,5 @@
-@import "variables";
-@import "typography";
+@use 'variables' as *;
+@use "typography";
 
 :root, :host {
   --fa-style-family-classic: 'Font Awesome 6 Free';

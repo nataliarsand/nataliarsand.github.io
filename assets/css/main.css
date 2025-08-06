@@ -286,13 +286,6 @@ section {
   display: none;
 }
 
-.section-block {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 4rem 0;
-}
-
 section#main-intro {
   align-items: center;
 }
@@ -965,16 +958,16 @@ main {
   max-height: 180px;
   height: auto;
 }
-#home #intro-text, #home .section-intro {
+#home #intro-text, #home .section-intro, #home #more-about .about-content {
   max-width: 60%;
 }
-#home #intro-text p.mono, #home .section-intro p.mono {
+#home #intro-text p.mono, #home .section-intro p.mono, #home #more-about .about-content p.mono {
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.1rem;
   margin-bottom: 2rem;
   color: #2e2e42;
 }
-#home #intro-text p, #home .section-intro p {
+#home #intro-text p, #home .section-intro p, #home #more-about .about-content p {
   color: #2e2e42;
   font-size: 1rem;
   line-height: 1.7;
@@ -1028,10 +1021,6 @@ main {
 }
 #hire-me .grid-cards .card:nth-last-child(-n+3) {
   border-bottom: none;
-}
-
-#more-about {
-  max-width: 100%;
 }
 
 @media (max-width: 768px) {
