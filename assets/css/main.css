@@ -294,6 +294,7 @@ section#main-intro .container {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
 @media (max-width: 768px) {
   section#main-intro .container {
@@ -616,36 +617,16 @@ main {
   text-align: center;
   margin-bottom: 2rem;
 }
-#works-index .works-grid {
+
+.works-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.5rem;
   width: 100%;
   max-width: 900px; /* Adjust as needed */
 }
-#works-index .works-grid .folder-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-decoration: none;
-  color: #1a1a1a;
-  transition: transform 0.2s ease-in-out;
-}
-#works-index .works-grid .folder-link:hover {
-  transform: translateY(-5px);
-}
-#works-index .works-grid .folder-link .folder-icon {
-  width: 80px;
-  height: auto;
-  margin-bottom: 0.5rem;
-}
-#works-index .works-grid .folder-link .folder-title {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.9rem;
-  text-align: center;
-}
 @media (max-width: 768px) {
-  #works-index .works-grid {
+  .works-grid {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
@@ -782,9 +763,6 @@ main {
     padding: 15px 30px;
     font-size: 14px;
   }
-  #works .folder-icon-link {
-    margin-top: 50px;
-  }
   .section-heading {
     font-size: 1.6em;
   }
@@ -874,6 +852,28 @@ main {
   display: block;
   padding: 3rem;
   margin: 0 auto;
+  text-align: center;
+}
+
+.folder-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: #1a1a1a;
+  transition: transform 0.2s ease-in-out;
+}
+.folder-link:hover {
+  transform: translateY(-5px);
+}
+.folder-link .folder-icon {
+  width: 80px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+.folder-link .folder-title {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.9rem;
   text-align: center;
 }
 
@@ -972,25 +972,12 @@ main {
   font-size: 1rem;
   line-height: 1.7;
 }
-#home #works {
+#home #works-section {
   flex: 1 1 30%;
   text-align: center;
-}
-#home #works .folder-icon-link {
-  display: block;
-}
-#home #works .folder-icon-link img {
-  width: 80px;
-  margin: 0 auto;
-}
-#home #works .folder-icon-link .folder-text {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.85rem;
-  margin-top: 0.75rem;
-  color: #3b82f6;
-}
-#home #works .folder-icon-link:hover .folder-text {
-  color: #2563eb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #about .grid-cards {

@@ -79,12 +79,14 @@ $(function () {
       }
     });
   
-    // ========== DRAGGABLE FOLDER ICON ==========
-    $("#works a, .folder-link").draggable({
+          
+  
+    // ========== DRAGGABLE FOLDER ICON ========== 
+    $(".folder-link").draggable({
         containment: "body", // Restrict movement to the viewport
         cursor: "move"
-    });      
-  
+    });
+
     // ========== BACK TO TOP BUTTON ==========
     const backToTopButton = $("#back-to-top");
   

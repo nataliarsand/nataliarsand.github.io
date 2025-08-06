@@ -11,12 +11,10 @@ title: Welcome
       <p>I’m a <strong>UX Design Lead</strong> working at the intersection of strategy, systems, and craft. I design for impact. Thoughtful, scalable, and always human-centered.</p>
       <p>This site is my digital OS, it's a space to explore structure, reflect on process, and highlight work I am proud of.</p>
     </div>
-    <div id="works">
-      <a href="/works/design-systems" class="folder-icon-link">
-        <img src="{{ '/assets/images/folder.png' | relative_url }}" alt="Selected Works" class="folder-icon" />
-        <p class="folder-text">Selected works</p>
-      </a>
+    <div id="works-section">
+      {% include components/folder-link.html url="/works" title="Selected Works" %}
     </div>
+    
   </div>
 
   {% include components/nav.html context="desktop" %}

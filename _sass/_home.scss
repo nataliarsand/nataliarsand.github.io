@@ -81,29 +81,12 @@
     }
   }
 
-  #works {
+  #works-section {
     flex: 1 1 30%;
     text-align: center;
-
-    .folder-icon-link {
-      display: block;
-
-      img {
-        width: 80px;
-        margin: 0 auto;
-      }
-
-      .folder-text {
-        font-family: 'IBM Plex Mono', monospace;
-        font-size: 0.85rem;
-        margin-top: 0.75rem;
-        color: $color-accent;
-      }
-
-      &:hover .folder-text {
-        color: $color-accent-hover;
-      }
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

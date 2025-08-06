@@ -43,9 +43,7 @@
     font-size: 14px;
   }
 
-  #works .folder-icon-link {
-    margin-top: 50px;
-  }
+  
 
   .section-heading {
     font-size: 1.6em;
@@ -152,6 +150,33 @@
 }
 
 
+
+
+.folder-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: $color-text;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  .folder-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+
+  .folder-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}
+
 #theme-toggle {
   position: fixed;
   bottom: 1rem;
@@ -178,3 +203,4 @@
     background: #222;
   }
 }
+
