@@ -14,7 +14,7 @@
         {% endfor %}
       </select>
     </nav>
-  
+
     <nav class="folders desktop-only-folders" aria-label="Project Folders">
       <ul>
         <h3>Booking.com</h3>
@@ -24,13 +24,13 @@
           {% if work %}
           <li class="project-item {% if page.url == work.url %}selected{% endif %}">
             <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
-              <img src="/assets/images/folder.png" alt="folder-icon" class="folder-icon">
+              <img src="/assets/images/folder.png" alt="" class="folder-icon" aria-hidden="true">
               <span class="project-title">{{ work.title }}</span>
             </a>
           </li>
           {% endif %}
         {% endfor %}
-  
+
         <h3>ThoughtWorks</h3>
         {% assign tw_titles = "Digital Health Records in Haiti,Amplify Tablet" | split: "," %}
         {% for title in tw_titles %}
@@ -38,13 +38,13 @@
           {% if work %}
           <li class="project-item {% if page.url == work.url %}selected{% endif %}">
             <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
-              <img src="/assets/images/folder.png" alt="folder-icon" class="folder-icon">
+              <img src="/assets/images/folder.png" alt="" class="folder-icon" aria-hidden="true">
               <span class="project-title">{{ work.title }}</span>
             </a>
           </li>
           {% endif %}
         {% endfor %}
-  
+
         <h3>Personal</h3>
         {% assign personal_titles = "BodyMap: Dosha Questionnaire,Mama Circle" | split: "," %}
         {% for title in personal_titles %}
@@ -52,7 +52,7 @@
           {% if work %}
           <li class="project-item {% if page.url == work.url %}selected{% endif %}">
             <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
-              <img src="/assets/images/folder.png" alt="folder-icon" class="folder-icon">
+              <img src="/assets/images/folder.png" alt="" class="folder-icon" aria-hidden="true">
               <span class="project-title">{{ work.title }}</span>
             </a>
           </li>
@@ -61,4 +61,3 @@
       </ul>
     </nav>
   </section>
-  
