@@ -34,6 +34,7 @@ section#main-intro {
 
     @media (max-width: 768px) {
       flex-direction: column; /* Stack elements vertically on mobile */
+      margin: 2em 0;
     }
   }
 }

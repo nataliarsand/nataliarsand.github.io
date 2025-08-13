@@ -294,6 +294,7 @@ section#main-intro .container {
 @media (max-width: 768px) {
   section#main-intro .container {
     flex-direction: column; /* Stack elements vertically on mobile */
+    margin: 2em 0;
   }
 }
 
