@@ -1040,6 +1040,11 @@ main {
   #more-about {
     max-width: 80%;
   }
+
+  #works-section {
+    flex: 1 1 100%;
+    margin-top: 2rem;
+  }
 }
 .work.meta-data,
 #selected-works,
