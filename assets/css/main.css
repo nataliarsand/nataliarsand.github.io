@@ -302,6 +302,13 @@ main {
   max-width: 1000px;
 }
 
+@media (min-width: 1200px) {
+  section,
+  main {
+    max-width: min(90vw, 1200px);
+  }
+}
+
 .header {
   width: 100%;
   text-align: left;
