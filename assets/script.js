@@ -89,15 +89,33 @@ $(function () {
 
     // ========== BACK TO TOP BUTTON ==========
     const backToTopButton = $("#back-to-top");
-  
+
+    // ========== STICKY SECTION NAV ==========
+    const sectionNav = document.getElementById("sectionNav");
+    const stickyClass = "sticky";
+    const sectionNavOffset = sectionNav ? sectionNav.offsetTop : 0;
+
+    // ========== SCROLL HANDLER ==========
     $(window).on("scroll", function () {
-      if ($(this).scrollTop() > 200) {
+      const scrollTop = $(this).scrollTop();
+
+      // Back to top visibility
+      if (scrollTop > 200) {
         backToTopButton.fadeIn();
       } else {
         backToTopButton.fadeOut();
       }
+
+      // Sticky section navigation
+      if (sectionNav) {
+        if (scrollTop > sectionNavOffset) {
+          sectionNav.classList.add(stickyClass);
+        } else {
+          sectionNav.classList.remove(stickyClass);
+        }
+      }
     });
-  
+
     backToTopButton.on("click", function (e) {
       e.preventDefault();
       $("html, body").animate({ scrollTop: 0 }, 400);
@@ -123,21 +141,7 @@ $(function () {
       $("main#selected-works .content h3, main#selected-works .content h4").attr("tabindex", "0");
     }
   
-    // ========== STICKY SECTION NAV ==========
-    const sectionNav = document.getElementById("sectionNav");
-  
-    if (sectionNav) {
-      const stickyClass = "sticky";
-      const offset = sectionNav.offsetTop;
-  
-      $(window).on("scroll", function () {
-        if (window.pageYOffset > offset) {
-          sectionNav.classList.add(stickyClass);
-        } else {
-          sectionNav.classList.remove(stickyClass);
-        }
-      });
-    }
+    // Sticky navigation handled in unified scroll listener above
   
     // ========== MOBILE WORK SELECT ==========
     $("#mobile-work-select").on("change", function() {
