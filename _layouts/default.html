@@ -5,7 +5,7 @@
     <a href="#main-content-start" class="skip-link">Skip to main content</a>
     {% include sections/header.html %}
 
-    <main id="home">
+    <main id="{{ page.main_id | default: 'home' }}">
         <div id="main-content-start"></div>
         {{ content }}
     </main>

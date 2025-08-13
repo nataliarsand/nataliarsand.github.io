@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Selected Works
+main_id: selected-works
 ---
 
 <section id="works-index">
