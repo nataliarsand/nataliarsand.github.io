@@ -1007,7 +1007,7 @@ main {
 
 @media (max-width: 768px) {
   #home {
-    margin: 40px;
+    margin: 1rem;
   }
   #home #intro-text,
   #home .section-intro {
