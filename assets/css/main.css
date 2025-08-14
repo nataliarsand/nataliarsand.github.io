@@ -294,12 +294,20 @@ section#main-intro .container {
 @media (max-width: 768px) {
   section#main-intro .container {
     flex-direction: column; /* Stack elements vertically on mobile */
+    margin: 2em 0;
   }
 }
 
 main {
   margin: 0 auto;
   max-width: 1000px;
+}
+
+@media (min-width: 1200px) {
+  section,
+  main {
+    max-width: min(90vw, 1200px);
+  }
 }
 
 .header {
@@ -1013,7 +1021,7 @@ main {
 
 @media (max-width: 768px) {
   #home {
-    margin: 40px;
+    margin: 1rem;
   }
   #home #intro-text,
   #home .section-intro {
@@ -1045,6 +1053,11 @@ main {
   }
   #more-about {
     max-width: 80%;
+  }
+
+  #works-section {
+    flex: 1 1 100%;
+    margin-top: 2rem;
   }
 }
 .work.meta-data,

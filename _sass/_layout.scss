@@ -34,6 +34,7 @@ section#main-intro {
 
     @media (max-width: 768px) {
       flex-direction: column; /* Stack elements vertically on mobile */
+      margin: 2em 0;
     }
   }
 }
@@ -41,6 +42,13 @@ section#main-intro {
 main {
   margin: 0 auto;
   max-width: 1000px;
+}
+
+@media (min-width: 1200px) {
+  section,
+  main {
+    max-width: min(90vw, 1200px);
+  }
 }
 
 
