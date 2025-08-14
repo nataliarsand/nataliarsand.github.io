@@ -64,7 +64,10 @@
     height: auto;
   }
 
-  #intro-text, .section-intro, #more-about .about-content{
+  #intro-text,
+  .section-intro,
+  #more-about .about-content,
+  #not-my-zone {
     max-width: 60%;
 
     p.mono {
@@ -79,6 +82,10 @@
       font-size: 1rem;
       line-height: 1.7;
     }
+  }
+
+  #not-my-zone {
+    margin-left: 0;
   }
 
   #works-section {
@@ -130,7 +137,9 @@
     margin: 1rem;
 
     #intro-text,
-    .section-intro {
+    .section-intro,
+    #more-about .about-content,
+    #not-my-zone {
       max-width: 90%;
     }
 
