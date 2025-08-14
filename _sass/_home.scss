@@ -64,7 +64,10 @@
     height: auto;
   }
 
-  #intro-text, .section-intro, #more-about .about-content{
+  #intro-text,
+  .section-intro,
+  #more-about .about-content,
+  #not-my-zone {
     max-width: 60%;
 
     p.mono {
