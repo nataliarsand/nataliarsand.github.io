@@ -84,6 +84,10 @@
     }
   }
 
+  #not-my-zone {
+    margin-left: 0;
+  }
+
   #works-section {
     flex: 1 1 30%;
     text-align: center;
@@ -133,7 +137,9 @@
     margin: 1rem;
 
     #intro-text,
-    .section-intro {
+    .section-intro,
+    #more-about .about-content,
+    #not-my-zone {
       max-width: 90%;
     }
 
