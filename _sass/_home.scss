@@ -127,7 +127,7 @@
 // === MOBILE RESPONSIVENESS ===
 @media (max-width: 768px) {
   #home {
-    margin: 40px;
+    margin: 1rem;
 
     #intro-text,
     .section-intro {
@@ -162,10 +162,15 @@
   #my-craft .grid-cards .card:last-child,
   #hire-me .grid-cards .card:last-child {
     border-bottom: 0 !important;
-}
+  }
 
-#more-about {
+  #more-about {
     max-width: 80%;
+  }
+
+  #works-section {
+    flex: 1 1 100%;
+    margin-top: 2rem;
   }
 }
 
