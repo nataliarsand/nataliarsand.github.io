@@ -963,6 +963,7 @@ main {
 }
 #home #intro-text, #home .section-intro, #home #more-about .about-content, #home #not-my-zone {
   max-width: 60%;
+  margin-left: 0;
 }
 #home #intro-text p.mono, #home .section-intro p.mono, #home #more-about .about-content p.mono, #home #not-my-zone p.mono {
   font-family: "IBM Plex Mono", monospace;
@@ -1049,9 +1050,6 @@ main {
   #my-craft .grid-cards .card:last-child,
   #hire-me .grid-cards .card:last-child {
     border-bottom: 0 !important;
-  }
-  #more-about {
-    max-width: 80%;
   }
 
   #works-section {
