@@ -158,26 +158,28 @@ title: Welcome
 </section>
 
 <section id="not-my-zone">
-  <h2 tabindex="0">Out of scope</h2>
-  <p class="section-intro">
-    I'm not a unicorn. Here are a few things I probably won't help you with, and that's okay:
-  </p>
+  <div class="nmz-content">
+    <h2 tabindex="0">Out of scope</h2>
+    <p class="section-intro">
+      I'm not a unicorn. Here are a few things I probably won't help you with, and that's okay:
+    </p>
 
-  <ul class="pills">
-    <li class="pill">Branding from scratch</li>
-    <li class="pill">Polished motion design</li>
-    <li class="pill">Pixel-perfect Dribbble shots</li>
-    <li class="pill">Design by consensus</li>
-    <li class="pill">Aesthetics-first</li>
-    <li class="pill">Greenwashing</li>
-    <li class="pill">Skipping research</li>
-    <li class="pill">Print production</li>
-    <li class="pill">Illustrations</li>
-    <li class="pill">Marketing and social media assets</li>
-    <li class="pill">Logo design</li>
-    <li class="pill">Stunning visual design</li>
-    <li class="pill">Full-time developer</li>
-  </ul>
+    <ul class="pills">
+      <li class="pill">Branding from scratch</li>
+      <li class="pill">Polished motion design</li>
+      <li class="pill">Pixel-perfect Dribbble shots</li>
+      <li class="pill">Design by consensus</li>
+      <li class="pill">Aesthetics-first</li>
+      <li class="pill">Greenwashing</li>
+      <li class="pill">Skipping research</li>
+      <li class="pill">Print production</li>
+      <li class="pill">Illustrations</li>
+      <li class="pill">Marketing and social media assets</li>
+      <li class="pill">Logo design</li>
+      <li class="pill">Stunning visual design</li>
+      <li class="pill">Full-time developer</li>
+    </ul>
+  </div>
 </section>
 
 
