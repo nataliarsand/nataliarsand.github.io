@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Welcome
+title: Home
 ---
 
 <section id="main-intro">
