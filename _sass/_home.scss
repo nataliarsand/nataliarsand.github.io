@@ -64,8 +64,12 @@
     height: auto;
   }
 
-  #intro-text, .section-intro, #more-about .about-content{
+  #intro-text,
+  .section-intro,
+  #more-about .about-content,
+  #not-my-zone .nmz-content {
     max-width: 60%;
+    margin-left: 0;
 
     p.mono {
       font-family: 'IBM Plex Mono', monospace;
@@ -130,7 +134,9 @@
     margin: 1rem;
 
     #intro-text,
-    .section-intro {
+    .section-intro,
+    #more-about .about-content,
+    #not-my-zone .nmz-content {
       max-width: 90%;
     }
 
@@ -162,10 +168,6 @@
   #my-craft .grid-cards .card:last-child,
   #hire-me .grid-cards .card:last-child {
     border-bottom: 0 !important;
-  }
-
-#more-about {
-    max-width: 80%;
   }
 
 #works-section {
