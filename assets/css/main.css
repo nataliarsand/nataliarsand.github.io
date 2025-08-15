@@ -961,17 +961,19 @@ main {
   max-height: 180px;
   height: auto;
 }
-#home #intro-text, #home .section-intro, #home #more-about .about-content, #home #not-my-zone {
+
+#home #intro-text, #home .section-intro, #home #more-about .about-content, #home #not-my-zone .nmz-content {
   max-width: 60%;
   margin-left: 0;
 }
-#home #intro-text p.mono, #home .section-intro p.mono, #home #more-about .about-content p.mono, #home #not-my-zone p.mono {
+#home #intro-text p.mono, #home .section-intro p.mono, #home #more-about .about-content p.mono, #home #not-my-zone .nmz-content p.mono {
   font-family: "IBM Plex Mono", monospace;
   font-size: 1.1rem;
   margin-bottom: 2rem;
   color: #2e2e42;
 }
-#home #intro-text p, #home .section-intro p, #home #more-about .about-content p, #home #not-my-zone p {
+
+#home #intro-text p, #home .section-intro p, #home #more-about .about-content p, #home #not-my-zone .nmz-content p {
   color: #2e2e42;
   font-size: 1rem;
   line-height: 1.7;
@@ -1024,7 +1026,7 @@ main {
   #home #intro-text,
   #home .section-intro,
   #home #more-about .about-content,
-  #home #not-my-zone {
+  #home #not-my-zone .nmz-content {
     max-width: 90%;
   }
   #home #intro-text {
