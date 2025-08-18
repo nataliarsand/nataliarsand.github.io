@@ -1,0 +1,158 @@
+PORTFOLIO IMAGES NEEDED - STREAMLINED LIST
+==========================================
+
+Create these essential images and place them in the specified folders under /assets/images/works/
+Maximum 3-5 images per project, prioritizing the most impactful visuals.
+
+DESIGN SYSTEMS PROJECT (3 images)
+==================================
+Folder: /assets/images/works/design-systems/
+
+1. checkbox-before-inconsistent.png
+   - Screenshots showing inconsistent checkbox implementations across different product teams
+   - Side-by-side comparison of various checkbox patterns before standardization
+
+2. checkbox-after-unified.png
+   - Clean screenshot of the unified design system checkbox pattern
+   - Show the standardized hierarchy, states, and consistent styling
+
+3. study-results-dashboard.png
+   - Dashboard or infographic showing quantitative findings from time & motion study
+   - Include metrics: time savings, error reduction, confidence levels
+   - Data visualization with charts/graphs
+
+MAMA CIRCLE PROJECT (3 images)
+==============================
+Folder: /assets/images/works/mama-circle/
+
+4. website-mobile.png
+   - Mobile view of the Mama Circle website
+   - Show responsive design and mobile-friendly interface
+   - Clean, minimal design emphasizing gentleness
+
+5. website-desktop.png
+   - Desktop view of the Mama Circle website
+   - Full layout showing navigation, content, and overall design
+   - Demonstrate the "digital love letter" aesthetic
+
+6. ai-collaboration-chat.png
+   - Screenshot of ChatGPT conversation showing AI assistance
+   - Show how AI helped with content structure and coding decisions
+   - Highlight collaborative aspects of the process
+
+HEALTH RECORDS HAITI PROJECT (3 images)
+=======================================
+Folder: /assets/images/works/health-records/
+
+7. patient-journey-map.png
+   - Comprehensive workflow diagram from admission to discharge
+   - Show pain points, stakeholders, and critical moments
+   - Include timeline and decision points throughout care process
+
+8. ui-before-prototype.png & ui-after-refined.png (side-by-side)
+   - Before: Screenshot of initial prototype interface
+   - After: Screenshot of refined interface after user feedback
+   - Show improvements based on testing with medical staff
+
+9. hospital-testing-environment.jpg
+   - Photo of nurses using the system at Mirebalais hospital
+   - Real-world context showing actual usage environment
+   - Capture the authentic testing conditions
+
+BODYMAP PROJECT (2 images)
+===========================
+Folder: /assets/images/works/bodymap/
+
+10. quiz-interface-mobile.png
+    - Mobile quiz interface showing grouped thematic questions
+    - Demonstrate the intuitive, non-overwhelming approach
+    - Show thoughtful question grouping (digestion, movement, emotions)
+
+11. results-page-design.png
+    - Beautiful, personalized dosha results page
+    - Show friendly explanation and actionable insights
+    - Demonstrate the "thoughtful friend" tone in visual design
+
+DESIGN OPS PROJECT (1 image)
+=============================
+Folder: /assets/images/works/design-ops/
+
+12. ux-hub-interface.png
+    - Screenshots of centralized documentation portal
+    - Show navigation, search functionality, resource categorization
+    - Demonstrate improved findability and organization
+
+REFERRAL PROGRAM PROJECT (3 images)
+===================================
+Folder: /assets/images/works/referral-program/
+
+13. user-journey-full-funnel.png
+    - Complete referral user journey from discovery to reward
+    - Show touchpoints from initial exposure to successful friend booking
+    - Include timeline and conversion points throughout the funnel
+
+14. desktop-referral-interface.png & mobile-referral-interface.png (side-by-side)
+    - Desktop: sharing interface with referral tools (email, WhatsApp, social)
+    - Mobile: responsive design optimized for mobile sharing
+    - Show reward preview and trust signals
+
+15. ab-testing-results.png
+    - A/B testing results dashboard with conversion metrics
+    - Show placement, rewards, and copy optimization data
+    - Include statistical significance and market comparisons
+
+AMPLIFY TABLET PROJECT (1 image)
+================================
+Folder: /assets/images/works/amplify-tablet/
+
+16. teacher-dashboard-interface.png & student-learning-interface.png (side-by-side)
+    - Teacher: interface showing classroom management tools
+    - Student: interface optimized for focused learning
+    - Demonstrate dual-user experience design
+
+INTERNAL APP MARKETPLACE PROJECT (2 images)
+===========================================
+Folder: /assets/images/works/internal-app/
+
+17. marketplace-interface-overview.png
+    - Main interface of internal app marketplace
+    - Show categorization system, featured apps, navigation
+    - Clean, searchable interface for tool discovery
+
+18. before-tool-chaos.png & after-organized-categories.png (side-by-side)
+    - Before: overwhelming tool landscape, scattered access points
+    - After: clear categorization system, logical hierarchy
+    - Show the problem solved and improved discoverability
+
+STREAMLINED TOTAL: 18 images across 8 projects (2-3 per project average)
+
+PRIORITY GUIDELINES
+===================
+
+High Priority (Create First):
+- Before/after comparisons showing your impact
+- User interfaces demonstrating design quality
+- Process documentation (journey maps, research)
+- Quantitative results (dashboards, metrics)
+
+Medium Priority:
+- Behind-the-scenes photos (workshops, testing)
+- Technical diagrams (architecture, flows)
+
+Visual Style Guidelines:
+- Clean, minimal aesthetic matching your retro-OS theme
+- Consistent visual treatment within each project
+- Focus on clarity and readability
+- Ensure screenshots show your design work prominently
+
+IMPACT FOR AGENCIES
+===================
+This streamlined set demonstrates:
+✅ Strategic thinking (journey maps, research)
+✅ Design execution (interfaces, before/after)
+✅ Quantitative impact (metrics, A/B testing)
+✅ Process transparency (collaboration, iteration)
+✅ Technical depth (systems, architecture)
+✅ Real-world application (hospital photos, user testing)
+
+Perfect balance of showing your complete design process without overwhelming the viewer.

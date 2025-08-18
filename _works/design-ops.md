@@ -71,6 +71,12 @@ I was part of the core team that established DesignOps at Booking.com and later 
 - Improved the internal documentation platform to support ease of contributions and readability.
 - Developed a content maintenance plan by mapping documentation ownership across domains, ensuring information stays accurate and regularly updated.
 
+<div class="work-image-container large">
+  <img src="/assets/images/works/design-ops/ux-hub-interface.png" alt="UX Hub documentation portal interface" class="work-image">
+  <p class="work-image-caption">UX Hub interface: centralized documentation portal with navigation, search, and resource categorization</p>
+</div>
+
+
 ---
 
 #### <a id="ux-directory"></a>UX people directory
@@ -83,6 +89,7 @@ I was part of the core team that established DesignOps at Booking.com and later 
 - Launched a tool connecting designers and writers across teams
 - Included live links to Figma files and documentation
 - Improved access to active design work across the company
+
 
 ---
 

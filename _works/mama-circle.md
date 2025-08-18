@@ -38,7 +38,8 @@ credits:
 
 ### Context and Objective
 
-In the haze of postpartum life, I kept thinking about how many new mothers feel isolated, unseen, or unsure of how to ask for help. I wanted to create a gentle nudge, a message that says: “You’re not alone. Look for the hashtag. We’re here.”
+In the haze of postpartum life, I kept thinking about how many new mothers feel isolated, unseen, or unsure of how to ask for help. I wanted to create a gentle nudge, a message that says: "You're not alone. Look for the hashtag. We're here."
+
 
 **Mama Circle** was born from this idea: no logins, no profiles, no platforms. Just a simple way to signal support.
 
@@ -58,6 +59,23 @@ It was also my first time coding with help from AI tools. Instead of specs and w
 - **AI pair-programming**: Used ChatGPT to structure layout files, refactor HTML, clean styles, and co-write thoughtful legal content.
 - **Multilingual and maintainable**: Set up Eleventy for future content growth and localisation, with GitHub Pages as the host.
 - **No user data**: Prioritised safety, with clear disclaimers and email-only opt-out for testimonials.
+
+
+<div class="work-images-side-by-side">
+  <div class="work-image-container">
+    <img src="/assets/images/works/mama-circle/website-mobile.png" alt="Mobile view of Mama Circle website" class="work-image">
+    <p class="work-image-caption">Mobile interface</p>
+  </div>
+  <div class="work-image-container">
+    <img src="/assets/images/works/mama-circle/website-desktop.png" alt="Desktop view of Mama Circle website" class="work-image">
+    <p class="work-image-caption">Desktop interface</p>
+  </div>
+</div>
+
+<div class="work-image-container large">
+  <img src="/assets/images/works/mama-circle/ai-collaboration-chat.png" alt="AI coding collaboration showing assistance with content and coding" class="work-image">
+  <p class="work-image-caption">AI collaboration: pair-programming session showing assistance with content structure and coding</p>
+</div>
 
 ---
 

@@ -73,10 +73,23 @@ I was a senior UX designer embedded in the Design Systems team. My responsibilit
 
 **Why it mattered**: Complex UI components like nested checkboxes were frequently re-invented or misunderstood across teams.
 
+<div class="work-images-side-by-side">
+  <div class="work-image-container">
+    <img src="/assets/images/works/design-systems/checkbox-before-inconsistent.png" alt="Inconsistent checkbox implementations across teams" class="work-image">
+    <p class="work-image-caption">Before: Inconsistent checkbox implementations</p>
+  </div>
+  <div class="work-image-container">
+    <img src="/assets/images/works/design-systems/checkbox-after-unified.png" alt="Unified design system checkbox pattern" class="work-image">
+    <p class="work-image-caption">After: Unified design system pattern</p>
+  </div>
+</div>
+
 **What we did**:
 - Designed and documented a scalable checkbox pattern supporting grouped logic, accessibility, and flexible interaction states  
 - Created placement logic for tooltips and bubbles that respected directionality, screen boundaries, and user context  
-- Partnered with engineers to spec behaviour and edge cases across platforms  
+- Partnered with engineers to spec behaviour and edge cases across platforms
+
+  
 
 ---
 
@@ -84,10 +97,18 @@ I was a senior UX designer embedded in the Design Systems team. My responsibilit
 
 **Why it mattered**: The team introduced an internal Figma plugin to improve adherence to design system specs. But we needed evidence of its impact.
 
+
 **What we did**:
 - Designed and led a time & motion study comparing workflows with and without the plugin  
 - Measured time to complete tasks, number of errors, and perceived confidence  
-- Synthesised findings into actionable improvements for both plugin and process  
+- Synthesised findings into actionable improvements for both plugin and process
+
+<div class="work-image-container large">
+  <img src="/assets/images/works/design-systems/study-results-dashboard.png" alt="Dashboard showing study results with time savings and error metrics" class="work-image">
+  <p class="work-image-caption">Study results: quantitative findings showing time savings, error reduction, and confidence metrics</p>
+</div>
+
+  
 
 ---
 
@@ -95,10 +116,13 @@ I was a senior UX designer embedded in the Design Systems team. My responsibilit
 
 **Why it mattered**: Documentation was fragmented, inconsistent, and difficult to navigate, especially for new joiners or engineers.
 
+
 **What we did**:
 - Audited all system documentation and developed a unified structure across platforms  
 - Created scalable templates and guidelines to support cross-team documentation  
-- Co-built the new platform with accessibility, searchability, and governance in mind  
+- Co-built the new platform with accessibility, searchability, and governance in mind
+
+  
 
 ---
 

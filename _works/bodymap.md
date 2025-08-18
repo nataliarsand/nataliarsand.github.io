@@ -60,7 +60,19 @@ This was a hobby project, so I worked from sketching out the structure and writi
 
 - **Group-based questions**: Instead of dozens of scattered questions, themes are clustered around how you feel, eat, move, and think.
 - **Dual logic**: The tool detects both your nature and your imbalance, gently revealing patterns without jargon.
-- **Tone and language**: It doesn’t feel like a spreadsheet or a mystic scroll. It feels like a thoughtful friend asking how you’ve been.
+- **Tone and language**: It doesn't feel like a spreadsheet or a mystic scroll. It feels like a thoughtful friend asking how you've been.
+
+<div class="work-images-side-by-side">
+  <div class="work-image-container">
+    <img src="/assets/images/works/bodymap/quiz-interface-desktop.png" alt="Desktop quiz interface showing grouped thematic questions" class="work-image">
+    <p class="work-image-caption">Desktop quiz interface</p>
+  </div>
+  <div class="work-image-container">
+    <img src="/assets/images/works/bodymap/quiz-result-mobile.png" alt="Mobile quiz results page with personalized dosha insights" class="work-image">
+    <p class="work-image-caption">Mobile results page</p>
+  </div>
+</div>
+
 
 ---
 

@@ -54,11 +54,13 @@ I joined as the sole designer in Porto Alegre, working closely with teams in New
 
 I led **interaction design** for several core experiences on the Android-based platform, collaborating daily with developers, testers, and the visual designer.
 
+
 - Built flows for classroom management, lesson transitions, and real-time student insights
 - Designed student-facing interactions that encouraged agency without distraction
 - Participated in and facilitated critiques, story mapping, and continuous refinement
 - Ran validation sessions with teachers and students in US classrooms during on-site visits
 - Helped document and align design patterns in a growing visual and interaction style guide
+
 
 ---
 
@@ -67,11 +69,24 @@ I led **interaction design** for several core experiences on the Android-based p
 1. **Designing for dual users**  
    The product needed to serve both teachers and students simultaneously. We created tailored experiences for each, while keeping the system consistent and easy to navigate.
 
+<div class="work-images-side-by-side">
+  <div class="work-image-container">
+    <img src="/assets/images/works/amplify-tablet/teacher-dashboard-interface.png" alt="Teacher dashboard showing classroom management tools" class="work-image">
+    <p class="work-image-caption">Teacher interface: classroom management</p>
+  </div>
+  <div class="work-image-container">
+    <img src="/assets/images/works/amplify-tablet/student-learning-interface.png" alt="Student interface showing lesson content" class="work-image">
+    <p class="work-image-caption">Student interface: focused learning</p>
+  </div>
+</div>
+
 2. **Low-distraction interfaces**  
    Classroom environments are dynamic and often noisy. We focused on visual clarity, minimal cognitive load, and intuitive transitions to avoid adding complexity.
 
+
 3. **Distributed design team**  
    As the only designer in Brazil, I learned to work asynchronously, document clearly, and communicate intent in a way that survived time zone gaps.
+
 
 ---
 

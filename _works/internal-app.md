@@ -47,10 +47,16 @@ My role in this project focused on creating a **seamless user experience** for t
 
 Key contributions included:
 
+<div class="work-image-container large">
+  <img src="/assets/images/works/internal-app/marketplace-interface-overview.png" alt="Internal app marketplace main interface" class="work-image">
+  <p class="work-image-caption">App marketplace interface: categorized tools with search and discovery features</p>
+</div>
+
 - Designing an **app marketplace interface** that categorised tools based on functionality, user roles, and popularity.
 - Crafting **search and discovery flows** to make finding tools faster and more intuitive.
 - Leading **usability testing sessions** to gather feedback from accommodation partners across departments, ensuring the platform met user needs.
 - Collaborating with internal tool managers to align features with business goals and technical feasibility.
+
 
 ### Challenges & Solutions
 
@@ -58,15 +64,29 @@ Key contributions included:
    Challenge: accommodation partners struggled to navigate an overwhelming number of tools.  
    Solution: Developed a **clear categorisation system** and filters to help users quickly find relevant applications.
 
+<div class="work-images-side-by-side">
+  <div class="work-image-container">
+    <img src="/assets/images/works/internal-app/before-tool-chaos.png" alt="Before: overwhelming tool landscape" class="work-image">
+    <p class="work-image-caption">Before: tool overload and confusion</p>
+  </div>
+  <div class="work-image-container">
+    <img src="/assets/images/works/internal-app/after-organized-categories.png" alt="After: organized tool categories" class="work-image">
+    <p class="work-image-caption">After: clear categorization system</p>
+  </div>
+</div>
+
 2. **Inconsistent User Interfaces**  
    Challenge: Tools had varying UI patterns, leading to confusion.  
    Solution: Standardised UI components and introduced a consistent visual language for all app pages.
+
 
 3. **User Feedback Loop**  
    Challenge: accommodation partners lacked a way to provide feedback on tools.  
    Solution: Integrated a feedback mechanism, allowing users to rate and comment on applications for continuous improvement.
 
+
 ### Outcome
+
 
 - Launched the **Booking App Store**, used by thousands of accommodation partners globally.
 - Improved **tool discoverability**, reducing the time to find applications by 40%.

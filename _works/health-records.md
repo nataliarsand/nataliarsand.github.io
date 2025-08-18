@@ -66,11 +66,29 @@ Three months into the project, I was brought in to help fix user experience chal
 
 We started with empathy and curiosity. I asked clinicians and support staff to walk us through patient journeys, from check-in to diagnosis to medication. We captured critical moments, constraints, and stress points. These workshops grounded everything we did.
 
+<div class="work-image-container large">
+  <img src="/assets/images/works/health-records/patient-journey-map.png" alt="Patient journey map showing care workflow from admission to discharge" class="work-image">
+  <p class="work-image-caption">Patient journey map: complete care workflow from admission to discharge with pain points highlighted</p>
+</div>
+
+
 ---
 
 #### <a id="lofi"></a>Low-Fidelity Prototyping
 
 Our first ideas were sketched and tested before any code was written. With frontend development as a skill, we moved quickly from mockups to live prototypes, validating ideas with the team in Boston and testing with nurses in Mirebalais.
+
+
+<div class="work-images-side-by-side">
+  <div class="work-image-container">
+    <img src="/assets/images/works/health-records/ui-before-prototype.png" alt="Initial prototype interface" class="work-image">
+    <p class="work-image-caption">Before: Initial prototype</p>
+  </div>
+  <div class="work-image-container">
+    <img src="/assets/images/works/health-records/ui-after-refined.png" alt="Refined interface after user feedback" class="work-image">
+    <p class="work-image-caption">After: Refined interface</p>
+  </div>
+</div>
 
 We learned fast, changed things often, and avoided waste.
 
@@ -86,6 +104,12 @@ To help the team scale and iterate efficiently, I created what we then called a 
 
 I planned and led an on-site usability testing once we were happy with our first improvements. We tested everything in context directly at the hospital with real staff. Some had never used a computer before. We learned that keyboard shortcuts were faster than mouse clicks. We used icons, large touch targets, and simplified flows to reduce cognitive load.
 
+<div class="work-image-container">
+  <img src="/assets/images/works/health-records/hospital-testing-environment.jpg" alt="Nurses using the system at Mirebalais hospital" class="work-image">
+  <p class="work-image-caption">Hospital testing: nurses using the system in the actual Mirebalais hospital setting</p>
+</div>
+
+
 We role-played patient scenarios, documented insights in video, and iterated quick to support the pain points we found.
 
 ---
@@ -96,6 +120,11 @@ We role-played patient scenarios, documented insights in video, and iterated qui
 - The system was adopted and used in real patient care, helping save lives by surfacing key data faster
 - Our design work influenced the core of OpenMRS and was later adopted in countries like Sierra Leone
 - We proved that inclusive, localised design can create global impact
+
+<div class="work-image-container">
+  <img src="/assets/images/works/health-records/system-use-india.png" alt="OpenMRS system with Mirebalais design being used in India healthcare facility" class="work-image">
+  <p class="work-image-caption">Global impact: OpenMRS system with our design improvements being used in healthcare facilities in India</p>
+</div>
 
 This was not just a project, to me, it was a privilege.
 

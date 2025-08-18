@@ -67,25 +67,49 @@ As lead designer, I shaped the vision and execution across a multidisciplinary t
 
 We designed full-funnel experiences that integrated seamlessly into the product, from first exposure on landing pages to the post-booking confirmation screen.
 
+<div class="work-image-container large">
+  <img src="/assets/images/works/referral-program/user-journey-full-funnel.png" alt="Complete referral user journey from discovery to reward" class="work-image">
+  <p class="work-image-caption">Full-funnel referral journey: from initial discovery to successful friend booking and reward</p>
+</div>
+
 - Built interaction patterns that encouraged sharing while feeling trustworthy and non-intrusive
 - Included previews of potential rewards and allowed easy access to invite tools (email, WhatsApp, social)
 - Provided confirmation and status updates so users stayed engaged with their rewards
+
+<div class="work-images-side-by-side">
+  <div class="work-image-container">
+    <img src="/assets/images/works/referral-program/desktop-referral-interface.png" alt="Desktop referral sharing interface" class="work-image">
+    <p class="work-image-caption">Desktop sharing interface</p>
+  </div>
+  <div class="work-image-container">
+    <img src="/assets/images/works/referral-program/mobile-referral-interface.png" alt="Mobile referral sharing interface" class="work-image">
+    <p class="work-image-caption">Mobile sharing interface</p>
+  </div>
+</div>
 
 #### Experimentation & Growth
 
 As an R&D team, we had freedom to test big bets.
 
+<div class="work-image-container">
+  <img src="/assets/images/works/referral-program/ab-testing-results.png" alt="A/B testing results dashboard showing conversion metrics" class="work-image">
+  <p class="work-image-caption">A/B testing results: placement, rewards, and copy optimization across markets</p>
+</div>
+
 - Ran **A/B tests** on placement, rewards, and copy to measure conversion and engagement
 - Launched experiments in multiple markets, with localised rewards and triggers
 - Advocated for and launched in-product discovery moments, increasing visibility without harming core flows
+
 
 #### Research & Validation
 
 We prioritised testing assumptions in the field.
 
+
 - Ran moderated sessions in Amsterdam and Tokyo to explore what made people excited to share
 - Validated referral mechanics and emotional drivers behind sharing Booking.com with friends
 - Used findings to fine-tune reward framing, messaging clarity, and trust signals
+
 
 ---
 
