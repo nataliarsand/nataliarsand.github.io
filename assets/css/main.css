@@ -1198,6 +1198,12 @@ main {
   border-bottom: none;
 }
 
+@media (min-width: 1200px) {
+  #hire-me .grid-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   #home {
     margin: 1rem;
