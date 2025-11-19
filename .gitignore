@@ -1,4 +1,3 @@
-_site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
@@ -22,8 +21,6 @@ Thumbs.db
 *.bak
 *.tmp
 
-# Ignore source maps
+# Ignore source maps (except in _site)
 *.map
-
-# Ignore compiled CSS (Jekyll builds this automatically)
-assets/css/main.css
+!_site/**/*.map
