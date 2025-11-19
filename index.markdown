@@ -175,7 +175,8 @@ title: Home
       <li class="pill">Print production</li>
       <li class="pill">Video production</li>
       <li class="pill">Illustrations</li>
-      <li class="pill">Marketing and social media assets</li>
+      <li class="pill">Marketing assets</li>
+      <li class="pill">Social media content</li>
       <li class="pill">Logo design</li>
       <li class="pill">Stunning visual design</li>
       <li class="pill">Full-time developer</li>
