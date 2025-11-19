@@ -17,7 +17,7 @@
     .error-code {
       font-size: 8rem;
       font-weight: 700;
-      color: $color-accent;
+      color: $color-accent-alt;
       margin: 0;
       line-height: 1;
       letter-spacing: -0.02em;
@@ -115,12 +115,12 @@
 
         li {
           a {
-            color: $color-text;
+            color: $color-accent;
             text-decoration: none;
             transition: color 0.2s ease;
 
             &:hover {
-              color: $color-accent;
+              color: $color-accent-alt;
               text-decoration: underline;
             }
           }
