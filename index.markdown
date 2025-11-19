@@ -194,7 +194,9 @@ title: Home
 
     <p>Later, as I joined tech communities and got in touch of the boom of start-ups, I took on a UX role at a startup called Engage:  where I worked with research, design, and front-end. That experience opened the door to ThoughtWorks, where I deepened my skills in strategy, facilitation, and cross-cultural consulting across India, the US, and Europe.</p>
 
-    <p>Today I work at Booking.com, where I’ve led design for both B2B and B2C products, founded the Design Operations team, and now focus on scaling Booking's Design System to support our global design community.</p>
+    <p>I spent ten years at Booking.com, where I led design for both B2B and B2C products, founded the Design Operations team, and scaled Booking's Design System to support the global design community.</p>
+
+    <p>Today, I'm taking time to explore what comes next:  building a few apps, experimenting with AI, and balancing parenthood with creative work. I'm open to the right opportunity, whether that's joining a mission-driven team or collaborating on meaningful projects.</p>
   </div>
 </section>
 
