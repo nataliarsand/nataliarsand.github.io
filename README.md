@@ -46,4 +46,4 @@ The code structure and architecture are available for reference and learning. Pl
 
 ---
 
-For inquiries: [hi@nataliarsand.com](mailto:hi@nataliarsand.com)
+For inquiries: [hi@nataliarsand.com](mailto:nataliarsand@gmail.com)

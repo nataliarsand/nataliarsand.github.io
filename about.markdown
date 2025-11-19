@@ -8,5 +8,5 @@ I'm Natalia Arsand,  a UX Design Lead based in Amsterdam, working at the interse
 
 This site is both a portfolio and a digital playground. It’s inspired by operating systems, editorial interfaces, and the quiet clarity of Nordic design,  a space to explore structure, reflect on process, and share things I’ve made with care.
 
-Want to work together, invite me to speak, or just say hi?  
-**[hi@nataliarsand.com](mailto:hi@nataliarsand.com)**
+Want to work together, invite me to speak, or just say hi?
+**[hi@nataliarsand.com](mailto:nataliarsand@gmail.com)**
