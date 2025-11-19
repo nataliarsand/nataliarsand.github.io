@@ -81,13 +81,16 @@
         transition: all 0.2s ease;
 
         &:hover {
-          background-color: rgba($color-accent, 0.1);
+          background-color: $color-accent-alt;
+          color: #fff;
+          border-color: $color-accent-alt;
           transform: translateY(-4px) scale(1.03);
           text-decoration: none;
         }
 
         &:active {
           transform: translateY(1px) scale(0.98);
+          background-color: $color-accent-alt-hover;
         }
       }
     }
