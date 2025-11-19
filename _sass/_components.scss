@@ -14,7 +14,7 @@
   font-family: 'IBM Plex Mono', monospace;
   font-size: 1rem;
   padding: 14px 24px;
-  background-color: $color-accent-alt;
+  background-color: $color-accent;
   color: #fff;
   text-decoration: none;
   border: none;
@@ -23,7 +23,7 @@
   transition: all 0.2s ease;
 
   &:hover {
-    background-color: $color-accent-hover;
+    background-color: $color-accent-alt;
     transform: translateY(-4px) scale(1.03);
     color: #fff;
     text-decoration: none;
@@ -31,7 +31,7 @@
 
   &:active {
     transform: translateY(1px) scale(0.98);
-    background-color: $color-accent-hover;
+    background-color: $color-accent-alt;
   }
 }
 
