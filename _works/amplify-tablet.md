@@ -71,12 +71,12 @@ I led **interaction design** for several core experiences on the Android-based p
 
 <div class="work-images-side-by-side">
   <div class="work-image-container">
-    <img src="/assets/images/works/amplify-tablet/teacher-dashboard-interface.png" alt="Teacher dashboard showing classroom management tools" class="work-image">
-    <p class="work-image-caption">Teacher interface: classroom management</p>
+    <img src="/assets/images/works/amplify-tablet/teacher-interface.png" alt="Teacher dashboard showing classroom management tools" class="work-image">
+    <p class="work-image-caption">Teacher interface wireframes</p>
   </div>
   <div class="work-image-container">
-    <img src="/assets/images/works/amplify-tablet/student-learning-interface.png" alt="Student interface showing lesson content" class="work-image">
-    <p class="work-image-caption">Student interface: focused learning</p>
+    <img src="/assets/images/works/amplify-tablet/student-interface.png" alt="Student interface showing lesson content" class="work-image">
+    <p class="work-image-caption">Student interface wireframes</p>
   </div>
 </div>
 

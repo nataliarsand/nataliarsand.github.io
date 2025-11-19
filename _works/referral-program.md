@@ -68,8 +68,8 @@ As lead designer, I shaped the vision and execution across a multidisciplinary t
 We designed full-funnel experiences that integrated seamlessly into the product, from first exposure on landing pages to the post-booking confirmation screen.
 
 <div class="work-image-container large">
-  <img src="/assets/images/works/referral-program/user-journey-full-funnel.png" alt="Complete referral user journey from discovery to reward" class="work-image">
-  <p class="work-image-caption">Full-funnel referral journey: from initial discovery to successful friend booking and reward</p>
+  <img src="/assets/images/works/referral-program//RAF_banner_spaced.webp" alt="Complete referral user journey from discovery to reward" class="work-image">
+  <p class="work-image-caption">Example on how Refer a Friend positioned itself.</p>
 </div>
 
 - Built interaction patterns that encouraged sharing while feeling trustworthy and non-intrusive
@@ -78,12 +78,8 @@ We designed full-funnel experiences that integrated seamlessly into the product,
 
 <div class="work-images-side-by-side">
   <div class="work-image-container">
-    <img src="/assets/images/works/referral-program/desktop-referral-interface.png" alt="Desktop referral sharing interface" class="work-image">
-    <p class="work-image-caption">Desktop sharing interface</p>
-  </div>
-  <div class="work-image-container">
-    <img src="/assets/images/works/referral-program/mobile-referral-interface.png" alt="Mobile referral sharing interface" class="work-image">
-    <p class="work-image-caption">Mobile sharing interface</p>
+    <img src="/assets/images/works/referral-program/RAF_banner.png" alt="Referral banners" class="work-image">
+    <p class="work-image-caption">Banners we had distributed across multi-platforms</p>
   </div>
 </div>
 

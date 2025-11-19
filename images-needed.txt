@@ -63,8 +63,8 @@ BODYMAP PROJECT (2 images)
 ===========================
 Folder: /assets/images/works/bodymap/
 
-10. quiz-interface-mobile.png
-    - Mobile quiz interface showing grouped thematic questions
+10. quiz-interface.png
+    - Mobile-friendly quiz interface showing grouped thematic questions
     - Demonstrate the intuitive, non-overwhelming approach
     - Show thoughtful question grouping (digestion, movement, emotions)
 

@@ -61,6 +61,7 @@ exclude:
 
 include:
   - _redirects
+  - robots.txt
 
 # ----------------------------------------------------
 # Defaults

@@ -1,157 +1,175 @@
 ---
 layout: work
-title: "Design Systems"
+title: "Design systems"
 subtitle: "Scaling design through systems, documentation, and inclusive foundations"
 description: >
-  I led and contributed to a series of initiatives that strengthened the design system at Booking.com, supporting consistency, understanding, and inclusivity across platforms. This included component design, research-driven tooling, documentation architecture, and accessibility guidance.
+  I contributed to the evolution of Booking.com’s Design System through component design, 
+  research-driven tooling, documentation improvements, and accessibility work. 
+  My focus was on strengthening foundations, reducing ambiguity, and enabling teams to design 
+  and build with clarity, consistency, and care.
 
 image: "/assets/images/design-system-hero.png"
+
 deliverables:
   - label: Components
     link: "#components"
-    description: Design and specification of complex, reusable UI elements such as nested checkboxes and bubble placement logic
+    description: Design and specification of complex, reusable UI patterns, including sort/filter indicators and nested logic
   - label: Time & Motion Study
     link: "#verify-design"
-    description: Research study evaluating our Design System’s Figma linter plugin to assess its efficiency, usefulness, and impact on design quality.
+    description: Research-led evaluation of the “Verify Design” Figma plugin to measure workflow efficiency and design quality impact
   - label: Unified Documentation
     link: "#unified-docs"
-    description: Led efforts to improve content architecture, findability, and usability, ensuring the documentation platform could scale to support adoption and learning across teams.
+    description: Audit and redesign of documentation structure to improve clarity, findability, and cross-platform alignment"
   - label: System Stories
     link: "#system-stories"
-    description: Organized a company-wide interview series capturing real stories of system use, led by DS designers through recurring 1:1 conversations.
+    description: A research initiative built around open 1:1 conversations with designers across the company to understand how they used the Design System in their day-to-day work, uncover pain points, and surface real workflows in a safe, unstructured format.
   - label: Accessibility and inclusive services
     link: "#inclusive-services"
-    description: Workshops and facilitation to embed accessibility and equity into system foundations and product practices.
+    description: Collaboration with accessibility and DEI teams to embed inclusive defaults into components and system practices
   - label: Role
-    description: Senior UX designer in the Design Systems team, responsible for system evolution and education.
+    description: Senior UX designer responsible for cross-platform system evolution and internal education
   - label: Scope
-    description: Cross-platform system work spanning design, documentation, tooling, accessibility, and research.
+    description: Component design, documentation architecture, tooling research, accessibility, and system governance
+
 team:
-  - UX Designers
-  - UX Writers
+  - UX designers
+  - UX writers
   - Researchers
   - Multi-platform engineers
   - Accessibility and DEI specialists
   - Product managers
+
 process:
-    - Component design, expansion and maintenance
-    - Design system audits
-    - Documentation audits
-    - Information architecture and taxonomy modelling
-    - Time & motion study
-    - User interviews and qualitative synthesis
-    - Accessibility reviews
-    - Design reviews and cross-functional critique sessions
-    - System governance and contribution model refinement
+  - Component design, expansion, and maintenance
+  - Design system audits
+  - Documentation audits
+  - Information architecture and taxonomy modelling
+  - Time & motion study
+  - User interviews and qualitative synthesis
+  - Accessibility reviews
+  - Design reviews and critique sessions
+  - System governance and contribution model refinement
+
 credits:
   - Booking.com
 ---
 
-### Context and Objective
 
-Booking.com’s Design System was already well established when I joined the team. With hundreds of designers working across platforms, the system needed continuous refinement to stay usable, inclusive, and aligned with evolving product needs.
+### Context and objective
 
-My contributions focused on reinforcing the system’s foundations, improving component clarity, scaling documentation, embedding accessibility, and validating new tooling through research. Each initiative was designed to reduce friction, increase adoption, and help teams build with more confidence and consistency.
+Booking.com’s Design System was well established when I joined the team, supporting hundreds of designers across multiple platforms. As the product ecosystem evolved, the system needed ongoing refinement to remain clear, scalable, and accessible.
 
----
-
-### My Role
-
-I was a senior UX designer embedded in the Design Systems team. My responsibilities included:
-
-- Designing and documenting scalable UI components for product use  
-- Partnering with engineering to align specs and technical feasibility  
-- Leading qualitative and quantitative research into system tooling  
-- Collaborating on accessibility improvements and inclusive design standards  
-- Communicating the system’s value through stories, demos, and internal education  
+My contributions focused on strengthening core patterns, improving component clarity, validating new tooling through research, refining documentation, and embedding inclusive design principles. All work aimed to reduce friction, improve consistency, and increase confidence for designers and engineers using the system.
 
 ---
 
-### Key Initiatives
+### My role
 
-#### <a id="components"></a>Components: Nested Checkboxes & Bubble Placement
+As a senior UX designer embedded in the Design System team, I was responsible for:
 
-**Why it mattered**: Complex UI components like nested checkboxes were frequently re-invented or misunderstood across teams.
-
-<div class="work-images-side-by-side">
-  <div class="work-image-container">
-    <img src="/assets/images/works/design-systems/checkbox-before-inconsistent.png" alt="Inconsistent checkbox implementations across teams" class="work-image">
-    <p class="work-image-caption">Before: Inconsistent checkbox implementations</p>
-  </div>
-  <div class="work-image-container">
-    <img src="/assets/images/works/design-systems/checkbox-after-unified.png" alt="Unified design system checkbox pattern" class="work-image">
-    <p class="work-image-caption">After: Unified design system pattern</p>
-  </div>
-</div>
-
-**What we did**:
-- Designed and documented a scalable checkbox pattern supporting grouped logic, accessibility, and flexible interaction states  
-- Created placement logic for tooltips and bubbles that respected directionality, screen boundaries, and user context  
-- Partnered with engineers to spec behaviour and edge cases across platforms
-
-  
+- Designing and documenting scalable UI components  
+- Partnering with engineers to align patterns with technical feasibility  
+- Leading qualitative and quantitative research into Design System tooling  
+- Improving accessibility and inclusive design standards  
 
 ---
 
-#### <a id="verify-design"></a>Time & Motion Study: Verify Design Plugin
+### Key initiatives
 
-**Why it mattered**: The team introduced an internal Figma plugin to improve adherence to design system specs. But we needed evidence of its impact.
+---
 
+## 1. Component patterns: sort & filter indicators  
+<a id="components"></a>
 
-**What we did**:
-- Designed and led a time & motion study comparing workflows with and without the plugin  
-- Measured time to complete tasks, number of errors, and perceived confidence  
-- Synthesised findings into actionable improvements for both plugin and process
+Complex components—especially those involving interaction logic like sorting, filtering, and nested states—were frequently reinvented across teams, leading to inconsistent behaviours and additional engineering overhead.
+
+### Why it mattered  
+Teams used different interpretations of the same components, creating inconsistent states and unclear user feedback, particularly around active or applied filters.
+
+### What I did  
+- Defined clear behavioural rules for sort vs. filter (single vs. multi-select)  
+- Updated label, icon, and indicator patterns to ensure clarity  
+- Explored indicator bubble placement options to balance hierarchy and usability  
+- Documented precise do/don’t guidance to reduce ambiguity  
+- Partnered with engineering to spec logic and edge cases  
 
 <div class="work-image-container large">
-  <img src="/assets/images/works/design-systems/study-results-dashboard.png" alt="Dashboard showing study results with time savings and error metrics" class="work-image">
-  <p class="work-image-caption">Study results: quantitative findings showing time savings, error reduction, and confidence metrics</p>
+  <img src="/assets/images/works/design-system/bubble-proposal.png" alt="Sort and filter bubble proposal explorations" class="work-image">
+  <p class="work-image-caption">
+    Example of the sort of component work I did, in this case, sort and filter indicator exploration: problem framing, assumptions, recommended behaviour, and design options aligned with system patterns.
+  </p>
 </div>
 
-  
+---
+
+## 2. Research: Verify Design plugin (time & motion study)  
+<a id="verify-design"></a>
+
+We developed an internal Figma plugin (Verify Design) to validate spacing, colour, typography, and component usage. Before recommending broad adoption, we needed to assess its impact.
+
+### Why it mattered  
+The plugin had the potential to significantly reduce design QA time and inconsistencies, but only if it genuinely improved workflows without adding friction.
+
+### What I did  
+- Designed and led a controlled time & motion study  
+- Measured time-to-complete, error count, error types, and correction confidence  
+- Compared plugin vs. no-plugin workflows across participant groups  
+- Analysed behaviours to improve plugin logic, UI, and documentation  
+- Presented findings to leadership and engineering for next iterations  
+
+<div class="work-image-container large">
+  <img src="/assets/images/works/design-system/research-tracker.png" alt="Research tracking spreadsheet for the Verify Design plugin study" class="work-image">
+  <p class="work-image-caption">
+    Research tracker used during the time & motion study. Each row captures component or property deviations observed across participants.
+  </p>
+</div>
 
 ---
 
-#### <a id="unified-docs"></a>Unified Documentation
+## 3. Unified documentation  
+<a id="unified-docs"></a>
 
-**Why it mattered**: Documentation was fragmented, inconsistent, and difficult to navigate, especially for new joiners or engineers.
+Documentation lived across different repositories, with varying standards and inconsistent levels of detail.
 
-
-**What we did**:
-- Audited all system documentation and developed a unified structure across platforms  
-- Created scalable templates and guidelines to support cross-team documentation  
-- Co-built the new platform with accessibility, searchability, and governance in mind
-
-  
-
----
-
-#### <a id="system-stories"></a>System Stories
-
-**Why it mattered**: Design systems can feel abstract. We needed to make the impact visible and relatable.
-
-**What we did**:
-- Developed a storytelling format to capture real examples of how the system improved product outcomes  
-- Published and shared stories through demos, newsletters, and onboarding sessions  
-- Used stories as a tool to teach usage, surface challenges, and celebrate alignment  
+### What I did  
+- Audited all existing documentation across platforms  
+- Designed a unified structure for interaction, visual, and content guidelines  
+- Created reusable documentation templates for cross-team adoption  
+- Co-developed a new documentation platform with improved navigation, search, and accessibility  
 
 ---
 
-#### <a id="inclusive-services"></a>Accessibility & Inclusive Services
+## 4. System stories  
+<a id="system-stories"></a>
 
-**Why it mattered**: A scalable design system must serve a diverse range of users and account for more than just compliance.
+Design Systems can become abstract when viewed only through components and documentation.  
+System Stories was created as an open, research-led initiative to understand how designers *actually* used the system in their day-to-day work.
 
-**What we did**:
-- Collaborated with accessibility and DEI leads to audit components and patterns  
-- Embedded inclusive defaults into system design decisions (e.g. labels, contrast, focus behaviour)  
-- Co-led conversations about how to build with care, especially for underrepresented or vulnerable groups  
+### What I did  
+- Ran recurring 1:1 conversations with designers across the company, using an intentionally unstructured, safe format  
+- Collected real stories about daily workflows, system usage, workarounds, and pain points  
+- Identified gaps in components, tooling, and documentation based on lived experience  
+- Synthesised insights and shared them with the Design System team to guide priorities and improvements  
+
+---
+
+## 5. Accessibility and inclusive design  
+<a id="inclusive-services"></a>
+
+A scalable system must support a wide range of user needs, beyond basic accessibility compliance.
+
+### What I did  
+- Audited core components with accessibility and DEI partners  
+- Strengthened defaults for colour, language, and focus behaviour  
+- Improved guidance around inclusive usage of patterns  
+- Facilitated discussions about responsible design practices across teams  
 
 ---
 
 ### Impact
 
-- Improved clarity and reusability of complex components across platforms  
-- Enabled faster, more confident design work through plugin tooling and better documentation  
-- Created shared language and understanding through stories and accessible documentation  
-- Strengthened the system’s foundations to support a more inclusive and equitable experience for all users
-
+- Improved clarity and reusability of complex UI components  
+- Reduced design-QA friction through plugin tooling  
+- Faster onboarding through unified documentation and structured guidance  
+- Stronger shared understanding across teams through stories and research artefacts  
+- More inclusive and accessible foundations across system components  

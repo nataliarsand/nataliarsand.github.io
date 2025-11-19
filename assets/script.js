@@ -273,5 +273,33 @@ $(function () {
             }
         });
     }
+
+    // ========== IMAGE PROTECTION ==========
+    // Prevent right-click on work images
+    const workImages = document.querySelectorAll('.work-image');
+    workImages.forEach(img => {
+        img.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        // Additional protection against dragging
+        img.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+    });
+
+    // Also protect modal images
+    if (modalImage) {
+        modalImage.addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        modalImage.addEventListener('dragstart', function(e) {
+            e.preventDefault();
+            return false;
+        });
+    }
   });
-  
