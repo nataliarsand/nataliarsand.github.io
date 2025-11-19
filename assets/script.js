@@ -114,6 +114,26 @@ $(function () {
           sectionNav.classList.remove(stickyClass);
         }
       }
+
+      // Highlight active section in navigation
+      const sections = $("section[id]");
+      let currentSection = "";
+
+      sections.each(function () {
+        const sectionTop = $(this).offset().top;
+        const sectionHeight = $(this).outerHeight();
+        const scrollPosition = scrollTop + 100; // Offset for better triggering
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          currentSection = $(this).attr("id");
+        }
+      });
+
+      // Update nav links
+      $(".section-nav a").removeClass("active");
+      if (currentSection) {
+        $(`.section-nav a[href="#${currentSection}"]`).addClass("active");
+      }
     });
 
     backToTopButton.on("click", function (e) {

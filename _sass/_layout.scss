@@ -135,10 +135,15 @@ main {
           color: $color-text-muted;
           text-decoration: none;
           transition: color 0.2s ease;
-  
+
           &:hover,
           &:focus {
             color: $color-accent;
+          }
+
+          &.active {
+            color: $color-accent;
+            font-weight: 600;
           }
         }
       }
