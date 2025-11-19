@@ -173,6 +173,32 @@ $(function () {
   });
 
   document.addEventListener("DOMContentLoaded", function () {
+    // ========== FORBIDDEN PATH PROTECTION ==========
+    const forbiddenPaths = [
+      '/assets/images/works/internal-app/',
+      '/assets/images/works/referral-program/',
+      '/assets/images/works/amplify-tablet/',
+      '/_sass/',
+      '/_includes/',
+      '/_layouts/',
+      '/.git/',
+      '/.jekyll-cache/',
+      '/node_modules/'
+    ];
+
+    const currentPath = window.location.pathname;
+
+    // Check if current path matches any forbidden path
+    const isForbidden = forbiddenPaths.some(forbidden =>
+      currentPath.startsWith(forbidden) ||
+      currentPath.includes(forbidden)
+    );
+
+    if (isForbidden) {
+      // Redirect to 404 page
+      window.location.replace('/404.html');
+    }
+
     const toggleButton = document.getElementById("theme-toggle");
     const editorialThemeClass = "editorial-theme";
     const defaultThemeClass = "default-theme";
