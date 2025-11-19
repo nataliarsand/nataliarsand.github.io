@@ -24,3 +24,6 @@ Thumbs.db
 
 # Ignore source maps
 *.map
+
+# Ignore compiled CSS (Jekyll builds this automatically)
+assets/css/main.css
