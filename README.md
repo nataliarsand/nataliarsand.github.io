@@ -4,6 +4,8 @@ Personal portfolio website showcasing UX design work, case studies, and professi
 
 **Live Site:** [https://nataliarsand.github.io](https://nataliarsand.github.io)
 
+> **Note:** This repository is public for transparency and learning purposes. The code structure is available for reference. **DO NOT use my portfolio content, case studies, or personal information.**
+
 ---
 
 ## About
