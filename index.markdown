@@ -9,7 +9,7 @@ title: Home
       <img src="{{ '/assets/images/natalia.svg' | relative_url }}" class="intro-image" alt="Natalia Arsand profile image"/>
       <h2 class="hidden">Hi, I’m Natalia.</h2>
       <p>I’m a <strong>UX Design Lead</strong> working at the intersection of strategy, systems, and craft. I design for impact. Thoughtful, scalable, and always human-centered.</p>
-      <p>This site is my digital OS, it's a space to explore structure, reflect on process, and highlight work I am proud of.</p>
+      <p>This site is my digital OS. I use this space to explore structure, reflect on process, and highlight work I am proud of.</p>
     </div>
     <div id="works-section">
       {% include components/folder-link.html url="/works" title="Selected Works" %}
@@ -24,7 +24,7 @@ title: Home
 
 <section id="about">
   <h2 tabindex="0">Design approach</h2>
-  <p class="section-intro">I approach design as a practice of systems thinking, honest collaboration, and continuous refinement. Here are the principles I follow to stay anchored in the impact I create through my work.
+  <p class="section-intro">I approach design as a practice of systems thinking, collaboration, and continuous refinement. Here are the principles I follow to ensure impact through my work.
 </p>
 
 
@@ -32,26 +32,22 @@ title: Home
     <div class="card">
         <img src="{{ '/assets/images/icons/discover.svg' | relative_url }}" alt="Discover icon" />
         <h3>Discovery & Collaboration</h3>
-        <p>I bring people together early, across roles and perspectives, to frame problems clearly and align once, avoiding the cost of fragmented decisions later. I’ve got my ways of making even the busiest execs show up and engage when I run discovery workshops.</p>
-
-
-
+        <p>I bring people together early, across roles and perspectives, to frame problems clearly and align once, avoiding the cost of fragmented decisions later. I’ve got my ways of making even the busiest execs show up and engage during my workshops.</p>
     </div>
     <div class="card">
         <img src="{{ '/assets/images/icons/feedback.svg' | relative_url }}" alt="Feedback icon" />
         <h3>Design is Dialog</h3>
-        <p>No designer gets it right the first time. That’s why I never work in isolation. I share early and often to show progress and invite critique that surface ideas I wouldn’t reach alone. Even unused feedback reveals assumptions or gaps worth seeing.</p>
-
+        <p>No designer gets it right the first time. That’s why I don't work in isolation. I share early and often to discuss progress and invite critique that surface ideas I wouldn’t reach alone. Even unused feedback reveals assumptions or gaps worth seeing.</p>
     </div>
     <div class="card">
       <img src="{{ '/assets/images/icons/improve.svg' | relative_url }}" alt="Continuous Improvement icon" />
       <h3>Iteration is Commitment</h3>
-      <p>Design isn’t static and a problem is never fully solved. Our solutions must evolve as we deepen our understanding of the problem, the customer, and their needs. As long as it remains relevant to the business, we should strive to continuously improve it.</p>
+      <p>Design isn’t static and a problem is never fully solved. Solutions must evolve as we deepen our understanding of the problem, the customer, and their needs. As long as it remains relevant to the business, we should strive to continuously improve it.</p>
     </div>
     <div class="card">
       <img src="{{ '/assets/images/icons/empathy.svg' | relative_url }}" alt="Human-centered icon" />
-      <h3>Ethical, Human-Centered Always</h3>
-      <p>Products exist to solve real problems for real people. It’s easy to get lost in business goals and forget that. I remind people by asking the uncomfortable questions about access, ethics, and impact. As designers, we’re gatekeepers of the change we wish to see in the world.</p>
+      <h3>Ethical, Human-Centered, Always</h3>
+      <p>Products exist to solve real problems for real people. It’s easy to get lost in business goals and KPIs. I'm often the one asking the uncomfortable questions about access, ethics, and impact. As designers, we’re gatekeepers of the change we wish to see in the world.</p>
 
     </div>
   </div>
@@ -70,11 +66,12 @@ title: Home
   <div class="grid-cards">
     <div class="card">
       <h3>Strategic Discovery & Facilitation</h3>
-      <p>I help teams get unstuck at the very beginning by aligning on purpose, asking the right questions, and facilitating workshops that clarify what matters, from user needs to business priorities. I frame MVPs not as minimal builds, but as high-learning opportunities with real delivery value.</p>
+      <p>I help teams get unstuck early by running hands-on, purpose focused workshops to create alignemt, uncover open questions, and align user needs to business priorities. I consolidate findings into MVP plans that offer high-learning opportunities with real delivery value.</p>
       <ul class="pills">
         <li class="pill">Miro</li>
         <li class="pill">FigJam</li>
         <li class="pill">Design Sprints</li>
+        <li class="pill">Product Inception</li>
         <li class="pill">Lean UX</li>
         <li class="pill">Facilitation</li>
         <li class="pill">Workshops</li>
@@ -82,15 +79,14 @@ title: Home
         <li class="pill">Alignment</li>
       </ul>
     </div>
-
     <div class="card">
       <h3>Fluency in Code & Tech Conversations</h3>
-      <p>My background in front-end development helps me prototype fast, understand engineering constraints, and avoid design-theoretical dead ends. I don’t build production code, but I speak the language fluently and often bridge the gap between design intent and technical feasibility.</p>
+      <p>My background in software development helps me prototype fast, understand engineering constraints, and avoid design-theoretical dead ends. I don’t build production code (often), but I speak the language fluently and often bridge the gap between product expectations and technical feasibility.</p>
       <ul class="pills">
         <li class="pill">HTML</li>
         <li class="pill">CSS/SCSS</li>
         <li class="pill">JavaScript</li>
-        <li class="pill">React JS</li>
+        <li class="pill">React/Vue</li>
         <li class="pill">Git</li>
         <li class="pill">Github</li>
         <li class="pill">Gitlab</li>
@@ -99,10 +95,9 @@ title: Home
         <li class="pill">✨ Vibe Coding</li>
       </ul>
     </div>
-
     <div class="card">
       <h3>Applied AI with Integrity</h3>
-      <p>I work with AI as a creative partner, using it for synthesis, ideation, and acceleration, but never blindly. I take time to understand a tool’s boundaries, train it on the right inputs, and remain accountable for its outputs. I believe in using AI to enhance, not replace, the thinking behind the work.</p>
+      <p>I work with AI as a creative partner, using it for synthesis, ideation, and acceleration, and never blindly. I take time to understand a tool’s boundaries, train it on the right inputs, and remain accountable for its outputs. I believe AI can enhance, not replace, the thinking behind the work.</p>
       <ul class="pills">
         <li class="pill">ChatGPT</li>
         <li class="pill">Gemini CLI</li>
@@ -112,10 +107,9 @@ title: Home
         <li class="pill">Output Review</li>
       </ul>
     </div>
-
     <div class="card">
       <h3>Cross-Disciplinary Bridging</h3>
-      <p>I often find myself translating between product strategy, business logic, and technical delivery. Whether it’s clarifying vague requirements or turning fuzzy goals into concrete artifacts, I bring structure that helps teams align across silos. I love connecting the dots and keeping things moving.</p>
+      <p>I often find myself translating between product strategy, business logic, and technical delivery. That means clarifying vague requirements or turning fuzzy goals into concrete artifacts, I bring structure that helps teams align across silos. I love connecting the dots and keeping things moving.</p>
       <ul class="pills">
         <li class="pill">Trello</li>
         <li class="pill">Jira</li>
@@ -124,25 +118,24 @@ title: Home
         <li class="pill">Product Management</li>
         <li class="pill">Stakeholder Alignment</li>
         <li class="pill">Design Reviews</li>
+        <li class="pill">Team ceremonies (code reviews/demos/retrospectives)</li>
       </ul>
     </div>
-
     <div class="card">
       <h3>Information Architecture & Semantics</h3>
-      <p>I’m obsessed with context and clarity, both in how information is structured and how it's presented. That means caring about navigation, labeling, hierarchy, and even the semantics of code. Good IA is invisible but powerful, it enables conversations to flow, both within teams and with customers.</p>
+      <p>I’m obsessed with context and clarity, both in how information is structured and how it's presented. That means caring about navigation, labeling, hierarchy, and even code semantics. Good IA is invisible but powerful, it enables conversations to flow within teams, in code, and with customers.</p>
       <ul class="pills">
         <li class="pill">Sitemaps</li>
         <li class="pill">Usability testing</li>
         <li class="pill">Diagrams</li>
         <li class="pill">Accessibility</li>
         <li class="pill">Component Libraries</li>
-        <li class="pill">Semantic HTML</li>
+        <li class="pill">Software architecture</li>
       </ul>
     </div>
-
     <div class="card">
       <h3>Reliable Execution & Delivery</h3>
-      <p>I don’t disappear after ideation, in fact, handoff is one of my favorite parts. I care about clearly communicating design intent so engineers can build with ease. I stay through QA, stakeholder sign-off, and final tweaks to make sure it lands well. Design is only done when it’s in the hands of the customer, not just in a Figma frame.</p>
+      <p>I don’t disappear after ideation, handoff is actually one of my favorite parts. I like to ensure engineers understand what we are trying to build and why, and can work with ease and ownership without back and forth and requirements changing halfway. Design is only done when it’s in the hands of the customer, not in a Figma frame.</p>
       <ul class="pills">
         <li class="pill">Design System</li>
         <li class="pill">Handoff</li>
@@ -152,6 +145,7 @@ title: Home
         <li class="pill">Usability testing</li>
         <li class="pill">Mobile-first</li>
         <li class="pill">Accessibility</li>
+        <li class="pill">UX/Dev pairing</li>
       </ul>
     </div>
   </div>
