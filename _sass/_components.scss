@@ -290,6 +290,10 @@
       font-size: 0.8rem;
     }
   }
+
+  &.tall .work-image-container .work-image {
+    height: 500px;
+  }
 }
 
 // ========== IMAGE MODAL ==========

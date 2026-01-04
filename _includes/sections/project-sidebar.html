@@ -46,7 +46,7 @@
         {% endfor %}
 
         <h3>Personal</h3>
-        {% assign personal_titles = "BodyMap: Dosha Questionnaire,Mama Circle" | split: "," %}
+        {% assign personal_titles = "Start Ashtanga,Julia Sorts,BodyMap: Dosha Questionnaire,Mama Circle" | split: "," %}
         {% for title in personal_titles %}
           {% assign work = site.works | where: "title", title | first %}
           {% if work %}
