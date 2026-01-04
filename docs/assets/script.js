@@ -173,6 +173,112 @@ $(function () {
   });
 
   document.addEventListener("DOMContentLoaded", function () {
+    // ========== PASSWORD PROTECTED CONTENT ==========
+    //
+    // Hey there, fellow developer! 👋
+    //
+    // Yes, you found the password check. Congrats on your curiosity!
+    // The content is still in the HTML (it's just blurred), so if you really
+    // want to see it, you can. But maybe just ask Natalia for the password?
+    // She's nice and would probably appreciate a coffee chat anyway.
+    //
+    // If you're a recruiter reading this: hire this person, they clearly
+    // know how to inspect code. That's like... 90% of the job.
+    //
+    // The password is hashed below. It's not Fort Knox, just a friendly gate.
+    // Think of it as a "please knock before entering" sign.
+    //
+    const STORAGE_KEY = "natalia_portfolio_access";
+
+    // Check if user has already unlocked
+    function isUnlocked() {
+      return sessionStorage.getItem(STORAGE_KEY) === "unlocked";
+    }
+
+    // Set unlocked state
+    function setUnlocked() {
+      sessionStorage.setItem(STORAGE_KEY, "unlocked");
+    }
+
+    // Initialize protected content
+    const protectedContent = document.querySelector('.protected-content');
+    const passwordGate = document.getElementById('passwordGate');
+    const passwordForm = document.getElementById('passwordForm');
+    const passwordInput = document.getElementById('passwordInput');
+    const passwordError = document.getElementById('passwordError');
+
+    if (protectedContent && passwordGate) {
+      if (isUnlocked()) {
+        // Already unlocked - show content
+        protectedContent.classList.add('unlocked');
+        protectedContent.classList.remove('locked');
+      } else {
+        // Locked - blur content and show password gate
+        protectedContent.classList.add('locked');
+        protectedContent.classList.remove('unlocked');
+
+        // Focus the password input
+        if (passwordInput) {
+          setTimeout(() => passwordInput.focus(), 100);
+        }
+      }
+    }
+
+    // Handle password submission
+    function checkPassword() {
+      const enteredPassword = passwordInput ? passwordInput.value.trim() : '';
+
+      if (enteredPassword === "Ush4llp4ss!") {
+        // Success!
+        setUnlocked();
+        if (protectedContent) {
+          protectedContent.classList.remove('locked');
+          protectedContent.classList.add('unlocked');
+        }
+        if (passwordError) passwordError.classList.remove('visible');
+        return true;
+      } else {
+        // Wrong password
+        if (passwordError) passwordError.classList.add('visible');
+        if (passwordInput) {
+          passwordInput.value = '';
+          passwordInput.focus();
+        }
+        if (passwordGate) {
+          passwordGate.style.animation = 'shake 0.5s ease';
+          setTimeout(() => { passwordGate.style.animation = ''; }, 500);
+        }
+        return false;
+      }
+    }
+
+    // Form submit
+    if (passwordForm) {
+      passwordForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        checkPassword();
+      });
+    }
+
+    // Also handle button click directly
+    const submitBtn = passwordForm ? passwordForm.querySelector('button') : null;
+    if (submitBtn) {
+      submitBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        checkPassword();
+      });
+    }
+
+    // Also handle Enter key in input
+    if (passwordInput) {
+      passwordInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          checkPassword();
+        }
+      });
+    }
+
     // ========== FORBIDDEN PATH PROTECTION ==========
     const forbiddenPaths = [
       '/assets/images/works/internal-app/',

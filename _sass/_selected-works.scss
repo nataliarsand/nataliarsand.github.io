@@ -1,6 +1,151 @@
 @use "variables" as *;
 
 // ========================
+// PROTECTED CONTENT STYLES
+// ========================
+
+// Lock icon in sidebar and works index
+.protected-icon,
+.work-sidebar i.protected-icon,
+.folder-link i.protected-icon {
+  font-size: 0.55rem !important;
+  margin-left: 0.4rem !important;
+  color: $color-text-muted;
+  opacity: 0.6;
+}
+
+// Password gate overlay - shows in content area only
+.password-gate {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  min-height: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+// Only show when locked
+.protected-content.locked .password-gate {
+  display: flex;
+}
+
+// Hide ALL content when locked except password gate
+.protected-content.locked > *:not(.password-gate) {
+  display: none !important;
+}
+
+.password-gate-content {
+  text-align: center;
+  padding: 3rem;
+  max-width: 400px;
+
+  .password-gate-icon {
+    font-size: 3rem;
+    color: $color-accent-alt;
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-primary;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    color: $color-secondary;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.password-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  input[type="password"] {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid $color-border;
+    border-radius: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.95rem;
+    background: $color-surface;
+    color: $color-text;
+    transition: border-color 0.2s ease;
+
+    &:focus {
+      outline: none;
+      border-color: $color-accent;
+    }
+
+    &::placeholder {
+      color: $color-text-muted;
+    }
+  }
+
+  button {
+    padding: 0.75rem 1.5rem;
+    background: $color-accent;
+    color: $color-text-inverse;
+    border: none;
+    border-radius: 6px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease;
+
+    &:hover {
+      background: $color-accent-hover;
+    }
+  }
+}
+
+.password-error {
+  color: $color-error;
+  font-size: 0.875rem;
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
+
+.password-hint {
+  font-size: 0.875rem;
+  color: $color-text-muted;
+  margin-top: 1.5rem;
+
+  a {
+    color: $color-accent;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Protected content container
+.protected-content {
+  position: relative;
+
+  &.locked {
+    width: 960px;
+    max-width: 960px;
+  }
+}
+
+// Shake animation for wrong password
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+
+// ========================
 // SELECTED WORKS SECTION
 // ========================
 

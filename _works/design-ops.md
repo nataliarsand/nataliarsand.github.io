@@ -1,6 +1,7 @@
 ---
 layout: work
 title: "Design Operations"
+protected: true
 subtitle: "Building tools, processes, and shared practices to support a growing design organisation"
 description: >
   As Booking.com scaled its design organisation, I helped establish and lead DesignOps initiatives that improved knowledge sharing,

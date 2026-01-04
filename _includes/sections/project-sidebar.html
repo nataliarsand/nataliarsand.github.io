@@ -10,13 +10,27 @@
         <option value="">Select a project</option>
         {% assign all_works = site.works | sort: "title" %}
         {% for work in all_works %}
-          <option value="{{ work.url }}" {% if page.url == work.url %}selected{% endif %}>{{ work.title }}</option>
+          <option value="{{ work.url }}" {% if page.url == work.url %}selected{% endif %} {% if work.protected %}data-protected="true"{% endif %}>{{ work.title }}{% if work.protected %} 🔒{% endif %}</option>
         {% endfor %}
       </select>
     </nav>
 
     <nav class="folders desktop-only-folders" aria-label="Project Folders">
       <ul>
+        <h3>Personal</h3>
+        {% assign personal_titles = "Start Ashtanga,Julia Sorts,BodyMap: Dosha Questionnaire,Mama Circle" | split: "," %}
+        {% for title in personal_titles %}
+          {% assign work = site.works | where: "title", title | first %}
+          {% if work %}
+          <li class="project-item {% if page.url == work.url %}selected{% endif %}">
+            <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
+              <img src="/assets/images/folder.png" alt="" class="folder-icon" aria-hidden="true">
+              <span class="project-title">{{ work.title }}</span>
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+
         <h3>Booking.com</h3>
         {% assign booking_titles = "Design systems,Design Operations,Referral Program,Booking partnerside App Store" | split: "," %}
         {% for title in booking_titles %}
@@ -26,6 +40,7 @@
             <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
               <img src="/assets/images/folder.png" alt="" class="folder-icon" aria-hidden="true">
               <span class="project-title">{{ work.title }}</span>
+              {% if work.protected %}<i class="fa-solid fa-lock protected-icon" aria-label="Password protected"></i>{% endif %}
             </a>
           </li>
           {% endif %}
@@ -40,20 +55,7 @@
             <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
               <img src="/assets/images/folder.png" alt="" class="folder-icon" aria-hidden="true">
               <span class="project-title">{{ work.title }}</span>
-            </a>
-          </li>
-          {% endif %}
-        {% endfor %}
-
-        <h3>Personal</h3>
-        {% assign personal_titles = "Start Ashtanga,Julia Sorts,BodyMap: Dosha Questionnaire,Mama Circle" | split: "," %}
-        {% for title in personal_titles %}
-          {% assign work = site.works | where: "title", title | first %}
-          {% if work %}
-          <li class="project-item {% if page.url == work.url %}selected{% endif %}">
-            <a href="{{ work.url }}" class="project-name" {% if page.url == work.url %}aria-current="page"{% endif %}>
-              <img src="/assets/images/folder.png" alt="" class="folder-icon" aria-hidden="true">
-              <span class="project-title">{{ work.title }}</span>
+              {% if work.protected %}<i class="fa-solid fa-lock protected-icon" aria-label="Password protected"></i>{% endif %}
             </a>
           </li>
           {% endif %}

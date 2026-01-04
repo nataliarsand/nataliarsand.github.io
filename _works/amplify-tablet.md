@@ -1,6 +1,7 @@
 ---
 layout: work
 title: "Amplify Tablet"
+protected: true
 subtitle: "Rethinking classroom learning through a teacher–student tablet experience"
 description: >
   A cross-continental collaboration to design in-class tablet software that empowers teachers to manage classrooms and personalise learning,

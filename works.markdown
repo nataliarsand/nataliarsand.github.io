@@ -10,7 +10,7 @@ main_id: selected-works
     <div class="works-grid">
       {% assign sorted_works = site.works | sort: 'title' %}
       {% for work in sorted_works %}
-        {% include components/folder-link.html url=work.url image="/assets/images/folder.png" alt="folder-icon" title=work.title %}
+        {% include components/folder-link.html url=work.url image="/assets/images/folder.png" alt="folder-icon" title=work.title protected=work.protected %}
       {% endfor %}
     </div>
   </div>

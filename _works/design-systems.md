@@ -1,6 +1,7 @@
 ---
 layout: work
 title: "Design systems"
+protected: true
 subtitle: "Scaling design through systems, documentation, and inclusive foundations"
 description: >
   I contributed to Booking.com's Design System through component design, research-driven tooling, documentation improvements, and accessibility work.

@@ -1,6 +1,7 @@
 ---
 layout: work
 title: "Booking partnerside App Store"
+protected: true
 subtitle: "Improving access to third-party tools through a unified platform"
 description: >
   The partnerside App Store gave accommodation partners a structured way to discover and access third-party tools integrated with Booking.com.

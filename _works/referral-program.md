@@ -1,6 +1,7 @@
 ---
 layout: work
 title: "Referral Program"
+protected: true
 subtitle: "Boosting Booking.com adoption through peer-to-peer referrals"
 description: >
   I led the design of the Refer a Friend program at Booking.com from concept to implementation across desktop, mobile web, and apps.

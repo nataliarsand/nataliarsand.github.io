@@ -1,6 +1,7 @@
 ---
 layout: work
 title: "Digital Health Records in Haiti"
+protected: true
 subtitle: "Designing digital healthcare for and with the people of Haiti"
 description: >
   My most meaningful project to date: co-creating a digital medical records system at Haiti's largest hospital,

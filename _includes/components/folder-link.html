@@ -1,4 +1,4 @@
 <a href="{{ include.url }}" class="folder-link">
   <img src="{{ include.image | default: '/assets/images/folder.png' }}" alt="" class="folder-icon" aria-hidden="true">
-  <p class="folder-title">{{ include.title }}</p>
+  <p class="folder-title">{{ include.title }}{% if include.protected %}<i class="fa-solid fa-lock protected-icon" aria-label="Password protected"></i>{% endif %}</p>
 </a>
