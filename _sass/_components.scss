@@ -897,3 +897,131 @@
   }
 }
 
+// ========== CAREER LAYOUT ==========
+.career-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  .about-content {
+    max-width: 57%;
+  }
+}
+
+// ========== CAREER TIMELINE ==========
+.career-timeline {
+  flex: 0 0 280px;
+  background: $color-surface-alt;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+  padding: 1.25rem;
+}
+
+.timeline-header {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: $color-text-muted;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid $color-border;
+}
+
+.timeline-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba($color-border, 0.5);
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  &:first-of-type {
+    .timeline-company {
+      color: $color-accent-hover;
+    }
+  }
+}
+
+.timeline-date {
+  display: block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: $color-text-muted;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.2rem;
+}
+
+.timeline-company {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $color-primary;
+  margin: 0 0 0.15rem 0;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s ease;
+
+    &:hover {
+      color: $color-accent;
+    }
+
+    &::after {
+      content: ' ↗';
+      font-size: 0.7em;
+      opacity: 0.5;
+    }
+  }
+}
+
+.timeline-roles {
+  font-size: 0.8rem;
+  color: $color-secondary;
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 900px) {
+  .career-layout {
+    flex-direction: column;
+    gap: 2rem;
+
+    .about-content {
+      max-width: 100%;
+    }
+  }
+
+  .career-timeline {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline-header {
+    font-size: 0.65rem;
+  }
+
+  .timeline-item {
+    padding: 0.6rem 0;
+  }
+
+  .timeline-date {
+    font-size: 0.6rem;
+  }
+
+  .timeline-company {
+    font-size: 0.8rem;
+  }
+
+  .timeline-roles {
+    font-size: 0.75rem;
+  }
+}
+

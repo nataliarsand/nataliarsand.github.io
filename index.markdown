@@ -180,23 +180,54 @@ title: Home
 
 
 <section id="more-about">
-  <div class="about-content">
-    <h2 tabindex="0">Career Journey</h2>
-    <p>I’ve always been drawn to design:  not just how things look, but how they work and why. I studied both Graphic Design and Systems Analysis, but most of what I know I learned through experience: building, breaking, iterating.</p>
+  <h2 tabindex="0">Career Journey</h2>
+  <div class="career-layout">
+    <div class="about-content">
+      <p>I've always been drawn to design:  not just how things look, but how they work and why. I studied both Graphic Design and Systems Analysis, but most of what I know I learned through experience: building, breaking, iterating.</p>
 
-    <p>I started at 16, working as a Webmaster in a small countryside tech company. I spent my teenage years immersed in the internet, fascinated by its creative and connective power. By 18, I joined Dell, working on the US platform and helping migrate a massive CMS using HTML, CSS, XML, JavaScript, and C#.</p>
+      <p>I started at 16, working as a Webmaster in a small countryside tech company. I spent my teenage years immersed in the internet, fascinated by its creative and connective power. By 18, I joined Dell, working on the US platform and helping migrate a massive CMS using HTML, CSS, XML, JavaScript, and C#.</p>
 
-    <p>Later, as I joined tech communities and got in touch of the boom of start-ups, I took on a UX role at a startup called Engage:  where I worked with research, design, and front-end. That experience opened the door to ThoughtWorks, where I deepened my skills in strategy, facilitation, and cross-cultural consulting across India, the US, and Europe.</p>
+      <p>Later, as I joined tech communities and got in touch of the boom of start-ups, I took on a UX role at a startup called Engage:  where I worked with research, design, and front-end. That experience opened the door to ThoughtWorks, where I deepened my skills in strategy, facilitation, and cross-cultural consulting across India, the US, and Europe.</p>
 
-    <p>I spent ten years at Booking.com, where I led design for both B2B and B2C products, founded the Design Operations team, and scaled Booking's Design System to support the global design community.</p>
+      <p>I spent ten years at Booking.com, where I led design for both B2B and B2C products, founded the Design Operations team, and scaled Booking's Design System to support the global design community.</p>
 
-    <p>Today, I'm taking time to explore what comes next:  building a few apps, experimenting with AI, and balancing parenthood with creative work. I'm open to the right opportunity, whether that's joining a mission-driven team or collaborating on meaningful projects.</p>
+      <p>Today, I'm taking time to explore what comes next:  building a few apps, experimenting with AI, and balancing parenthood with creative work. I'm open to the right opportunity, whether that's joining a mission-driven team or collaborating on meaningful projects.</p>
+    </div>
+
+    <aside class="career-timeline">
+      <h3 class="timeline-header">Work Experience</h3>
+      <div class="timeline-item">
+        <span class="timeline-date">Oct 2015 – 2025</span>
+        <h4 class="timeline-company"><a href="https://www.booking.com" target="_blank" rel="noopener">Booking.com</a></h4>
+        <p class="timeline-roles">Senior/Lead UX · Design Manager · Design Operations</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">Oct 2012 – Aug 2015</span>
+        <h4 class="timeline-company"><a href="https://www.thoughtworks.com" target="_blank" rel="noopener">ThoughtWorks</a></h4>
+        <p class="timeline-roles">UX Designer · Agile Consultant · Frontend Developer</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">Jun 2011 – Oct 2012</span>
+        <h4 class="timeline-company">Engage</h4>
+        <p class="timeline-roles">Frontend Developer · UX Designer</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">Mar 2009 – Jun 2011</span>
+        <h4 class="timeline-company"><a href="https://www.dell.com" target="_blank" rel="noopener">Dell Inc.</a></h4>
+        <p class="timeline-roles">Frontend Developer</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">Feb 2008 – Feb 2009</span>
+        <h4 class="timeline-company">TCA Informática</h4>
+        <p class="timeline-roles">Webmaster</p>
+      </div>
+    </aside>
   </div>
 </section>
 
 <section id="hire-me">
   <h2 tabindex="0">Let’s Work Together</h2>
-  <p class="section-intro">I’m open to good work with good people, whether that means shaping a new idea, mentoring a fellow designer, or joining a mission-driven team that cares about what they’re building.</p>
+  <p class="section-intro">I’m open to good work with good people, shaping new ideas, mentoring a fellow designer, or joining a mission-driven team that cares about what they’re building.</p>
 
   <div class="grid-cards">
     <div class="card">
@@ -212,11 +243,11 @@ title: Home
     <div class="card">
       <img src="{{ '/assets/images/icons/job.svg' | relative_url }}" alt="Job opportunities icon" />
       <h3>Job Opportunities</h3>
-      <p>Looking for a lead designer who can work across systems, strategy, and team alignment? I’d love to hear about what you’re building.</p>
+      <p>Looking for a lead designer who can work across systems, strategy, and team alignment? I’d love to hear what you’re building.</p>
     </div>
   </div>
 
   <div class="contact">
-    <a href="mailto:nataliarsand@gmail.com" class="cta-button">Hire me</a>
+    <a href="mailto:nataliarsand@gmail.com" class="cta-button">Get in touch</a>
   </div>
 </section>
