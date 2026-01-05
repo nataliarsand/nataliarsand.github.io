@@ -12,9 +12,10 @@ section {
 
 @media screen and (max-width: 768px) {
   section {
-    padding: 2.5rem 1.25rem;
+    padding: 2.5rem 1rem;
     max-width: 100%;
-    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
   }
 }
 

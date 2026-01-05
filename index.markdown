@@ -118,7 +118,7 @@ title: Home
         <li class="pill">Product Management</li>
         <li class="pill">Stakeholder Alignment</li>
         <li class="pill">Design Reviews</li>
-        <li class="pill">Team ceremonies (code reviews/demos/retrospectives)</li>
+        <li class="pill">Team ceremonies (code reviews/demos/retros)</li>
       </ul>
     </div>
     <div class="card">

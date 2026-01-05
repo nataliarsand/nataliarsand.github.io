@@ -94,37 +94,39 @@
   }
 }
 
-// === SECTION-SPECIFIC GRID CONFIGS ===
-#about .grid-cards {
-  grid-template-columns: repeat(2, 1fr);
+// === SECTION-SPECIFIC GRID CONFIGS (Desktop only) ===
+@media (min-width: 769px) {
+  #about .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
 
-  .card:nth-child(2n) {
-    border-right: none;
+    .card:nth-child(2n) {
+      border-right: none;
+    }
+    .card:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
   }
-  .card:nth-last-child(-n+2) {
-    border-bottom: none;
-  }
-}
 
-#my-craft .grid-cards {
-  grid-template-columns: repeat(2, 1fr);
+  #my-craft .grid-cards {
+    grid-template-columns: repeat(2, 1fr);
 
-  .card:nth-child(2n) {
-    border-right: none;
+    .card:nth-child(2n) {
+      border-right: none;
+    }
+    .card:nth-last-child(-n+2) {
+      border-bottom: none;
+    }
   }
-  .card:nth-last-child(-n+2) {
-    border-bottom: none;
-  }
-}
 
-#hire-me .grid-cards {
-  grid-template-columns: repeat(3, 1fr);
+  #hire-me .grid-cards {
+    grid-template-columns: repeat(3, 1fr);
 
-  .card:nth-child(3n) {
-    border-right: none;
-  }
-  .card:nth-last-child(-n+3) {
-    border-bottom: none;
+    .card:nth-child(3n) {
+      border-right: none;
+    }
+    .card:nth-last-child(-n+3) {
+      border-bottom: none;
+    }
   }
 }
 
@@ -149,11 +151,11 @@
   .grid-cards {
     grid-template-columns: 1fr !important;
     max-width: 100%;
+    width: 100%;
     box-sizing: border-box;
   }
 
   .grid-cards .card {
-    border-right: 1px solid $color-primary;
     max-width: 100%;
     box-sizing: border-box;
   }
@@ -165,7 +167,7 @@
   #about .grid-cards .card,
   #my-craft .grid-cards .card,
   #hire-me .grid-cards .card {
-    border-right: 0;
+    border-right: none;
     border-bottom: 1px solid $color-primary !important;
   }
   #about .grid-cards .card:last-child,
@@ -176,11 +178,17 @@
 
   .pills {
     max-width: 100%;
+    overflow: hidden;
   }
 
   .pill {
     max-width: 100%;
     word-break: break-word;
+    white-space: normal;
+  }
+
+  .card {
+    overflow: hidden;
   }
 
   #works-section {
