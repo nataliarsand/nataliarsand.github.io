@@ -43,7 +43,7 @@ collaboration:
 
 ### Impact
 
-- Deployed live at [juliasorts.com](https://juliasorts.com)
+- Deployed live at <a href="https://juliasorts.com" target="_blank" rel="noopener">juliasorts.com</a>
 - Built with React + Vite, optimized for performance
 - SEO optimized for discoverability
 

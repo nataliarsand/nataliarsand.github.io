@@ -55,7 +55,7 @@ collaboration:
 
 ### Impact
 
-- Live at [startashtanga.org](https://www.startashtanga.org)
+- Live at <a href="https://www.startashtanga.org" target="_blank" rel="noopener">startashtanga.org</a>
 - Built with React, TypeScript, Vite, and Tailwind CSS
 - Growing community of contributors and practitioners
 
