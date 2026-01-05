@@ -463,4 +463,38 @@ $(function () {
             return false;
         });
     }
+
+    // ========== LAZY LOAD ANIMATIONS ==========
+    const lazyElements = document.querySelectorAll(
+        '#home > section:not(#main-intro) > *:not(.section-nav):not(h2), ' +
+        '#selected-works .content > h2, ' +
+        '#selected-works .content > h3, ' +
+        '#selected-works .content > p, ' +
+        '#selected-works .content > .paper-showcase, ' +
+        '#selected-works .content > .device-showcase, ' +
+        '#selected-works .content > .work-image, ' +
+        '#selected-works .content > .sticky-note, ' +
+        '#selected-works .content > ul'
+    );
+
+    if (lazyElements.length > 0) {
+        lazyElements.forEach((el, index) => {
+            el.classList.add('lazy-hidden');
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('lazy-visible');
+                    entry.target.classList.remove('lazy-hidden');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15,
+            rootMargin: '0px 0px -30px 0px'
+        });
+
+        lazyElements.forEach(el => observer.observe(el));
+    }
   });
