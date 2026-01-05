@@ -220,32 +220,33 @@
         <section class="content protected-content locked" data-protected="true">
             
             <!-- Password Gate Overlay -->
-            <!-- Yes, you found it. If you can read it, well done. But maybe drop me a message anyway? ☕ -->
-            <div class="password-gate" id="passwordGate">
-                <div class="password-gate-content">
-                    <i class="fa-solid fa-lock password-gate-icon"></i>
-                    <h2>This case study is protected</h2>
-                    <p>Enter the password to view this work.</p>
-                    <div class="password-form">
-                        <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="off" onkeypress="if(event.key==='Enter'){document.getElementById('unlockBtn').click();}" />
-                        <button type="button" id="unlockBtn" onclick="
-                            var pw = document.getElementById('passwordInput').value.trim();
-                            var k = atob('VXNoNGxscDRzcyE=');
-                            if(pw === k) {
-                                sessionStorage.setItem('natalia_portfolio_access', 'unlocked');
-                                document.querySelector('.protected-content').classList.remove('locked');
-                                document.querySelector('.protected-content').classList.add('unlocked');
-                            } else {
-                                document.getElementById('passwordError').classList.add('visible');
-                                document.getElementById('passwordInput').value = '';
-                                document.getElementById('passwordInput').focus();
-                            }
-                        ">Unlock</button>
-                    </div>
-                    <p class="password-error" id="passwordError">Incorrect password. Try again.</p>
-                    <p class="password-hint">Don't have the password? <a href="mailto:nataliarsand@gmail.com">Request access</a></p>
-                </div>
-            </div>
+<!-- Yes, you found it. If you can read it, well done. But maybe drop me a message anyway? -->
+<div class="password-gate" id="passwordGate">
+    <div class="password-gate-content">
+        <i class="fa-solid fa-lock password-gate-icon"></i>
+        <h2>This case study is protected</h2>
+        <p>Enter the password to view this work.</p>
+        <div class="password-form">
+            <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="off" onkeypress="if(event.key==='Enter'){document.getElementById('unlockBtn').click();}" />
+            <button type="button" id="unlockBtn" onclick="
+                var pw = document.getElementById('passwordInput').value.trim();
+                var k = atob('VXNoNGxscDRzcyE=');
+                if(pw === k) {
+                    sessionStorage.setItem('natalia_portfolio_access', 'unlocked');
+                    document.querySelector('.protected-content').classList.remove('locked');
+                    document.querySelector('.protected-content').classList.add('unlocked');
+                } else {
+                    document.getElementById('passwordError').classList.add('visible');
+                    document.getElementById('passwordInput').value = '';
+                    document.getElementById('passwordInput').focus();
+                }
+            ">Unlock</button>
+        </div>
+        <p class="password-error" id="passwordError">Incorrect password. Try again.</p>
+        <p class="password-hint">Don't have the password? <a href="mailto:nataliarsand@gmail.com?subject=Portfolio%20Access%20Request">Request access</a></p>
+    </div>
+</div>
+
             
 
             <!-- Work Hero -->
@@ -441,18 +442,18 @@
   <a href="#" id="back-to-top" title="Back to top" aria-label="Back to top">↑</a>
 </footer>
 
-    
-    <!-- Image Modal -->
+
     <div id="imageModal" class="image-modal">
-        <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
-        <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous image">‹</button>
-        <button class="modal-nav modal-next" id="modalNext" aria-label="Next image">›</button>
-        <div class="modal-content">
-            <img id="modalImage" src="" alt="">
-            <div class="modal-caption" id="modalCaption"></div>
-        </div>
+    <button class="modal-close" id="modalClose" aria-label="Close modal">&times;</button>
+    <button class="modal-nav modal-prev" id="modalPrev" aria-label="Previous image">‹</button>
+    <button class="modal-nav modal-next" id="modalNext" aria-label="Next image">›</button>
+    <div class="modal-content">
+        <img id="modalImage" src="" alt="">
+        <div class="modal-caption" id="modalCaption"></div>
     </div>
-    
+</div>
+
+
     <script src="/assets/script.js"></script>
 </body>
 </html>
