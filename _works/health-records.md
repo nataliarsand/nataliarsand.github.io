@@ -1,6 +1,6 @@
 ---
 layout: work
-title: "Digital Health Records in Haiti"
+title: "Mirebalais Hospital"
 protected: true
 subtitle: "Designing digital healthcare for and with the people of Haiti"
 description: >

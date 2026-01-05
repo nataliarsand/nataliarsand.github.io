@@ -1,6 +1,6 @@
 ---
 layout: work
-title: "Booking partnerside App Store"
+title: "Booking App Store"
 protected: true
 subtitle: "Improving access to third-party tools through a unified platform"
 description: >

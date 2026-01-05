@@ -4,18 +4,18 @@ title: "Julia Sorts"
 subtitle: "A playful decision maker for the chronically indecisive"
 description: >
   Can't decide what to eat, watch, or do? Julia Sorts is a fun, arcade-style random picker that makes decisions for you.
-  Built as a personal project to solve a real problem (Julia's legendary indecisiveness), it combines retro 90s gaming aesthetics with simple utility.
-  I designed and built the entire React app, from the neon-soaked UI to the dramatic spinning animation.
+  Built as a personal project to solve a real problem (my friend Julia's legendary indecisiveness), I thought it could be a simpler substitute for complex and add-heavy tools out there.
+  I designed and built the entire React app with help of claude.ai.
 
 image: "/assets/images/works/juliasorts/logo@2x.png"
 
 deliverables:
   - label: Random picker tool
-    description: Add options and let fate decide with a satisfying spin animation
+    description: Add up to 5 options (default is for Yes/No questions), and let fate decide with a satisfying spin animation
   - label: Quick picks
     description: Pre-loaded categories for common decisions like food, activities, and board games
   - label: 90s arcade aesthetic
-    description: Neon colors, CRT effects, and pixel-inspired typography
+    description: Neon colors, CRT effects, and pixel-inspired design.
 
 collaboration:
   - Personal project with AI assistance
@@ -27,7 +27,7 @@ collaboration:
 
 - **Dramatic tension**: The spinning animation builds suspense before revealing the result, making even mundane decisions feel exciting.
 - **Retro gaming vibe**: Inspired by 90s arcade machines with neon pinks and cyans, chunky buttons, and glowing effects.
-- **Dead simple UX**: Add options, hit the button, get a result. No accounts, no complexity.
+- **Dead simple UX**: Add options, hit the button, get a result. No accounts added.
 
 <div class="device-showcase">
   <div class="device-frame desktop">

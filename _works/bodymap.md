@@ -1,11 +1,11 @@
 ---
 layout: work
-title: "BodyMap: Dosha Questionnaire"
+title: "BodyMap"
 subtitle: "Designing a better way to understand your dosha imbalances"
 description: >
-  A playful yet grounded quiz experience inspired by traditional Ayurvedic wisdom, built for clarity, curiosity, and self-awareness.
-  This passion project is my attempt to make ancient knowledge more intuitive (and beautiful) to explore.
-  I designed, wrote, and built the entire React-based app, from translating traditional frameworks into user-friendly logic to crafting results with clarity and narrative flow.
+  A playful yet grounded quiz experience inspired by traditional Ayurvedic wisdom.
+  This project was my attempt to make ancient knowledge more intuitive (and beautiful) to explore.
+  I designed, wrote, and built the entire React-based app, from translating traditional frameworks into user-friendly logic to crafting results into a clear and simple narrative.
 
 image: "/assets/images/works/bodymap/bodymap-logo.png"
 
@@ -20,7 +20,7 @@ deliverables:
     description: Friendly storytelling tone rooted in traditional principles
 
 collaboration:
-  - Self-initiated project with feedback from wellness peers and AI assistance
+  - Self-initiated project with feedback from wellness peers and AI code assistance
 ---
 
 ---
@@ -47,11 +47,11 @@ collaboration:
 ### Impact
 
 <div class="sticky-note centered rotate-right">
-  <p>"More accurate than any dosha quiz I've ever done"</p>
+  <p>"The easier dosha quiz I've ever done"</p>
 </div>
 
-- Helped dozens of testers gain clearer insight into their patterns and tendencies
-- Received praise for feeling "honest", "gentle", and "more accurate than any dosha quiz I've ever done"
-- Set the foundation for future ideas: seasonal recalibrations, printable reports, and one-on-one integrations with practitioners
+- Helped people gain clearer insight into their patterns and tendencies
+- Helpful for ayurveda professionals too as a one tool, less work from their analysis of patients.
+- Received praise for being "the easier dosha quiz I've ever done"
 
-BodyMap is my way of bringing design to wellness without dumbing it down and inviting others to explore their dosha imbalances, one question at a time.
+BodyMap is my way of bringing design to wellness without dumbing it down, and inviting others to explore the fascinating world of ayurveda.
