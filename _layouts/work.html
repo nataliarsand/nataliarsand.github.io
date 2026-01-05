@@ -42,20 +42,67 @@
             </div>
             {% endif %}
 
-            <div class="work intro">
-                <!-- Render Title and Subtitle -->
-                <h1>{{ page.title }}</h1>
-                {% if page.subtitle %}
-                <h2 tabindex="0">{{ page.subtitle }}</h2>
+            <!-- Work Hero -->
+            <header class="work-hero">
+                <nav class="breadcrumb-path" aria-label="Breadcrumb">
+                    {% assign personal_titles = "Start Ashtanga,Julia Sorts,BodyMap: Dosha Questionnaire,Mama Circle" | split: "," %}
+                    {% assign booking_titles = "Design systems,Design Operations,Referral Program,Booking partnerside App Store" | split: "," %}
+                    {% assign tw_titles = "Digital Health Records in Haiti,Amplify Tablet" | split: "," %}
+                    <span class="path-segment home">~</span><span class="path-separator">/</span><a href="/works/" class="path-segment">Works</a><span class="path-separator">/</span>{% if personal_titles contains page.title %}<span class="path-segment folder">Personal</span>{% elsif booking_titles contains page.title %}<span class="path-segment folder">Booking.com</span>{% elsif tw_titles contains page.title %}<span class="path-segment folder">ThoughtWorks</span>{% else %}<span class="path-segment folder">Projects</span>{% endif %}<span class="path-separator">/</span><span class="path-segment current">{{ page.title | slugify }}</span>
+                </nav>
+
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="work-title">{{ page.title }}</h1>
+                        {% if page.subtitle %}
+                        <p class="work-subtitle">{{ page.subtitle }}</p>
+                        {% endif %}
+                        {% if page.description %}
+                        <p class="work-description">{{ page.description }}</p>
+                        {% endif %}
+                    </div>
+                    {% if page.image %}
+                    <div class="hero-preview">
+                        <img src="{{ page.image }}" alt="{{ page.title }} preview">
+                    </div>
+                    {% endif %}
+                </div>
+            </header>
+
+            {% if page.deliverables or page.credits or page.team or page.collaboration %}
+            <div class="work-info-bar">
+                {% if page.credits %}
+                <div class="info-group">
+                    <span class="info-label"><i class="fa-solid fa-building"></i> Company</span>
+                    <span class="info-value">{% for credit in page.credits %}{{ credit }}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>
+                </div>
                 {% endif %}
-                <!-- Render Description -->
-                {% if page.description %}
-                <p>{{ page.description }}</p>
+
+                {% if page.deliverables %}
+                <div class="info-group info-group--wide">
+                    <span class="info-label"><i class="fa-solid fa-cube"></i> Deliverables</span>
+                    <div class="info-pills">
+                        {% for item in page.deliverables %}<span class="info-pill" {% if item.description %}title="{{ item.description }}"{% endif %}>{{ item.label }}</span>{% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if page.team %}
+                <div class="info-group info-group--wide">
+                    <span class="info-label"><i class="fa-solid fa-users"></i> Team</span>
+                    <div class="info-pills">
+                        {% for member in page.team %}<span class="info-pill info-pill--subtle">{{ member }}</span>{% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if page.collaboration %}
+                <div class="info-group">
+                    <span class="info-label"><i class="fa-solid fa-handshake"></i> Collaboration</span>
+                    <span class="info-value">{% for item in page.collaboration %}{{ item }}{% unless forloop.last %} · {% endunless %}{% endfor %}</span>
+                </div>
                 {% endif %}
             </div>
-
-            {% if page.deliverables or page.process or page.team or page.credits %}
-                {% include components/project-tabs.html %}
             {% endif %}
 
 

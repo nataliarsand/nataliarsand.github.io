@@ -7,7 +7,7 @@ description: >
   I contributed to Booking.com's Design System through component design, research-driven tooling, documentation improvements, and accessibility work.
   My focus was on strengthening foundations, reducing ambiguity, and enabling teams to design and build with clarity, consistency, and care.
 
-image: "/assets/images/design-system-hero.png"
+image: "/assets/images/works/design-system/design-system-top-image.png"
 
 deliverables:
   - label: Components
@@ -39,12 +39,12 @@ Complex components involving interaction logic like sorting and filtering were f
 
 **Solution:** Defined clear behavioural rules (single vs. multi-select), updated label and indicator patterns, explored placement options, and documented precise guidance to reduce ambiguity. Partnered with engineering to spec logic and edge cases.
 
-<div class="work-image-container large">
-  <img src="/assets/images/works/design-system/bubble-proposal.png" alt="Sort and filter bubble proposal explorations" class="work-image">
-  <p class="work-image-caption">
-    Sort and filter indicator exploration: problem framing, assumptions, recommended behaviour, and design options aligned with system patterns.
-  </p>
+<div class="paper-showcase">
+  <div class="paper-frame">
+    <img src="/assets/images/works/design-system/bubble-proposal.png" alt="Sort and filter bubble proposal explorations" class="work-image">
+  </div>
 </div>
+<p class="work-image-caption">Sort and filter indicator exploration: problem framing, assumptions, recommended behaviour, and design options aligned with system patterns.</p>
 
 ---
 
@@ -54,12 +54,12 @@ We developed an internal Figma plugin to validate spacing, colour, typography, a
 
 **Approach:** Designed and led a controlled time & motion study comparing plugin vs. no-plugin workflows, measuring time-to-complete, error count, and correction confidence. Analysed behaviours to improve plugin logic and presented findings to leadership for next iterations.
 
-<div class="work-image-container large">
-  <img src="/assets/images/works/design-system/research-tracker.png" alt="Research tracking spreadsheet for the Verify Design plugin study" class="work-image">
-  <p class="work-image-caption">
-    Research tracker used during the time & motion study, capturing component deviations observed across participants.
-  </p>
+<div class="paper-showcase">
+  <div class="paper-frame">
+    <img src="/assets/images/works/design-system/research-tracker.png" alt="Research tracking spreadsheet for the Verify Design plugin study" class="work-image">
+  </div>
 </div>
+<p class="work-image-caption">Research tracker used during the time & motion study, capturing component deviations observed across participants.</p>
 
 ---
 

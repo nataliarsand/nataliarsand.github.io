@@ -7,7 +7,7 @@ description: >
   The goal is to make traditional yoga accessible to everyone, everywhere—no gatekeeping, no paywalls.
   I designed and built the multilingual React app, created the content structure, and set up the open-source community for contributions.
 
-image: "/assets/images/startashtanga-hero.png"
+image: "/assets/images/works/startashtanga/start-ashtanga-top-image.png"
 
 deliverables:
   - label: Beginner-friendly content
@@ -31,21 +31,25 @@ collaboration:
 - **Community-first**: Open source from day one, with easy contribution paths for non-developers (content, translations, shala submissions).
 - **Traditional with modern UX**: Respects the lineage while making information easy to navigate.
 
-<div class="work-image-container large">
-  <img src="/assets/images/works/startashtanga/homepage-desktop.png" alt="Start Ashtanga homepage on desktop" class="work-image">
-  <p class="work-image-caption">Homepage - welcoming beginners to the practice</p>
+<div class="device-showcase">
+  <div class="device-frame desktop">
+    <img src="/assets/images/works/startashtanga/homepage-desktop.webp" alt="Start Ashtanga homepage on desktop" class="work-image">
+  </div>
+  <div class="device-frame mobile">
+    <img src="/assets/images/works/startashtanga/homepage-mobile.webp" alt="Start Ashtanga mobile view" class="work-image">
+  </div>
 </div>
+<p class="work-image-caption">Homepage - welcoming beginners to the practice</p>
 
-<div class="work-images-side-by-side">
-  <div class="work-image-container">
-    <img src="/assets/images/works/startashtanga/homepage-mobile.png" alt="Start Ashtanga mobile view" class="work-image">
-    <p class="work-image-caption">Mobile-friendly design</p>
+<div class="device-showcase">
+  <div class="device-frame desktop">
+    <img src="/assets/images/works/startashtanga/getting-started-desktop.webp" alt="Getting started guide desktop" class="work-image">
   </div>
-  <div class="work-image-container">
-    <img src="/assets/images/works/startashtanga/getting-started-page.png" alt="Getting started guide" class="work-image">
-    <p class="work-image-caption">Getting started guide</p>
+  <div class="device-frame mobile">
+    <img src="/assets/images/works/startashtanga/getting-started-mobile.webp" alt="Getting started guide mobile" class="work-image">
   </div>
 </div>
+<p class="work-image-caption">Getting started guide</p>
 
 ---
 

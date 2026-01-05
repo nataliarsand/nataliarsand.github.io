@@ -7,7 +7,7 @@ description: >
   Built as a personal project to solve a real problem (Julia's legendary indecisiveness), it combines retro 90s gaming aesthetics with simple utility.
   I designed and built the entire React app—from the neon-soaked UI to the dramatic spinning animation.
 
-image: "/assets/images/juliasorts-hero.png"
+image: "/assets/images/works/juliasorts/logo@2x.png"
 
 deliverables:
   - label: Random picker tool
@@ -29,20 +29,15 @@ collaboration:
 - **Retro gaming vibe**: Inspired by 90s arcade machines—neon pinks and cyans, chunky buttons, and glowing effects.
 - **Dead simple UX**: Add options, hit the button, get a result. No accounts, no complexity.
 
-<div class="work-images-side-by-side tall">
-  <div class="work-image-container">
-    <img src="/assets/images/works/juliasorts/start-sort-food.png" alt="Julia Sorts food picker interface" class="work-image">
-    <p class="work-image-caption">Adding options</p>
+<div class="device-showcase">
+  <div class="device-frame desktop">
+    <img src="/assets/images/works/juliasorts/homepage-desktop.webp" alt="Julia Sorts desktop interface" class="work-image">
   </div>
-  <div class="work-image-container">
-    <img src="/assets/images/works/juliasorts/pick-sort-food.png" alt="Options menu to add or choose options" class="work-image">
-    <p class="work-image-caption">Options menu</p>
-  </div>
-  <div class="work-image-container">
-    <img src="/assets/images/works/juliasorts/success-yes-no-sort.png" alt="Result screen showing the winner" class="work-image">
-    <p class="work-image-caption">Fate has decided</p>
+  <div class="device-frame mobile">
+    <img src="/assets/images/works/juliasorts/homepage-mobile.webp" alt="Julia Sorts mobile view" class="work-image">
   </div>
 </div>
+<p class="work-image-caption">Julia Sorts - arcade-style decision maker</p>
 
 ---
 

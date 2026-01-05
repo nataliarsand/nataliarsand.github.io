@@ -7,7 +7,7 @@ description: >
   A cross-continental collaboration to design in-class tablet software that empowers teachers to manage classrooms and personalise learning,
   based on real research with educators and students.
 
-image: "/assets/images/amplify/amplify-tablet.png"
+image: "/assets/images/works/amplify-tablet/tablet-cover.webp"
 
 deliverables:
   - label: Classroom UX flows
@@ -34,12 +34,12 @@ credits:
 
 ---
 
-<div class="work-image-container large">
-  <img src="/assets/images/works/amplify-tablet/amplify-overview.jpg" alt="Two tablets showing teacher and student interfaces side by side" class="work-image">
-  <p class="work-image-caption">
-    Dual interface overview: teacher dashboard alongside student learning interface.
-  </p>
+<div class="paper-showcase">
+  <div class="paper-frame">
+    <img src="/assets/images/works/amplify-tablet/amplify-overview.jpg" alt="Two tablets showing teacher and student interfaces side by side" class="work-image">
+  </div>
 </div>
+<p class="work-image-caption">Dual interface overview: teacher dashboard alongside student learning interface.</p>
 
 ---
 
@@ -47,16 +47,15 @@ credits:
 
 **Designing for dual users:** The product needed to serve both teachers and students simultaneously. We created tailored experiences for each while keeping the system consistent and easy to navigate.
 
-<div class="work-images-side-by-side">
-  <div class="work-image-container">
+<div class="paper-showcase stacked">
+  <div class="paper-frame">
     <img src="/assets/images/works/amplify-tablet/teacher-interface.png" alt="Teacher dashboard showing classroom management tools" class="work-image">
-    <p class="work-image-caption">Teacher interface wireframes.</p>
   </div>
-  <div class="work-image-container">
+  <div class="paper-frame">
     <img src="/assets/images/works/amplify-tablet/student-interface.png" alt="Student interface showing lesson content" class="work-image">
-    <p class="work-image-caption">Student interface wireframes.</p>
   </div>
 </div>
+<p class="work-image-caption">Teacher and student interface wireframes side by side.</p>
 
 **Low-distraction interfaces:** Classroom environments are dynamic and often noisy. We focused on visual clarity, minimal cognitive load, and intuitive transitions to avoid adding complexity.
 

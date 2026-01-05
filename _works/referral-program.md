@@ -8,7 +8,7 @@ description: >
   Working as part of a dedicated R&D team, we built a full-funnel experience that made it easy and rewarding for users to share Booking.com with friends,
   driving trust, organic growth, and global adoption.
 
-image: "/assets/images/refer-a-friend-hero.png"
+image: "/assets/images/works/referral-program/refer-a-friend-top.png"
 
 deliverables:
   - label: Referral journeys
@@ -38,19 +38,21 @@ credits:
 
 We designed full-funnel experiences integrated seamlessly into the product, from landing pages to post-booking confirmation screens.
 
-<div class="work-image-container large">
-  <img src="/assets/images/works/referral-program//RAF_banner_spaced.webp" alt="Complete referral user journey from discovery to reward" class="work-image">
-  <p class="work-image-caption">Example of how Refer a Friend positioned itself across platforms.</p>
+<div class="paper-showcase">
+  <div class="paper-frame">
+    <img src="/assets/images/works/referral-program/RAF_banner_spaced.webp" alt="Complete referral user journey from discovery to reward" class="work-image">
+  </div>
 </div>
+<p class="work-image-caption">Example of how Refer a Friend positioned itself across platforms.</p>
 
 Built interaction patterns that encouraged sharing while feeling trustworthy, included previews of rewards, easy access to invite tools (email, WhatsApp, social), and provided confirmation and status updates.
 
-<div class="work-images-side-by-side">
-  <div class="work-image-container">
+<div class="paper-showcase">
+  <div class="paper-frame">
     <img src="/assets/images/works/referral-program/RAF_banner.png" alt="Referral banners" class="work-image">
-    <p class="work-image-caption">Banners distributed across multi-platforms.</p>
   </div>
 </div>
+<p class="work-image-caption">Banners distributed across multi-platforms.</p>
 
 ---
 

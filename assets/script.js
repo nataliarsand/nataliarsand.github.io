@@ -337,14 +337,23 @@ $(function () {
     const modalClose = document.getElementById("modalClose");
     const modalPrev = document.getElementById("modalPrev");
     const modalNext = document.getElementById("modalNext");
-    
+
     let currentImageIndex = 0;
     let allImages = [];
 
     // Only initialize modal if elements exist
     if (modal && modalImage && modalCaption && modalClose && modalPrev && modalNext) {
-        // Get all work images on the page
-        allImages = Array.from(document.querySelectorAll('.work-image'));
+        // Get hero preview image first, then all work images
+        const heroPreview = document.querySelector('.hero-preview img');
+        const workImages = Array.from(document.querySelectorAll('.work-image'));
+
+        // Combine hero preview with work images
+        allImages = heroPreview ? [heroPreview, ...workImages] : workImages;
+
+        // Make hero preview clickable
+        if (heroPreview) {
+            heroPreview.style.cursor = 'pointer';
+        }
         
         // Add click listeners to all work images
         allImages.forEach((img, index) => {

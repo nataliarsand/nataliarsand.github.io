@@ -7,7 +7,7 @@ description: >
   This was a solo and soulful build—I wrote, designed, coded, and published the site myself, guided by intuition and a desire for softness in the digital world.
   It was my first experience "vibe coding" with help from AI tools, adjusting text and layout based on how it resonated, not just how it looked.
 
-image: "/assets/images/mama-circle-hero.png"
+image: "/assets/images/works/mama-circle/mama-circle-logo.png"
 
 deliverables:
   - label: Manifesto
@@ -33,16 +33,15 @@ collaboration:
 - **No user data**: Prioritised safety, with clear disclaimers and email-only opt-out for testimonials.
 
 
-<div class="work-images-side-by-side">
-  <div class="work-image-container">
-    <img src="/assets/images/works/mama-circle/website-mobile.png" alt="Mobile view of Mama Circle website" class="work-image">
-    <p class="work-image-caption">Mobile interface</p>
+<div class="device-showcase">
+  <div class="device-frame desktop">
+    <img src="/assets/images/works/mama-circle/homepage-desktop.webp" alt="Mama Circle desktop view" class="work-image">
   </div>
-  <div class="work-image-container">
-    <img src="/assets/images/works/mama-circle/website-desktop.png" alt="Desktop view of Mama Circle website" class="work-image">
-    <p class="work-image-caption">Desktop interface</p>
+  <div class="device-frame mobile">
+    <img src="/assets/images/works/mama-circle/homepage-mobile.webp" alt="Mama Circle mobile view" class="work-image">
   </div>
 </div>
+<p class="work-image-caption">Mama Circle - a gentle digital presence for new mothers</p>
 
 <div class="work-image-container large">
   <img src="/assets/images/works/mama-circle/ai-collaboration-chat.png" alt="AI coding collaboration showing assistance with content and coding" class="work-image">
@@ -52,6 +51,10 @@ collaboration:
 ---
 
 ### Impact
+
+<div class="sticky-note pink centered">
+  <p>"Exactly the kind of gentleness the internet needs"</p>
+</div>
 
 - Created a heartfelt presence online that many described as "exactly the kind of gentleness the internet needs"
 - Helped others feel inspired to share stories and show up with the hashtag #mamacircle 💞

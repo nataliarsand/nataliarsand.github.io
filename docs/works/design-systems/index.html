@@ -271,110 +271,63 @@
             </div>
             
 
-            <div class="work intro">
-                <!-- Render Title and Subtitle -->
-                <h1>Design systems</h1>
-                
-                <h2 tabindex="0">Scaling design through systems, documentation, and inclusive foundations</h2>
-                
-                <!-- Render Description -->
-                
-                <p>I contributed to Booking.com's Design System through component design, research-driven tooling, documentation improvements, and accessibility work. My focus was on strengthening foundations, reducing ambiguity, and enabling teams to design and build with clarity, consistency, and care.
+            <!-- Work Hero -->
+            <header class="work-hero">
+                <nav class="breadcrumb-path" aria-label="Breadcrumb">
+                    
+                    
+                    
+                    <span class="path-segment home">~</span><span class="path-separator">/</span><a href="/works/" class="path-segment">Works</a><span class="path-separator">/</span><span class="path-segment folder">Booking.com</span><span class="path-separator">/</span><span class="path-segment current">design-systems</span>
+                </nav>
+
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="work-title">Design systems</h1>
+                        
+                        <p class="work-subtitle">Scaling design through systems, documentation, and inclusive foundations</p>
+                        
+                        
+                        <p class="work-description">I contributed to Booking.com's Design System through component design, research-driven tooling, documentation improvements, and accessibility work. My focus was on strengthening foundations, reducing ambiguity, and enabling teams to design and build with clarity, consistency, and care.
 </p>
+                        
+                    </div>
+                    
+                    <div class="hero-preview">
+                        <img src="/assets/images/works/design-system/design-system-top-image.png" alt="Design systems preview">
+                    </div>
+                    
+                </div>
+            </header>
+
+            
+            <div class="work-info-bar">
+                
+                <div class="info-group">
+                    <span class="info-label"><i class="fa-solid fa-building"></i> Company</span>
+                    <span class="info-value">Booking.com</span>
+                </div>
+                
+
+                
+                <div class="info-group info-group--wide">
+                    <span class="info-label"><i class="fa-solid fa-cube"></i> Deliverables</span>
+                    <div class="info-pills">
+                        <span class="info-pill" title="Design and specification of complex, reusable UI patterns">Components</span><span class="info-pill" title="Time & motion study to measure workflow efficiency and design quality impact">Tooling research</span><span class="info-pill" title="Unified documentation structure and system storytelling framework">Documentation</span><span class="info-pill" title="Collaboration with accessibility and DEI teams to embed inclusive defaults">Accessibility</span>
+                    </div>
+                </div>
+                
+
+                
+                <div class="info-group info-group--wide">
+                    <span class="info-label"><i class="fa-solid fa-users"></i> Team</span>
+                    <div class="info-pills">
+                        <span class="info-pill info-pill--subtle">UX designers</span><span class="info-pill info-pill--subtle">UX writers</span><span class="info-pill info-pill--subtle">Researchers</span><span class="info-pill info-pill--subtle">Multi-platform engineers</span><span class="info-pill info-pill--subtle">Accessibility and DEI specialists</span><span class="info-pill info-pill--subtle">Product managers</span>
+                    </div>
+                </div>
+                
+
                 
             </div>
-
-            
-                <!-- work-tabs.html -->
-<div class="work meta-data">
-  <div class="tabs-container">
-    <div class="tabs" role="tablist">
-      
-        <a class="tab-link active" data-tab="deliverables" role="tab" aria-controls="deliverables" aria-selected="true" tabindex="0">Deliverables</a>
-      
-      
-      
-      
-        <a class="tab-link" data-tab="team" role="tab" aria-controls="team" aria-selected="false" tabindex="0">Team</a>
-      
-      
-        <a class="tab-link" data-tab="credits" role="tab" aria-controls="credits" aria-selected="false" tabindex="0">Credits</a>
-      
-    </div>
-  </div>
-
-
-    
-    <div id="deliverables" class="tab-content active" role="tabpanel" aria-labelledby="deliverables">
-      <h3 tabindex="0">Deliverables</h3>
-      <ul>
-        
-          <li>
-            
-              <strong>Components</strong>: Design and specification of complex, reusable UI patterns
-            
-          </li>
-        
-          <li>
-            
-              <strong>Tooling research</strong>: Time & motion study to measure workflow efficiency and design quality impact
-            
-          </li>
-        
-          <li>
-            
-              <strong>Documentation</strong>: Unified documentation structure and system storytelling framework
-            
-          </li>
-        
-          <li>
-            
-              <strong>Accessibility</strong>: Collaboration with accessibility and DEI teams to embed inclusive defaults
-            
-          </li>
-        
-      </ul>
-    </div>
-    
-
-    
-
-    
-
-    
-    <div id="team" class="tab-content" role="tabpanel" aria-labelledby="team">
-      <h3 tabindex="0">Team</h3>
-      <ul>
-        
-          <li>UX designers</li>
-        
-          <li>UX writers</li>
-        
-          <li>Researchers</li>
-        
-          <li>Multi-platform engineers</li>
-        
-          <li>Accessibility and DEI specialists</li>
-        
-          <li>Product managers</li>
-        
-      </ul>
-    </div>
-    
-
-    
-    <div id="credits" class="tab-content" role="tabpanel" aria-labelledby="credits">
-      <h3 tabindex="0">Credits</h3>
-      <ul>
-        
-          <li>Booking.com</li>
-        
-      </ul>
-    </div>
-    
-  </div>
-</div>
-
             
 
 
@@ -387,12 +340,12 @@
 
 <p><strong>Solution:</strong> Defined clear behavioural rules (single vs. multi-select), updated label and indicator patterns, explored placement options, and documented precise guidance to reduce ambiguity. Partnered with engineering to spec logic and edge cases.</p>
 
-<div class="work-image-container large">
-  <img src="/assets/images/works/design-system/bubble-proposal.png" alt="Sort and filter bubble proposal explorations" class="work-image" />
-  <p class="work-image-caption">
-    Sort and filter indicator exploration: problem framing, assumptions, recommended behaviour, and design options aligned with system patterns.
-  </p>
+<div class="paper-showcase">
+  <div class="paper-frame">
+    <img src="/assets/images/works/design-system/bubble-proposal.png" alt="Sort and filter bubble proposal explorations" class="work-image" />
+  </div>
 </div>
+<p class="work-image-caption">Sort and filter indicator exploration: problem framing, assumptions, recommended behaviour, and design options aligned with system patterns.</p>
 
 <hr />
 
@@ -402,12 +355,12 @@
 
 <p><strong>Approach:</strong> Designed and led a controlled time &amp; motion study comparing plugin vs. no-plugin workflows, measuring time-to-complete, error count, and correction confidence. Analysed behaviours to improve plugin logic and presented findings to leadership for next iterations.</p>
 
-<div class="work-image-container large">
-  <img src="/assets/images/works/design-system/research-tracker.png" alt="Research tracking spreadsheet for the Verify Design plugin study" class="work-image" />
-  <p class="work-image-caption">
-    Research tracker used during the time &amp; motion study, capturing component deviations observed across participants.
-  </p>
+<div class="paper-showcase">
+  <div class="paper-frame">
+    <img src="/assets/images/works/design-system/research-tracker.png" alt="Research tracking spreadsheet for the Verify Design plugin study" class="work-image" />
+  </div>
 </div>
+<p class="work-image-caption">Research tracker used during the time &amp; motion study, capturing component deviations observed across participants.</p>
 
 <hr />
 

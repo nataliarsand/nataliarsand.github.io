@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {},
+  "type": "module",
+  "devDependencies": {
+    "playwright": "^1.40.0",
+    "sharp": "^0.33.0"
+  },
   "scripts": {
     "dev": "bundle exec jekyll serve --livereload --baseurl '' --port 4000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "sass --no-source-map --load-path=_sass assets/css/main.scss assets/css/main.css",
-    "prepush": "npm run build && bundle exec jekyll build && git pull origin main"
+    "prepush": "npm run build && bundle exec jekyll build && git pull origin main",
+    "screenshots": "node scripts/capture-project-screenshots.mjs",
+    "screenshots:desktop": "node scripts/capture-project-screenshots.mjs --desktop",
+    "screenshots:mobile": "node scripts/capture-project-screenshots.mjs --mobile"
   },
   "repository": {
     "type": "git",
@@ -17,7 +24,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
   "bugs": {
     "url": "https://github.com/nataliarsand/portfolio.io/issues"
   },

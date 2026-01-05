@@ -146,6 +146,255 @@
 }
 
 // ========================
+// BREADCRUMB PATH
+// ========================
+.breadcrumb-path {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.7rem;
+  color: $color-text-muted;
+  margin-bottom: 0.75rem;
+
+  .path-separator {
+    color: $color-border;
+    margin: 0 0.15rem;
+  }
+
+  .path-segment {
+    color: $color-text-muted;
+    text-decoration: none;
+
+    &.home {
+      color: $color-accent;
+    }
+
+    &.folder {
+      color: $color-secondary;
+    }
+
+    &.current {
+      color: $color-primary;
+    }
+  }
+
+  a.path-segment:hover {
+    color: $color-accent;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .breadcrumb-path {
+    font-size: 0.65rem;
+  }
+}
+
+// ========================
+// WORK HERO (Clean & Focused)
+// ========================
+.work-hero {
+  margin-bottom: 1.5rem;
+}
+
+.hero-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.hero-preview {
+  width: 200px;
+  min-width: 200px;
+  height: 140px;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid $color-border;
+  background: $color-surface;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0;
+    object-fit: cover;
+    object-position: top;
+  }
+}
+
+.work-title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.2;
+  color: $color-primary;
+}
+
+.work-subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $color-text-muted;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+}
+
+.work-description {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: $color-secondary;
+  margin: 0;
+}
+
+.work-info-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 2rem;
+  padding: 1.25rem 1.5rem;
+  background: $color-surface-alt;
+  border: 1px solid $color-border;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+
+  .info-group {
+    min-width: 120px;
+
+    &.info-group--wide {
+      flex: 1 1 100%;
+    }
+
+    .info-label {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.65rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: $color-text-muted;
+      margin-bottom: 0.4rem;
+
+      i {
+        font-size: 0.7rem;
+        padding: 0;
+        color: $color-accent-alt;
+      }
+    }
+
+    .info-value {
+      display: block;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      color: $color-primary;
+      font-weight: 500;
+    }
+
+    .info-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .info-pill {
+      display: inline-block;
+      padding: 0.3rem 0.65rem;
+      background: rgba($color-accent, 0.1);
+      color: $color-accent-hover;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 0.75rem;
+      font-weight: 500;
+      border-radius: 4px;
+      cursor: default;
+      transition: background 0.15s ease;
+
+      &:hover {
+        background: rgba($color-accent, 0.18);
+      }
+
+      &.info-pill--subtle {
+        background: rgba($color-primary, 0.06);
+        color: $color-secondary;
+
+        &:hover {
+          background: rgba($color-primary, 0.1);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .hero-preview {
+    width: 100%;
+    min-width: 100%;
+    max-height: 180px;
+
+    img {
+      object-fit: cover;
+      object-position: top;
+      max-height: 180px;
+    }
+  }
+
+  .work-title {
+    font-size: 1.5rem;
+  }
+
+  .work-subtitle {
+    font-size: 0.75rem;
+  }
+
+  .work-description {
+    font-size: 0.9rem;
+  }
+
+  .work-info-bar {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+
+    .info-group {
+      min-width: 0;
+
+      &.info-group--wide {
+        flex: none;
+      }
+    }
+
+    .info-pills {
+      gap: 0.35rem;
+    }
+
+    .info-pill {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
+
+// ========================
 // SELECTED WORKS SECTION
 // ========================
 

@@ -7,7 +7,7 @@ description: >
   This passion project is my attempt to make ancient knowledge more intuitive (and beautiful) to explore.
   I designed, wrote, and built the entire React-based app—from translating traditional frameworks into user-friendly logic to crafting results with clarity and narrative flow.
 
-image: "/assets/images/bodymap-hero.png"
+image: "/assets/images/works/bodymap/bodymap-logo.png"
 
 deliverables:
   - label: Structured self-assessment
@@ -31,21 +31,24 @@ collaboration:
 - **Dual logic**: The tool detects both your nature and your imbalance, gently revealing patterns without jargon.
 - **Tone and language**: It doesn't feel like a spreadsheet or a mystic scroll. It feels like a thoughtful friend asking how you've been.
 
-<div class="work-images-side-by-side">
-  <div class="work-image-container">
-    <img src="/assets/images/works/bodymap/quiz-interface-desktop.png" alt="Desktop quiz interface showing grouped thematic questions" class="work-image">
-    <p class="work-image-caption">Desktop quiz interface</p>
+<div class="device-showcase">
+  <div class="device-frame desktop">
+    <img src="/assets/images/works/bodymap/homepage-desktop.webp" alt="BodyMap homepage on desktop" class="work-image">
   </div>
-  <div class="work-image-container">
-    <img src="/assets/images/works/bodymap/quiz-result-mobile.png" alt="Mobile quiz results page with personalized dosha insights" class="work-image">
-    <p class="work-image-caption">Mobile results page</p>
+  <div class="device-frame mobile">
+    <img src="/assets/images/works/bodymap/homepage-mobile.webp" alt="BodyMap mobile view" class="work-image">
   </div>
 </div>
+<p class="work-image-caption">BodyMap quiz interface - grouped thematic questions</p>
 
 
 ---
 
 ### Impact
+
+<div class="sticky-note centered rotate-right">
+  <p>"More accurate than any dosha quiz I've ever done"</p>
+</div>
 
 - Helped dozens of testers gain clearer insight into their patterns and tendencies
 - Received praise for feeling "honest", "gentle", and "more accurate than any dosha quiz I've ever done"

@@ -7,7 +7,7 @@ description: >
   As Booking.com scaled its design organisation, I helped establish and lead DesignOps initiatives that improved knowledge sharing,
   onboarding, collaboration, and cross-platform alignment across design, research, and writing disciplines.
 
-image: "/assets/images/design-ops-hero.png"
+image: "/assets/images/works/design-ops/design-ops-top-image.png"
 
 deliverables:
   - label: UX documentation
@@ -38,10 +38,12 @@ Information related to UX was scattered across tools—often outdated, duplicate
 
 **Solution:** Designed and launched a centralised landing page consolidating key UX resources, from Figma libraries to job descriptions. Improved the internal documentation platform for ease of contribution and readability, and developed a content maintenance plan mapping documentation ownership to ensure accuracy.
 
-<div class="work-image-container large">
-  <img src="/assets/images/works/design-ops/ux-hub-interface.png" alt="UX Hub documentation portal interface" class="work-image">
-  <p class="work-image-caption">UX Hub interface: centralised documentation portal with navigation, search, and resource categorisation.</p>
+<div class="paper-showcase">
+  <div class="paper-frame">
+    <img src="/assets/images/works/design-ops/ux-hub-interface.png" alt="UX Hub documentation portal interface" class="work-image">
+  </div>
 </div>
+<p class="work-image-caption">UX Hub interface: centralised documentation portal with navigation, search, and resource categorisation.</p>
 
 ---
 

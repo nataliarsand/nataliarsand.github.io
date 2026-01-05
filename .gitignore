@@ -1,9 +1,15 @@
+# Build artifacts
 _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
 vendor/
 node_modules/
+
+# Scripts and automation
+scripts/
+
+# System files
 .DS_Store
 assets/images/**/.DS_Store
 assets/**/.DS_Store
