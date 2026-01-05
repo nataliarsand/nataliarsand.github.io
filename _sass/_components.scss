@@ -991,6 +991,7 @@
   .career-layout {
     flex-direction: column;
     gap: 2rem;
+    max-width: 100%;
 
     .about-content {
       max-width: 100%;
@@ -1000,6 +1001,8 @@
   .career-timeline {
     flex: none;
     width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 }
 
