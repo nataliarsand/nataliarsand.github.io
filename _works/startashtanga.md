@@ -4,7 +4,7 @@ title: "Start Ashtanga"
 subtitle: "An open-source guide to Ashtanga Yoga for beginners"
 description: >
   A free, community-driven resource for anyone curious about Ashtanga Yoga (Mysore style).
-  The goal is to make traditional yoga accessible to everyone, everywhere—no gatekeeping, no paywalls.
+  The goal is to make traditional yoga accessible to everyone, everywhere, with no gatekeeping and no paywalls.
   I designed and built the multilingual React app, created the content structure, and set up the open-source community for contributions.
 
 image: "/assets/images/works/startashtanga/start-ashtanga-top-image.png"
@@ -59,4 +59,4 @@ collaboration:
 - Built with React, TypeScript, Vite, and Tailwind CSS
 - Growing community of contributors and practitioners
 
-Start Ashtanga is my way of giving back to a practice that has given me so much—making it easier for others to begin their journey.
+Start Ashtanga is my way of giving back to a practice that has given me so much, making it easier for others to begin their journey.

@@ -4,7 +4,7 @@ title: "Mama Circle"
 subtitle: "A gentle online presence to support new mothers, built from love and code"
 description: >
   Mama Circle is a lightweight website and manifesto project that supports postpartum connection through a shared hashtag and simple web presence.
-  This was a solo and soulful build—I wrote, designed, coded, and published the site myself, guided by intuition and a desire for softness in the digital world.
+  This was a solo and soulful build. I wrote, designed, coded, and published the site myself, guided by intuition and a desire for softness in the digital world.
   It was my first experience "vibe coding" with help from AI tools, adjusting text and layout based on how it resonated, not just how it looked.
 
 image: "/assets/images/works/mama-circle/mama-circle-logo.png"

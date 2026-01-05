@@ -34,7 +34,7 @@ credits:
 
 ### UX documentation hub
 
-Information related to UX was scattered across tools—often outdated, duplicated, or hard to locate. This made it difficult for designers, writers, and researchers to find resources needed to work effectively.
+Information related to UX was scattered across tools, often outdated, duplicated, or hard to locate. This made it difficult for designers, writers, and researchers to find resources needed to work effectively.
 
 **Solution:** Designed and launched a centralised landing page consolidating key UX resources, from Figma libraries to job descriptions. Improved the internal documentation platform for ease of contribution and readability, and developed a content maintenance plan mapping documentation ownership to ensure accuracy.
 

@@ -72,7 +72,7 @@ I planned and led on-site usability testing directly at the hospital with real s
 
 ### Design system
 
-To help the team scale and iterate efficiently, I created a live design system of reusable components where we could evaluate consistency and developers could copy code directly—an innovation at the time (we were designing in Fireworks!). This sped up delivery, ensured consistency, and made it easier for new contributors to join.
+To help the team scale and iterate efficiently, I created a live design system of reusable components where we could evaluate consistency and developers could copy code directly. This was an innovation at the time (we were designing in Fireworks!). This sped up delivery, ensured consistency, and made it easier for new contributors to join.
 
 ---
 

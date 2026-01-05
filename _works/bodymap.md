@@ -5,7 +5,7 @@ subtitle: "Designing a better way to understand your dosha imbalances"
 description: >
   A playful yet grounded quiz experience inspired by traditional Ayurvedic wisdom, built for clarity, curiosity, and self-awareness.
   This passion project is my attempt to make ancient knowledge more intuitive (and beautiful) to explore.
-  I designed, wrote, and built the entire React-based app—from translating traditional frameworks into user-friendly logic to crafting results with clarity and narrative flow.
+  I designed, wrote, and built the entire React-based app, from translating traditional frameworks into user-friendly logic to crafting results with clarity and narrative flow.
 
 image: "/assets/images/works/bodymap/bodymap-logo.png"
 
