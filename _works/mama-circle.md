@@ -1,21 +1,24 @@
 ---
 layout: work
 title: "Mama Circle"
-subtitle: "A gentle online presence to support new mothers, built from love and code"
+subtitle: "A grassroots initiative to combat maternal isolation"
 description: >
-  Mama Circle is a lightweight website and manifesto project that supports postpartum connection through a shared hashtag and simple web presence.I wrote, designed, coded, and published the site myself, guided by a desire to offer new mamas something I wish I had have.It was my first experience "vibe coding", using mostly Codex to help me get where I wanted to.
+  A gentle digital presence for new mothers, built from lived experience.
+  Mama Circle offers a manifesto, shared stories, and a hashtag movement to help postpartum parents feel less alone.
 
 image: "/assets/images/works/mama-circle/mama-circle-logo.png"
 
 deliverables:
   - label: Manifesto
     description: A poetic, values-led declaration of support for new mothers
-  - label: Responsive website
-    description: Built with HTML, CSS, and hand-written care, no CMS, no fluff
-  - label: Mama cards
-    description: Horizontal testimonial carousel to honour postpartum stories
-  - label: Safety & care content
-    description: Clear disclaimers and a Code of Care to protect vulnerable users
+  - label: Testimonial Carousel
+    description: Horizontal mama cards honouring real postpartum stories
+  - label: Code of Care
+    description: Community guidelines for safe, supportive interaction
+  - label: Bilingual Support
+    description: Full content in English and Portuguese
+  - label: Privacy-First Design
+    description: No tracking, no accounts, email-only contact for testimonials
 
 collaboration:
   - Self-initiated project with AI pair-programming and inspiration from fellow mamas
@@ -23,12 +26,27 @@ collaboration:
 
 ---
 
-### Highlights
+### Situation
 
-- **Vibe coding**: I wrote the site in plain HTML/CSS, making creative decisions in the browser and barely touching Figma. It was fast and liberating.
-- **AI pair-programming**: Used Codex do the heavy lifting and co-create.
-- **No user data**: Prioritised safety, with clear disclaimers and email-only opt-out for testimonials.
+The early months of motherhood can be profoundly isolating. Despite being more connected than ever, new parents often find themselves scrolling through highlight reels that make their struggles feel abnormal. Online spaces meant to help can feel overwhelming, judgmental, or commercialized.
 
+I experienced this myself. In the fog of postpartum, I wished for something gentler: a space that simply said "you're not alone" without asking for an account, selling a course, or making me feel inadequate.
+
+---
+
+### Task
+
+Create a small, heartfelt corner of the internet for new mothers. Something that validates their experience, connects them through shared stories, and offers support without complexity. A grassroots initiative that spreads through a simple hashtag: #mamacircle.
+
+---
+
+### Action
+
+I designed and built **Mama Circle**, a lightweight website and manifesto project:
+
+- **From lived experience**: Every word comes from my own postpartum journey and conversations with other mothers.
+- **Vibe coding**: I wrote the site directly in code, making creative decisions in the browser. It was fast and liberating.
+- **AI pair-programming**: Used AI to help with the heavy lifting, making it my first true "vibe coding" experience.
 
 <div class="device-showcase">
   <div class="device-frame desktop">
@@ -40,21 +58,35 @@ collaboration:
 </div>
 <p class="work-image-caption">Mama Circle - a gentle digital presence for new mothers</p>
 
-<div class="work-image-container large">
-  <img src="/assets/images/works/mama-circle/ai-collaboration-chat.png" alt="AI coding collaboration showing assistance with content and coding" class="work-image">
-  <p class="work-image-caption">AI collaboration: pair-programming session showing assistance with content structure and coding</p>
-</div>
+#### Features built
+
+**The Manifesto**
+A poetic declaration of what Mama Circle stands for. Not rules, but values: showing up imperfectly, holding space without judgment, celebrating the messy reality of new parenthood.
+
+**Mama Cards**
+A horizontal testimonial carousel featuring real stories from mothers.
+
+**Code of Care**
+Community guidelines that set the tone for safe, supportive interaction. Because vulnerable people need explicit reassurance that a space is designed with their safety in mind.
+
+**Bilingual Support**
+Full content available in English and Portuguese, honoring my own background and extending the reach to more mothers who might need it.
+
+**Privacy-First Approach**
+No tracking, no accounts, no data collection. Testimonial submissions happen via email only, with clear disclaimers about how stories are shared. Safety first, always.
 
 ---
 
-### Impact
+### Result
+
+**Mama Circle** is live at <a href="https://mamacircle.me" target="_blank" rel="noopener">mamacircle.me</a>:
 
 <div class="sticky-note pink centered">
-  <p>"I got tears in my eyes, thank you for putting this into the world." - feedback from a mama</p>
+  <p>"I got tears in my eyes, thank you for putting this into the world."</p>
 </div>
 
-- Created a heartfelt presence online so mamas feel lest alone on postpartum, at least a tiny bit.
-- Helped others feel inspired to connect, share stories and show up with the hashtag #mamacircle 💞
-- Reconnected me to my creative voice, as a designer, as a new mother, a writer, and a builder
+- A heartfelt presence helping new mothers feel less alone in postpartum
+- The #mamacircle hashtag invites others to share their stories and show up for each other
+- Reconnected me to my creative voice as a designer, mother, writer, and builder
 
-Mama Circle is a digital love letter to new mamas everywhere, and it is just the beginning.
+Built with Eleventy, Nunjucks, and vanilla CSS. Mama Circle is a digital love letter to new mamas everywhere, and it is just the beginning.

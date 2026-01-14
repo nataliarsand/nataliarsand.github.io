@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A playful yet grounded quiz experience inspired by traditional Ayurvedic wisdom. This project was my attempt to make ancient knowledge more intuitive (and beautiful) to explore. I designed, wrote, and built the entire React-based app, from translating traditional frameworks into user-friendly logic to crafting results into a clear and simple narrative.
+    <meta name="description" content="A playful yet grounded quiz experience inspired by traditional Ayurvedic wisdom. Discover your constitution and current state of balance through themed questions that feel like a conversation, not a medical form.
 ">
     <meta name="theme-color" content="#ffffff">
   
@@ -271,10 +271,10 @@
                     <div class="hero-text">
                         <h1 class="work-title">BodyMap</h1>
                         
-                        <p class="work-subtitle">Designing a better way to understand your dosha imbalances</p>
+                        <p class="work-subtitle">Designing a better way to understand your dosha</p>
                         
                         
-                        <p class="work-description">A playful yet grounded quiz experience inspired by traditional Ayurvedic wisdom. This project was my attempt to make ancient knowledge more intuitive (and beautiful) to explore. I designed, wrote, and built the entire React-based app, from translating traditional frameworks into user-friendly logic to crafting results into a clear and simple narrative.
+                        <p class="work-description">A playful yet grounded quiz experience inspired by traditional Ayurvedic wisdom. Discover your constitution and current state of balance through themed questions that feel like a conversation, not a medical form.
 </p>
                         
                     </div>
@@ -294,7 +294,7 @@
                 <div class="info-group info-group--wide">
                     <span class="info-label"><i class="fa-solid fa-cube"></i> Deliverables</span>
                     <div class="info-pills">
-                        <span class="info-pill" title="Quiz format exploring patterns across body, mind, and habits">Structured self-assessment</span><span class="info-pill" title="Dual output logic for constitution and current imbalance">Smart results engine</span><span class="info-pill" title="Thematic structure across digestion, movement, emotions, and lifestyle">Modular content system</span><span class="info-pill" title="Friendly storytelling tone rooted in traditional principles">Narrative insights</span>
+                        <span class="info-pill" title="Separate quizzes for constitution (Prakriti) and current state (Vikriti)">Dual Assessment</span><span class="info-pill" title="40 questions organized by Body, Digestion, Mind, and Lifestyle">Themed Questions</span><span class="info-pill" title="8 possible dosha outcomes with personalized insights">Smart Results Engine</span><span class="info-pill" title="Morning, midday, and evening recommendations for each type">Daily Routines</span><span class="info-pill" title="Save results as shareable images">Downloadable Certificate</span><span class="info-pill" title="Resume mid-quiz with localStorage persistence">Progress Saving</span>
                     </div>
                 </div>
                 
@@ -304,7 +304,7 @@
                 
                 <div class="info-group">
                     <span class="info-label"><i class="fa-solid fa-handshake"></i> Collaboration</span>
-                    <span class="info-value">Self-initiated project with feedback from wellness peers and AI code assistance</span>
+                    <span class="info-value">Self-initiated project with feedback from wellness peers and AI assistance</span>
                 </div>
                 
             </div>
@@ -314,12 +314,28 @@
             <!-- Render Markdown Content -->
             <hr />
 
-<h3 id="design-approach">Design approach</h3>
+<h3 id="situation">Situation</h3>
+
+<p>Most dosha quizzes online fall into two extremes: either they’re oversimplified (“Answer 5 questions to find your type!”) or they’re overwhelming walls of text filled with Sanskrit jargon. Neither approach serves someone genuinely curious about Ayurveda.</p>
+
+<p>There’s also a common confusion between your constitution (who you naturally are) and your current state (how you’re feeling now due to stress, diet, or lifestyle). Most tools conflate the two, leading to misleading results.</p>
+
+<hr />
+
+<h3 id="task">Task</h3>
+
+<p>Create a dosha assessment that’s comprehensive but approachable. One that respects Ayurvedic tradition while feeling modern and inviting. And crucially, one that distinguishes between your natural constitution and your current imbalances, because understanding both is key to finding balance.</p>
+
+<hr />
+
+<h3 id="action">Action</h3>
+
+<p>I designed and built <strong>BodyMap</strong>, a dual-assessment tool that guides users through their Ayurvedic self-discovery:</p>
 
 <ul>
-  <li><strong>Group-based questions</strong>: Instead of dozens of scattered questions, themes are clustered around how you feel, eat, move, and think.</li>
-  <li><strong>Dual logic</strong>: The tool detects both your nature and your imbalance, gently revealing patterns without jargon.</li>
-  <li><strong>Tone and language</strong>: It doesn’t feel like a spreadsheet or a mystic scroll. It feels like a thoughtful friend asking how you’ve been.</li>
+  <li><strong>Two distinct assessments</strong>: Prakriti (constitution) reveals your lifelong nature; Vikriti (current state) shows what’s out of balance right now.</li>
+  <li><strong>Themed question groups</strong>: Instead of random questions, they’re organized by Body &amp; Appearance, Digestion &amp; Metabolism, Mind &amp; Emotions, and Lifestyle &amp; Energy.</li>
+  <li><strong>Conversational tone</strong>: Questions feel like a thoughtful friend asking how you’ve been, not a clinical form.</li>
 </ul>
 
 <div class="device-showcase">
@@ -330,23 +346,43 @@
     <img src="/assets/images/works/bodymap/homepage-mobile.webp" alt="BodyMap mobile view" class="work-image" />
   </div>
 </div>
-<p class="work-image-caption">BodyMap quiz interface - grouped thematic questions</p>
+<p class="work-image-caption">BodyMap - dual assessment for constitution and current state</p>
+
+<h4 id="features-built">Features built</h4>
+
+<p><strong>Dual Assessment System</strong>
+The constitution quiz (40 questions) explores long-term patterns and natural tendencies. The current state quiz unlocks after, focusing on recent symptoms and how you’ve been feeling lately. This distinction is fundamental to Ayurveda but rarely implemented well.</p>
+
+<p><strong>8 Possible Outcomes</strong>
+Results can be single dosha (Vata, Pitta, Kapha), dual combinations (Vata-Pitta, Pitta-Kapha, Vata-Kapha), Tridoshic (all three balanced), or a Balanced state for current assessments.</p>
+
+<p><strong>Personalized Results</strong>
+Each result includes: a summary of the dosha archetype, core traits with descriptions, what balance and imbalance look like, actionable tips for restoration, and a daily routine guide (morning, midday, evening).</p>
+
+<p><strong>Save &amp; Share</strong>
+Results can be downloaded as certificate images or copied as text summaries. Progress auto-saves to localStorage, so users can close the browser and resume later.</p>
+
+<p><strong>Gated Flow</strong>
+The current state assessment only unlocks after completing the constitution quiz, teaching users the proper sequence for understanding their Ayurvedic profile.</p>
 
 <hr />
 
-<h3 id="impact">Impact</h3>
+<h3 id="result">Result</h3>
 
-<div class="sticky-note centered rotate-right">
-  <p>"The easier dosha quiz I've ever done"</p>
-</div>
+<p><strong>BodyMap</strong> is live at <a href="https://bodymap.wearenebula.cc/" target="_blank" rel="noopener">bodymap.wearenebula.cc</a>:</p>
 
 <ul>
-  <li>Helped people gain clearer insight into their patterns and tendencies</li>
-  <li>Helpful for ayurveda professionals too as a one tool, less work from their analysis of patients.</li>
-  <li>Received praise for being “the easier dosha quiz I’ve ever done”</li>
+  <li>Praised as “the easiest dosha assessment I’ve ever done”</li>
+  <li>Helps practitioners and curious beginners alike understand their patterns</li>
+  <li>Useful for Ayurveda professionals as a starting tool for patient analysis</li>
+  <li>Brings design thinking to wellness without dumbing down the tradition</li>
 </ul>
 
-<p>BodyMap is my way of bringing design to wellness without dumbing it down, and inviting others to explore the fascinating world of ayurveda.</p>
+<div class="sticky-note centered rotate-right">
+  <p>"The easiest dosha assessment I've ever done"</p>
+</div>
+
+<p>Built with React, Tailwind CSS, and Framer Motion. BodyMap is my invitation for others to explore the fascinating world of Ayurveda.</p>
 
 
             </div>
