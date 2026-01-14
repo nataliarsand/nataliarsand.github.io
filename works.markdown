@@ -6,7 +6,7 @@ main_id: selected-works
 
 <section id="works-index">
   <div class="container">
-    <h1>Selected Works</h1>
+    <h1 class="anim-on-load fade-in-up">Selected Works</h1>
     <div class="works-grid">
       {% assign sorted_works = site.works | sort: 'title' %}
       {% for work in sorted_works %}

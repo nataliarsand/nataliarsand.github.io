@@ -1,37 +1,165 @@
-// === BRAND & CORE COLORS ===
-$color-primary:       #1a1a1a;       // Deep neutral black — primary text & strong UI elements
-$color-secondary:     #2e2e42;       // Muted indigo-gray — for secondary headings, borders, or depth
+// === CSS CUSTOM PROPERTIES (for runtime theming) ===
+:root {
+  // Core
+  --color-primary: #1a1a1a;
+  --color-secondary: #2e2e42;
 
-// === ACCENTS ===
-$color-accent:        #3b82f6;       // Primary action — links, buttons, icons
-$color-accent-hover:  #2563eb;       // Hover state for primary action
-$color-accent-alt:    #1e40af;       // Secondary accent — darker blue for depth
-$color-accent-alt-hover: #1e3a8a;    // Hover or active alt-accent
+  // Surfaces
+  --color-surface: #ffffff;
+  --color-surface-alt: #f4f4f6;
+  --color-surface-inverse: #1f1f2b;
 
-// === SURFACES & STRUCTURE ===
-$color-surface:       #ffffff;       // Main backgrounds
-$color-surface-alt:   #f4f4f6;       // Section backgrounds, cards
-$color-surface-inverse: #1f1f2b;     // Dark surface — e.g., dark mode card or footer
+  // Text
+  --color-text: #1a1a1a;
+  --color-text-muted: #6b6b7e;
+  --color-text-inverse: #ffffff;
 
-$color-overlay:       rgba(255, 255, 255, 0.94); // Light modals, overlays
-$color-overlay-dark:  rgba(0, 0, 0, 0.6);        // Dark overlay for modals or menus
+  // Borders
+  --color-border: #d1d1db;
+  --color-border-muted: #e6e6ee;
 
-// === TEXT ===
-$color-text:          $color-primary;    // Default text
-$color-text-muted:    #6b6b7e;           // Muted copy or labels
-$color-text-inverse:  #ffffff;           // On dark surfaces
-$color-text-link:     $color-accent;     // Links and CTA copy
+  // Accent
+  --color-accent: #3b82f6;
+  --color-accent-hover: #2563eb;
+  --color-accent-alt: #1e40af;
+  --color-accent-alt-hover: #1e3a8a;
 
-// === BORDER ===
-$color-border:        #d1d1db;       // Dividers, cards, input outlines
-$color-border-muted:  #e6e6ee;       // Subtle UI borders
+  // Highlights
+  --color-highlight: #fef3c7;
+  --color-highlight-strong: #fde68a;
 
-// === HIGHLIGHT ===
-$color-highlight:     #fef3c7;       // For callouts, annotations, gentle emphasis
-$color-highlight-strong: #fde68a;   // Slightly stronger for persistent notice or tags
+  // Status
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #0ea5e9;
 
-// === STATUS / UTILITY COLORS ===
-$color-success:       #10b981;       // For success messages, checkmarks
-$color-warning:       #f59e0b;       // For soft warnings or notices
-$color-error:         #ef4444;       // For errors, invalid inputs
-$color-info:          #0ea5e9;       // Informational messages or tips
+  // Overlays
+  --color-overlay: rgba(255, 255, 255, 0.94);
+  --color-overlay-dark: rgba(0, 0, 0, 0.6);
+
+  // Device frames (always dark, border varies by theme)
+  --color-device-frame: #1a1a1a;
+  --color-device-border: #0a0a0a;
+}
+
+// === DARK THEME ===
+// Hierarchy: lower/deeper = darker, raised = lighter
+[data-theme="dark"] {
+  --color-primary: #e8e8e8;
+  --color-secondary: #c0c0c0;
+
+  // Surfaces (depth hierarchy: surface < surface-alt)
+  --color-surface: #0a0a0a;      // Base layer - darkest
+  --color-surface-alt: #1a1a1a;  // Cards/raised elements - slightly lighter
+  --color-surface-inverse: #e4e4e4;
+
+  --color-text: #d4d4d4;
+  --color-text-muted: #888888;
+  --color-text-inverse: #0a0a0a;
+
+  // Borders (subtle separation)
+  --color-border: #3f3f47;
+  --color-border-muted: #2d2d32;
+
+  --color-accent: #60a5fa;
+  --color-accent-hover: #93c5fd;
+  --color-accent-alt: #3b82f6;
+  --color-accent-alt-hover: #2563eb;
+
+  --color-highlight: #1f1f1f;
+  --color-highlight-strong: #2d2d2d;
+
+  --color-overlay: rgba(0, 0, 0, 0.94);
+  --color-overlay-dark: rgba(255, 255, 255, 0.1);
+
+  // Device border - lighter in dark mode
+  --color-device-border: #3a3a3a;
+
+  // Invert dark images (icons, illustrations with dark outlines)
+  .card img,
+  .intro-image,
+  img[src*="icons/"],
+  img[src*=".svg"]:not(.device-showcase img) {
+    filter: invert(1) hue-rotate(180deg) brightness(0.85);
+  }
+
+  // Device showcase - darker background only, frames stay the same
+  .device-showcase {
+    background: linear-gradient(145deg, #1a1a1a 0%, #0f0f0f 100%);
+
+    &::before {
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    }
+  }
+
+  // Device frames - keep original appearance
+  .device-frame,
+  .device-frame img,
+  .device-showcase img {
+    filter: none !important;
+  }
+
+  // Sticky notes - keep original colors and dark text
+  .sticky-note {
+    filter: none !important;
+    color: #1a1a1a !important;
+
+    p, span, strong, em {
+      color: #1a1a1a !important;
+    }
+
+    strong {
+      color: #92400e !important;
+    }
+  }
+
+  .sticky-note.pink strong {
+    color: #9d174d !important;
+  }
+
+  .sticky-note.blue strong {
+    color: #1e40af !important;
+  }
+
+  .sticky-note.green strong {
+    color: #166534 !important;
+  }
+}
+
+// === SCSS VARIABLES (aliases to CSS custom properties) ===
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+
+$color-surface: var(--color-surface);
+$color-surface-alt: var(--color-surface-alt);
+$color-surface-inverse: var(--color-surface-inverse);
+
+$color-text: var(--color-text);
+$color-text-muted: var(--color-text-muted);
+$color-text-inverse: var(--color-text-inverse);
+$color-text-link: var(--color-accent);
+
+$color-border: var(--color-border);
+$color-border-muted: var(--color-border-muted);
+
+$color-accent: var(--color-accent);
+$color-accent-hover: var(--color-accent-hover);
+$color-accent-alt: var(--color-accent-alt);
+$color-accent-alt-hover: var(--color-accent-alt-hover);
+
+$color-highlight: var(--color-highlight);
+$color-highlight-strong: var(--color-highlight-strong);
+
+$color-success: var(--color-success);
+$color-warning: var(--color-warning);
+$color-error: var(--color-error);
+$color-info: var(--color-info);
+
+$color-overlay: var(--color-overlay);
+$color-overlay-dark: var(--color-overlay-dark);
+
+$color-device-frame: var(--color-device-frame);
+$color-device-border: var(--color-device-border);

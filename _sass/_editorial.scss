@@ -167,24 +167,5 @@
         }
       }
     }
-  
-    // Theme toggle button
-    #theme-toggle {
-      position: fixed;
-      bottom: 1rem;
-      right: 1rem;
-      padding: 0.6rem 1rem;
-      font-family: 'IBM Plex Mono', monospace;
-      background: #eee;
-      color: #111;
-      border: 1px solid #999;
-      border-radius: 4px;
-      cursor: pointer;
-      z-index: 1000;
-  
-      &:hover {
-        background: #ddd;
-      }
-    }
   }
   

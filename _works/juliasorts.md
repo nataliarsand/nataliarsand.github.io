@@ -45,6 +45,5 @@ collaboration:
 
 - Deployed live at <a href="https://juliasorts.com" target="_blank" rel="noopener">juliasorts.com</a>
 - Built with React + Vite, optimized for performance
-- SEO optimized for discoverability
 
 Julia Sorts is proof that sometimes the best projects come from solving your own problems, even if that problem is just picking what's for dinner.

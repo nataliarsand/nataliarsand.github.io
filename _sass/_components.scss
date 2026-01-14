@@ -15,7 +15,7 @@
   font-size: 1rem;
   padding: 14px 24px;
   background-color: $color-accent;
-  color: #fff;
+  color: $color-text-inverse;
   text-decoration: none;
   border: none;
   border-radius: 0;
@@ -25,7 +25,7 @@
   &:hover {
     background-color: $color-accent-alt;
     transform: translateY(-4px) scale(1.03);
-    color: #fff;
+    color: $color-text-inverse;
     text-decoration: none;
   }
 
@@ -177,20 +177,105 @@
   }
 }
 
+// ========== iOS-STYLE THEME TOGGLE ==========
+.theme-toggle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+
+  input[type="checkbox"] {
+    display: none;
+  }
+}
+
+.toggle-track {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  background: $color-border;
+  border-radius: 14px;
+  transition: background 0.3s ease;
+}
+
+.toggle-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+
+  svg {
+    display: block;
+    width: 12px;
+    height: 12px;
+  }
+}
+
+.toggle-icon--light {
+  left: 8px;
+  color: white;
+  opacity: 0;
+}
+
+.toggle-icon--dark {
+  right: 8px;
+  color: $color-text-muted;
+  opacity: 0;
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+// Checked state (dark mode)
+.theme-toggle input:checked + .toggle-track {
+  background: $color-accent;
+
+  .toggle-icon--light {
+    opacity: 1;
+  }
+
+  .toggle-thumb {
+    transform: translateX(24px);
+  }
+}
+
+// Unchecked state (light mode) - show moon on right
+.theme-toggle input:not(:checked) + .toggle-track {
+  .toggle-icon--dark {
+    opacity: 0.7;
+  }
+}
+
+// Focus state for accessibility
+.theme-toggle input:focus-visible + .toggle-track {
+  outline: 2px solid $color-accent;
+  outline-offset: 2px;
+}
+
 #theme-toggle {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  padding: 0.6rem 1rem;
+  padding: 0.4rem 0.8rem;
   font-family: 'IBM Plex Mono', monospace;
-  background: #eee;
-  color: #111;
-  border: 1px solid #999;
+  font-size: 0.75rem;
+  background: $color-surface-alt;
+  color: $color-text;
+  border: 1px solid $color-border;
   border-radius: 4px;
-  z-index: 1000;
+  cursor: pointer;
 
   &:hover {
-    background: #ddd;
+    background: $color-border-muted;
   }
 }
 
@@ -206,12 +291,12 @@
 
 // ========== OS SELECTION HIGHLIGHT ==========
 ::selection {
-  background: rgba($color-accent, 0.25);
+  background: rgba(59, 130, 246, 0.25); // accent blue
   color: $color-primary;
 }
 
 ::-moz-selection {
-  background: rgba($color-accent, 0.25);
+  background: rgba(59, 130, 246, 0.25); // accent blue
   color: $color-primary;
 }
 
@@ -404,7 +489,7 @@
   gap: 2rem;
   margin: 2.5rem 0 1rem 0;
   padding: 2rem;
-  background: linear-gradient(145deg, $color-surface-alt 0%, #eaeaed 100%);
+  background: linear-gradient(145deg, $color-surface-alt 0%, $color-border-muted 100%);
   border-radius: 8px;
   position: relative;
   overflow: hidden;
@@ -453,7 +538,8 @@
   &.desktop {
     flex: 1;
     max-width: 70%;
-    background: $color-primary;
+    background: $color-device-frame;
+    border: 1px solid $color-device-border;
     border-radius: 8px;
     padding: 8px 8px 24px 8px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
@@ -483,7 +569,8 @@
   &.mobile {
     width: 120px;
     min-width: 120px;
-    background: $color-primary;
+    background: $color-device-frame;
+    border: 1px solid $color-device-border;
     border-radius: 20px;
     padding: 8px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
@@ -911,7 +998,7 @@
 // ========== CAREER TIMELINE ==========
 .career-timeline {
   flex: 0 0 280px;
-  background: #fff;
+  background: $color-surface;
   border: 1px solid $color-primary;
   border-radius: 0;
   padding: 1.25rem;
@@ -1028,16 +1115,415 @@
   }
 }
 
-// ========== LAZY LOAD ANIMATIONS ==========
+// ========================================
+// REUSABLE ANIMATION SYSTEM
+// ========================================
+
+// === TIMING FUNCTIONS ===
+$ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+$ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
+$ease-out-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+// === KEYFRAME ANIMATIONS ===
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  70% {
+    transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+// === BASE ANIMATION CLASSES ===
+// These set up the initial hidden state
+
+[data-animate] {
+  opacity: 0;
+}
+
+.anim-ready {
+  // Applied by JS when element is ready to animate
+}
+
+.anim-visible {
+  // Applied by JS when element enters viewport
+}
+
+// === SCROLL-TRIGGERED ANIMATIONS ===
+// Use data-animate="fade-up" etc. on elements
+
+[data-animate="fade"] {
+  opacity: 0;
+  transition: opacity 0.6s $ease-out-smooth;
+
+  &.anim-visible {
+    opacity: 1;
+  }
+}
+
+[data-animate="fade-up"] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s $ease-out-smooth,
+              transform 0.6s $ease-out-expo;
+
+  &.anim-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-animate="fade-down"] {
+  opacity: 0;
+  transform: translateY(-24px);
+  transition: opacity 0.6s $ease-out-smooth,
+              transform 0.6s $ease-out-expo;
+
+  &.anim-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-animate="fade-left"] {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.6s $ease-out-smooth,
+              transform 0.6s $ease-out-expo;
+
+  &.anim-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+[data-animate="fade-right"] {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.6s $ease-out-smooth,
+              transform 0.6s $ease-out-expo;
+
+  &.anim-visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+[data-animate="scale"] {
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 0.5s $ease-out-smooth,
+              transform 0.5s $ease-out-back;
+
+  &.anim-visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+[data-animate="pop"] {
+  opacity: 0;
+  transform: scale(0.85);
+
+  &.anim-visible {
+    animation: popIn 0.5s $ease-out-back forwards;
+  }
+}
+
+[data-animate="slide-up"] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.7s $ease-out-smooth,
+              transform 0.7s $ease-out-expo;
+
+  &.anim-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// === STAGGER DELAYS ===
+// Use data-delay="1" through "5" for staggered animations
+
+@for $i from 1 through 8 {
+  [data-delay="#{$i}"] {
+    transition-delay: #{$i * 0.1}s;
+
+    &.anim-visible {
+      transition-delay: #{$i * 0.1}s;
+    }
+  }
+}
+
+// === PAGE LOAD ANIMATIONS ===
+// Applied immediately on page load, not scroll-triggered
+
+.anim-on-load {
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.anim-on-load.fade-in {
+  animation: fadeIn 0.6s $ease-out-smooth 0.1s forwards;
+}
+
+.anim-on-load.fade-in-up {
+  animation: fadeInUp 0.6s $ease-out-expo 0.1s forwards;
+}
+
+.anim-on-load.fade-in-down {
+  animation: fadeInDown 0.6s $ease-out-expo 0.1s forwards;
+}
+
+// Load delays for staggered page load
+@for $i from 1 through 8 {
+  .anim-on-load.load-delay-#{$i} {
+    animation-delay: #{0.1 + ($i * 0.1)}s;
+  }
+}
+
+// === LEGACY LAZY LOAD (backwards compatible) ===
 .lazy-hidden {
   opacity: 0;
   transform: translateY(12px);
-  transition: opacity 0.6s cubic-bezier(0.25, 0.1, 0.25, 1),
-              transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition: opacity 0.6s $ease-out-smooth,
+              transform 0.6s $ease-out-smooth;
 }
 
 .lazy-visible {
   opacity: 1;
   transform: translateY(0);
 }
+
+// === WORK PAGE ANIMATIONS ===
+// Paper slide-in for main content
+.work-content-animate {
+  transform: translateY(100%);
+  transition: none;
+
+  &.anim-active {
+    animation: paperSlideIn 0.4s $ease-out-expo forwards;
+  }
+
+  &.anim-skip {
+    transform: none;
+  }
+}
+
+@keyframes paperSlideIn {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+// Sidebar slide-in from left
+.work-sidebar-animate {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: none;
+
+  &.anim-active {
+    animation: sidebarSlideIn 0.8s $ease-out-expo 0.1s forwards;
+  }
+
+  &.anim-skip {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes sidebarSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// === TIMED ANIMATIONS (JS triggered, not scroll) ===
+.anim-timed {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s $ease-out-smooth,
+              transform 0.6s $ease-out-expo;
+
+  &.anim-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// === TYPING ANIMATION ===
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid $color-primary;
+  width: 0;
+  animation:
+    typing 1.2s steps(16) 0.3s forwards,
+    blink 0.7s step-end infinite;
+}
+
+.typing-text.done {
+  animation: typing 1.2s steps(16) 0.3s forwards;
+  border-color: transparent;
+}
+
+// === FOLDER SLIDE-IN ANIMATION ===
+#works-section .folder-link {
+  opacity: 0;
+  transform: translateX(40px);
+  animation: fadeInRight 0.6s $ease-out-expo 1.8s forwards;
+}
+
+// === HOVER ANIMATIONS ===
+.hover-lift {
+  transition: transform 0.3s $ease-out-smooth,
+              box-shadow 0.3s $ease-out-smooth;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.hover-scale {
+  transition: transform 0.3s $ease-out-back;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s $ease-out-smooth;
+
+  &:hover {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+}
+
+// === CONTINUOUS ANIMATIONS ===
+.anim-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.anim-pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
+
+// === REDUCED MOTION ===
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
 

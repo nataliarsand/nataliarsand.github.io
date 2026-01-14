@@ -6,10 +6,14 @@ title: Home
 <section id="main-intro">
   <div class="container">
     <div id="intro-text">
-      <img src="{{ '/assets/images/natalia.svg' | relative_url }}" class="intro-image" alt="Natalia Arsand profile image"/>
-      <h2 class="hidden">Hi, I’m Natalia.</h2>
-      <p>I’m a <strong>UX Design Lead</strong> working at the intersection of strategy, systems, and craft. I design for impact. Thoughtful, scalable, and always human-centered.</p>
-      <p>This site is my digital OS. I use this space to explore structure, reflect on process, and highlight work I am proud of.</p>
+      <div class="intro-greeting">
+        <img src="{{ '/assets/images/natalia-profile.png' | relative_url }}"
+             srcset="{{ '/assets/images/natalia-profile.png' | relative_url }} 1x, {{ '/assets/images/natalia-profile@2x.png' | relative_url }} 2x"
+             class="intro-image anim-on-load fade-in load-delay-1" alt="Natalia Arsand profile image"/>
+        <h2><span class="typing-text">Hi, I'm Natalia.</span></h2>
+      </div>
+      <p class="intro-p anim-timed">I'm a <strong>UX Design Lead</strong> working at the intersection of strategy, systems, and craft. I design for impact. Thoughtful, scalable, and always human-centered.</p>
+      <p class="intro-p anim-timed">This site is my digital OS. I use this space to explore structure, reflect on process, and highlight work I am proud of.</p>
     </div>
     <div id="works-section">
       {% include components/folder-link.html url="/works" title="Selected Works" %}
@@ -23,12 +27,12 @@ title: Home
 
 
 <section id="about">
-  <h2 tabindex="0">Design approach</h2>
-  <p class="section-intro">I approach design as a practice of systems thinking, collaboration, and continuous refinement. Here are the principles I follow to ensure impact through my work.
+  <h2 tabindex="0" data-animate="fade-up">Design approach</h2>
+  <p class="section-intro" data-animate="fade-up" data-delay="1">I approach design as a practice of systems thinking, collaboration, and continuous refinement. Here are the principles I follow to ensure impact through my work.
 </p>
 
 
-  <div class="grid-cards">
+  <div class="grid-cards" data-stagger="0.1">
     <div class="card">
         <img src="{{ '/assets/images/icons/discover.svg' | relative_url }}" alt="Discover icon" />
         <h3>Discovery & Collaboration</h3>
@@ -58,12 +62,12 @@ title: Home
 </section>
 
 <section id="my-craft">
-  <h2 tabindex="0">Core skills</h2>
-  <p class="section-intro">
+  <h2 tabindex="0" data-animate="fade-up">Core skills</h2>
+  <p class="section-intro" data-animate="fade-up" data-delay="1">
     I bridge strategy and execution through skills that span problem framing, hands-on design, prototyping, and delivery. These are the core tools I rely on:
   </p>
 
-  <div class="grid-cards">
+  <div class="grid-cards" data-stagger="0.08">
     <div class="card">
       <h3>Strategic Discovery & Facilitation</h3>
       <p>I help teams get unstuck early by running hands-on, purpose focused workshops to create alignemt, uncover open questions, and align user needs to business priorities. I consolidate findings into MVP plans that offer high-learning opportunities with real delivery value.</p>
@@ -153,12 +157,12 @@ title: Home
 
 <section id="not-my-zone">
   <div class="nmz-content">
-    <h2 tabindex="0">Out of scope</h2>
-    <p class="section-intro">
+    <h2 tabindex="0" data-animate="fade-up">Out of scope</h2>
+    <p class="section-intro" data-animate="fade-up" data-delay="1">
       I'm not a unicorn. Here are a few things I probably won't help you with, and that's okay:
     </p>
 
-    <ul class="pills">
+    <ul class="pills" data-animate="fade-up" data-delay="2">
       <li class="pill">Branding from scratch</li>
       <li class="pill">Polished motion design</li>
       <li class="pill">Pixel-perfect Dribbble shots</li>
@@ -180,9 +184,9 @@ title: Home
 
 
 <section id="more-about">
-  <h2 tabindex="0">Career Journey</h2>
+  <h2 tabindex="0" data-animate="fade-up">Career Journey</h2>
   <div class="career-layout">
-    <div class="about-content">
+    <div class="about-content" data-animate="fade-right" data-delay="1">
       <p>I've always been drawn to design:  not just how things look, but how they work and why. I studied both Graphic Design and Systems Analysis, but most of what I know I learned through experience: building, breaking, iterating.</p>
 
       <p>I started at 16, working as a Webmaster in a small countryside tech company. I spent my teenage years immersed in the internet, fascinated by its creative and connective power. By 18, I joined Dell, working on the US platform and helping migrate a massive CMS using HTML, CSS, XML, JavaScript, and C#.</p>
@@ -194,7 +198,7 @@ title: Home
       <p>Today, I'm taking time to explore what comes next:  building a few apps, experimenting with AI, and balancing parenthood with creative work. I'm open to the right opportunity, whether that's joining a mission-driven team or collaborating on meaningful projects.</p>
     </div>
 
-    <aside class="career-timeline">
+    <aside class="career-timeline" data-animate="fade-left" data-delay="2">
       <h3 class="timeline-header">Work Experience</h3>
       <div class="timeline-item">
         <span class="timeline-date">Oct 2015 – 2025</span>
@@ -226,10 +230,10 @@ title: Home
 </section>
 
 <section id="hire-me">
-  <h2 tabindex="0">Let’s Work Together</h2>
-  <p class="section-intro">I’m open to good work with good people, shaping new ideas, mentoring a fellow designer, or joining a mission-driven team that cares about what they’re building.</p>
+  <h2 tabindex="0" data-animate="fade-up">Let's Work Together</h2>
+  <p class="section-intro" data-animate="fade-up" data-delay="1">I'm open to good work with good people, shaping new ideas, mentoring a fellow designer, or joining a mission-driven team that cares about what they're building.</p>
 
-  <div class="grid-cards">
+  <div class="grid-cards" data-stagger="0.1">
     <div class="card">
       <img src="{{ '/assets/images/icons/freelance.svg' | relative_url }}" alt="Freelance work icon" />
       <h3>Freelance work</h3>

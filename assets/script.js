@@ -1,4 +1,26 @@
+console.log("Script.js loaded");
+
 $(function () {
+    console.log("jQuery ready fired");
+
+    // ========== TYPING ANIMATION CURSOR ==========
+    const typingText = document.querySelector('.typing-text');
+    if (typingText) {
+        // Remove cursor after typing completes (0.3s delay + 1.2s animation)
+        setTimeout(() => {
+            typingText.classList.add('done');
+        }, 1500);
+
+        // Trigger intro paragraphs after typing completes (synced with folder at 1.8s)
+        setTimeout(() => {
+            document.querySelectorAll('.intro-p').forEach((el, index) => {
+                setTimeout(() => {
+                    el.classList.add('anim-visible');
+                }, index * 100); // 100ms stagger between paragraphs
+            });
+        }, 1800);
+    }
+
     // ========== TABS ==========
     $(".tab-link").on("click", function (e) {
       e.preventDefault();
@@ -305,6 +327,7 @@ $(function () {
       window.location.replace('/404.html');
     }
 
+    // ========== EDITORIAL THEME TOGGLE ==========
     const toggleButton = document.getElementById("theme-toggle");
     const editorialThemeClass = "editorial-theme";
     const defaultThemeClass = "default-theme";
@@ -329,6 +352,47 @@ $(function () {
             }
         });
     }
+
+    // ========== DARK MODE TOGGLE ==========
+    const darkModeToggle = document.getElementById("dark-mode-toggle");
+
+    // Check for saved dark mode preference or system preference
+    const savedDarkMode = localStorage.getItem("darkMode");
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+    function setDarkMode(isDark) {
+        if (isDark) {
+            document.documentElement.setAttribute("data-theme", "dark");
+            if (darkModeToggle) darkModeToggle.checked = true;
+        } else {
+            document.documentElement.removeAttribute("data-theme");
+            if (darkModeToggle) darkModeToggle.checked = false;
+        }
+    }
+
+    // Initialize dark mode
+    if (savedDarkMode === "true") {
+        setDarkMode(true);
+    } else if (savedDarkMode === "false") {
+        setDarkMode(false);
+    } else if (prefersDark) {
+        setDarkMode(true);
+    }
+
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener("change", function () {
+            const isDark = this.checked;
+            setDarkMode(isDark);
+            localStorage.setItem("darkMode", String(isDark));
+        });
+    }
+
+    // Listen for system preference changes
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
+        if (localStorage.getItem("darkMode") === null) {
+            setDarkMode(e.matches);
+        }
+    });
 
     // ========== IMAGE MODAL ==========
     const modal = document.getElementById("imageModal");
@@ -464,7 +528,51 @@ $(function () {
         });
     }
 
-    // ========== LAZY LOAD ANIMATIONS ==========
+    // ========== WORK PAGE ENTRY ANIMATION ==========
+    const workContent = document.querySelector('.work-content-animate');
+
+    if (workContent) {
+        // Animate content on every work page
+        workContent.classList.add('anim-active');
+
+        // Skip header animations on work pages
+        document.querySelectorAll('.anim-on-load').forEach(el => {
+            el.classList.remove('anim-on-load', 'fade-in-down', 'fade-in-up');
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+            el.style.animation = 'none';
+        });
+    }
+
+    // ========== SCROLL ANIMATION SYSTEM ==========
+    // Handles both data-animate attributes and legacy lazy-load classes
+
+    const animationObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Handle data-animate elements
+                if (entry.target.hasAttribute('data-animate')) {
+                    entry.target.classList.add('anim-visible');
+                }
+                // Handle legacy lazy-hidden elements
+                if (entry.target.classList.contains('lazy-hidden')) {
+                    entry.target.classList.add('lazy-visible');
+                    entry.target.classList.remove('lazy-hidden');
+                }
+                animationObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -40px 0px'
+    });
+
+    // Observe all data-animate elements
+    document.querySelectorAll('[data-animate]').forEach(el => {
+        animationObserver.observe(el);
+    });
+
+    // Legacy lazy load elements (backwards compatible)
     const lazyElements = document.querySelectorAll(
         '#home > section:not(#main-intro) > *:not(.section-nav):not(h2), ' +
         '#selected-works .content > h2, ' +
@@ -478,23 +586,27 @@ $(function () {
     );
 
     if (lazyElements.length > 0) {
-        lazyElements.forEach((el, index) => {
-            el.classList.add('lazy-hidden');
+        lazyElements.forEach((el) => {
+            // Don't override if already has data-animate
+            if (!el.hasAttribute('data-animate')) {
+                el.classList.add('lazy-hidden');
+                animationObserver.observe(el);
+            }
         });
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('lazy-visible');
-                    entry.target.classList.remove('lazy-hidden');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            threshold: 0.15,
-            rootMargin: '0px 0px -30px 0px'
-        });
-
-        lazyElements.forEach(el => observer.observe(el));
     }
+
+    // ========== STAGGER CHILDREN ANIMATION ==========
+    // Automatically stagger children of elements with data-stagger
+    document.querySelectorAll('[data-stagger]').forEach(parent => {
+        const children = parent.children;
+        const staggerDelay = parseFloat(parent.dataset.stagger) || 0.1;
+
+        Array.from(children).forEach((child, index) => {
+            if (!child.hasAttribute('data-animate')) {
+                child.setAttribute('data-animate', 'fade-up');
+            }
+            child.style.transitionDelay = `${index * staggerDelay}s`;
+            animationObserver.observe(child);
+        });
+    });
   });

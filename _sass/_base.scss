@@ -25,9 +25,9 @@ body {
 }
 
 // Mixin: Reusable focus highlight with background
-@mixin focus-highlight($bg: rgba($color-accent, 0.1), $shadow: 0 0 0 2px rgba($color-accent, 0.3)) {
-  background-color: $bg;
-  box-shadow: $shadow;
+@mixin focus-highlight() {
+  background-color: rgba(59, 130, 246, 0.1); // accent color with opacity
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
   outline: none;
   transition: background-color 0.2s ease, box-shadow 0.2s ease;
 }

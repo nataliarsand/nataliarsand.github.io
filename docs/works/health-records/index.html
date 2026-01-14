@@ -36,11 +36,29 @@
     <a href="#main-content-start" class="skip-link">Skip to main content</a>
     <header class="header" role="banner">
   <div class="container header-inner">
-    <h1 class="site-title">
+    <h1 class="site-title anim-on-load fade-in-down">
       <a href="/">Natalia Arsand</a> <span class="location">| Amsterdam, NL</span>
     </h1>
-    <a href="mailto:nataliarsand@gmail.com" class="contact-email">hi@nataliarsand.com</a>
-    
+    <div class="header-actions anim-on-load fade-in-down load-delay-1">
+      <a href="mailto:nataliarsand@gmail.com" class="contact-email">hi@nataliarsand.com</a>
+      <label class="theme-toggle" aria-label="Toggle dark mode">
+        <input type="checkbox" id="dark-mode-toggle">
+        <span class="toggle-track">
+          <span class="toggle-icon toggle-icon--light">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"/>
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+            </svg>
+          </span>
+          <span class="toggle-icon toggle-icon--dark">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </span>
+          <span class="toggle-thumb"></span>
+        </span>
+      </label>
+    </div>
     
   <!-- Mobile Hamburger Menu -->
   <nav class="mobile-nav" id="mobileNav">
@@ -68,11 +86,7 @@
     </div>
   </nav>
 
- 
 
-    <button id="theme-toggle" aria-label="Toggle Theme">Switch Theme</button>
-
-    
   </div>
 </header>
 
@@ -271,6 +285,7 @@
 </div>
 
             
+            <div class="work-content-animate">
 
             <!-- Work Hero -->
             <header class="work-hero">
@@ -400,6 +415,7 @@
 <p class="work-image-caption">Global impact: OpenMRS system with our design improvements being used in healthcare facilities in India.</p>
 
 
+            </div>
         </section>
     </main>
     

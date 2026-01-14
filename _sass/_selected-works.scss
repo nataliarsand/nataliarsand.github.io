@@ -722,7 +722,7 @@ main {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  background-color: #dfdfe9;
+  background-color: $color-surface-alt;
   padding: 1rem 0 0;
   margin-bottom: 2rem;
 }
@@ -765,7 +765,7 @@ main {
 
   &.active {
     background: $color-accent-alt;
-    color: #fff;
+    color: $color-text-inverse;
     border-color: $color-accent-alt;
     font-weight: 600;
   }
@@ -773,7 +773,7 @@ main {
 
 .tab-content {
   display: none;
-  background-color: #dfdfe9;
+  background-color: $color-surface-alt;
   padding: 1.5rem;
 
   &.active {
@@ -818,7 +818,7 @@ main {
 
     &.active {
       background: $color-accent-alt;
-      color: #fff;
+      color: $color-text-inverse;
       border-color: $color-accent-alt;
       font-weight: 600;
     }

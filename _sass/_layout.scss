@@ -100,6 +100,12 @@ main {
         display: none; /* Hide contact email on mobile */
       }
     }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
   }
 }
 
@@ -135,13 +141,14 @@ main {
         }
   
         a {
-          color: $color-text-muted;
+          color: $color-accent;
           text-decoration: none;
-          transition: color 0.2s ease;
+          transition: all 0.2s ease;
 
           &:hover,
           &:focus {
-            color: $color-accent;
+            color: $color-accent-hover;
+            text-decoration: underline;
           }
 
           &.active {
@@ -430,7 +437,20 @@ main {
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.5rem;
   width: 100%;
-  max-width: 900px; /* Adjust as needed */
+  max-width: 900px;
+
+  // Stagger folder animations on page load
+  .folder-link {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @for $i from 1 through 12 {
+    .folder-link:nth-child(#{$i}) {
+      animation-delay: #{0.1 + ($i * 0.06)}s;
+    }
+  }
 
   @media (max-width: 768px) {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));

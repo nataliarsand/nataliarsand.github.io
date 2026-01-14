@@ -12,8 +12,10 @@ image: "/assets/images/works/startashtanga/start-ashtanga-top-image.png"
 deliverables:
   - label: Beginner-friendly content
     description: Clear explanations of Ashtanga fundamentals without jargon
-  - label: Shala finder
-    description: Interactive map to find Mysore-style yoga programs worldwide
+  - label: Glossary
+    description: Sanskrit terms and yoga vocabulary explained in plain language
+  - label: Shala finder (WIP)
+    description: Interactive map to find Mysore-style yoga programs worldwide (WIP)
   - label: Multi-language support
     description: Built with i18next for community-driven translations
   - label: Open source
