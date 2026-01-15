@@ -154,22 +154,31 @@
 
 .folder-link {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   text-decoration: none;
   color: $color-text;
   // Button reset for when used as <button>
   background: none;
   border: none;
+  padding: 0;
   cursor: pointer;
-
-  &:hover {
-    animation: jumpUp 0.4s ease-out;
-  }
+  // Disable native browser drag
+  -webkit-user-drag: none;
+  user-select: none;
 
   &:focus-visible {
     outline: 2px solid $color-primary;
     outline-offset: 2px;
+  }
+
+  .folder-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  &:hover .folder-inner {
+    transform: translateY(-8px);
   }
 
   .folder-icon {
@@ -1180,6 +1189,21 @@ $ease-out-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
   to {
     opacity: 1;
     transform: translateX(0);
+  }
+}
+
+@keyframes jumpUp {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  75% {
+    transform: translateY(-7px);
   }
 }
 

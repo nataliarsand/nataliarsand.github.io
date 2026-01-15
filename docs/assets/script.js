@@ -60,11 +60,29 @@ $(function () {
     });
 
     // ========== DRAGGABLE DESKTOP ICONS ==========
-    $("#works-section .folder-link").draggable({
-        containment: "body",
-        cursor: "move",
-        cancel: "" // Allow dragging on buttons
-    });
+    setTimeout(function() {
+      $(".folder-link").draggable({
+          containment: "body",
+          cursor: "move",
+          cancel: "",
+          start: function(event, ui) {
+            $(this).data('dragging', true);
+          },
+          stop: function(event, ui) {
+            var el = $(this);
+            setTimeout(function() {
+              el.data('dragging', false);
+            }, 100);
+          }
+      });
+
+      // Handle click navigation for folder buttons
+      $(".folder-link[data-href]").on("click", function(e) {
+        if (!$(this).data('dragging')) {
+          window.location.href = $(this).data('href');
+        }
+      });
+    }, 2500);
 
     // ========== BACK TO TOP BUTTON ==========
     const backToTopButton = $("#back-to-top");
