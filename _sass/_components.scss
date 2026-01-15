@@ -161,6 +161,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  font: inherit;
   // Disable native browser drag
   -webkit-user-drag: none;
   user-select: none;
@@ -1483,6 +1484,7 @@ $ease-out-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
   overflow: hidden;
   white-space: nowrap;
   border-right: 2px solid $color-primary;
+  color: $color-text;
   width: 0;
   animation:
     typing 1.2s steps(16) 0.3s forwards,
@@ -1744,10 +1746,10 @@ $ease-out-smooth: cubic-bezier(0.25, 0.1, 0.25, 1);
   height: 8px;
   border-radius: 50%;
   background-color: $color-success;
-  animation: blink 1.5s ease-in-out infinite;
+  animation: statusPulse 1.5s ease-in-out infinite;
 }
 
-@keyframes blink {
+@keyframes statusPulse {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.3; }
 }

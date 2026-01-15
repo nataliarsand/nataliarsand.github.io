@@ -469,6 +469,7 @@ main {
   gap: 1.5rem;
   width: 100%;
   max-width: 900px;
+  justify-items: center;
 
   // Stagger folder animations on page load
   .folder-link {

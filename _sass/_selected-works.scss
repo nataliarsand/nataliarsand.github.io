@@ -5,16 +5,11 @@
 // ========================
 
 // Lock icon in sidebar and works index
-.protected-icon,
-.work-sidebar i.protected-icon,
-.folder-link i.protected-icon {
-  display: inline-block;
-  font-family: "Font Awesome 6 Free" !important;
-  font-weight: 900 !important;
-  font-size: 0.55rem !important;
-  margin-left: 0.4rem !important;
+.protected-icon {
+  margin-left: 0.4rem;
+  font-size: 0.6rem;
   color: $color-text-muted;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 // Password gate overlay - shows in content area only
@@ -650,7 +645,7 @@ main {
     }
   }
 
-  i {
+  i:not(.protected-icon) {
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
