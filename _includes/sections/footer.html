@@ -2,11 +2,11 @@
   <div class="footer-columns">
     <div class="footer-left">
       <p>&copy; {{ site.time | date: "%Y" }} Natalia Arsand</p>
-      <p>Amsterdam, NL</p>
+      <p>{{ site.location }}</p>
     </div>
 
     <div class="footer-right">
-      <p><a href="mailto:nataliarsand@gmail.com">hi@nataliarsand.com</a></p>
+      <p><a href="mailto:{{ site.contact_email }}">{{ site.display_email }}</a></p>
       <ul class="footer-social-icons">
         <li>
           <a href="https://www.linkedin.com/in/nataliarsand/" aria-label="LinkedIn" target="_blank" rel="noopener">

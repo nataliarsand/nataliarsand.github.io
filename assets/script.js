@@ -1,8 +1,4 @@
-console.log("Script.js loaded");
-
 $(function () {
-    console.log("jQuery ready fired");
-
     // ========== TYPING ANIMATION CURSOR ==========
     const typingText = document.querySelector('.typing-text');
     if (typingText) {
@@ -225,7 +221,6 @@ $(function () {
     // Initialize protected content
     const protectedContent = document.querySelector('.protected-content');
     const passwordGate = document.getElementById('passwordGate');
-    const passwordForm = document.getElementById('passwordForm');
     const passwordInput = document.getElementById('passwordInput');
     const passwordError = document.getElementById('passwordError');
 
@@ -274,24 +269,16 @@ $(function () {
       }
     }
 
-    // Form submit
-    if (passwordForm) {
-      passwordForm.addEventListener('submit', function(e) {
+    // Handle button click
+    const unlockBtn = document.getElementById('unlockBtn');
+    if (unlockBtn) {
+      unlockBtn.addEventListener('click', function(e) {
         e.preventDefault();
         checkPassword();
       });
     }
 
-    // Also handle button click directly
-    const submitBtn = passwordForm ? passwordForm.querySelector('button') : null;
-    if (submitBtn) {
-      submitBtn.addEventListener('click', function(e) {
-        e.preventDefault();
-        checkPassword();
-      });
-    }
-
-    // Also handle Enter key in input
+    // Handle Enter key in input
     if (passwordInput) {
       passwordInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
@@ -325,32 +312,6 @@ $(function () {
     if (isForbidden) {
       // Redirect to 404 page
       window.location.replace('/404.html');
-    }
-
-    // ========== EDITORIAL THEME TOGGLE ==========
-    const toggleButton = document.getElementById("theme-toggle");
-    const editorialThemeClass = "editorial-theme";
-    const defaultThemeClass = "default-theme";
-
-    // Check for saved theme preference
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === editorialThemeClass) {
-        document.body.classList.remove(defaultThemeClass);
-        document.body.classList.add(editorialThemeClass);
-    }
-
-    if (toggleButton) {
-        toggleButton.addEventListener("click", function () {
-            if (document.body.classList.contains(defaultThemeClass)) {
-                document.body.classList.remove(defaultThemeClass);
-                document.body.classList.add(editorialThemeClass);
-                localStorage.setItem("theme", editorialThemeClass);
-            } else {
-                document.body.classList.remove(editorialThemeClass);
-                document.body.classList.add(defaultThemeClass);
-                localStorage.removeItem("theme");
-            }
-        });
     }
 
     // ========== DARK MODE TOGGLE ==========

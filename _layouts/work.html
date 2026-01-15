@@ -20,10 +20,7 @@
             <!-- Work Hero -->
             <header class="work-hero">
                 <nav class="breadcrumb-path" aria-label="Breadcrumb">
-                    {% assign personal_titles = "Start Ashtanga,Julia Sorts,BodyMap: Dosha Questionnaire,Mama Circle" | split: "," %}
-                    {% assign booking_titles = "Design systems,Design Operations,Referral Program,Booking partnerside App Store" | split: "," %}
-                    {% assign tw_titles = "Digital Health Records in Haiti,Amplify Tablet" | split: "," %}
-                    <span class="path-segment home">~</span><span class="path-separator">/</span><a href="/works/" class="path-segment">Works</a><span class="path-separator">/</span>{% if personal_titles contains page.title %}<span class="path-segment folder">Personal</span>{% elsif booking_titles contains page.title %}<span class="path-segment folder">Booking.com</span>{% elsif tw_titles contains page.title %}<span class="path-segment folder">ThoughtWorks</span>{% else %}<span class="path-segment folder">Projects</span>{% endif %}<span class="path-separator">/</span><span class="path-segment current">{{ page.title | slugify }}</span>
+                    <span class="path-segment home">~</span><span class="path-separator">/</span><a href="/works/" class="path-segment">Works</a><span class="path-separator">/</span>{% if site.data.project_categories.personal contains page.title %}<span class="path-segment folder">Personal</span>{% elsif site.data.project_categories.booking contains page.title %}<span class="path-segment folder">Booking.com</span>{% elsif site.data.project_categories.thoughtworks contains page.title %}<span class="path-segment folder">ThoughtWorks</span>{% else %}<span class="path-segment folder">Projects</span>{% endif %}<span class="path-separator">/</span><span class="path-segment current">{{ page.title | slugify }}</span>
                 </nav>
 
                 <div class="hero-content">
@@ -92,6 +89,6 @@
 
     {% include components/image-modal.html %}
 
-    <script src="/assets/script.js"></script>
+    <script src="{{ '/assets/script.js' | relative_url }}"></script>
 </body>
 </html>

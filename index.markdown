@@ -57,7 +57,7 @@ title: Home
   </div>
 
   <div class="contact">
-    <a href="mailto:nataliarsand@gmail.com" class="cta-button">Get in touch</a>
+    <a href="mailto:{{ site.contact_email }}" class="cta-button">Get in touch</a>
   </div>
 </section>
 
@@ -252,6 +252,6 @@ title: Home
   </div>
 
   <div class="contact">
-    <a href="mailto:nataliarsand@gmail.com" class="cta-button">Get in touch</a>
+    <a href="mailto:{{ site.contact_email }}" class="cta-button">Get in touch</a>
   </div>
 </section>

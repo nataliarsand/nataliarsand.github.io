@@ -19,8 +19,6 @@ deliverables:
     description: Morning, midday, and evening recommendations for each type
   - label: Downloadable Certificate
     description: Save results as shareable images
-  - label: Progress Saving
-    description: Resume mid-quiz with localStorage persistence
 
 collaboration:
   - Self-initiated project with feedback from wellness peers and AI assistance

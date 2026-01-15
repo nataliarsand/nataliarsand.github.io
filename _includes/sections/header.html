@@ -1,10 +1,10 @@
 <header class="header" role="banner">
   <div class="container header-inner">
     <h1 class="site-title anim-on-load fade-in-down">
-      <a href="/">Natalia Arsand</a> <span class="location">| Amsterdam, NL</span>
+      <a href="/">Natalia Arsand</a> <span class="location">| {{ site.location }}</span>
     </h1>
     <div class="header-actions anim-on-load fade-in-down load-delay-1">
-      <a href="mailto:nataliarsand@gmail.com" class="contact-email">hi@nataliarsand.com</a>
+      <a href="mailto:{{ site.contact_email }}" class="contact-email">{{ site.display_email }}</a>
       <label class="theme-toggle" aria-label="Toggle dark mode">
         <input type="checkbox" id="dark-mode-toggle">
         <span class="toggle-track">

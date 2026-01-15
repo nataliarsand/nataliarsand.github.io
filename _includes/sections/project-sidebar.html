@@ -18,8 +18,7 @@
     <nav class="folders desktop-only-folders" aria-label="Project Folders">
       <ul>
         <h3>Personal</h3>
-        {% assign personal_titles = "Start Ashtanga,Julia Sorts,BodyMap,Mama Circle" | split: "," %}
-        {% for title in personal_titles %}
+        {% for title in site.data.project_categories.personal %}
           {% assign work = site.works | where: "title", title | first %}
           {% if work %}
           <li class="project-item {% if page.url == work.url %}selected{% endif %}">
@@ -32,8 +31,7 @@
         {% endfor %}
 
         <h3>Booking.com</h3>
-        {% assign booking_titles = "Design systems,Design Operations,Referral Program,Booking App Store" | split: "," %}
-        {% for title in booking_titles %}
+        {% for title in site.data.project_categories.booking %}
           {% assign work = site.works | where: "title", title | first %}
           {% if work %}
           <li class="project-item {% if page.url == work.url %}selected{% endif %}">
@@ -47,8 +45,7 @@
         {% endfor %}
 
         <h3>ThoughtWorks</h3>
-        {% assign tw_titles = "Mirebalais Hospital,Amplify Tablet" | split: "," %}
-        {% for title in tw_titles %}
+        {% for title in site.data.project_categories.thoughtworks %}
           {% assign work = site.works | where: "title", title | first %}
           {% if work %}
           <li class="project-item {% if page.url == work.url %}selected{% endif %}">

@@ -81,3 +81,8 @@ defaults:
 # Custom Variables
 # ----------------------------------------------------
 footer_text: "© 2025 Natalia Arsand. All rights reserved."
+
+# Contact info (centralized)
+contact_email: nataliarsand@gmail.com
+display_email: hi@nataliarsand.com
+location: Amsterdam, NL

@@ -133,7 +133,6 @@
       <ul>
         <h3>Personal</h3>
         
-        
           
           
           <li class="project-item ">
@@ -176,7 +175,6 @@
         
 
         <h3>Booking.com</h3>
-        
         
           
           
@@ -225,7 +223,6 @@
 
         <h3>ThoughtWorks</h3>
         
-        
           
           
           <li class="project-item ">
@@ -264,20 +261,8 @@
         <h2>This case study is protected</h2>
         <p>Enter the password to view this work.</p>
         <div class="password-form">
-            <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="off" onkeypress="if(event.key==='Enter'){document.getElementById('unlockBtn').click();}" />
-            <button type="button" id="unlockBtn" onclick="
-                var pw = document.getElementById('passwordInput').value.trim();
-                var k = atob('VXNoNGxscDRzcyE=');
-                if(pw === k) {
-                    sessionStorage.setItem('natalia_portfolio_access', 'unlocked');
-                    document.querySelector('.protected-content').classList.remove('locked');
-                    document.querySelector('.protected-content').classList.add('unlocked');
-                } else {
-                    document.getElementById('passwordError').classList.add('visible');
-                    document.getElementById('passwordInput').value = '';
-                    document.getElementById('passwordInput').focus();
-                }
-            ">Unlock</button>
+            <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="off" />
+            <button type="button" id="unlockBtn">Unlock</button>
         </div>
         <p class="password-error" id="passwordError">Incorrect password. Try again.</p>
         <p class="password-hint">Don't have the password? <a href="mailto:nataliarsand@gmail.com?subject=Portfolio%20Access%20Request">Request access</a></p>
@@ -290,9 +275,6 @@
             <!-- Work Hero -->
             <header class="work-hero">
                 <nav class="breadcrumb-path" aria-label="Breadcrumb">
-                    
-                    
-                    
                     <span class="path-segment home">~</span><span class="path-separator">/</span><a href="/works/" class="path-segment">Works</a><span class="path-separator">/</span><span class="path-segment folder">Booking.com</span><span class="path-separator">/</span><span class="path-segment current">referral-program</span>
                 </nav>
 
