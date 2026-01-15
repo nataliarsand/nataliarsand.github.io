@@ -574,7 +574,7 @@ $(function () {
     if (aboutMacBtn && aboutMacOverlay) {
       // Calculate uptime since career start (2008)
       function calculateUptime() {
-        const startDate = new Date('2008-01-01');
+        const startDate = new Date('2008-02-01');
         const now = new Date();
         const diff = now - startDate;
 
