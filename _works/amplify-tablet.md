@@ -85,8 +85,8 @@ Working between Porto Alegre and NYC meant fully asynchronous collaboration was 
 
 ### Result
 
-- Foundational classroom flows powered live pilot programs in US schools
-- Research-validated prototypes informed final UI decisions across teacher and student experiences
-- Established remote collaboration practices that kept a distributed team effective
+- Shipped classroom flows that powered pilot programs in US schools
+- Validated teacher workflows with real educators before full development investment
+- The tablet hardware was discontinued in 2015 due to field challenges, but Amplify pivoted successfully to curriculum software and today serves over 18 million students globally
 
-This project shaped how I think about designing for education, working with research, and collaborating across distance.
+This project shaped how I think about designing for education, working closely with research, and collaborating across distance.
