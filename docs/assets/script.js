@@ -294,20 +294,26 @@ $(function () {
     }
 
     // ========== DARK MODE TOGGLE ==========
-    const darkModeToggle = document.getElementById("dark-mode-toggle");
+    const darkModeToggleMobile = document.getElementById("dark-mode-toggle");
+    const darkModeToggleDesktop = document.getElementById("dark-mode-toggle-desktop");
+
+    console.log("Desktop toggle found:", darkModeToggleDesktop);
+    console.log("Mobile toggle found:", darkModeToggleMobile);
 
     // Check for saved dark mode preference or system preference
     const savedDarkMode = localStorage.getItem("darkMode");
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
     function setDarkMode(isDark) {
+        console.log("setDarkMode called with:", isDark);
         if (isDark) {
             document.documentElement.setAttribute("data-theme", "dark");
-            if (darkModeToggle) darkModeToggle.checked = true;
         } else {
             document.documentElement.removeAttribute("data-theme");
-            if (darkModeToggle) darkModeToggle.checked = false;
         }
+        // Sync all toggles
+        if (darkModeToggleMobile) darkModeToggleMobile.checked = isDark;
+        if (darkModeToggleDesktop) darkModeToggleDesktop.checked = isDark;
     }
 
     // Initialize dark mode
@@ -319,11 +325,20 @@ $(function () {
         setDarkMode(true);
     }
 
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener("change", function () {
-            const isDark = this.checked;
-            setDarkMode(isDark);
-            localStorage.setItem("darkMode", String(isDark));
+    // Add event listeners to toggles
+    if (darkModeToggleMobile) {
+        darkModeToggleMobile.addEventListener("change", function () {
+            console.log("Mobile toggle changed:", this.checked);
+            setDarkMode(this.checked);
+            localStorage.setItem("darkMode", String(this.checked));
+        });
+    }
+
+    if (darkModeToggleDesktop) {
+        darkModeToggleDesktop.addEventListener("change", function () {
+            console.log("Desktop toggle changed:", this.checked);
+            setDarkMode(this.checked);
+            localStorage.setItem("darkMode", String(this.checked));
         });
     }
 
