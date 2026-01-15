@@ -58,51 +58,12 @@ $(function () {
           break;
       }
     });
-  
-    // ========== QUICK NAV OVERLAY ==========
-    const quickNavOverlay = $("#quick-nav-overlay");
-    const closeQuickNavButton = $("#close-quick-nav");
-  
-    function openQuickNav() {
-      quickNavOverlay.addClass("active");
-      quickNavOverlay.find("a, button").first().focus();
-    }
-  
-    function closeQuickNav() {
-      quickNavOverlay.removeClass("active");
-    }
-  
-    // Open with Cmd+K, Ctrl+K, or Shift+/
-    $(document).on("keydown", function (e) {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
-        e.preventDefault();
-        openQuickNav();
-      }
-  
-      if (e.shiftKey && e.key === "/") {
-        e.preventDefault();
-        openQuickNav();
-      }
-  
-      if (e.key === "Escape") {
-        closeQuickNav();
-      }
-    });
-  
-    closeQuickNavButton.on("click", closeQuickNav);
-  
-    quickNavOverlay.on("click", function (e) {
-      if ($(e.target).is(quickNavOverlay)) {
-        closeQuickNav();
-      }
-    });
-  
-          
-  
-    // ========== DRAGGABLE FOLDER ICON ========== 
-    $(".folder-link").draggable({
-        containment: "body", // Restrict movement to the viewport
-        cursor: "move"
+
+    // ========== DRAGGABLE DESKTOP ICONS ==========
+    $("#works-section .folder-link").draggable({
+        containment: "body",
+        cursor: "move",
+        cancel: "" // Allow dragging on buttons
     });
 
     // ========== BACK TO TOP BUTTON ==========
@@ -570,4 +531,66 @@ $(function () {
             animationObserver.observe(child);
         });
     });
+
+    // ========== ABOUT THIS MAC MODAL ==========
+    const aboutMacBtn = document.getElementById('aboutMacBtn');
+    const aboutMacOverlay = document.getElementById('aboutMacOverlay');
+    const aboutMacClose = document.getElementById('aboutMacClose');
+    const designerUptime = document.getElementById('designerUptime');
+
+    if (aboutMacBtn && aboutMacOverlay) {
+      // Calculate uptime since career start (2008)
+      function calculateUptime() {
+        const startDate = new Date('2008-01-01');
+        const now = new Date();
+        const diff = now - startDate;
+
+        const years = Math.floor(diff / (1000 * 60 * 60 * 24 * 365));
+        const days = Math.floor((diff % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+        return `${years} years, ${days} days, ${hours} hours`;
+      }
+
+      if (designerUptime) {
+        designerUptime.textContent = calculateUptime();
+      }
+
+      // Make modal window draggable by titlebar
+      $(".about-mac-window").draggable({
+        handle: ".about-mac-titlebar",
+        containment: "window",
+        cursor: "move"
+      });
+
+      // Open modal
+      aboutMacBtn.addEventListener('click', function() {
+        aboutMacOverlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      });
+
+      // Close modal
+      function closeAboutMac() {
+        aboutMacOverlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      if (aboutMacClose) {
+        aboutMacClose.addEventListener('click', closeAboutMac);
+      }
+
+      // Close on overlay click
+      aboutMacOverlay.addEventListener('click', function(e) {
+        if (e.target === aboutMacOverlay) {
+          closeAboutMac();
+        }
+      });
+
+      // Close on Escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && aboutMacOverlay.classList.contains('active')) {
+          closeAboutMac();
+        }
+      });
+    }
   });

@@ -17,6 +17,7 @@ title: Home
     </div>
     <div id="works-section">
       {% include components/folder-link.html url="/works" title="Selected Works" %}
+      {% include components/about-mac-icon.html %}
     </div>
     
   </div>
@@ -103,9 +104,9 @@ title: Home
       <h3>Applied AI with Integrity</h3>
       <p>I work with AI as a creative partner, using it for synthesis, ideation, and acceleration, and never blindly. I take time to understand a tool’s boundaries, train it on the right inputs, and remain accountable for its outputs. I believe AI can enhance, not replace, the thinking behind the work.</p>
       <ul class="pills">
-        <li class="pill">ChatGPT</li>
+        <li class="pill">ChatGPT/Codex</li>
         <li class="pill">Gemini CLI</li>
-        <li class="pill">Claude AI</li>
+        <li class="pill">Claude Code</li>
         <li class="pill">Ethical AI usage</li>
         <li class="pill">Prompt Design</li>
         <li class="pill">Output Review</li>
@@ -159,7 +160,7 @@ title: Home
   <div class="nmz-content">
     <h2 tabindex="0" data-animate="fade-up">Out of scope</h2>
     <p class="section-intro" data-animate="fade-up" data-delay="1">
-      I'm not a unicorn. Here are a few things I probably won't help you with, and that's okay:
+      Gotta tell you the truth: I'm not a unicorn, unfortunatelly. Here are a few things I probably won't help you with, and that's okay:
     </p>
 
     <ul class="pills" data-animate="fade-up" data-delay="2">

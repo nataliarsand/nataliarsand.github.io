@@ -1,0 +1,60 @@
+<!-- About This Mac Modal -->
+<div class="about-mac-overlay" id="aboutMacOverlay">
+  <div class="about-mac-window">
+    <div class="about-mac-titlebar">
+      <div class="titlebar-buttons">
+        <button class="titlebar-btn close" id="aboutMacClose" aria-label="Close"></button>
+        <button class="titlebar-btn minimize" aria-label="Minimize" disabled></button>
+        <button class="titlebar-btn maximize" aria-label="Maximize" disabled></button>
+      </div>
+      <span class="titlebar-title">About This Designer</span>
+    </div>
+    <div class="about-mac-content">
+      <div class="about-mac-logo">
+        <img src="/assets/images/natalia_thumb.jpeg" alt="Natalia Arsand">
+      </div>
+      <h1 class="about-mac-name">Natalia Arsand</h1>
+      <p class="about-mac-version">Version 17.0 (2008 - Present)</p>
+
+      <div class="about-mac-specs">
+        <div class="spec-row">
+          <span class="spec-label">Role</span>
+          <span class="spec-value">Senior UX & Design Leadership</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Location</span>
+          <span class="spec-value">Amsterdam, NL</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Languages</span>
+          <span class="spec-value">Portuguese, English, Spanish, <s>Dutch</s></span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Tools</span>
+          <span class="spec-value">Figma, Claude Code, VS Code, Pen & Paper</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Fuel</span>
+          <span class="spec-value">~5,200 flat whites and counting</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Uptime</span>
+          <span class="spec-value" id="designerUptime">Loading...</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Side quests</span>
+          <span class="spec-value">Ashtangi, Hyrule wanderer</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">Status</span>
+          <span class="spec-value">{% include components/status-badge.html %}</span>
+        </div>
+      </div>
+
+      <div class="about-mac-footer">
+        <p>Serial No: BR-1991-NL-2015</p>
+        <p class="about-mac-copyright">Designed by human, coded with Claude. Tabs: ∞</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -77,13 +77,6 @@
   #not-my-zone .nmz-content {
     max-width: 60%;
 
-    p.mono {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: 1.1rem;
-      margin-bottom: 2rem;
-      color: $color-secondary;
-    }
-
     p {
       color: $color-secondary;
       font-size: 1rem;
@@ -96,8 +89,10 @@
     flex: 1 1 30%;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1.5rem;
   }
 }
 
@@ -206,5 +201,7 @@
   #works-section {
     flex: 1 1 100%;
     margin-top: 2rem;
+    flex-direction: row;
+    gap: 2rem;
   }
 }
