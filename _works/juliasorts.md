@@ -90,4 +90,4 @@ Keyboard navigation throughout, ESC to close modals, Enter to submit, proper ARI
 - Zero ads, zero accounts, zero data collection
 - Proof that even the smallest tools deserve craft and attention
 
-Built with React and Vite. Named after Julia, who still can't decide what to have for dinner.
+Built with React and Vite, and Claude Code. Named after Julia, I love you sis ♡
