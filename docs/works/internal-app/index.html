@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The partnerside App Store gave accommodation partners a structured way to discover and access third-party tools integrated with Booking.com. Before this, partners had limited visibility into available solutions or how to connect them. A new API and single sign-on flow enabled partners to connect external tools using their Booking credentials, creating a consistent activation journey across providers.
+    <meta name="description" content="An MVP App Store for accommodation partners existed but was stuck—leadership saw potential but lacked direction. I started from scratch with user research, helping the team prioritise and fully redesign the marketplace and how third-party products connected through a standardised "Connect with Booking" SSO flow.
 ">
     <meta name="theme-color" content="#ffffff">
   
@@ -300,10 +300,10 @@
                     <div class="hero-text">
                         <h1 class="work-title">Booking App Store</h1>
                         
-                        <p class="work-subtitle">Improving access to third-party tools through a unified platform</p>
+                        <p class="work-subtitle">A marketplace for accommodation partners to discover and connect third-party tools</p>
                         
                         
-                        <p class="work-description">The partnerside App Store gave accommodation partners a structured way to discover and access third-party tools integrated with Booking.com. Before this, partners had limited visibility into available solutions or how to connect them. A new API and single sign-on flow enabled partners to connect external tools using their Booking credentials, creating a consistent activation journey across providers.
+                        <p class="work-description">An MVP App Store for accommodation partners existed but was stuck—leadership saw potential but lacked direction. I started from scratch with user research, helping the team prioritise and fully redesign the marketplace and how third-party products connected through a standardised "Connect with Booking" SSO flow.
 </p>
                         
                     </div>
@@ -328,7 +328,7 @@
                 <div class="info-group info-group--wide">
                     <span class="info-label"><i class="fa-solid fa-cube"></i> Deliverables</span>
                     <div class="info-pills">
-                        <span class="info-pill" title="End-to-end interface for browsing and accessing third-party tools on the Extranet">App marketplace design</span><span class="info-pill" title="Search, filter, and navigation models helping partners find relevant solutions quickly">Discovery flows</span><span class="info-pill" title="Standardised authentication flow and provider onboarding interface">SSO integration design</span>
+                        <span class="info-pill" title="End-to-end interface for browsing and accessing third-party tools">App marketplace</span><span class="info-pill" title="Search, filter, and categorisation helping partners find relevant solutions">Discovery flows</span><span class="info-pill" title="Standardised authentication flow for partners and providers">SSO integration</span><span class="info-pill" title="Journey maps and workshops that guided cross-team decisions">Research artefacts</span>
                     </div>
                 </div>
                 
@@ -350,75 +350,75 @@
             <!-- Render Markdown Content -->
             <hr />
 
-<h3 id="research-foundations">Research foundations</h3>
+<h3 id="situation">Situation</h3>
 
-<p>User interviews and cross-team workshops revealed how partners currently discovered, assessed, and activated external solutions. The resulting journey map guided the redesign, highlighting confusion around categories, unclear value propositions, and inconsistent onboarding flows.</p>
+<p>The existing App Store showed all tools in one long list. There were a few filters, but all manually preselected and, as the product grew, they became outdated and hard to maintain. Partners didn’t know which apps to choose or why. The experience felt broken and incomplete, with edge cases and dead ends throughout the flow. And once partners found something, each tool had its own login and data-sharing flow, causing confusion and drop-off during activation.</p>
+
+<div class="device-showcase">
+  <div class="device-frame desktop">
+    <img src="/assets/images/works/internal-app/app-store-before.png" alt="Original App Store homepage on Booking Extranet" class="work-image" />
+  </div>
+</div>
+<p class="work-image-caption">Original App Store: all tools in one long list, limited context.</p>
+
+<hr />
+
+<h3 id="task">Task</h3>
+
+<p>Start from scratch with research to understand what was working and what wasn’t. Use findings to help the team prioritise and redesign both the marketplace experience and the integration flow for each third-party product. Coordinate between business partners, other Extranet teams, API and integrations teams, product, leadership, and engineers to align on direction.</p>
+
+<hr />
+
+<h3 id="action">Action</h3>
+
+<p><strong>Research &amp; Discovery</strong><br />
+Planned and ran user interviews and usability tests with accommodation partners to understand their needs and pain points. Ran multiple cross-functional, technical, and business workshops to align on goals and co-create solutions. Research uncovered critical pain points: wildly varying trial periods, unclear billing terms, forms and phone calls required to start trials, and automatic charges without explicit consent. These findings shaped three design principles—<em>Be in control</em>, <em>Be informed</em>, <em>Be confident</em>—that guided all decisions.</p>
 
 <div class="paper-showcase">
   <div class="paper-frame">
     <img src="/assets/images/works/internal-app/customer-journey.png" alt="Partner journey map for third-party tools" class="work-image" />
   </div>
 </div>
-<p class="work-image-caption">Journey map created with accommodation partners. Used by multiple teams to guide decisions around categories, entry points, and activation flows.</p>
+<p class="work-image-caption">Journey map for a persona, created based on interviews and research.</p>
 
-<hr />
+<p><strong>Marketplace Experience</strong><br />
+Redesigned the browsing experience with meaningful categories, featured use cases, and detail pages showing transparent pricing, trial terms, and what data would be shared. Partners could now assess value and understand commitments before connecting.</p>
 
-<h3 id="key-improvements">Key improvements</h3>
-
-<h4 id="1-structured-marketplace-experience">1. Structured marketplace experience</h4>
-
-<p>Partners struggled to understand which tools were relevant. The previous interface showed all tools in one undifferentiated list with no filtering or context.</p>
-
-<div class="paper-showcase">
-  <div class="paper-frame">
-    <img src="/assets/images/works/internal-app/app-store-before.png" alt="Original App Store homepage on Booking Extranet" class="work-image" />
-  </div>
-</div>
-<p class="work-image-caption">Original App Store: all tools in one long list, limited context.</p>
-
-<p><strong>Solution:</strong> Clearer categorisation, featured use cases, and improved detail pages that helped partners assess value before connecting.</p>
-
-<div class="paper-showcase">
-  <div class="paper-frame">
-    <img src="/assets/images/works/internal-app/app-store-front.png" alt="Example tool detail page on Booking Extranet (Vikey)" class="work-image" />
+<div class="device-showcase">
+  <div class="device-frame desktop">
+    <img src="/assets/images/works/internal-app/app-store-front.png" alt="Example tool detail page on Booking Extranet" class="work-image" />
   </div>
 </div>
 <p class="work-image-caption">Improved tool detail pages with clearer value propositions and structured information.</p>
 
-<hr />
+<p><strong>Standardised Connection Flow</strong><br />
+Designed a single sign-on flow with predictable permissions, clear trial terms, and explicit consent before any charges. Created a provider-facing interface for generating the “Connect with Booking.com” button. To validate the approach before full integration, we used a Wizard of Oz method for Phase I, manually processing billings while the technical infrastructure was built.</p>
 
-<h4 id="2-standardised-sso-and-onboarding">2. Standardised SSO and onboarding</h4>
-
-<p>Third-party tools had different login and data-sharing flows, causing confusion during activation.</p>
-
-<p><strong>Solution:</strong> Designed a standard SSO flow allowing partners to connect using Booking.com credentials, reducing friction and creating predictable integration for providers.</p>
-
-<div class="paper-showcase">
-  <div class="paper-frame">
+<div class="device-showcase">
+  <div class="device-frame desktop">
     <img src="/assets/images/works/internal-app/trial-flow.png" alt="Partner-facing connection and trial setup flow" class="work-image" />
   </div>
 </div>
 <p class="work-image-caption">Connection flow using standardised SSO: predictable permissions and clear steps.</p>
 
-<p>Providers integrated through a consistent interface for generating the “Connect with Booking.com” button, reducing fragmentation and support overhead.</p>
-
-<div class="paper-showcase">
-  <div class="paper-frame">
+<div class="device-showcase">
+  <div class="device-frame desktop">
     <img src="/assets/images/works/internal-app/sso-screen.png" alt="Provider interface for generating Connect with Booking.com button" class="work-image" />
   </div>
 </div>
-<p class="work-image-caption">Provider-facing interface ensuring consistent authentication flows across third-party integrations.</p>
+<p class="work-image-caption">Provider-facing interface for consistent authentication flows.</p>
 
 <hr />
 
-<h3 id="outcome">Outcome</h3>
+<h3 id="result">Result</h3>
 
 <ul>
-  <li>Clear entry point to third-party tools, reducing time spent searching for relevant solutions</li>
-  <li>Consistent connection experience supported by the new Booking SSO flow</li>
-  <li>Shared design patterns and categorisation models used across teams integrating external tools</li>
-  <li>Research artefacts became long-term references for cross-team integration strategy</li>
-  <li>More predictable experience for partners regardless of which provider they chose</li>
+  <li>Successfully launched at ITB Berlin (World’s Leading Travel Trade Show)</li>
+  <li>Significant increase in trials started, with 100% of purchases made with intent</li>
+  <li>Decrease in customer support tickets about billing errors</li>
+  <li>Partners could discover and connect tools faster with transparent information and a predictable flow</li>
+  <li>Providers had a consistent integration path, reducing fragmentation and support overhead</li>
+  <li>Research artefacts became long-term references across the track. From business to engineers, teams would gather around journey maps to discuss flows, ideas, and improvements</li>
 </ul>
 
 
