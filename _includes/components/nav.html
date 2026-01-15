@@ -31,6 +31,10 @@
         {% endfor %}
         <li class="nav-selected-works"><a href="/works/">Selected works</a></li>
       </ul>
+      <div class="mobile-nav-footer">
+        <a href="mailto:{{ site.contact_email }}" class="mobile-nav-email">{{ site.display_email }}</a>
+        {% include components/status-badge.html %}
+      </div>
     </div>
   </nav>
 {% endif %}
