@@ -8,6 +8,9 @@
 .protected-icon,
 .work-sidebar i.protected-icon,
 .folder-link i.protected-icon {
+  display: inline-block;
+  font-family: "Font Awesome 6 Free" !important;
+  font-weight: 900 !important;
   font-size: 0.55rem !important;
   margin-left: 0.4rem !important;
   color: $color-text-muted;
