@@ -42,7 +42,7 @@ year: 2014
 
 <div class="paper-showcase">
   <div class="paper-frame">
-    <img src="/assets/images/works/amplify-tablet/amplify-overview.jpg" alt="Two tablets showing teacher and student interfaces side by side" class="work-image">
+    <img loading="lazy" src="/assets/images/works/amplify-tablet/amplify-overview.jpg" alt="Two tablets showing teacher and student interfaces side by side" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Teacher and student tablets designed to work together in the classroom.</p>
@@ -67,10 +67,10 @@ I worked mostly on the teacher side, focusing on architecture and flow. What we 
 
 <div class="device-showcase">
   <div class="device-frame desktop" style="flex: 1; max-width: 50%;">
-    <img src="/assets/images/works/amplify-tablet/teacher-interface.png" alt="Teacher dashboard showing classroom management tools" class="work-image">
+    <img loading="lazy" src="/assets/images/works/amplify-tablet/teacher-interface.png" alt="Teacher dashboard showing classroom management tools" class="work-image">
   </div>
   <div class="device-frame desktop" style="flex: 1; max-width: 50%;">
-    <img src="/assets/images/works/amplify-tablet/student-interface.png" alt="Student interface showing lesson content" class="work-image">
+    <img loading="lazy" src="/assets/images/works/amplify-tablet/student-interface.png" alt="Student interface showing lesson content" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Teacher dashboard and student interface designed for their distinct needs.</p>

@@ -40,7 +40,7 @@ Designed and launched a centralised landing page consolidating key UX resources,
 
 <div class="paper-showcase">
   <div class="paper-frame">
-    <img src="/assets/images/works/design-ops/ux-hub-interface.png" alt="UX Hub documentation portal interface" class="work-image">
+    <img loading="lazy" src="/assets/images/works/design-ops/ux-hub-interface.png" alt="UX Hub documentation portal interface" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">UX Hub interface: centralised documentation portal with navigation, search, and resource categorisation.</p>

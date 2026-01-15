@@ -12,8 +12,8 @@ title: Home
              class="intro-image anim-on-load fade-in load-delay-1" alt="Natalia Arsand profile image"/>
         <h2><span class="typing-text">Hi, I'm Natalia.</span></h2>
       </div>
-      <p class="intro-p anim-timed">I'm a <strong>UX Design Lead</strong> working at the intersection of strategy, systems, and craft. I design for impact. Thoughtful, scalable, and always human-centered.</p>
-      <p class="intro-p anim-timed">This site is my digital OS. I use this space to explore structure, reflect on process, and highlight work I am proud of.</p>
+      <p class="intro-p anim-timed">I'm a <strong>UX Design Lead</strong> with over 15 years of experience working across strategy, systems, and delivery. I help teams make sense of complex, real-world problems and guide work from early insight through to implementation.</p>
+      <p class="intro-p anim-timed">This is where I document my practice and how I approach design problems and decision-making. Part playground, part portfolio, it brings together some of my favourite case studies and reflections.</p>
     </div>
     <div id="works-section">
       {% include components/folder-link.html url="/works" title="Selected Works" %}
@@ -34,22 +34,22 @@ title: Home
 
   <div class="grid-cards" data-stagger="0.1">
     <div class="card">
-        <img src="{{ '/assets/images/icons/discover.svg' | relative_url }}" alt="Discover icon" />
+        <img loading="lazy" src="{{ '/assets/images/icons/discover.svg' | relative_url }}" alt="Discover icon" />
         <h3>Discovery & Collaboration</h3>
         <p>I bring people together early, across roles and perspectives, to frame problems clearly and align once, avoiding the cost of fragmented decisions later. I’ve got my ways of making even the busiest execs show up and engage during my workshops.</p>
     </div>
     <div class="card">
-        <img src="{{ '/assets/images/icons/feedback.svg' | relative_url }}" alt="Feedback icon" />
+        <img loading="lazy" src="{{ '/assets/images/icons/feedback.svg' | relative_url }}" alt="Feedback icon" />
         <h3>Design is Dialog</h3>
         <p>No designer gets it right the first time. That’s why I don't work in isolation. I share early and often to discuss progress and invite critique that surface ideas I wouldn’t reach alone. Even unused feedback reveals assumptions or gaps worth seeing.</p>
     </div>
     <div class="card">
-      <img src="{{ '/assets/images/icons/improve.svg' | relative_url }}" alt="Continuous Improvement icon" />
+      <img loading="lazy" src="{{ '/assets/images/icons/improve.svg' | relative_url }}" alt="Continuous Improvement icon" />
       <h3>Iteration is Commitment</h3>
       <p>Design isn’t static and a problem is never fully solved. Solutions must evolve as we deepen our understanding of the problem, the customer, and their needs. As long as it remains relevant to the business, we should strive to continuously improve it.</p>
     </div>
     <div class="card">
-      <img src="{{ '/assets/images/icons/empathy.svg' | relative_url }}" alt="Human-centered icon" />
+      <img loading="lazy" src="{{ '/assets/images/icons/empathy.svg' | relative_url }}" alt="Human-centered icon" />
       <h3>Ethical, Human-Centered, Always</h3>
       <p>Products exist to solve real problems for real people. It’s easy to get lost in business goals and KPIs. I'm often the one asking the uncomfortable questions about access, ethics, and impact. As designers, we’re gatekeepers of the change we wish to see in the world.</p>
 
@@ -235,17 +235,17 @@ title: Home
 
   <div class="grid-cards" data-stagger="0.1">
     <div class="card">
-      <img src="{{ '/assets/images/icons/freelance.svg' | relative_url }}" alt="Freelance work icon" />
+      <img loading="lazy" src="{{ '/assets/images/icons/freelance.svg' | relative_url }}" alt="Freelance work icon" />
       <h3>Freelance work</h3>
       <p>Need a thoughtful UX designer to make sense of complexity, run a workshop, or help move things forward? Let’s talk and see how I can help you.</p>
     </div>
     <div class="card">
-      <img src="{{ '/assets/images/icons/mentorship.svg' | relative_url }}" alt="Mentorship icon" />
+      <img loading="lazy" src="{{ '/assets/images/icons/mentorship.svg' | relative_url }}" alt="Mentorship icon" />
       <h3>Mentorship & Coaching</h3>
       <p>Looking for honest feedback, support with a career transition, or navigating the messier parts of design work? I offer 1:1 sessions and long-term mentorship.</p>
     </div>
     <div class="card">
-      <img src="{{ '/assets/images/icons/job.svg' | relative_url }}" alt="Job opportunities icon" />
+      <img loading="lazy" src="{{ '/assets/images/icons/job.svg' | relative_url }}" alt="Job opportunities icon" />
       <h3>Job Opportunities</h3>
       <p>Looking for a lead designer who can work across systems, strategy, and team alignment? I’d love to hear what you’re building.</p>
     </div>

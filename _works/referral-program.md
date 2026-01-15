@@ -44,14 +44,14 @@ Designed full-funnel experiences integrated into the product, from landing pages
 
 <div class="paper-showcase">
   <div class="paper-frame">
-    <img src="/assets/images/works/referral-program/RAF_banner_spaced.webp" alt="Complete referral user journey from discovery to reward" class="work-image">
+    <img loading="lazy" src="/assets/images/works/referral-program/RAF_banner_spaced.webp" alt="Complete referral user journey from discovery to reward" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Example of how Refer a Friend positioned itself across platforms.</p>
 
 <div class="paper-showcase">
   <div class="paper-frame">
-    <img src="/assets/images/works/referral-program/RAF_banner.png" alt="Referral banners" class="work-image">
+    <img loading="lazy" src="/assets/images/works/referral-program/RAF_banner.png" alt="Referral banners" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Banners distributed across multiple platforms.</p>

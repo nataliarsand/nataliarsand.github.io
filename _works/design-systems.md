@@ -44,7 +44,7 @@ Defined behavioural rules for complex components such as sort & filter indicator
 
 <div class="paper-showcase">
   <div class="paper-frame">
-    <img src="/assets/images/works/design-system/bubble-proposal.png" alt="Sort and filter bubble proposal explorations" class="work-image">
+    <img loading="lazy" src="/assets/images/works/design-system/bubble-proposal.png" alt="Sort and filter bubble proposal explorations" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Sort and filter indicator exploration: problem framing, recommended behaviour, and design options.</p>
@@ -54,7 +54,7 @@ Led a time & motion study to validate our Figma plugin (Verify Design) for impro
 
 <div class="paper-showcase">
   <div class="paper-frame">
-    <img src="/assets/images/works/design-system/research-tracker.png" alt="Research tracking spreadsheet for the Verify Design plugin study" class="work-image">
+    <img loading="lazy" src="/assets/images/works/design-system/research-tracker.png" alt="Research tracking spreadsheet for the Verify Design plugin study" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Research tracker capturing component deviations observed across participants.</p>

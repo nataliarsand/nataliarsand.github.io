@@ -52,13 +52,13 @@ I designed and built **Julia Sorts**, a gloriously over-engineered random decisi
 
 <div class="device-showcase">
   <div class="device-frame mobile">
-    <img src="/assets/images/works/juliasorts/homepage-mobile.png" alt="Julia Sorts homepage" class="work-image">
+    <img loading="lazy" src="/assets/images/works/juliasorts/homepage-mobile.png" alt="Julia Sorts homepage" class="work-image">
   </div>
   <div class="device-frame mobile">
-    <img src="/assets/images/works/juliasorts/pick-sort-food.png" alt="Quick pick food options" class="work-image">
+    <img loading="lazy" src="/assets/images/works/juliasorts/pick-sort-food.png" alt="Quick pick food options" class="work-image">
   </div>
   <div class="device-frame mobile">
-    <img src="/assets/images/works/juliasorts/success-pizza-sort.png" alt="Result reveal - Pizza wins" class="work-image">
+    <img loading="lazy" src="/assets/images/works/juliasorts/success-pizza-sort.png" alt="Result reveal - Pizza wins" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">The full flow: home → pick options → result</p>

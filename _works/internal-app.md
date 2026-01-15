@@ -39,7 +39,7 @@ The existing App Store showed all tools in one long list. There were a few filte
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img src="/assets/images/works/internal-app/app-store-before.png" alt="Original App Store homepage on Booking Extranet" class="work-image">
+    <img loading="lazy" src="/assets/images/works/internal-app/app-store-before.png" alt="Original App Store homepage on Booking Extranet" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Original App Store: all tools in one long list, limited context.</p>
@@ -59,7 +59,7 @@ Planned and ran user interviews and usability tests with accommodation partners 
 
 <div class="paper-showcase">
   <div class="paper-frame">
-    <img src="/assets/images/works/internal-app/customer-journey.png" alt="Partner journey map for third-party tools" class="work-image">
+    <img loading="lazy" src="/assets/images/works/internal-app/customer-journey.png" alt="Partner journey map for third-party tools" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Journey map for a persona, created based on interviews and research.</p>
@@ -69,7 +69,7 @@ Redesigned the browsing experience with meaningful categories, featured use case
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img src="/assets/images/works/internal-app/app-store-front.png" alt="Example tool detail page on Booking Extranet" class="work-image">
+    <img loading="lazy" src="/assets/images/works/internal-app/app-store-front.png" alt="Example tool detail page on Booking Extranet" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Improved tool detail pages with clearer value propositions and structured information.</p>
@@ -79,14 +79,14 @@ Designed a single sign-on flow with predictable permissions, clear trial terms, 
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img src="/assets/images/works/internal-app/trial-flow.png" alt="Partner-facing connection and trial setup flow" class="work-image">
+    <img loading="lazy" src="/assets/images/works/internal-app/trial-flow.png" alt="Partner-facing connection and trial setup flow" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Connection flow using standardised SSO: predictable permissions and clear steps.</p>
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img src="/assets/images/works/internal-app/sso-screen.png" alt="Provider interface for generating Connect with Booking.com button" class="work-image">
+    <img loading="lazy" src="/assets/images/works/internal-app/sso-screen.png" alt="Provider interface for generating Connect with Booking.com button" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Provider-facing interface for consistent authentication flows.</p>

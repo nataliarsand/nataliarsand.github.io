@@ -54,10 +54,10 @@ I designed and built **Start Ashtanga**, a free, open-source web application wit
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img src="/assets/images/works/startashtanga/homepage-desktop.webp" alt="Start Ashtanga homepage on desktop" class="work-image">
+    <img loading="lazy" src="/assets/images/works/startashtanga/homepage-desktop.webp" alt="Start Ashtanga homepage on desktop" class="work-image">
   </div>
   <div class="device-frame mobile">
-    <img src="/assets/images/works/startashtanga/homepage-mobile.webp" alt="Start Ashtanga mobile view" class="work-image">
+    <img loading="lazy" src="/assets/images/works/startashtanga/homepage-mobile.webp" alt="Start Ashtanga mobile view" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Homepage - welcoming beginners to the practice</p>
@@ -72,10 +72,10 @@ The complete Primary Series (Yoga Chikitsa) with every pose documented: Sanskrit
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img src="/assets/images/works/startashtanga/getting-started-desktop.webp" alt="Getting started guide desktop" class="work-image">
+    <img loading="lazy" src="/assets/images/works/startashtanga/getting-started-desktop.webp" alt="Getting started guide desktop" class="work-image">
   </div>
   <div class="device-frame mobile">
-    <img src="/assets/images/works/startashtanga/getting-started-mobile.webp" alt="Getting started guide mobile" class="work-image">
+    <img loading="lazy" src="/assets/images/works/startashtanga/getting-started-mobile.webp" alt="Getting started guide mobile" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Getting Started guide with section navigation</p>

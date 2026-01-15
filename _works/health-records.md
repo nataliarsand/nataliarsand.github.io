@@ -51,7 +51,7 @@ I sat down with Partners in Health specialists and asked them to guide me throug
 
 <div class="paper-showcase">
   <div class="paper-frame">
-    <img src="/assets/images/works/health-records/patient-journey-map.png" alt="Patient journey map showing care workflow from admission to discharge" class="work-image">
+    <img loading="lazy" src="/assets/images/works/health-records/patient-journey-map.png" alt="Patient journey map showing care workflow from admission to discharge" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Patient journey map created with clinicians to identify pain points and focus areas.</p>
@@ -61,17 +61,17 @@ Started with simple mockups for communication before committing to development. 
 
 <div class="device-showcase">
   <div class="device-frame desktop" style="flex: 1; max-width: 50%;">
-    <img src="/assets/images/works/health-records/ui-before.png" alt="First version of the UI" class="work-image">
+    <img loading="lazy" src="/assets/images/works/health-records/ui-before.png" alt="First version of the UI" class="work-image">
   </div>
   <div class="paper-frame" style="flex: 1; max-width: 50%;">
-    <img src="/assets/images/works/health-records/ui-before-prototype.png" alt="Low-fidelity prototype sketches" class="work-image">
+    <img loading="lazy" src="/assets/images/works/health-records/ui-before-prototype.png" alt="Low-fidelity prototype sketches" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">First versions: working prototype alongside low-fidelity mockups to validate concepts quickly.</p>
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img src="/assets/images/works/health-records/ui-after.png" alt="Evolved interface after testing" class="work-image">
+    <img loading="lazy" src="/assets/images/works/health-records/ui-after.png" alt="Evolved interface after testing" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Evolved UI with clearer patient information, actions, and encounter history.</p>
@@ -81,7 +81,7 @@ Once we had working software, we took it to hospital grounds in Haiti to test wi
 
 <div class="paper-showcase">
   <div class="paper-frame">
-    <img src="/assets/images/works/health-records/hospital-testing-environment.jpg" alt="Nurses using the system at Mirebalais hospital" class="work-image">
+    <img loading="lazy" src="/assets/images/works/health-records/hospital-testing-environment.jpg" alt="Nurses using the system at Mirebalais hospital" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Testing in Haiti: validating designs with hospital staff who would use the system daily.</p>
@@ -91,7 +91,7 @@ Created a <a href="https://github.com/glauberramos/style-guide" target="_blank" 
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img src="/assets/images/works/health-records/style-guide-ui.png" alt="Live UI style guide with colors, icons, and buttons" class="work-image">
+    <img loading="lazy" src="/assets/images/works/health-records/style-guide-ui.png" alt="Live UI style guide with colors, icons, and buttons" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Live style guide: colors, icons, and buttons that developers could reference and copy directly.</p>
@@ -111,7 +111,7 @@ Created a <a href="https://github.com/glauberramos/style-guide" target="_blank" 
 
 <div class="paper-showcase">
   <div class="paper-frame">
-    <img src="/assets/images/works/health-records/system-use-india.png" alt="OpenMRS system being used in healthcare facilities worldwide" class="work-image">
+    <img loading="lazy" src="/assets/images/works/health-records/system-use-india.png" alt="OpenMRS system being used in healthcare facilities worldwide" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Global impact: OpenMRS with our design improvements being used in healthcare facilities worldwide.</p>

@@ -44,10 +44,10 @@ I designed and built **BodyMap**, a dual-assessment tool with 40 themed question
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img src="/assets/images/works/bodymap/homepage-desktop.webp" alt="BodyMap homepage on desktop" class="work-image">
+    <img loading="lazy" src="/assets/images/works/bodymap/homepage-desktop.webp" alt="BodyMap homepage on desktop" class="work-image">
   </div>
   <div class="device-frame mobile">
-    <img src="/assets/images/works/bodymap/homepage-mobile.webp" alt="BodyMap mobile view" class="work-image">
+    <img loading="lazy" src="/assets/images/works/bodymap/homepage-mobile.webp" alt="BodyMap mobile view" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">BodyMap - dual assessment for constitution and current state</p>

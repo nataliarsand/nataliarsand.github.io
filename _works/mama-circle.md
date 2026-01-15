@@ -50,10 +50,10 @@ I designed and built **Mama Circle**, a lightweight website and manifesto projec
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img src="/assets/images/works/mama-circle/homepage-desktop.webp" alt="Mama Circle desktop view" class="work-image">
+    <img loading="lazy" src="/assets/images/works/mama-circle/homepage-desktop.webp" alt="Mama Circle desktop view" class="work-image">
   </div>
   <div class="device-frame mobile">
-    <img src="/assets/images/works/mama-circle/homepage-mobile.webp" alt="Mama Circle mobile view" class="work-image">
+    <img loading="lazy" src="/assets/images/works/mama-circle/homepage-mobile.webp" alt="Mama Circle mobile view" class="work-image">
   </div>
 </div>
 <p class="work-image-caption">Mama Circle - a gentle digital presence for new mothers</p>

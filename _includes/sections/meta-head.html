@@ -1,10 +1,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ page.description }}">
+    <meta name="description" content="{{ page.description | default: site.description }}">
     <meta name="theme-color" content="#ffffff">
-  
+
     <title>{{ page.title }} | Natalia Arsand - Portfolio & Playground</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="{{ page.title }} | Natalia Arsand">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:type" content="{% if page.layout == 'work' %}article{% else %}website{% endif %}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:site_name" content="Natalia Arsand - Portfolio & Playground">
+    <meta property="og:image" content="{{ page.image | default: '/assets/images/natalia-profile.png' | absolute_url }}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@{{ site.twitter_username }}">
+    <meta name="twitter:title" content="{{ page.title }} | Natalia Arsand">
+    <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+    <meta name="twitter:image" content="{{ page.image | default: '/assets/images/natalia-profile.png' | absolute_url }}">
   
   
     <!-- Fonts -->
@@ -12,16 +30,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Inter:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
   
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo16zO27h9f4sJKp+TwYV0t6cBbLd7O3s1p6pIYGg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
-  
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css" integrity="sha512-HlVrOzfZrg77V03Y0rWQhPYODq5FMaDnQL0LTGWefBMPEsB2I3q8MhPJiajLqMtrPebfy/sOGGb9OfKRJpKNNaw==" crossorigin="anonymous">
+
     <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
   
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "{% if page.layout == 'work' %}Article{% else %}WebSite{% endif %}",
+      {% if page.layout == 'work' %}
+      "headline": "{{ page.title }}",
+      "description": "{{ page.description | default: site.description }}",
+      "image": "{{ page.image | absolute_url }}",
+      "author": {
+        "@type": "Person",
+        "name": "Natalia Arsand",
+        "url": "{{ site.url }}"
+      },
+      {% else %}
+      "name": "Natalia Arsand - Portfolio & Playground",
+      "description": "{{ site.description }}",
+      "url": "{{ site.url }}",
+      "author": {
+        "@type": "Person",
+        "name": "Natalia Arsand",
+        "jobTitle": "UX Design Lead",
+        "url": "{{ site.url }}",
+        "sameAs": [
+          "https://www.linkedin.com/in/{{ site.linkedin_username }}/",
+          "https://twitter.com/{{ site.twitter_username }}",
+          "https://github.com/{{ site.github_username }}"
+        ]
+      },
+      {% endif %}
+      "publisher": {
+        "@type": "Person",
+        "name": "Natalia Arsand"
+      }
+    }
+    </script>
+
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">

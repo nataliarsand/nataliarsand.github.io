@@ -13,7 +13,7 @@ main_id: selected-works
       <article class="work-tile">
         <a href="{{ work.url }}">
           {% if work.image %}
-            <img src="{{ work.image }}" alt="{{ work.title }} thumbnail">
+            <img loading="lazy" src="{{ work.image }}" alt="{{ work.title }} thumbnail">
           {% endif %}
           <h2>{{ work.title }}</h2>
           <p>{{ work.description | truncate: 120 }}</p>
