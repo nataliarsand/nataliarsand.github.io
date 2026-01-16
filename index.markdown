@@ -196,7 +196,7 @@ title: Home
 
       <p>I spent 10 years at Booking.com, where I led design for both B2B and B2C products, founded the Design Operations team, and scaled Booking's Design System to support the global design community.</p>
 
-      <p>Today, I'm taking time to explore what comes next:  building a few apps, experimenting with AI, and balancing parenthood with creative work. I'm open to the right opportunity, whether that's joining a mission-driven team or collaborating on meaningful projects.</p>
+      <p>Today, I'm taking time to explore what comes next:  building a few apps, experimenting with AI, and balancing parenthood with creative work.</p>
     </div>
 
     <aside class="career-timeline" data-animate="fade-left" data-delay="2">
