@@ -2,6 +2,7 @@
 layout: default
 title: Selected Works
 main_id: selected-works
+description: "Case studies and projects in UX design, design systems, and product strategy. Explore work from healthcare, fintech, and consumer products."
 ---
 
 <section id="works-index">
