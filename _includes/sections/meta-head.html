@@ -15,14 +15,14 @@
     <meta property="og:type" content="{% if page.layout == 'work' %}article{% else %}website{% endif %}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
     <meta property="og:site_name" content="Natalia Arsand - Portfolio & Playground">
-    <meta property="og:image" content="{{ page.image | default: '/assets/images/natalia-profile.png' | absolute_url }}">
+    <meta property="og:image" content="{{ page.image | default: '/assets/images/default-og.png' | absolute_url }}">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@{{ site.twitter_username }}">
     <meta name="twitter:title" content="{{ page.title }} | Natalia Arsand">
     <meta name="twitter:description" content="{{ page.description | default: site.description }}">
-    <meta name="twitter:image" content="{{ page.image | default: '/assets/images/natalia-profile.png' | absolute_url }}">
+    <meta name="twitter:image" content="{{ page.image | default: '/assets/images/default-og.png' | absolute_url }}">
   
   
     <!-- Fonts -->
