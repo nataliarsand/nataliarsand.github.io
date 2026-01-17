@@ -40,7 +40,7 @@ title: Home
         <p>No designer gets it right the first time. I share early and often to invite critique that surfaces ideas I wouldn't reach alone. Even unused feedback reveals assumptions worth seeing.</p>
     </div>
     <div class="card">
-      <img loading="lazy" src="{{ '/assets/images/icons/improve.svg' | relative_url }}" alt="Systems thinking icon" />
+      <img loading="lazy" src="{{ '/assets/images/icons/roadmap.svg' | relative_url }}" alt="Systems thinking icon" />
       <h3>Systems Over Screens</h3>
       <p>Every design decision ripples through a system. I look at things holistically, zooming out to understand connections, zooming in to account for details. Surfaces might change, but good foundations remain.</p>
     </div>
