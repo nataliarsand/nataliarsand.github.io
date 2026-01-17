@@ -99,12 +99,12 @@
 // === SECTION-SPECIFIC GRID CONFIGS (Desktop only) ===
 @media (min-width: 769px) {
   #about .grid-cards {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
 
-    .card:nth-child(2n) {
+    .card:nth-child(3n) {
       border-right: none;
     }
-    .card:nth-last-child(-n+2) {
+    .card:nth-last-child(-n+3) {
       border-bottom: none;
     }
   }

@@ -35,29 +35,24 @@ title: Home
 
   <div class="grid-cards" data-stagger="0.1">
     <div class="card">
-        <img loading="lazy" src="{{ '/assets/images/icons/discover.svg' | relative_url }}" alt="Discover icon" />
-        <h3>Discovery & Collaboration</h3>
-        <p>I bring people together early, across roles and perspectives, to frame problems clearly and align once, avoiding the cost of fragmented decisions later. I’ve got my ways of making even the busiest execs show up and engage during my workshops.</p>
-    </div>
-    <div class="card">
         <img loading="lazy" src="{{ '/assets/images/icons/feedback.svg' | relative_url }}" alt="Feedback icon" />
         <h3>Design is Dialog</h3>
-        <p>No designer gets it right the first time. That’s why I don't work in isolation. I share early and often to discuss progress and invite critique that surface ideas I wouldn’t reach alone. Even unused feedback reveals assumptions or gaps worth seeing.</p>
+        <p>No designer gets it right the first time. I share early and often to invite critique that surfaces ideas I wouldn't reach alone. Even unused feedback reveals assumptions worth seeing.</p>
     </div>
     <div class="card">
-      <img loading="lazy" src="{{ '/assets/images/icons/improve.svg' | relative_url }}" alt="Continuous Improvement icon" />
-      <h3>Iteration is Commitment</h3>
-      <p>Design isn’t static and a problem is never fully solved. Solutions must evolve as we deepen our understanding of the problem, the customer, and their needs. As long as it remains relevant to the business, we should strive to continuously improve it.</p>
+      <img loading="lazy" src="{{ '/assets/images/icons/improve.svg' | relative_url }}" alt="Systems thinking icon" />
+      <h3>Systems Over Screens</h3>
+      <p>Every design decision ripples through a system. I look at things holistically, zooming out to understand connections, zooming in to account for details. Surfaces might change, but good foundations remain.</p>
     </div>
     <div class="card">
       <img loading="lazy" src="{{ '/assets/images/icons/empathy.svg' | relative_url }}" alt="Human-centered icon" />
-      <h3>Ethical, Human-Centered, Always</h3>
-      <p>Products exist to solve real problems for real people. It’s easy to get lost in business goals and KPIs. I'm often the one asking the uncomfortable questions about access, ethics, and impact. As designers, we’re gatekeepers of the change we wish to see in the world.</p>
+      <h3>Design Serves People</h3>
+      <p>Products exist to solve real problems for real people. As designers, we're gatekeepers of change, and I'll ask the uncomfortable questions about access, ethics, and impact.</p>
 
     </div>
   </div>
 
-  <div class="contact">
+  <div class="section-cta">
     <a href="mailto:{{ site.contact_email }}" class="cta-button">Get in touch</a>
   </div>
 </section>
@@ -70,8 +65,8 @@ title: Home
 
   <div class="grid-cards" data-stagger="0.08">
     <div class="card">
-      <h3>Strategic Discovery & Facilitation</h3>
-      <p>I help teams get unstuck early by running hands-on, purpose focused workshops to create alignemt, uncover open questions, and align user needs to business priorities. I consolidate findings into MVP plans that offer high-learning opportunities with real delivery value.</p>
+      <h3>Facilitation & Collaboration</h3>
+      <p>I bring people together, across roles and perspectives, to frame problems and align on direction. I've got my ways of making even the busiest execs show up and engage. From workshops to MVP planning, I surface open questions and connect user needs to business priorities.</p>
       <ul class="pills">
         <li class="pill">Miro</li>
         <li class="pill">FigJam</li>
@@ -153,6 +148,10 @@ title: Home
         <li class="pill">UX/Dev pairing</li>
       </ul>
     </div>
+  </div>
+
+  <div class="section-cta">
+    <a href="{{ '/works' | relative_url }}" class="cta-button" target="_blank" rel="noopener">See it in practice</a>
   </div>
 </section>
 
@@ -252,7 +251,7 @@ title: Home
     </div>
   </div>
 
-  <div class="contact">
+  <div class="section-cta">
     <a href="mailto:{{ site.contact_email }}" class="cta-button">Get in touch</a>
   </div>
 </section>
