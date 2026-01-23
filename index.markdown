@@ -123,7 +123,7 @@ title: Home
     </div>
     <div class="card">
       <h3>Information Architecture & Semantics</h3>
-      <p>I’m obsessed with context and clarity, both in how information is structured and how it's presented. That means caring about navigation, labeling, hierarchy, and even code semantics. Good IA is invisible but powerful, it enables conversations to flow within teams, in code, and with customers.</p>
+      <p>I’m obsessed with context and coherence, both in how information is structured and how it's presented. That means caring about navigation, labeling, hierarchy, and even code semantics. Good IA is invisible but powerful, it enables conversations to flow within teams, in code, and with customers.</p>
       <ul class="pills">
         <li class="pill">Sitemaps</li>
         <li class="pill">Usability testing</li>

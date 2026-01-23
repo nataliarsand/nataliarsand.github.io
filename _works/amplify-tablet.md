@@ -76,7 +76,7 @@ I worked mostly on the teacher side, focusing on architecture and flow. What we 
 <p class="work-image-caption">Teacher dashboard and student interface designed for their distinct needs.</p>
 
 **Low-Distraction Design**<br>
-Focused on visual clarity, minimal cognitive load, and intuitive transitions. In a classroom, you can't afford confusion or unnecessary complexity.
+Focused on visual precision, minimal cognitive load, and intuitive transitions. In a classroom, you can't afford confusion or unnecessary complexity.
 
 **Fully Asynchronous Collaboration**<br>
 Working between Porto Alegre and NYC meant fully asynchronous collaboration was a necessity, not a choice. We created robust practices, check-ins, and ceremonies that helped the team stay focused and deliver value. Thorough documentation and communicating design intent in ways that survived the time zone gap became essential skills.
