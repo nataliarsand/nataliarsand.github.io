@@ -108,10 +108,14 @@ table {
   --color-device-border: #3a3a3a;
 }
 [data-theme=dark] .card img,
-[data-theme=dark] .intro-image,
 [data-theme=dark] img[src*="icons/"],
 [data-theme=dark] img[src*=".svg"]:not(.device-showcase img) {
   filter: invert(1) hue-rotate(180deg) brightness(0.85);
+}
+[data-theme=dark] .intro-image {
+  background: #e0e0e0;
+  border-radius: 50%;
+  padding: 0.5rem;
 }
 [data-theme=dark] .device-showcase {
   background: linear-gradient(145deg, #1a1a1a 0%, #0f0f0f 100%);
