@@ -17,6 +17,8 @@ deliverables:
     description: Follows your system appearance automatically
   - label: Read-Only by Design
     description: Your files stay untouched - no accidental edits, no auto-formatting surprises
+  - label: Quick Look Preview
+    description: Press spacebar on any .md file in Finder to see it rendered instantly
   - label: Native macOS App
     description: Built with Swift and SwiftUI - lightweight, fast, and private
   - label: Default Reader
@@ -74,6 +76,9 @@ Follows your system appearance automatically. No settings to toggle - it just wo
 
 **Read-Only by Design**
 Your files stay untouched. No accidental edits, no auto-formatting surprises. Readdown is a reader, not an editor.
+
+**Quick Look Preview**
+Press spacebar on any `.md` file in Finder and see it rendered right there - no need to open the app. The same GitHub-style rendering, right in Quick Look.
 
 **Set as Default Reader**
 Replace Xcode, TextEdit, or VS Code as your default `.md` handler in one click. Every Markdown file on your machine opens beautifully from that point on.
