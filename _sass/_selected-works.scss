@@ -290,6 +290,11 @@
     object-fit: cover;
     object-position: top;
   }
+
+  img[src*="icon"] {
+    object-fit: contain;
+    padding: 0.75rem;
+  }
 }
 
 .work-title {
