@@ -36,19 +36,19 @@ collaboration:
 
 ### Situation
 
-Every developer has Markdown files scattered across their machine - READMEs, notes, documentation, meeting agendas. On macOS, double-clicking one of these files opens it in Xcode, VS Code, or TextEdit. Heavy tools for a simple read. You don't want an IDE to spin up just to skim a README. You don't want a text editor that shows you raw syntax. You just want to read the thing.
+Every developer has Markdown files scattered across their machine - READMEs, notes, documentation, meeting agendas. On macOS, double-clicking one opens Xcode, VS Code, or TextEdit. Heavy tools for a simple read.
 
 ---
 
 ### Task
 
-Build a lightweight, native macOS Markdown reader. Something that opens instantly, renders beautifully, and stays out of the way. No editing, no clutter, no telemetry - just reading.
+Build a native macOS Markdown reader that opens instantly, renders beautifully, and stays out of the way. No editing, no clutter, no telemetry.
 
 ---
 
 ### Action
 
-I designed and built **Readdown**, a native macOS app with Swift and SwiftUI, using Claude Code as an AI pair-programming partner throughout the process.
+I designed and built **Readdown** with Swift and SwiftUI, using Claude Code as a pair-programming partner.
 
 <div class="device-showcase">
   <div class="device-frame desktop">
@@ -60,19 +60,17 @@ I designed and built **Readdown**, a native macOS app with Swift and SwiftUI, us
 </div>
 <p class="work-image-caption">Readdown rendering a Markdown document with headings, lists, tables, and formatted text</p>
 
-#### Features built
-
 **Instant Open**
-Double-click any `.md` file and it opens immediately. No project loading, no workspace setup, no waiting. It just opens.
+Double-click any `.md` file and it opens immediately. No project loading, no workspace setup.
 
 **GitHub-Style Rendering**
-Headings, lists, tables, code blocks, task lists - all rendered cleanly, the way you'd see them on GitHub.
+Headings, lists, tables, code blocks, task lists - rendered the way you'd see them on GitHub.
 
 **Syntax Highlighting**
-Code blocks with a language tag get precise grammar-based highlighting. Bare code blocks are auto-detected from 19 common languages including Python, Swift, JavaScript, Go, Rust, SQL, and more.
+Code blocks with a language tag get grammar-based highlighting. Bare blocks are auto-detected from 19 common languages.
 
 **Mermaid Diagrams**
-Fenced code blocks with `mermaid` as the language render as interactive diagrams - flowcharts, sequence diagrams, pie charts, and more. No plugins, no configuration.
+Use `mermaid` as the language on a code block and it renders as a diagram - flowcharts, sequence diagrams, pie charts.
 
 <div class="device-showcase">
   <div class="device-frame desktop">
@@ -81,28 +79,20 @@ Fenced code blocks with `mermaid` as the language render as interactive diagrams
 </div>
 <p class="work-image-caption">Code blocks and task lists rendered with familiar GitHub styling</p>
 
-**Light & Dark Mode**
-Follows your system appearance automatically. No settings to toggle - it just works.
+**Quick Look**
+Press spacebar on any `.md` in Finder and see it rendered right there.
 
 **Read-Only by Design**
-Your files stay untouched. No accidental edits, no auto-formatting surprises. Readdown is a reader, not an editor.
-
-**Quick Look Preview**
-Press spacebar on any `.md` file in Finder and see it rendered right there - no need to open the app. The same GitHub-style rendering, right in Quick Look.
-
-**Set as Default Reader**
-Replace Xcode, TextEdit, or VS Code as your default `.md` handler in one click. Every Markdown file on your machine opens beautifully from that point on.
+Your files stay untouched. Readdown is a reader, not an editor.
 
 ---
 
 ### Result
 
-**Readdown** is live at <a href="https://heya.studio/readdown" target="_blank" rel="noopener">heya.studio/readdown</a> with the source code on <a href="https://github.com/nataliarsand/readdown" target="_blank" rel="noopener">GitHub</a>.
+**Readdown** is live at <a href="https://heya.studio/readdown" target="_blank" rel="noopener">heya.studio/readdown</a> with the source on <a href="https://github.com/nataliarsand/readdown" target="_blank" rel="noopener">GitHub</a>.
 
-- A tiny, focused app that does one thing well
-- Real users with automatic updates via Sparkle
-- Solves a real daily annoyance for anyone who works with Markdown
-- My first native macOS app - built with AI pair-programming
-- Active feedback loop via <a href="https://github.com/nataliarsand/readdown/issues" target="_blank" rel="noopener">GitHub Issues</a>
+- Does one thing well
+- Real users with automatic updates
+- Active feedback via <a href="https://github.com/nataliarsand/readdown/issues" target="_blank" rel="noopener">GitHub Issues</a>
 
-Built with Swift, SwiftUI, and WebKit. Readdown is the kind of tool I wished existed, so I built it.
+Built with Swift, SwiftUI, and WebKit. The kind of tool I wished existed, so I built it.
