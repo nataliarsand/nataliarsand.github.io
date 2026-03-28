@@ -48,7 +48,7 @@ Build a lightweight, native macOS Markdown reader. Something that opens instantl
 
 ### Action
 
-I designed and built **Readdown**, a native macOS app with Swift and SwiftUI. The whole thing was vibe-coded with Claude Code - a true AI pair-programming build from start to finish.
+I designed and built **Readdown**, a native macOS app with Swift and SwiftUI, using Claude Code as an AI pair-programming partner throughout the process.
 
 <div class="device-showcase">
   <div class="device-frame desktop">
@@ -102,7 +102,7 @@ Replace Xcode, TextEdit, or VS Code as your default `.md` handler in one click. 
 - A tiny, focused app that does one thing well
 - Real users with automatic updates via Sparkle
 - Solves a real daily annoyance for anyone who works with Markdown
-- My first native macOS app - fully vibe-coded with Claude Code
+- My first native macOS app - built with AI pair-programming
 - Active feedback loop via <a href="https://github.com/nataliarsand/readdown/issues" target="_blank" rel="noopener">GitHub Issues</a>
 
 Built with Swift, SwiftUI, and WebKit. Readdown is the kind of tool I wished existed, so I built it.
