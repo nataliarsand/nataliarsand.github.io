@@ -10,16 +10,16 @@
     <title>Readdown | Natalia Arsand - Portfolio & Playground</title>
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://nataliarsand.com/works/readdown/">
+    <link rel="canonical" href="http://localhost:4000/works/readdown/">
 
     <!-- Open Graph -->
     <meta property="og:title" content="Readdown | Natalia Arsand">
     <meta property="og:description" content="A lightweight native macOS app for reading Markdown files - nothing more, nothing less. Double-click any .md file and get beautiful, GitHub-style rendering without the overhead of a code editor.
 ">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://nataliarsand.com/works/readdown/">
+    <meta property="og:url" content="http://localhost:4000/works/readdown/">
     <meta property="og:site_name" content="Natalia Arsand - Portfolio & Playground">
-    <meta property="og:image" content="https://nataliarsand.com/assets/images/works/readdown/readdown-icon.png">
+    <meta property="og:image" content="http://localhost:4000/assets/images/works/readdown/readdown-icon.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
@@ -27,7 +27,7 @@
     <meta name="twitter:title" content="Readdown | Natalia Arsand">
     <meta name="twitter:description" content="A lightweight native macOS app for reading Markdown files - nothing more, nothing less. Double-click any .md file and get beautiful, GitHub-style rendering without the overhead of a code editor.
 ">
-    <meta name="twitter:image" content="https://nataliarsand.com/assets/images/works/readdown/readdown-icon.png">
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/works/readdown/readdown-icon.png">
   
   
     <!-- Fonts -->
@@ -54,11 +54,11 @@
       "headline": "Readdown",
       "description": "A lightweight native macOS app for reading Markdown files - nothing more, nothing less. Double-click any .md file and get beautiful, GitHub-style rendering without the overhead of a code editor.
 ",
-      "image": "https://nataliarsand.com/assets/images/works/readdown/readdown-icon.png",
+      "image": "http://localhost:4000/assets/images/works/readdown/readdown-icon.png",
       "author": {
         "@type": "Person",
         "name": "Natalia Arsand",
-        "url": "https://nataliarsand.com"
+        "url": "http://localhost:4000"
       },
       
       "publisher": {
@@ -181,6 +181,8 @@
         
           <option value="/works/internal-app/"  data-protected="true">Booking App Store 🔒</option>
         
+          <option value="/works/celebrations/"  >Celebrations</option>
+        
           <option value="/works/design-ops/"  data-protected="true">Design Operations 🔒</option>
         
           <option value="/works/design-systems/"  data-protected="true">Design systems 🔒</option>
@@ -203,6 +205,16 @@
     <nav class="folders desktop-only-folders" aria-label="Project Folders">
       <ul>
         <h3>Personal</h3>
+        
+          
+          
+          <li class="project-item ">
+            <a href="/works/celebrations/" class="project-name" >
+              <img src="/assets/images/folder.png" alt="" class="folder-icon" aria-hidden="true">
+              <span class="project-title">Celebrations</span>
+            </a>
+          </li>
+          
         
           
           
@@ -369,7 +381,7 @@
                 <div class="info-group info-group--wide">
                     <span class="info-label"><i class="fa-solid fa-cube"></i> Deliverables</span>
                     <div class="info-pills">
-                        <span class="info-pill" title="Double-click any .md file - no project loading, no workspace setup">Instant Open</span><span class="info-pill" title="Headings, lists, tables, code blocks, and task lists rendered the way you expect">GitHub-Style Rendering</span><span class="info-pill" title="Follows your system appearance automatically">Light & Dark Mode</span><span class="info-pill" title="Your files stay untouched - no accidental edits, no auto-formatting surprises">Read-Only by Design</span><span class="info-pill" title="Built with Swift and SwiftUI - lightweight, fast, and private">Native macOS App</span><span class="info-pill" title="Replace Xcode, TextEdit, or VS Code as your .md handler in one click">Default Reader</span>
+                        <span class="info-pill" title="Double-click any .md file - no project loading, no workspace setup">Instant Open</span><span class="info-pill" title="Headings, lists, tables, code blocks, and task lists rendered the way you expect">GitHub-Style Rendering</span><span class="info-pill" title="19 languages auto-detected, or specify the language on your code fence">Syntax Highlighting</span><span class="info-pill" title="Flowcharts, sequence diagrams, pie charts rendered natively from code blocks">Mermaid Diagrams</span><span class="info-pill" title="Follows your system appearance automatically">Light & Dark Mode</span><span class="info-pill" title="Your files stay untouched - no accidental edits, no auto-formatting surprises">Read-Only by Design</span><span class="info-pill" title="Press spacebar on any .md file in Finder to see it rendered instantly">Quick Look Preview</span><span class="info-pill" title="Built with Swift and SwiftUI - lightweight, fast, and private">Native macOS App</span><span class="info-pill" title="Replace Xcode, TextEdit, or VS Code as your .md handler in one click">Default Reader</span>
                     </div>
                 </div>
                 
@@ -391,19 +403,19 @@
 
 <h3 id="situation">Situation</h3>
 
-<p>Every developer has Markdown files scattered across their machine - READMEs, notes, documentation, meeting agendas. On macOS, double-clicking one of these files opens it in Xcode, VS Code, or TextEdit. Heavy tools for a simple read. You don’t want an IDE to spin up just to skim a README. You don’t want a text editor that shows you raw syntax. You just want to read the thing.</p>
+<p>Every developer has Markdown files scattered across their machine - READMEs, notes, documentation, meeting agendas. On macOS, double-clicking one opens Xcode, VS Code, or TextEdit. Heavy tools for a simple read.</p>
 
 <hr />
 
 <h3 id="task">Task</h3>
 
-<p>Build a lightweight, native macOS Markdown reader. Something that opens instantly, renders beautifully, and stays out of the way. No editing, no clutter, no telemetry - just reading.</p>
+<p>Build a native macOS Markdown reader that opens instantly, renders beautifully, and stays out of the way. No editing, no clutter, no telemetry.</p>
 
 <hr />
 
 <h3 id="action">Action</h3>
 
-<p>I designed and built <strong>Readdown</strong>, a native macOS app with Swift and SwiftUI. The whole thing was vibe-coded with Claude Code - a true AI pair-programming build from start to finish.</p>
+<p>I designed and built <strong>Readdown</strong> with Swift and SwiftUI, using Claude Code as a pair-programming partner.</p>
 
 <div class="device-showcase">
   <div class="device-frame desktop">
@@ -415,13 +427,17 @@
 </div>
 <p class="work-image-caption">Readdown rendering a Markdown document with headings, lists, tables, and formatted text</p>
 
-<h4 id="features-built">Features built</h4>
-
 <p><strong>Instant Open</strong>
-Double-click any <code class="language-plaintext highlighter-rouge">.md</code> file and it opens immediately. No project loading, no workspace setup, no waiting. It just opens.</p>
+Double-click any <code class="language-plaintext highlighter-rouge">.md</code> file and it opens immediately. No project loading, no workspace setup.</p>
 
 <p><strong>GitHub-Style Rendering</strong>
-Headings, lists, tables, code blocks with syntax highlighting, task lists - all rendered cleanly, the way you’d see them on GitHub.</p>
+Headings, lists, tables, code blocks, task lists - rendered the way you’d see them on GitHub.</p>
+
+<p><strong>Syntax Highlighting</strong>
+Code blocks with a language tag get grammar-based highlighting. Bare blocks are auto-detected from 19 common languages.</p>
+
+<p><strong>Mermaid Diagrams</strong>
+Use <code class="language-plaintext highlighter-rouge">mermaid</code> as the language on a code block and it renders as a diagram - flowcharts, sequence diagrams, pie charts.</p>
 
 <div class="device-showcase">
   <div class="device-frame desktop">
@@ -430,28 +446,25 @@ Headings, lists, tables, code blocks with syntax highlighting, task lists - all 
 </div>
 <p class="work-image-caption">Code blocks and task lists rendered with familiar GitHub styling</p>
 
-<p><strong>Light &amp; Dark Mode</strong>
-Follows your system appearance automatically. No settings to toggle - it just works.</p>
+<p><strong>Quick Look</strong>
+Press spacebar on any <code class="language-plaintext highlighter-rouge">.md</code> in Finder and see it rendered right there.</p>
 
 <p><strong>Read-Only by Design</strong>
-Your files stay untouched. No accidental edits, no auto-formatting surprises. Readdown is a reader, not an editor.</p>
-
-<p><strong>Set as Default Reader</strong>
-Replace Xcode, TextEdit, or VS Code as your default <code class="language-plaintext highlighter-rouge">.md</code> handler in one click. Every Markdown file on your machine opens beautifully from that point on.</p>
+Your files stay untouched. Readdown is a reader, not an editor.</p>
 
 <hr />
 
 <h3 id="result">Result</h3>
 
-<p><strong>Readdown</strong> is live at <a href="https://heya.studio/readdown" target="_blank" rel="noopener">heya.studio/readdown</a> with the source code on <a href="https://github.com/nataliarsand/readdown" target="_blank" rel="noopener">GitHub</a>.</p>
+<p><strong>Readdown</strong> is live at <a href="https://heya.studio/readdown" target="_blank" rel="noopener">heya.studio/readdown</a> with the source on <a href="https://github.com/nataliarsand/readdown" target="_blank" rel="noopener">GitHub</a>.</p>
 
 <ul>
-  <li>A tiny, focused app that does one thing well</li>
-  <li>Solves a real daily annoyance for anyone who works with Markdown</li>
-  <li>My first native macOS app - fully vibe-coded with Claude Code</li>
+  <li>Does one thing well</li>
+  <li>Real users with automatic updates</li>
+  <li>Active feedback via <a href="https://github.com/nataliarsand/readdown/issues" target="_blank" rel="noopener">GitHub Issues</a></li>
 </ul>
 
-<p>Built with Swift, SwiftUI, and WebKit. Readdown is the kind of tool I wished existed, so I built it.</p>
+<p>Built with Swift, SwiftUI, and WebKit. The kind of tool I wished existed, so I built it.</p>
 
 
             </div>

@@ -3,31 +3,31 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My most meaningful project to date. Three months into the project, I was brought in to fix the UX problems the team was encountering. Working alongside Partners in Health, OpenMRS, and ThoughtWorks, I helped design a medical records system for Haiti's largest hospital, serving 3 million people. The design changes were so impactful they were later rolled out to OpenMRS globally.
+    <meta name="description" content="Celebrations is a live product for creating beautiful event pages with RSVPs and collaborative gift lists. I designed and built it end-to-end on my own, from the theming system and templates through the React frontend to the backend and deployment, using AI as a build partner throughout.
 ">
     <meta name="theme-color" content="#ffffff">
 
-    <title>Mirebalais Hospital | Natalia Arsand - Portfolio & Playground</title>
+    <title>Celebrations | Natalia Arsand - Portfolio & Playground</title>
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="http://localhost:4000/works/health-records/">
+    <link rel="canonical" href="http://localhost:4000/works/celebrations/">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Mirebalais Hospital | Natalia Arsand">
-    <meta property="og:description" content="My most meaningful project to date. Three months into the project, I was brought in to fix the UX problems the team was encountering. Working alongside Partners in Health, OpenMRS, and ThoughtWorks, I helped design a medical records system for Haiti's largest hospital, serving 3 million people. The design changes were so impactful they were later rolled out to OpenMRS globally.
+    <meta property="og:title" content="Celebrations | Natalia Arsand">
+    <meta property="og:description" content="Celebrations is a live product for creating beautiful event pages with RSVPs and collaborative gift lists. I designed and built it end-to-end on my own, from the theming system and templates through the React frontend to the backend and deployment, using AI as a build partner throughout.
 ">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="http://localhost:4000/works/health-records/">
+    <meta property="og:url" content="http://localhost:4000/works/celebrations/">
     <meta property="og:site_name" content="Natalia Arsand - Portfolio & Playground">
-    <meta property="og:image" content="http://localhost:4000/assets/images/works/health-records/mirebalais-cover.jpeg">
+    <meta property="og:image" content="http://localhost:4000/assets/images/works/celebrations/celebrations-top-image.webp">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@nataliarsand">
-    <meta name="twitter:title" content="Mirebalais Hospital | Natalia Arsand">
-    <meta name="twitter:description" content="My most meaningful project to date. Three months into the project, I was brought in to fix the UX problems the team was encountering. Working alongside Partners in Health, OpenMRS, and ThoughtWorks, I helped design a medical records system for Haiti's largest hospital, serving 3 million people. The design changes were so impactful they were later rolled out to OpenMRS globally.
+    <meta name="twitter:title" content="Celebrations | Natalia Arsand">
+    <meta name="twitter:description" content="Celebrations is a live product for creating beautiful event pages with RSVPs and collaborative gift lists. I designed and built it end-to-end on my own, from the theming system and templates through the React frontend to the backend and deployment, using AI as a build partner throughout.
 ">
-    <meta name="twitter:image" content="http://localhost:4000/assets/images/works/health-records/mirebalais-cover.jpeg">
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/works/celebrations/celebrations-top-image.webp">
   
   
     <!-- Fonts -->
@@ -51,10 +51,10 @@
       "@context": "https://schema.org",
       "@type": "Article",
       
-      "headline": "Mirebalais Hospital",
-      "description": "My most meaningful project to date. Three months into the project, I was brought in to fix the UX problems the team was encountering. Working alongside Partners in Health, OpenMRS, and ThoughtWorks, I helped design a medical records system for Haiti's largest hospital, serving 3 million people. The design changes were so impactful they were later rolled out to OpenMRS globally.
+      "headline": "Celebrations",
+      "description": "Celebrations is a live product for creating beautiful event pages with RSVPs and collaborative gift lists. I designed and built it end-to-end on my own, from the theming system and templates through the React frontend to the backend and deployment, using AI as a build partner throughout.
 ",
-      "image": "http://localhost:4000/assets/images/works/health-records/mirebalais-cover.jpeg",
+      "image": "http://localhost:4000/assets/images/works/celebrations/celebrations-top-image.webp",
       "author": {
         "@type": "Person",
         "name": "Natalia Arsand",
@@ -181,7 +181,7 @@
         
           <option value="/works/internal-app/"  data-protected="true">Booking App Store 🔒</option>
         
-          <option value="/works/celebrations/"  >Celebrations</option>
+          <option value="/works/celebrations/" selected >Celebrations</option>
         
           <option value="/works/design-ops/"  data-protected="true">Design Operations 🔒</option>
         
@@ -191,7 +191,7 @@
         
           <option value="/works/mama-circle/"  >Mama Circle</option>
         
-          <option value="/works/health-records/" selected data-protected="true">Mirebalais Hospital 🔒</option>
+          <option value="/works/health-records/"  data-protected="true">Mirebalais Hospital 🔒</option>
         
           <option value="/works/readdown/"  >Readdown</option>
         
@@ -208,8 +208,8 @@
         
           
           
-          <li class="project-item ">
-            <a href="/works/celebrations/" class="project-name" >
+          <li class="project-item selected">
+            <a href="/works/celebrations/" class="project-name" aria-current="page">
               <img src="/assets/images/folder.png" alt="" class="folder-icon" aria-hidden="true">
               <span class="project-title">Celebrations</span>
             </a>
@@ -318,8 +318,8 @@
         
           
           
-          <li class="project-item selected">
-            <a href="/works/health-records/" class="project-name" aria-current="page">
+          <li class="project-item ">
+            <a href="/works/health-records/" class="project-name" >
               <img src="/assets/images/folder.png" alt="" class="folder-icon" aria-hidden="true">
               <span class="project-title">Mirebalais Hospital</span>
               <i class="fa-solid fa-lock protected-icon" aria-label="Password protected"></i>
@@ -344,47 +344,30 @@
 
 
         <!-- Main Content -->
-        <section class="content protected-content locked" data-protected="true">
-            
-            <!-- Password Gate Overlay -->
-<!-- Yes, you found it. If you can read it, well done. But maybe drop me a message anyway? -->
-<div class="password-gate" id="passwordGate">
-    <div class="password-gate-content">
-        <i class="fa-solid fa-lock password-gate-icon"></i>
-        <h2>This case study is protected</h2>
-        <p>Enter the password to view this work.</p>
-        <div class="password-form">
-            <input type="password" id="passwordInput" placeholder="Enter password" autocomplete="off" />
-            <button type="button" id="unlockBtn">Unlock</button>
-        </div>
-        <p class="password-error" id="passwordError">Incorrect password. Try again.</p>
-        <p class="password-hint">Don't have the password? <a href="mailto:nataliarsand@gmail.com?subject=Portfolio%20Access%20Request">Request access</a></p>
-    </div>
-</div>
-
+        <section class="content " >
             
             <div class="work-content-animate">
 
             <!-- Work Hero -->
             <header class="work-hero">
                 <nav class="breadcrumb-path" aria-label="Breadcrumb">
-                    <span class="path-segment home">~</span><span class="path-separator">/</span><a href="/works/" class="path-segment">Works</a><span class="path-separator">/</span><span class="path-segment folder">ThoughtWorks</span><span class="path-separator">/</span><span class="path-segment current">mirebalais-hospital</span>
+                    <span class="path-segment home">~</span><span class="path-separator">/</span><a href="/works/" class="path-segment">Works</a><span class="path-separator">/</span><span class="path-segment folder">Personal</span><span class="path-separator">/</span><span class="path-segment current">celebrations</span>
                 </nav>
 
                 <div class="hero-content">
                     <div class="hero-text">
-                        <h1 class="work-title">Mirebalais Hospital</h1>
+                        <h1 class="work-title">Celebrations</h1>
                         
-                        <p class="work-subtitle">Designing digital healthcare for and with the people of Haiti</p>
+                        <p class="work-subtitle">A production, design-system-driven product for beautiful event pages — designed and built end-to-end, with AI</p>
                         
                         
-                        <p class="work-description">My most meaningful project to date. Three months into the project, I was brought in to fix the UX problems the team was encountering. Working alongside Partners in Health, OpenMRS, and ThoughtWorks, I helped design a medical records system for Haiti's largest hospital, serving 3 million people. The design changes were so impactful they were later rolled out to OpenMRS globally.
+                        <p class="work-description">Celebrations is a live product for creating beautiful event pages with RSVPs and collaborative gift lists. I designed and built it end-to-end on my own, from the theming system and templates through the React frontend to the backend and deployment, using AI as a build partner throughout.
 </p>
                         
                     </div>
                     
                     <div class="hero-preview">
-                        <img loading="lazy" src="/assets/images/works/health-records/mirebalais-cover.jpeg" alt="Mirebalais Hospital preview">
+                        <img loading="lazy" src="/assets/images/works/celebrations/celebrations-top-image.webp" alt="Celebrations preview">
                     </div>
                     
                 </div>
@@ -393,30 +376,23 @@
             
             <div class="work-info-bar">
                 
-                <div class="info-group">
-                    <span class="info-label"><i class="fa-solid fa-building"></i> Company</span>
-                    <span class="info-value">Partners in Health · OpenMRS · ThoughtWorks</span>
-                </div>
-                
 
                 
                 <div class="info-group info-group--wide">
                     <span class="info-label"><i class="fa-solid fa-cube"></i> Deliverables</span>
                     <div class="info-pills">
-                        <span class="info-pill" title="Collaborative sessions with medical staff to map patient workflows">UX research and journeys</span><span class="info-pill" title="Low-fi mockups to live prototypes, tested on hospital grounds in Haiti">Prototyping & testing</span><span class="info-pill" title="Live UI style guide enabling faster delivery and consistency">Design system</span>
+                        <span class="info-pill" title="Tokenised theming engine — colour, typography, and background presets generating 72 coherent templates">Design system</span><span class="info-pill" title="Five-step creation wizard, RSVP management, and collaborative gift lists, designed end-to-end">Product design</span><span class="info-pill" title="React 19 + TypeScript monorepo with a shared component library, responsive and accessible">Front-end build</span><span class="info-pill" title="AI used across design exploration, build, and QA, with craft and architecture decisions owned throughout">AI-assisted delivery</span>
                     </div>
                 </div>
                 
 
                 
-                <div class="info-group info-group--wide">
-                    <span class="info-label"><i class="fa-solid fa-users"></i> Team</span>
-                    <div class="info-pills">
-                        <span class="info-pill info-pill--subtle">Haitian clinicians and hospital staff</span><span class="info-pill info-pill--subtle">Partners in Health specialists</span><span class="info-pill info-pill--subtle">ThoughtWorks engineers and PMs</span><span class="info-pill info-pill--subtle">OpenMRS contributors</span>
-                    </div>
-                </div>
-                
 
+                
+                <div class="info-group">
+                    <span class="info-label"><i class="fa-solid fa-handshake"></i> Collaboration</span>
+                    <span class="info-value">Self-initiated project, designed and built end-to-end with AI</span>
+                </div>
                 
             </div>
             
@@ -427,89 +403,79 @@
 
 <h3 id="situation">Situation</h3>
 
-<p>Haiti in 2012 was the poorest country in the Americas. The 2010 earthquake had destroyed 80% of healthcare infrastructure. Literacy levels were around 50%, half of children were unvaccinated, and fewer than 30% reached 6th grade. Partners in Health built Hôpital Universitaire de Mirebalais to become the best and biggest hospital in Haiti, providing care for 3 million people. ThoughtWorks was brought in to build the digital experience on top of OpenMRS, an open-source medical records system for developing countries.</p>
+<p>Planning a celebration means stitching together separate tools — one app for the invitation, a spreadsheet or chat thread for RSVPs, a third site for a gift registry. The event page itself usually looks generic, or takes real design effort to make beautiful. For most people organising a wedding, a baby shower, or a housewarming, that effort is out of reach.</p>
 
 <hr />
 
 <h3 id="task">Task</h3>
 
-<p>Three months after the project kicked off, I was brought in to fix the UX problems the team was encountering. The challenge was designing for extreme constraints: users with low literacy, many who had never used a computer, and a high-pressure hospital environment where every second mattered. Changing the OpenMRS interface was technically complex, so every design decision needed to be validated before committing to development.</p>
+<p>Build one product where anyone can create a beautiful, themed event page with RSVPs and a collaborative gift list — elegant by default, with no design skill required from the host.</p>
 
 <hr />
 
 <h3 id="action">Action</h3>
 
-<p><strong>Research &amp; Journey Mapping</strong><br />
-I sat down with Partners in Health specialists and asked them to guide me through patient care from admission to discharge. Ran multiple design exercises with the team and client, generating artefacts that helped identify where to focus design efforts.</p>
-
-<div class="paper-showcase">
-  <div class="paper-frame">
-    <img loading="lazy" src="/assets/images/works/health-records/patient-journey-map.png" alt="Patient journey map showing care workflow from admission to discharge" class="work-image" />
-  </div>
-</div>
-<p class="work-image-caption">Patient journey map created with clinicians to identify pain points and focus areas.</p>
-
-<p><strong>Low-Fi to Working Prototypes</strong><br />
-Started with simple mockups for communication before committing to development. As soon as a UX problem was solved in low-fidelity, I helped the frontend developer create working prototypes. We did as little upfront design as possible to move fast.</p>
-
-<div class="device-showcase">
-  <div class="device-frame desktop" style="flex: 1; max-width: 50%;">
-    <img loading="lazy" src="/assets/images/works/health-records/ui-before.png" alt="First version of the UI" class="work-image" />
-  </div>
-  <div class="paper-frame" style="flex: 1; max-width: 50%;">
-    <img loading="lazy" src="/assets/images/works/health-records/ui-before-prototype.png" alt="Low-fidelity prototype sketches" class="work-image" />
-  </div>
-</div>
-<p class="work-image-caption">First versions: working prototype alongside low-fidelity mockups to validate concepts quickly.</p>
+<p>I designed and built <strong>Celebrations</strong> end-to-end on my own: a React 19 and TypeScript monorepo with a shared component library, and a Fastify and PostgreSQL backend, deployed to production.</p>
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img loading="lazy" src="/assets/images/works/health-records/ui-after.png" alt="Evolved interface after testing" class="work-image" />
+    <img loading="lazy" src="/assets/images/works/celebrations/editor.webp" alt="Celebrations live editor with theming controls and a live preview of the event page" class="work-image" />
   </div>
 </div>
-<p class="work-image-caption">Evolved UI with clearer patient information, actions, and encounter history.</p>
+<p class="work-image-caption">The live editor: edit on the left, watch the themed page update on the right, then publish.</p>
 
-<p><strong>In-Site Testing in Haiti</strong><br />
-Once we had working software, we took it to hospital grounds in Haiti to test with actual staff. The hospital was still under construction, but we role-played scenarios and recorded everything. Key discoveries: many participants had never used a computer before, so keyboard navigation (“Enter + number”) was easier to learn than mouse clicks under pressure. We replaced text with intuitive icons and large elements (“look for the heart and click it”). Doctors found the patient dashboard life-saving for surfacing critical data quickly.</p>
-
-<div class="paper-showcase">
-  <div class="paper-frame">
-    <img loading="lazy" src="/assets/images/works/health-records/hospital-testing-environment.jpg" alt="Nurses using the system at Mirebalais hospital" class="work-image" />
-  </div>
-</div>
-<p class="work-image-caption">Testing in Haiti: validating designs with hospital staff who would use the system daily.</p>
-
-<p><strong>Live Design System</strong><br />
-Created a <a href="https://github.com/glauberramos/style-guide" target="_blank" rel="noopener">live UI style guide</a> (we were designing in Fireworks at the time, so this was innovative) where developers could copy code directly. This enabled faster delivery, faster demoing to the client, and faster testing with nurses in Haiti.</p>
+<p><strong>A tokenised design system</strong>
+Twelve colour presets, ten typography options, and a set of backgrounds and borders combine into 72 templates from one theming engine. The hard part was making the system produce tasteful defaults, so a host with no design background still ends up with an elegant page.</p>
 
 <div class="device-showcase">
   <div class="device-frame desktop">
-    <img loading="lazy" src="/assets/images/works/health-records/style-guide-ui.png" alt="Live UI style guide with colors, icons, and buttons" class="work-image" />
+    <img loading="lazy" src="/assets/images/works/celebrations/templates-grid.webp" alt="A grid of Celebrations templates, each themed differently from the same system" class="work-image" />
   </div>
 </div>
-<p class="work-image-caption">Live style guide: colors, icons, and buttons that developers could reference and copy directly.</p>
+<p class="work-image-caption">One system, seventy-two templates: every invite shares the same tokens and components, with its own colour, typography, and imagery.</p>
+
+<div class="device-showcase">
+  <div class="device-frame desktop">
+    <img loading="lazy" src="/assets/images/works/celebrations/dinner-party.webp" alt="Celebrations dinner party event page on desktop" class="work-image" />
+  </div>
+  <div class="device-frame mobile">
+    <img loading="lazy" src="/assets/images/works/celebrations/housewarming-mobile.webp" alt="Celebrations housewarming event page on mobile" class="work-image" />
+  </div>
+</div>
+<p class="work-image-caption">A finished page, from desktop down to mobile.</p>
+
+<p><strong>End-to-end, on my own</strong>
+I did the whole thing myself, from the first idea through design, build, and deployment. Doing both the design and the engineering meant nothing got lost in a handoff.</p>
+
+<p><strong>AI as a build partner</strong>
+I worked with AI the way I always do: as a creative partner, never blindly. It helped with exploration, writing code, and testing, while I stayed accountable for everything it produced.</p>
+
+<p><strong>Still hard, even with AI</strong>
+AI helps, but it doesn’t make this easy. I have to understand the code well enough to debug and reason about it, decide the architecture and which third-party tools and services to depend on, and hold the whole thing to proper software standards, not just design ones: reliability, security and privacy, testing, maintainability, and a deployment pipeline I can trust. AI speeds up the writing; the judgment about what’s correct and what will hold up over time stays with me.</p>
+
+<p><strong>The details</strong>
+I put the time into the parts that are easy to skip: a creation wizard that doesn’t overwhelm despite all the options, password protection for private events, proper mobile layouts, accessibility, multiple languages, and the small states that often get left out, like gift reservations, calendar adds, and empty views.</p>
+
+<div class="device-showcase">
+  <div class="device-frame desktop">
+    <img loading="lazy" src="/assets/images/works/celebrations/rsvp-dashboard.webp" alt="Celebrations RSVP dashboard showing responses, headcount, statuses, and guest management" class="work-image" />
+  </div>
+</div>
+<p class="work-image-caption">The host's RSVP dashboard: responses, headcount, statuses, and inline guest management.</p>
 
 <hr />
 
 <h3 id="result">Result</h3>
 
-<div class="sticky-note green centered rotate-left">
-  <p><strong>Real impact:</strong> Helping save lives by surfacing key data faster</p>
-</div>
+<p><strong>Celebrations</strong> is live at <a href="https://joincelebrations.com" target="_blank" rel="noopener">joincelebrations.com</a>, in user validation ahead of paid tiers.</p>
 
 <ul>
-  <li>Clinicians worked more efficiently and confidently, even under high pressure</li>
-  <li>The system was adopted in real patient care, helping save lives by surfacing critical data faster</li>
-  <li>Design changes were so impactful that we were asked to roll them out to the core OpenMRS system</li>
-  <li><a href="https://github.com/openmrs" target="_blank" rel="noopener">OpenMRS</a> has evolved since, but this work laid the foundation. The project is still active with a large global community, helping millions access healthcare worldwide</li>
+  <li>A tokenised design system producing 72 coherent templates from structured colour and typography presets</li>
+  <li>The full design-to-delivery arc, built solo with AI and deployed to production</li>
+  <li>Mobile-first, accessible, and internationalised from the start</li>
 </ul>
 
-<div class="paper-showcase">
-  <div class="paper-frame">
-    <img loading="lazy" src="/assets/images/works/health-records/system-use-india.png" alt="OpenMRS system being used in healthcare facilities worldwide" class="work-image" />
-  </div>
-</div>
-<p class="work-image-caption">Global impact: OpenMRS with our design improvements being used in healthcare facilities worldwide.</p>
+<p>Built with React, TypeScript, Fastify, and PostgreSQL.</p>
 
 
             </div>
