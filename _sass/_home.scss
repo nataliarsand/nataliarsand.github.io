@@ -35,6 +35,20 @@
     line-height: 1.6;
     color: $color-secondary;
   }
+
+  // Sits at the foot of the card, so cards of unequal text still line up.
+  .card-link {
+    margin-top: auto;
+    padding-top: 1rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.85rem;
+    color: $color-accent;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 // === PILLS COMPONENT ===

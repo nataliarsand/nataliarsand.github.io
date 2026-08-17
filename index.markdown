@@ -12,7 +12,7 @@ title: Home
              class="intro-image anim-on-load fade-in load-delay-1" alt="Natalia Arsand profile image"/>
         <h2><span class="typing-text">Hi, I'm Natalia.</span></h2>
       </div>
-      <p class="intro-p anim-timed">I'm a <strong>UX Design Lead</strong> with 18 years of experience working across strategy, systems, and delivery. I help teams make sense of complex, real-world problems and guide work from early insight through to implementation.</p>
+      <p class="intro-p anim-timed">I'm a <strong>UX Design Lead</strong> with 18+ years of experience working across strategy, systems, and delivery. I help teams make sense of complex, real-world problems and guide work from early insight through to implementation.</p>
       <p class="intro-p anim-timed">This is where I document my practice and how I approach design problems and decision-making. Part playground, part portfolio, it brings together some of my favourite case studies and reflections.</p>
     </div>
     <div id="works-section">
@@ -195,13 +195,20 @@ title: Home
 
       <p>I spent 10 years at Booking.com, where I led design for both B2B and B2C products, founded the Design Operations team, and scaled Booking's Design System to support the global design community.</p>
 
-      <p>Today, I'm taking time to explore what comes next:  building a few apps, experimenting with AI, and balancing parenthood with creative work.</p>
+      <p>Along the way, my early practice work at ThoughtWorks was featured in <a href="https://www.amazon.com/Lean-Inception-Align-People-Product/dp/8594377134" target="_blank" rel="noopener">Paulo Caroli's Lean Inception book</a> and a ThoughtWorks anthology. My recorded classes for <a href="https://pm3.com.br/" target="_blank" rel="noopener">PM3</a>, Brazil's largest product management school, are still sold as part of its curriculum today. I've spoken at Product Camp, AgileTrends, UXConfBR and IxDF, and in 2026 I completed a BSc (Honours) in Design and Innovation with <a href="https://www.open.ac.uk/" target="_blank" rel="noopener">The Open University</a>.</p>
+
+      <p>Today I work through <a href="https://eixo.design" target="_blank" rel="noopener">Eixo</a>, my own design practice: one to one with designers and product people, client work where I can help, and a few products of my own built with AI as a partner. All of it alongside parenthood.</p>
     </div>
 
     <aside class="career-timeline" data-animate="fade-left" data-delay="2">
       <h3 class="timeline-header">Work Experience</h3>
       <div class="timeline-item">
-        <span class="timeline-date">Oct 2015 – 2025</span>
+        <span class="timeline-date">2026 – now</span>
+        <h4 class="timeline-company"><a href="https://eixo.design" target="_blank" rel="noopener">Eixo</a></h4>
+        <p class="timeline-roles">Founder · Product Strategy · UX Design · Mentorship</p>
+      </div>
+      <div class="timeline-item">
+        <span class="timeline-date">Oct 2015 – 2026</span>
         <h4 class="timeline-company"><a href="https://www.booking.com" target="_blank" rel="noopener">Booking.com</a></h4>
         <p class="timeline-roles">Senior/Lead UX · Design Manager · Design Operations</p>
       </div>
@@ -242,7 +249,8 @@ title: Home
     <div class="card">
       <img loading="lazy" src="{{ '/assets/images/icons/mentorship.svg' | relative_url }}" alt="Mentorship icon" />
       <h3>Mentorship & Coaching</h3>
-      <p>Looking for honest feedback, support with a career transition, or navigating the messier parts of design work? I offer 1:1 sessions and long-term mentorship.</p>
+      <p>Looking for honest feedback, support with a career transition, or navigating the messier parts of design work? I offer 1:1 sessions and long-term mentorship through Eixo.</p>
+      <a class="card-link" href="https://calendly.com/nataliarsand/intro-call-mentorship" target="_blank" rel="noopener">Book a first chat</a>
     </div>
     <div class="card">
       <img loading="lazy" src="{{ '/assets/images/icons/job.svg' | relative_url }}" alt="Job opportunities icon" />
