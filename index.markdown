@@ -81,30 +81,35 @@ title: Home
     </div>
     <div class="card">
       <h3>Fluency in Code & Tech Conversations</h3>
-      <p>My background in software development helps me prototype fast, understand engineering constraints, and avoid design-theoretical dead ends. I don’t build production code (often), but I speak the language fluently and often bridge the gap between product expectations and technical feasibility.</p>
+      <p>My background in software development helps me prototype fast, understand engineering constraints, and avoid design-theoretical dead ends. These days I ship too: products designed and built end to end, deployed and maintained, which keeps me honest about what a design decision really costs to build.</p>
       <ul class="pills">
         <li class="pill">HTML</li>
         <li class="pill">CSS/SCSS</li>
         <li class="pill">JavaScript</li>
+        <li class="pill">TypeScript</li>
         <li class="pill">React/Vue</li>
+        <li class="pill">Astro</li>
+        <li class="pill">SwiftUI</li>
+        <li class="pill">Cloudflare Workers</li>
         <li class="pill">Git</li>
         <li class="pill">Github</li>
-        <li class="pill">Gitlab</li>
-        <li class="pill">iTerm</li>
         <li class="pill">VS Code</li>
         <li class="pill">✨ Vibe Coding</li>
       </ul>
     </div>
     <div class="card">
-      <h3>Applied AI with Integrity</h3>
-      <p>I work with AI as a creative partner, using it for synthesis, ideation, and acceleration, and never blindly. I take time to understand a tool’s boundaries, train it on the right inputs, and remain accountable for its outputs. I believe AI can enhance, not replace, the thinking behind the work.</p>
+      <h3>Designing & Building with AI</h3>
+      <p>I don’t just prompt, I build with it. I’ve designed and shipped live products end to end with AI as a build partner, so I know where it genuinely accelerates the work and where it produces confident nonsense. I set up the context it needs, keep the craft and architecture decisions mine, and stay accountable for whatever ships.</p>
       <ul class="pills">
+        <li class="pill">Claude Code</li>
         <li class="pill">ChatGPT/Codex</li>
         <li class="pill">Gemini CLI</li>
-        <li class="pill">Claude Code</li>
-        <li class="pill">Ethical AI usage</li>
+        <li class="pill">MCP servers</li>
+        <li class="pill">Agents & subagents</li>
+        <li class="pill">Context engineering</li>
         <li class="pill">Prompt Design</li>
         <li class="pill">Output Review</li>
+        <li class="pill">Ethical AI usage</li>
       </ul>
     </div>
     <div class="card">
