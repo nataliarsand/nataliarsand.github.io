@@ -65,6 +65,21 @@ title: Home
 
   <div class="grid-cards" data-stagger="0.08">
     <div class="card">
+      <h3>Designing & Building with AI</h3>
+      <p>I’ve designed and shipped live products end to end with AI as a build partner. I go back and forth between exploring what the technology can actually do and folding what holds up into how I work, layering it onto the fundamentals rather than replacing them. Nobody has this figured out yet. We’re building the future of design right now and it’s exciting, but it also requires a lot of responsibility.</p>
+      <ul class="pills">
+        <li class="pill">Claude Code</li>
+        <li class="pill">ChatGPT/Codex</li>
+        <li class="pill">Gemini CLI</li>
+        <li class="pill">MCP servers</li>
+        <li class="pill">Agents & subagents</li>
+        <li class="pill">Context engineering</li>
+        <li class="pill">Prompt Design</li>
+        <li class="pill">Output Review</li>
+        <li class="pill">Ethical AI usage</li>
+      </ul>
+    </div>
+    <div class="card">
       <h3>Facilitation & Collaboration</h3>
       <p>I bring people together, across roles and perspectives, to frame problems and align on direction. I've got my ways of making even the busiest execs show up and engage. From workshops to MVP planning, I surface open questions and connect user needs to business priorities.</p>
       <ul class="pills">
@@ -95,21 +110,6 @@ title: Home
         <li class="pill">Github</li>
         <li class="pill">VS Code</li>
         <li class="pill">✨ Vibe Coding</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Designing & Building with AI</h3>
-      <p>I’ve designed and shipped live products end to end with AI as a build partner. I go back and forth between exploring what the technology can actually do and folding what holds up into how I work, layering it onto the fundamentals rather than replacing them. Nobody has this figured out yet. We’re building the future of design right now and it’s exciting, but it also requires a lot of responsibility.</p>
-      <ul class="pills">
-        <li class="pill">Claude Code</li>
-        <li class="pill">ChatGPT/Codex</li>
-        <li class="pill">Gemini CLI</li>
-        <li class="pill">MCP servers</li>
-        <li class="pill">Agents & subagents</li>
-        <li class="pill">Context engineering</li>
-        <li class="pill">Prompt Design</li>
-        <li class="pill">Output Review</li>
-        <li class="pill">Ethical AI usage</li>
       </ul>
     </div>
     <div class="card">
