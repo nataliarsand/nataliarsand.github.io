@@ -66,7 +66,7 @@ title: Home
   <div class="grid-cards" data-stagger="0.08">
     <div class="card">
       <h3>Design Craft & Quality</h3>
-      <p>Flows, states, the empty and error screens nobody asks for. I think in systems, care about accessibility, and would rather put work in front of people than argue for my own taste. I don’t disappear after ideation either, handoff is one of my favorite parts: engineers get the what and the why, and can build with ownership instead of chasing changing requirements. Design is only done when it’s in the customer’s hands, not when it looks right in a Figma frame.</p>
+      <p>Flows, states, the empty and error screens nobody asks for, and the interface details that decide whether something feels considered. Handoff is one of my favorite parts: engineers get the what and the why, and can build with ownership instead of chasing changing requirements. Design is only done when it’s in the customer’s hands, not when it looks right in a Figma frame.</p>
       <ul class="pills">
         <li class="pill">Interaction design</li>
         <li class="pill">Design Systems</li>
