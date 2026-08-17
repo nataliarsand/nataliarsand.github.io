@@ -99,7 +99,7 @@ title: Home
     </div>
     <div class="card">
       <h3>Designing & Building with AI</h3>
-      <p>I don’t just prompt, I build with it. I’ve designed and shipped live products end to end with AI as a build partner, so I know where it genuinely accelerates the work and where it produces confident nonsense. I set up the context it needs, keep the craft and architecture decisions mine, and stay accountable for whatever ships.</p>
+      <p>I’ve designed and shipped live products end to end with AI as a build partner, so I know where it genuinely accelerates the work and where it produces confident nonsense. I set up the context it needs, keep the craft and architecture decisions mine, and stay accountable for whatever ships.</p>
       <ul class="pills">
         <li class="pill">Claude Code</li>
         <li class="pill">ChatGPT/Codex</li>
