@@ -84,7 +84,7 @@ title: Home
     </div>
     <div class="card">
       <h3>Designing & Building with AI</h3>
-      <p>I’ve designed and shipped live products end to end with AI as a build partner. I go back and forth between exploring the technology and folding what holds up into how I work, on top of the fundamentals, not instead of them. Nobody has this figured out yet: we’re building the future of design right now, and that takes as much responsibility as excitement.</p>
+      <p>I’ve designed and shipped live products end to end with AI as a build partner. I go back and forth on exploring the technology and incorporating new ways of working on top of the fundamentals, not instead of them. Nobody has this figured out yet: we’re building the future of design right now, and that takes as much responsibility as excitement.</p>
       <ul class="pills">
         <li class="pill">Claude Code</li>
         <li class="pill">ChatGPT/Codex</li>
