@@ -139,18 +139,19 @@ title: Home
       </ul>
     </div>
     <div class="card">
-      <h3>Reliable Execution & Delivery</h3>
-      <p>I don’t disappear after ideation, handoff is actually one of my favorite parts. I like to ensure engineers understand what we are trying to build and why, and can work with ease and ownership without back and forth and requirements changing halfway. Design is only done when it’s in the hands of the customer, not in a Figma frame.</p>
+      <h3>Design Craft & Quality</h3>
+      <p>The designing itself is still the job: flows, states, the empty and error screens nobody asks for, and the interface details that decide whether something feels considered. I design in systems so patterns stay consistent and accessible, prototype to answer questions rather than to decorate them, and put the work in front of real people instead of defending my own taste. Design is only done when it’s in the hands of the customer and holds up there, not when it looks right in a Figma frame.</p>
       <ul class="pills">
-        <li class="pill">Design System</li>
-        <li class="pill">Handoff</li>
-        <li class="pill">Quality Assurance</li>
+        <li class="pill">Interaction design</li>
+        <li class="pill">Design Systems</li>
         <li class="pill">Figma</li>
         <li class="pill">Prototypes</li>
+        <li class="pill">States & edge cases</li>
         <li class="pill">Usability testing</li>
-        <li class="pill">Mobile-first</li>
         <li class="pill">Accessibility</li>
-        <li class="pill">UX/Dev pairing</li>
+        <li class="pill">Mobile-first</li>
+        <li class="pill">Design critique</li>
+        <li class="pill">Quality Assurance</li>
       </ul>
     </div>
   </div>
