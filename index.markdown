@@ -65,8 +65,26 @@ title: Home
 
   <div class="grid-cards" data-stagger="0.08">
     <div class="card">
+      <h3>Design Craft & Quality</h3>
+      <p>Flows, states, the empty and error screens nobody asks for. I work in systems so patterns stay consistent and accessible, and test with real people rather than defend my own taste. I don’t disappear after ideation either, handoff is one of my favorite parts: engineers get the what and the why, and can build with ownership instead of chasing changing requirements. Design is only done when it’s in the customer’s hands, not when it looks right in a Figma frame.</p>
+      <ul class="pills">
+        <li class="pill">Interaction design</li>
+        <li class="pill">Design Systems</li>
+        <li class="pill">Figma</li>
+        <li class="pill">Prototypes</li>
+        <li class="pill">States & edge cases</li>
+        <li class="pill">Usability testing</li>
+        <li class="pill">Accessibility</li>
+        <li class="pill">Mobile-first</li>
+        <li class="pill">Design critique</li>
+        <li class="pill">Handoff</li>
+        <li class="pill">UX/Dev pairing</li>
+        <li class="pill">Quality Assurance</li>
+      </ul>
+    </div>
+    <div class="card">
       <h3>Designing & Building with AI</h3>
-      <p>I’ve designed and shipped live products end to end with AI as a build partner. I go back and forth between exploring what the technology can actually do and folding what holds up into how I work, layering it onto the fundamentals rather than replacing them. Nobody has this figured out yet. We’re building the future of design right now and it’s exciting, but it also requires a lot of responsibility.</p>
+      <p>I’ve designed and shipped live products end to end with AI as a build partner. I go back and forth between exploring what the technology can do and folding what holds up into how I work, layered onto the fundamentals rather than replacing them. Nobody has this figured out yet: we’re building the future of design right now, and that takes as much responsibility as excitement.</p>
       <ul class="pills">
         <li class="pill">Claude Code</li>
         <li class="pill">ChatGPT/Codex</li>
@@ -136,22 +154,6 @@ title: Home
         <li class="pill">Accessibility</li>
         <li class="pill">Component Libraries</li>
         <li class="pill">Software architecture</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>Design Craft & Quality</h3>
-      <p>The designing itself is still the job: flows, states, the empty and error screens nobody asks for, and the interface details that decide whether something feels considered. I design in systems so patterns stay consistent and accessible, prototype to answer questions rather than to decorate them, and put the work in front of real people instead of defending my own taste. Design is only done when it’s in the hands of the customer and holds up there, not when it looks right in a Figma frame.</p>
-      <ul class="pills">
-        <li class="pill">Interaction design</li>
-        <li class="pill">Design Systems</li>
-        <li class="pill">Figma</li>
-        <li class="pill">Prototypes</li>
-        <li class="pill">States & edge cases</li>
-        <li class="pill">Usability testing</li>
-        <li class="pill">Accessibility</li>
-        <li class="pill">Mobile-first</li>
-        <li class="pill">Design critique</li>
-        <li class="pill">Quality Assurance</li>
       </ul>
     </div>
   </div>
