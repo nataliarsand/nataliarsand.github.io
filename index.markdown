@@ -106,10 +106,10 @@ title: Home
         <li class="pill">Astro</li>
         <li class="pill">SwiftUI</li>
         <li class="pill">Cloudflare Workers</li>
+        <li class="pill">Railway</li>
         <li class="pill">Git</li>
         <li class="pill">Github</li>
         <li class="pill">VS Code</li>
-        <li class="pill">✨ Vibe Coding</li>
       </ul>
     </div>
     <div class="card">
